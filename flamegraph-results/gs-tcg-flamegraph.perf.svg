@@ -1,0 +1,1365 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="1200" height="2134" onload="init(evt)" viewBox="0 0 1200 2134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
+<!-- NOTES:  -->
+<defs>
+	<linearGradient id="background" y1="0" y2="1" x1="0" x2="0" >
+		<stop stop-color="#eeeeee" offset="5%" />
+		<stop stop-color="#eeeeb0" offset="95%" />
+	</linearGradient>
+</defs>
+<style type="text/css">
+	text { font-family:Verdana; font-size:12px; fill:rgb(0,0,0); }
+	#search, #ignorecase { opacity:0.1; cursor:pointer; }
+	#search:hover, #search.show, #ignorecase:hover, #ignorecase.show { opacity:1; }
+	#subtitle { text-anchor:middle; font-color:rgb(160,160,160); }
+	#title { text-anchor:middle; font-size:17px}
+	#unzoom { cursor:pointer; }
+	#frames > *:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+	.hide { display:none; }
+	.parent { opacity:0.5; }
+</style>
+<script type="text/ecmascript">
+<![CDATA[
+	"use strict";
+	var details, searchbtn, unzoombtn, matchedtxt, svg, searching, currentSearchTerm, ignorecase, ignorecaseBtn;
+	function init(evt) {
+		details = document.getElementById("details").firstChild;
+		searchbtn = document.getElementById("search");
+		ignorecaseBtn = document.getElementById("ignorecase");
+		unzoombtn = document.getElementById("unzoom");
+		matchedtxt = document.getElementById("matched");
+		svg = document.getElementsByTagName("svg")[0];
+		searching = 0;
+		currentSearchTerm = null;
+
+		// use GET parameters to restore a flamegraphs state.
+		var params = get_params();
+		if (params.x && params.y)
+			zoom(find_group(document.querySelector('[x="' + params.x + '"][y="' + params.y + '"]')));
+                if (params.s) search(params.s);
+	}
+
+	// event listeners
+	window.addEventListener("click", function(e) {
+		var target = find_group(e.target);
+		if (target) {
+			if (target.nodeName == "a") {
+				if (e.ctrlKey === false) return;
+				e.preventDefault();
+			}
+			if (target.classList.contains("parent")) unzoom(true);
+			zoom(target);
+			if (!document.querySelector('.parent')) {
+				// we have basically done a clearzoom so clear the url
+				var params = get_params();
+				if (params.x) delete params.x;
+				if (params.y) delete params.y;
+				history.replaceState(null, null, parse_params(params));
+				unzoombtn.classList.add("hide");
+				return;
+			}
+
+			// set parameters for zoom state
+			var el = target.querySelector("rect");
+			if (el && el.attributes && el.attributes.y && el.attributes._orig_x) {
+				var params = get_params()
+				params.x = el.attributes._orig_x.value;
+				params.y = el.attributes.y.value;
+				history.replaceState(null, null, parse_params(params));
+			}
+		}
+		else if (e.target.id == "unzoom") clearzoom();
+		else if (e.target.id == "search") search_prompt();
+		else if (e.target.id == "ignorecase") toggle_ignorecase();
+	}, false)
+
+	// mouse-over for info
+	// show
+	window.addEventListener("mouseover", function(e) {
+		var target = find_group(e.target);
+		if (target) details.nodeValue = "Function: " + g_to_text(target);
+	}, false)
+
+	// clear
+	window.addEventListener("mouseout", function(e) {
+		var target = find_group(e.target);
+		if (target) details.nodeValue = ' ';
+	}, false)
+
+	// ctrl-F for search
+	// ctrl-I to toggle case-sensitive search
+	window.addEventListener("keydown",function (e) {
+		if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+			e.preventDefault();
+			search_prompt();
+		}
+		else if (e.ctrlKey && e.keyCode === 73) {
+			e.preventDefault();
+			toggle_ignorecase();
+		}
+	}, false)
+
+	// functions
+	function get_params() {
+		var params = {};
+		var paramsarr = window.location.search.substr(1).split('&');
+		for (var i = 0; i < paramsarr.length; ++i) {
+			var tmp = paramsarr[i].split("=");
+			if (!tmp[0] || !tmp[1]) continue;
+			params[tmp[0]]  = decodeURIComponent(tmp[1]);
+		}
+		return params;
+	}
+	function parse_params(params) {
+		var uri = "?";
+		for (var key in params) {
+			uri += key + '=' + encodeURIComponent(params[key]) + '&';
+		}
+		if (uri.slice(-1) == "&")
+			uri = uri.substring(0, uri.length - 1);
+		if (uri == '?')
+			uri = window.location.href.split('?')[0];
+		return uri;
+	}
+	function find_child(node, selector) {
+		var children = node.querySelectorAll(selector);
+		if (children.length) return children[0];
+	}
+	function find_group(node) {
+		var parent = node.parentElement;
+		if (!parent) return;
+		if (parent.id == "frames") return node;
+		return find_group(parent);
+	}
+	function orig_save(e, attr, val) {
+		if (e.attributes["_orig_" + attr] != undefined) return;
+		if (e.attributes[attr] == undefined) return;
+		if (val == undefined) val = e.attributes[attr].value;
+		e.setAttribute("_orig_" + attr, val);
+	}
+	function orig_load(e, attr) {
+		if (e.attributes["_orig_"+attr] == undefined) return;
+		e.attributes[attr].value = e.attributes["_orig_" + attr].value;
+		e.removeAttribute("_orig_"+attr);
+	}
+	function g_to_text(e) {
+		var text = find_child(e, "title").firstChild.nodeValue;
+		return (text)
+	}
+	function g_to_func(e) {
+		var func = g_to_text(e);
+		// if there's any manipulation we want to do to the function
+		// name before it's searched, do it here before returning.
+		return (func);
+	}
+	function update_text(e) {
+		var r = find_child(e, "rect");
+		var t = find_child(e, "text");
+		var w = parseFloat(r.attributes.width.value) -3;
+		var txt = find_child(e, "title").textContent.replace(/\([^(]*\)$/,"");
+		t.attributes.x.value = parseFloat(r.attributes.x.value) + 3;
+
+		// Smaller than this size won't fit anything
+		if (w < 2 * 12 * 0.59) {
+			t.textContent = "";
+			return;
+		}
+
+		t.textContent = txt;
+		var sl = t.getSubStringLength(0, txt.length);
+		// check if only whitespace or if we can fit the entire string into width w
+		if (/^ *$/.test(txt) || sl < w)
+			return;
+
+		// this isn't perfect, but gives a good starting point
+		// and avoids calling getSubStringLength too often
+		var start = Math.floor((w/sl) * txt.length);
+		for (var x = start; x > 0; x = x-2) {
+			if (t.getSubStringLength(0, x + 2) <= w) {
+				t.textContent = txt.substring(0, x) + "..";
+				return;
+			}
+		}
+		t.textContent = "";
+	}
+
+	// zoom
+	function zoom_reset(e) {
+		if (e.attributes != undefined) {
+			orig_load(e, "x");
+			orig_load(e, "width");
+		}
+		if (e.childNodes == undefined) return;
+		for (var i = 0, c = e.childNodes; i < c.length; i++) {
+			zoom_reset(c[i]);
+		}
+	}
+	function zoom_child(e, x, ratio) {
+		if (e.attributes != undefined) {
+			if (e.attributes.x != undefined) {
+				orig_save(e, "x");
+				e.attributes.x.value = (parseFloat(e.attributes.x.value) - x - 10) * ratio + 10;
+				if (e.tagName == "text")
+					e.attributes.x.value = find_child(e.parentNode, "rect[x]").attributes.x.value + 3;
+			}
+			if (e.attributes.width != undefined) {
+				orig_save(e, "width");
+				e.attributes.width.value = parseFloat(e.attributes.width.value) * ratio;
+			}
+		}
+
+		if (e.childNodes == undefined) return;
+		for (var i = 0, c = e.childNodes; i < c.length; i++) {
+			zoom_child(c[i], x - 10, ratio);
+		}
+	}
+	function zoom_parent(e) {
+		if (e.attributes) {
+			if (e.attributes.x != undefined) {
+				orig_save(e, "x");
+				e.attributes.x.value = 10;
+			}
+			if (e.attributes.width != undefined) {
+				orig_save(e, "width");
+				e.attributes.width.value = parseInt(svg.width.baseVal.value) - (10 * 2);
+			}
+		}
+		if (e.childNodes == undefined) return;
+		for (var i = 0, c = e.childNodes; i < c.length; i++) {
+			zoom_parent(c[i]);
+		}
+	}
+	function zoom(node) {
+		var attr = find_child(node, "rect").attributes;
+		var width = parseFloat(attr.width.value);
+		var xmin = parseFloat(attr.x.value);
+		var xmax = parseFloat(xmin + width);
+		var ymin = parseFloat(attr.y.value);
+		var ratio = (svg.width.baseVal.value - 2 * 10) / width;
+
+		// XXX: Workaround for JavaScript float issues (fix me)
+		var fudge = 0.0001;
+
+		unzoombtn.classList.remove("hide");
+
+		var el = document.getElementById("frames").children;
+		for (var i = 0; i < el.length; i++) {
+			var e = el[i];
+			var a = find_child(e, "rect").attributes;
+			var ex = parseFloat(a.x.value);
+			var ew = parseFloat(a.width.value);
+			var upstack;
+			// Is it an ancestor
+			if (0 == 0) {
+				upstack = parseFloat(a.y.value) > ymin;
+			} else {
+				upstack = parseFloat(a.y.value) < ymin;
+			}
+			if (upstack) {
+				// Direct ancestor
+				if (ex <= xmin && (ex+ew+fudge) >= xmax) {
+					e.classList.add("parent");
+					zoom_parent(e);
+					update_text(e);
+				}
+				// not in current path
+				else
+					e.classList.add("hide");
+			}
+			// Children maybe
+			else {
+				// no common path
+				if (ex < xmin || ex + fudge >= xmax) {
+					e.classList.add("hide");
+				}
+				else {
+					zoom_child(e, xmin, ratio);
+					update_text(e);
+				}
+			}
+		}
+		search();
+	}
+	function unzoom(dont_update_text) {
+		unzoombtn.classList.add("hide");
+		var el = document.getElementById("frames").children;
+		for(var i = 0; i < el.length; i++) {
+			el[i].classList.remove("parent");
+			el[i].classList.remove("hide");
+			zoom_reset(el[i]);
+			if(!dont_update_text) update_text(el[i]);
+		}
+		search();
+	}
+	function clearzoom() {
+		unzoom();
+
+		// remove zoom state
+		var params = get_params();
+		if (params.x) delete params.x;
+		if (params.y) delete params.y;
+		history.replaceState(null, null, parse_params(params));
+	}
+
+	// search
+	function toggle_ignorecase() {
+		ignorecase = !ignorecase;
+		if (ignorecase) {
+			ignorecaseBtn.classList.add("show");
+		} else {
+			ignorecaseBtn.classList.remove("show");
+		}
+		reset_search();
+		search();
+	}
+	function reset_search() {
+		var el = document.querySelectorAll("#frames rect");
+		for (var i = 0; i < el.length; i++) {
+			orig_load(el[i], "fill")
+		}
+		var params = get_params();
+		delete params.s;
+		history.replaceState(null, null, parse_params(params));
+	}
+	function search_prompt() {
+		if (!searching) {
+			var term = prompt("Enter a search term (regexp " +
+			    "allowed, eg: ^ext4_)"
+			    + (ignorecase ? ", ignoring case" : "")
+			    + "\nPress Ctrl-i to toggle case sensitivity", "");
+			if (term != null) search(term);
+		} else {
+			reset_search();
+			searching = 0;
+			currentSearchTerm = null;
+			searchbtn.classList.remove("show");
+			searchbtn.firstChild.nodeValue = "Search"
+			matchedtxt.classList.add("hide");
+			matchedtxt.firstChild.nodeValue = ""
+		}
+	}
+	function search(term) {
+		if (term) currentSearchTerm = term;
+
+		var re = new RegExp(currentSearchTerm, ignorecase ? 'i' : '');
+		var el = document.getElementById("frames").children;
+		var matches = new Object();
+		var maxwidth = 0;
+		for (var i = 0; i < el.length; i++) {
+			var e = el[i];
+			var func = g_to_func(e);
+			var rect = find_child(e, "rect");
+			if (func == null || rect == null)
+				continue;
+
+			// Save max width. Only works as we have a root frame
+			var w = parseFloat(rect.attributes.width.value);
+			if (w > maxwidth)
+				maxwidth = w;
+
+			if (func.match(re)) {
+				// highlight
+				var x = parseFloat(rect.attributes.x.value);
+				orig_save(rect, "fill");
+				rect.attributes.fill.value = "rgb(230,0,230)";
+
+				// remember matches
+				if (matches[x] == undefined) {
+					matches[x] = w;
+				} else {
+					if (w > matches[x]) {
+						// overwrite with parent
+						matches[x] = w;
+					}
+				}
+				searching = 1;
+			}
+		}
+		if (!searching)
+			return;
+		var params = get_params();
+		params.s = currentSearchTerm;
+		history.replaceState(null, null, parse_params(params));
+
+		searchbtn.classList.add("show");
+		searchbtn.firstChild.nodeValue = "Reset Search";
+
+		// calculate percent matched, excluding vertical overlap
+		var count = 0;
+		var lastx = -1;
+		var lastw = 0;
+		var keys = Array();
+		for (k in matches) {
+			if (matches.hasOwnProperty(k))
+				keys.push(k);
+		}
+		// sort the matched frames by their x location
+		// ascending, then width descending
+		keys.sort(function(a, b){
+			return a - b;
+		});
+		// Step through frames saving only the biggest bottom-up frames
+		// thanks to the sort order. This relies on the tree property
+		// where children are always smaller than their parents.
+		var fudge = 0.0001;	// JavaScript floating point
+		for (var k in keys) {
+			var x = parseFloat(keys[k]);
+			var w = matches[keys[k]];
+			if (x >= lastx + lastw - fudge) {
+				count += w;
+				lastx = x;
+				lastw = w;
+			}
+		}
+		// display matched percent
+		matchedtxt.classList.remove("hide");
+		var pct = 100 * count / maxwidth;
+		if (pct != 100) pct = pct.toFixed(1)
+		matchedtxt.firstChild.nodeValue = "Matched: " + pct + "%";
+	}
+]]>
+</script>
+<rect x="0.0" y="0" width="1200.0" height="2134.0" fill="url(#background)"  />
+<text id="title" x="600.00" y="24" >Flame Graph</text>
+<text id="details" x="10.00" y="2117" > </text>
+<text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
+<text id="search" x="1090.00" y="24" >Search</text>
+<text id="ignorecase" x="1174.00" y="24" >ic</text>
+<text id="matched" x="1090.00" y="2117" > </text>
+<g id="frames">
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="821" width="175.7" height="15.0" fill="rgb(245,147,30)" rx="2" ry="2" />
+<text  x="58.04" y="831.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1653" width="175.7" height="15.0" fill="rgb(227,203,17)" rx="2" ry="2" />
+<text  x="58.04" y="1663.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="805" width="175.7" height="15.0" fill="rgb(253,204,5)" rx="2" ry="2" />
+<text  x="58.04" y="815.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>alloc_find_save (10,101,010 samples, 0.38%)</title><rect x="226.2" y="37" width="4.5" height="15.0" fill="rgb(238,66,4)" rx="2" ry="2" />
+<text  x="229.18" y="47.5" ></text>
+</g>
+<g >
+<title>gx_image_enum_begin (10,101,010 samples, 0.38%)</title><rect x="428.9" y="2037" width="4.5" height="15.0" fill="rgb(221,67,13)" rx="2" ry="2" />
+<text  x="431.85" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2005" width="306.3" height="15.0" fill="rgb(220,96,21)" rx="2" ry="2" />
+<text  x="886.74" y="2015.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="501" width="175.7" height="15.0" fill="rgb(241,203,26)" rx="2" ry="2" />
+<text  x="58.04" y="511.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>dict_put (10,101,010 samples, 0.38%)</title><rect x="334.3" y="2005" width="4.5" height="15.0" fill="rgb(219,152,7)" rx="2" ry="2" />
+<text  x="337.27" y="2015.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1845" width="4.5" height="15.0" fill="rgb(236,158,23)" rx="2" ry="2" />
+<text  x="328.27" y="1855.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1733" width="175.7" height="15.0" fill="rgb(233,82,2)" rx="2" ry="2" />
+<text  x="58.04" y="1743.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1925" width="175.7" height="15.0" fill="rgb(207,42,0)" rx="2" ry="2" />
+<text  x="58.04" y="1935.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gx_cpath_init_contained_shared (10,101,010 samples, 0.38%)</title><rect x="424.4" y="2037" width="4.5" height="15.0" fill="rgb(227,200,36)" rx="2" ry="2" />
+<text  x="427.35" y="2047.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1925" width="306.3" height="15.0" fill="rgb(206,211,38)" rx="2" ry="2" />
+<text  x="886.74" y="1935.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="117" width="175.7" height="15.0" fill="rgb(215,18,36)" rx="2" ry="2" />
+<text  x="58.04" y="127.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>_dl_sysdep_start (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2037" width="4.5" height="15.0" fill="rgb(228,173,4)" rx="2" ry="2" />
+<text  x="17.50" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="517" width="175.7" height="15.0" fill="rgb(209,93,51)" rx="2" ry="2" />
+<text  x="58.04" y="527.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_alloc_ref_array (10,101,010 samples, 0.38%)</title><rect x="550.5" y="2053" width="4.5" height="15.0" fill="rgb(238,51,34)" rx="2" ry="2" />
+<text  x="553.46" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2053" width="4.5" height="15.0" fill="rgb(241,95,8)" rx="2" ry="2" />
+<text  x="13.00" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1797" width="175.7" height="15.0" fill="rgb(250,116,27)" rx="2" ry="2" />
+<text  x="58.04" y="1807.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1189" width="175.7" height="15.0" fill="rgb(240,0,44)" rx="2" ry="2" />
+<text  x="58.04" y="1199.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1221" width="175.7" height="15.0" fill="rgb(223,116,24)" rx="2" ry="2" />
+<text  x="58.04" y="1231.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (80,808,080 samples, 3.05%)</title><rect x="262.2" y="2037" width="36.0" height="15.0" fill="rgb(210,6,14)" rx="2" ry="2" />
+<text  x="265.21" y="2047.5" >[li..</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1829" width="175.7" height="15.0" fill="rgb(214,65,49)" rx="2" ry="2" />
+<text  x="58.04" y="1839.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="453" width="175.7" height="15.0" fill="rgb(251,54,17)" rx="2" ry="2" />
+<text  x="58.04" y="463.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_currentcharmatrix (10,101,010 samples, 0.38%)</title><rect x="329.8" y="1989" width="4.5" height="15.0" fill="rgb(210,81,47)" rx="2" ry="2" />
+<text  x="332.77" y="1999.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1125" width="175.7" height="15.0" fill="rgb(241,76,28)" rx="2" ry="2" />
+<text  x="58.04" y="1135.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1909" width="175.7" height="15.0" fill="rgb(238,12,21)" rx="2" ry="2" />
+<text  x="58.04" y="1919.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (323,232,320 samples, 12.21%)</title><rect x="68.5" y="53" width="144.2" height="15.0" fill="rgb(221,142,14)" rx="2" ry="2" />
+<text  x="71.55" y="63.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="725" width="175.7" height="15.0" fill="rgb(219,184,30)" rx="2" ry="2" />
+<text  x="58.04" y="735.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2021" width="4.5" height="15.0" fill="rgb(252,136,15)" rx="2" ry="2" />
+<text  x="436.36" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1493" width="175.7" height="15.0" fill="rgb(236,2,29)" rx="2" ry="2" />
+<text  x="58.04" y="1503.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>obj_eq (20,202,020 samples, 0.76%)</title><rect x="460.4" y="2037" width="9.0" height="15.0" fill="rgb(205,141,47)" rx="2" ry="2" />
+<text  x="463.38" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1429" width="175.7" height="15.0" fill="rgb(205,127,37)" rx="2" ry="2" />
+<text  x="58.04" y="1439.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="901" width="175.7" height="15.0" fill="rgb(228,3,41)" rx="2" ry="2" />
+<text  x="58.04" y="911.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1157" width="175.7" height="15.0" fill="rgb(242,19,33)" rx="2" ry="2" />
+<text  x="58.04" y="1167.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="2021" width="175.7" height="15.0" fill="rgb(205,82,38)" rx="2" ry="2" />
+<text  x="58.04" y="2031.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="581" width="175.7" height="15.0" fill="rgb(236,9,43)" rx="2" ry="2" />
+<text  x="58.04" y="591.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="565" width="175.7" height="15.0" fill="rgb(234,169,8)" rx="2" ry="2" />
+<text  x="58.04" y="575.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1685" width="175.7" height="15.0" fill="rgb(231,80,43)" rx="2" ry="2" />
+<text  x="58.04" y="1695.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="661" width="175.7" height="15.0" fill="rgb(209,174,9)" rx="2" ry="2" />
+<text  x="58.04" y="671.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (40,404,040 samples, 1.53%)</title><rect x="212.7" y="53" width="18.0" height="15.0" fill="rgb(242,135,38)" rx="2" ry="2" />
+<text  x="215.67" y="63.5" ></text>
+</g>
+<g >
+<title>ref_stack_index (10,101,010 samples, 0.38%)</title><rect x="343.3" y="2021" width="4.5" height="15.0" fill="rgb(208,165,46)" rx="2" ry="2" />
+<text  x="346.28" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2005" width="4.5" height="15.0" fill="rgb(250,9,38)" rx="2" ry="2" />
+<text  x="436.36" y="2015.5" ></text>
+</g>
+<g >
+<title>packed_get (10,101,010 samples, 0.38%)</title><rect x="469.4" y="2037" width="4.5" height="15.0" fill="rgb(225,99,13)" rx="2" ry="2" />
+<text  x="472.39" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1973" width="4.5" height="15.0" fill="rgb(210,195,33)" rx="2" ry="2" />
+<text  x="328.27" y="1983.5" ></text>
+</g>
+<g >
+<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1989" width="306.3" height="15.0" fill="rgb(251,183,16)" rx="2" ry="2" />
+<text  x="886.74" y="1999.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="85" width="175.7" height="15.0" fill="rgb(225,167,34)" rx="2" ry="2" />
+<text  x="58.04" y="95.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>bench.sh (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2069" width="4.5" height="15.0" fill="rgb(221,48,26)" rx="2" ry="2" />
+<text  x="13.00" y="2079.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1781" width="175.7" height="15.0" fill="rgb(233,197,8)" rx="2" ry="2" />
+<text  x="58.04" y="1791.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1397" width="175.7" height="15.0" fill="rgb(207,19,29)" rx="2" ry="2" />
+<text  x="58.04" y="1407.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="261" width="175.7" height="15.0" fill="rgb(244,34,27)" rx="2" ry="2" />
+<text  x="58.04" y="271.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="757" width="175.7" height="15.0" fill="rgb(236,71,39)" rx="2" ry="2" />
+<text  x="58.04" y="767.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1349" width="175.7" height="15.0" fill="rgb(242,34,48)" rx="2" ry="2" />
+<text  x="58.04" y="1359.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>sed (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2069" width="4.5" height="15.0" fill="rgb(244,139,0)" rx="2" ry="2" />
+<text  x="593.99" y="2079.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (454,545,450 samples, 17.18%)</title><rect x="28.0" y="2053" width="202.7" height="15.0" fill="rgb(229,20,30)" rx="2" ry="2" />
+<text  x="31.02" y="2063.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>adler32_z (10,101,010 samples, 0.38%)</title><rect x="496.4" y="2053" width="4.5" height="15.0" fill="rgb(237,5,8)" rx="2" ry="2" />
+<text  x="499.41" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1669" width="175.7" height="15.0" fill="rgb(213,188,14)" rx="2" ry="2" />
+<text  x="58.04" y="1679.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>__memset_avx2_erms (10,101,010 samples, 0.38%)</title><rect x="59.5" y="37" width="4.5" height="15.0" fill="rgb(236,26,24)" rx="2" ry="2" />
+<text  x="62.54" y="47.5" ></text>
+</g>
+<g >
+<title>inflate (20,202,020 samples, 0.76%)</title><rect x="437.9" y="2037" width="9.0" height="15.0" fill="rgb(218,183,32)" rx="2" ry="2" />
+<text  x="440.86" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1957" width="4.5" height="15.0" fill="rgb(244,166,7)" rx="2" ry="2" />
+<text  x="328.27" y="1967.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1893" width="4.5" height="15.0" fill="rgb(207,159,31)" rx="2" ry="2" />
+<text  x="328.27" y="1903.5" ></text>
+</g>
+<g >
+<title>clump_locate_ptr (10,101,010 samples, 0.38%)</title><rect x="500.9" y="2053" width="4.5" height="15.0" fill="rgb(242,110,47)" rx="2" ry="2" />
+<text  x="503.92" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="149" width="175.7" height="15.0" fill="rgb(249,119,19)" rx="2" ry="2" />
+<text  x="58.04" y="159.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="165" width="175.7" height="15.0" fill="rgb(241,120,49)" rx="2" ry="2" />
+<text  x="58.04" y="175.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1749" width="175.7" height="15.0" fill="rgb(237,211,41)" rx="2" ry="2" />
+<text  x="58.04" y="1759.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (30,303,030 samples, 1.15%)</title><rect x="55.0" y="53" width="13.5" height="15.0" fill="rgb(229,11,32)" rx="2" ry="2" />
+<text  x="58.04" y="63.5" ></text>
+</g>
+<g >
+<title>_dl_relocate_object (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2005" width="4.5" height="15.0" fill="rgb(220,44,20)" rx="2" ry="2" />
+<text  x="17.50" y="2015.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="837" width="175.7" height="15.0" fill="rgb(244,130,35)" rx="2" ry="2" />
+<text  x="58.04" y="847.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1013" width="175.7" height="15.0" fill="rgb(246,6,33)" rx="2" ry="2" />
+<text  x="58.04" y="1023.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="133" width="175.7" height="15.0" fill="rgb(215,146,37)" rx="2" ry="2" />
+<text  x="58.04" y="143.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1461" width="175.7" height="15.0" fill="rgb(215,129,50)" rx="2" ry="2" />
+<text  x="58.04" y="1471.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1237" width="175.7" height="15.0" fill="rgb(209,53,51)" rx="2" ry="2" />
+<text  x="58.04" y="1247.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="773" width="175.7" height="15.0" fill="rgb(205,108,9)" rx="2" ry="2" />
+<text  x="58.04" y="783.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2053" width="4.5" height="15.0" fill="rgb(233,123,32)" rx="2" ry="2" />
+<text  x="593.99" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (40,404,040 samples, 1.53%)</title><rect x="212.7" y="69" width="18.0" height="15.0" fill="rgb(207,207,38)" rx="2" ry="2" />
+<text  x="215.67" y="79.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2053" width="4.5" height="15.0" fill="rgb(240,93,41)" rx="2" ry="2" />
+<text  x="17.50" y="2063.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2005" width="288.2" height="15.0" fill="rgb(234,191,49)" rx="2" ry="2" />
+<text  x="598.50" y="2015.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="229" width="175.7" height="15.0" fill="rgb(225,66,45)" rx="2" ry="2" />
+<text  x="58.04" y="239.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_setcolorspace (10,101,010 samples, 0.38%)</title><rect x="419.8" y="2037" width="4.6" height="15.0" fill="rgb(236,224,10)" rx="2" ry="2" />
+<text  x="422.85" y="2047.5" ></text>
+</g>
+<g >
+<title>zindex (10,101,010 samples, 0.38%)</title><rect x="203.7" y="37" width="4.5" height="15.0" fill="rgb(210,33,17)" rx="2" ry="2" />
+<text  x="206.66" y="47.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="613" width="175.7" height="15.0" fill="rgb(252,45,17)" rx="2" ry="2" />
+<text  x="58.04" y="623.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="469" width="175.7" height="15.0" fill="rgb(247,20,10)" rx="2" ry="2" />
+<text  x="58.04" y="479.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_c_glyph_name (10,101,010 samples, 0.38%)</title><rect x="555.0" y="2053" width="4.5" height="15.0" fill="rgb(229,217,29)" rx="2" ry="2" />
+<text  x="557.96" y="2063.5" ></text>
+</g>
+<g >
+<title>make_child (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2037" width="4.5" height="15.0" fill="rgb(222,27,45)" rx="2" ry="2" />
+<text  x="13.00" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1317" width="175.7" height="15.0" fill="rgb(241,25,9)" rx="2" ry="2" />
+<text  x="58.04" y="1327.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="693" width="175.7" height="15.0" fill="rgb(208,146,48)" rx="2" ry="2" />
+<text  x="58.04" y="703.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="245" width="175.7" height="15.0" fill="rgb(226,100,54)" rx="2" ry="2" />
+<text  x="58.04" y="255.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="965" width="175.7" height="15.0" fill="rgb(232,212,3)" rx="2" ry="2" />
+<text  x="58.04" y="975.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="629" width="175.7" height="15.0" fill="rgb(219,142,18)" rx="2" ry="2" />
+<text  x="58.04" y="639.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1269" width="175.7" height="15.0" fill="rgb(219,99,45)" rx="2" ry="2" />
+<text  x="58.04" y="1279.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1845" width="175.7" height="15.0" fill="rgb(248,36,3)" rx="2" ry="2" />
+<text  x="58.04" y="1855.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1861" width="4.5" height="15.0" fill="rgb(215,196,16)" rx="2" ry="2" />
+<text  x="328.27" y="1871.5" ></text>
+</g>
+<g >
+<title>names_ref (10,101,010 samples, 0.38%)</title><rect x="338.8" y="2021" width="4.5" height="15.0" fill="rgb(245,80,28)" rx="2" ry="2" />
+<text  x="341.78" y="2031.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.76%)</title><rect x="325.3" y="2005" width="9.0" height="15.0" fill="rgb(248,59,25)" rx="2" ry="2" />
+<text  x="328.27" y="2015.5" ></text>
+</g>
+<g >
+<title>refcpy_to_old (10,101,010 samples, 0.38%)</title><rect x="473.9" y="2037" width="4.5" height="15.0" fill="rgb(248,151,9)" rx="2" ry="2" />
+<text  x="476.89" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1029" width="175.7" height="15.0" fill="rgb(210,198,42)" rx="2" ry="2" />
+<text  x="58.04" y="1039.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1973" width="306.3" height="15.0" fill="rgb(240,12,2)" rx="2" ry="2" />
+<text  x="886.74" y="1983.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>gs (1,282,828,270 samples, 48.47%)</title><rect x="19.0" y="2069" width="572.0" height="15.0" fill="rgb(208,19,32)" rx="2" ry="2" />
+<text  x="22.01" y="2079.5" >gs</text>
+</g>
+<g >
+<title>names_ref (10,101,010 samples, 0.38%)</title><rect x="455.9" y="2037" width="4.5" height="15.0" fill="rgb(217,132,21)" rx="2" ry="2" />
+<text  x="458.88" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1333" width="175.7" height="15.0" fill="rgb(219,27,54)" rx="2" ry="2" />
+<text  x="58.04" y="1343.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1989" width="288.2" height="15.0" fill="rgb(248,190,17)" rx="2" ry="2" />
+<text  x="598.50" y="1999.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="677" width="175.7" height="15.0" fill="rgb(251,60,12)" rx="2" ry="2" />
+<text  x="58.04" y="687.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1413" width="175.7" height="15.0" fill="rgb(245,85,13)" rx="2" ry="2" />
+<text  x="58.04" y="1423.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>cmsEvalToneCurveFloat (10,101,010 samples, 0.38%)</title><rect x="352.3" y="2037" width="4.5" height="15.0" fill="rgb(218,115,48)" rx="2" ry="2" />
+<text  x="355.29" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2037" width="306.3" height="15.0" fill="rgb(235,5,36)" rx="2" ry="2" />
+<text  x="886.74" y="2047.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="405" width="175.7" height="15.0" fill="rgb(215,104,26)" rx="2" ry="2" />
+<text  x="58.04" y="415.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libz.so.1.2.11] (10,101,010 samples, 0.38%)</title><rect x="307.3" y="2037" width="4.5" height="15.0" fill="rgb(207,116,49)" rx="2" ry="2" />
+<text  x="310.25" y="2047.5" ></text>
+</g>
+<g >
+<title>[libfreetype.so.6.17.1] (10,101,010 samples, 0.38%)</title><rect x="23.5" y="2053" width="4.5" height="15.0" fill="rgb(224,36,8)" rx="2" ry="2" />
+<text  x="26.51" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="853" width="175.7" height="15.0" fill="rgb(207,22,41)" rx="2" ry="2" />
+<text  x="58.04" y="863.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_type1_decrypt (10,101,010 samples, 0.38%)</title><rect x="559.5" y="2053" width="4.5" height="15.0" fill="rgb(251,19,6)" rx="2" ry="2" />
+<text  x="562.47" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1621" width="175.7" height="15.0" fill="rgb(245,54,44)" rx="2" ry="2" />
+<text  x="58.04" y="1631.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1989" width="175.7" height="15.0" fill="rgb(230,195,9)" rx="2" ry="2" />
+<text  x="58.04" y="1999.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1941" width="4.5" height="15.0" fill="rgb(235,200,53)" rx="2" ry="2" />
+<text  x="328.27" y="1951.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="325" width="175.7" height="15.0" fill="rgb(230,103,2)" rx="2" ry="2" />
+<text  x="58.04" y="335.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="949" width="175.7" height="15.0" fill="rgb(206,8,50)" rx="2" ry="2" />
+<text  x="58.04" y="959.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1365" width="175.7" height="15.0" fill="rgb(212,228,15)" rx="2" ry="2" />
+<text  x="58.04" y="1375.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1973" width="288.2" height="15.0" fill="rgb(241,82,40)" rx="2" ry="2" />
+<text  x="598.50" y="1983.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1957" width="175.7" height="15.0" fill="rgb(236,4,15)" rx="2" ry="2" />
+<text  x="58.04" y="1967.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1701" width="175.7" height="15.0" fill="rgb(221,176,39)" rx="2" ry="2" />
+<text  x="58.04" y="1711.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (404,040,400 samples, 15.27%)</title><rect x="50.5" y="2037" width="180.2" height="15.0" fill="rgb(221,166,3)" rx="2" ry="2" />
+<text  x="53.53" y="2047.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="917" width="175.7" height="15.0" fill="rgb(216,180,7)" rx="2" ry="2" />
+<text  x="58.04" y="927.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (30,303,030 samples, 1.15%)</title><rect x="212.7" y="37" width="13.5" height="15.0" fill="rgb(243,203,24)" rx="2" ry="2" />
+<text  x="215.67" y="47.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="197" width="175.7" height="15.0" fill="rgb(237,103,24)" rx="2" ry="2" />
+<text  x="58.04" y="207.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1829" width="4.5" height="15.0" fill="rgb(240,149,32)" rx="2" ry="2" />
+<text  x="328.27" y="1839.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1957" width="306.3" height="15.0" fill="rgb(245,154,28)" rx="2" ry="2" />
+<text  x="886.74" y="1967.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1861" width="175.7" height="15.0" fill="rgb(250,16,47)" rx="2" ry="2" />
+<text  x="58.04" y="1871.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="789" width="175.7" height="15.0" fill="rgb(241,6,20)" rx="2" ry="2" />
+<text  x="58.04" y="799.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>WRF_wbyte (10,101,010 samples, 0.38%)</title><rect x="311.8" y="2021" width="4.5" height="15.0" fill="rgb(224,151,41)" rx="2" ry="2" />
+<text  x="314.76" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1445" width="175.7" height="15.0" fill="rgb(240,215,51)" rx="2" ry="2" />
+<text  x="58.04" y="1455.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_scan_token (50,505,050 samples, 1.91%)</title><rect x="397.3" y="2037" width="22.5" height="15.0" fill="rgb(232,200,26)" rx="2" ry="2" />
+<text  x="400.33" y="2047.5" >g..</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1957" width="288.2" height="15.0" fill="rgb(243,23,24)" rx="2" ry="2" />
+<text  x="598.50" y="1967.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="357" width="175.7" height="15.0" fill="rgb(208,214,1)" rx="2" ry="2" />
+<text  x="58.04" y="367.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="341" width="175.7" height="15.0" fill="rgb(219,16,53)" rx="2" ry="2" />
+<text  x="58.04" y="351.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="421" width="175.7" height="15.0" fill="rgb(240,53,39)" rx="2" ry="2" />
+<text  x="58.04" y="431.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="549" width="175.7" height="15.0" fill="rgb(238,141,21)" rx="2" ry="2" />
+<text  x="58.04" y="559.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>intel_check_word.isra.0 (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2037" width="4.5" height="15.0" fill="rgb(224,210,27)" rx="2" ry="2" />
+<text  x="593.99" y="2047.5" ></text>
+</g>
+<g >
+<title>[libfreetype.so.6.17.1] (10,101,010 samples, 0.38%)</title><rect x="257.7" y="2037" width="4.5" height="15.0" fill="rgb(247,59,16)" rx="2" ry="2" />
+<text  x="260.71" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="869" width="175.7" height="15.0" fill="rgb(254,168,38)" rx="2" ry="2" />
+<text  x="58.04" y="879.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (80,808,080 samples, 3.05%)</title><rect x="311.8" y="2037" width="36.0" height="15.0" fill="rgb(205,14,41)" rx="2" ry="2" />
+<text  x="314.76" y="2047.5" >[un..</text>
+</g>
+<g >
+<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2021" width="306.3" height="15.0" fill="rgb(247,217,13)" rx="2" ry="2" />
+<text  x="886.74" y="2031.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1813" width="175.7" height="15.0" fill="rgb(211,77,20)" rx="2" ry="2" />
+<text  x="58.04" y="1823.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="437" width="175.7" height="15.0" fill="rgb(237,222,11)" rx="2" ry="2" />
+<text  x="58.04" y="447.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_gstate_release (10,101,010 samples, 0.38%)</title><rect x="383.8" y="2037" width="4.5" height="15.0" fill="rgb(213,46,27)" rx="2" ry="2" />
+<text  x="386.82" y="2047.5" ></text>
+</g>
+<g >
+<title>gs_currentcpsimode (10,101,010 samples, 0.38%)</title><rect x="379.3" y="2037" width="4.5" height="15.0" fill="rgb(246,202,52)" rx="2" ry="2" />
+<text  x="382.31" y="2047.5" ></text>
+</g>
+<g >
+<title>gs_grestore_only (20,202,020 samples, 0.76%)</title><rect x="181.1" y="37" width="9.1" height="15.0" fill="rgb(240,71,32)" rx="2" ry="2" />
+<text  x="184.15" y="47.5" ></text>
+</g>
+<g >
+<title>zroll (10,101,010 samples, 0.38%)</title><rect x="208.2" y="37" width="4.5" height="15.0" fill="rgb(213,41,19)" rx="2" ry="2" />
+<text  x="211.17" y="47.5" ></text>
+</g>
+<g >
+<title>[libz.so.1.2.11] (60,606,060 samples, 2.29%)</title><rect x="230.7" y="2053" width="27.0" height="15.0" fill="rgb(226,154,17)" rx="2" ry="2" />
+<text  x="233.69" y="2063.5" >[..</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1909" width="4.5" height="15.0" fill="rgb(242,31,29)" rx="2" ry="2" />
+<text  x="328.27" y="1919.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="933" width="175.7" height="15.0" fill="rgb(205,153,22)" rx="2" ry="2" />
+<text  x="58.04" y="943.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="181" width="175.7" height="15.0" fill="rgb(254,74,11)" rx="2" ry="2" />
+<text  x="58.04" y="191.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="709" width="175.7" height="15.0" fill="rgb(209,121,26)" rx="2" ry="2" />
+<text  x="58.04" y="719.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1573" width="175.7" height="15.0" fill="rgb(253,191,29)" rx="2" ry="2" />
+<text  x="58.04" y="1583.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>array_get (10,101,010 samples, 0.38%)</title><rect x="347.8" y="2037" width="4.5" height="15.0" fill="rgb(206,224,51)" rx="2" ry="2" />
+<text  x="350.79" y="2047.5" ></text>
+</g>
+<g >
+<title>[liblcms2.so.2.0.8] (20,202,020 samples, 0.76%)</title><rect x="298.2" y="2037" width="9.1" height="15.0" fill="rgb(245,226,26)" rx="2" ry="2" />
+<text  x="301.24" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1989" width="4.5" height="15.0" fill="rgb(219,209,10)" rx="2" ry="2" />
+<text  x="328.27" y="1999.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1477" width="175.7" height="15.0" fill="rgb(230,16,40)" rx="2" ry="2" />
+<text  x="58.04" y="1487.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1813" width="4.5" height="15.0" fill="rgb(223,164,48)" rx="2" ry="2" />
+<text  x="328.27" y="1823.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2021" width="288.2" height="15.0" fill="rgb(248,12,42)" rx="2" ry="2" />
+<text  x="598.50" y="2031.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1893" width="175.7" height="15.0" fill="rgb(245,99,0)" rx="2" ry="2" />
+<text  x="58.04" y="1903.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1925" width="4.5" height="15.0" fill="rgb(238,116,52)" rx="2" ry="2" />
+<text  x="328.27" y="1935.5" ></text>
+</g>
+<g >
+<title>dl_main (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2021" width="4.5" height="15.0" fill="rgb(239,16,17)" rx="2" ry="2" />
+<text  x="17.50" y="2031.5" ></text>
+</g>
+<g >
+<title>__pthread_mutex_unlock (20,202,020 samples, 0.76%)</title><rect x="487.4" y="2053" width="9.0" height="15.0" fill="rgb(213,184,45)" rx="2" ry="2" />
+<text  x="490.40" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1877" width="175.7" height="15.0" fill="rgb(233,99,50)" rx="2" ry="2" />
+<text  x="58.04" y="1887.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2037" width="288.2" height="15.0" fill="rgb(220,113,27)" rx="2" ry="2" />
+<text  x="598.50" y="2047.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1541" width="175.7" height="15.0" fill="rgb(214,73,7)" rx="2" ry="2" />
+<text  x="58.04" y="1551.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (252,525,250 samples, 9.54%)</title><rect x="68.5" y="37" width="112.6" height="15.0" fill="rgb(234,201,24)" rx="2" ry="2" />
+<text  x="71.55" y="47.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1509" width="175.7" height="15.0" fill="rgb(231,42,1)" rx="2" ry="2" />
+<text  x="58.04" y="1519.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1605" width="175.7" height="15.0" fill="rgb(213,80,45)" rx="2" ry="2" />
+<text  x="58.04" y="1615.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="981" width="175.7" height="15.0" fill="rgb(223,150,32)" rx="2" ry="2" />
+<text  x="58.04" y="991.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="645" width="175.7" height="15.0" fill="rgb(242,106,50)" rx="2" ry="2" />
+<text  x="58.04" y="655.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1301" width="175.7" height="15.0" fill="rgb(245,109,14)" rx="2" ry="2" />
+<text  x="58.04" y="1311.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1941" width="175.7" height="15.0" fill="rgb(239,85,41)" rx="2" ry="2" />
+<text  x="58.04" y="1951.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="277" width="175.7" height="15.0" fill="rgb(220,222,29)" rx="2" ry="2" />
+<text  x="58.04" y="287.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>dstack_find_name_by_index (40,404,040 samples, 1.53%)</title><rect x="532.4" y="2053" width="18.1" height="15.0" fill="rgb(248,37,29)" rx="2" ry="2" />
+<text  x="535.44" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (353,535,350 samples, 13.36%)</title><rect x="55.0" y="69" width="157.7" height="15.0" fill="rgb(239,183,39)" rx="2" ry="2" />
+<text  x="58.04" y="79.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1285" width="175.7" height="15.0" fill="rgb(241,74,53)" rx="2" ry="2" />
+<text  x="58.04" y="1295.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1381" width="175.7" height="15.0" fill="rgb(242,154,41)" rx="2" ry="2" />
+<text  x="58.04" y="1391.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>zdiv (10,101,010 samples, 0.38%)</title><rect x="199.2" y="37" width="4.5" height="15.0" fill="rgb(227,131,51)" rx="2" ry="2" />
+<text  x="202.16" y="47.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1589" width="175.7" height="15.0" fill="rgb(252,11,17)" rx="2" ry="2" />
+<text  x="58.04" y="1599.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>ptr_is_within_mem_clumps (10,101,010 samples, 0.38%)</title><rect x="64.0" y="37" width="4.5" height="15.0" fill="rgb(221,115,16)" rx="2" ry="2" />
+<text  x="67.05" y="47.5" ></text>
+</g>
+<g >
+<title>dirname (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2069" width="4.5" height="15.0" fill="rgb(251,52,47)" rx="2" ry="2" />
+<text  x="17.50" y="2079.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1557" width="175.7" height="15.0" fill="rgb(231,80,31)" rx="2" ry="2" />
+<text  x="58.04" y="1567.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="741" width="175.7" height="15.0" fill="rgb(225,178,17)" rx="2" ry="2" />
+<text  x="58.04" y="751.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>swapper (1,333,333,320 samples, 50.38%)</title><rect x="595.5" y="2069" width="594.5" height="15.0" fill="rgb(254,109,1)" rx="2" ry="2" />
+<text  x="598.50" y="2079.5" >swapper</text>
+</g>
+<g >
+<title>names_ref (60,606,060 samples, 2.29%)</title><rect x="564.0" y="2053" width="27.0" height="15.0" fill="rgb(239,142,34)" rx="2" ry="2" />
+<text  x="566.97" y="2063.5" >n..</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1045" width="175.7" height="15.0" fill="rgb(239,70,25)" rx="2" ry="2" />
+<text  x="58.04" y="1055.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>all (2,646,464,620 samples, 100%)</title><rect x="10.0" y="2085" width="1180.0" height="15.0" fill="rgb(240,220,1)" rx="2" ry="2" />
+<text  x="13.00" y="2095.5" ></text>
+</g>
+<g >
+<title>gs_moveto_aux (10,101,010 samples, 0.38%)</title><rect x="392.8" y="2037" width="4.5" height="15.0" fill="rgb(213,62,37)" rx="2" ry="2" />
+<text  x="395.82" y="2047.5" ></text>
+</g>
+<g >
+<title>dict_find (50,505,050 samples, 1.91%)</title><rect x="509.9" y="2053" width="22.5" height="15.0" fill="rgb(234,155,10)" rx="2" ry="2" />
+<text  x="512.92" y="2063.5" >d..</text>
+</g>
+<g >
+<title>igc_reloc_string (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2037" width="4.5" height="15.0" fill="rgb(207,134,35)" rx="2" ry="2" />
+<text  x="436.36" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="213" width="175.7" height="15.0" fill="rgb(244,33,14)" rx="2" ry="2" />
+<text  x="58.04" y="223.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>lookup_gs_simple_font_encoding (10,101,010 samples, 0.38%)</title><rect x="451.4" y="2037" width="4.5" height="15.0" fill="rgb(227,219,8)" rx="2" ry="2" />
+<text  x="454.37" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="597" width="175.7" height="15.0" fill="rgb(249,69,37)" rx="2" ry="2" />
+<text  x="58.04" y="607.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="309" width="175.7" height="15.0" fill="rgb(236,189,37)" rx="2" ry="2" />
+<text  x="58.04" y="319.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1061" width="175.7" height="15.0" fill="rgb(231,73,18)" rx="2" ry="2" />
+<text  x="58.04" y="1071.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1893" width="306.3" height="15.0" fill="rgb(206,146,21)" rx="2" ry="2" />
+<text  x="886.74" y="1903.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1765" width="175.7" height="15.0" fill="rgb(245,87,5)" rx="2" ry="2" />
+<text  x="58.04" y="1775.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1077" width="175.7" height="15.0" fill="rgb(219,104,48)" rx="2" ry="2" />
+<text  x="58.04" y="1087.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (10,101,010 samples, 0.38%)</title><rect x="55.0" y="37" width="4.5" height="15.0" fill="rgb(243,28,34)" rx="2" ry="2" />
+<text  x="58.04" y="47.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1093" width="175.7" height="15.0" fill="rgb(245,80,24)" rx="2" ry="2" />
+<text  x="58.04" y="1103.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1941" width="306.3" height="15.0" fill="rgb(214,35,20)" rx="2" ry="2" />
+<text  x="886.74" y="1951.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>zif (10,101,010 samples, 0.38%)</title><rect x="478.4" y="2037" width="4.5" height="15.0" fill="rgb(206,6,34)" rx="2" ry="2" />
+<text  x="481.40" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1637" width="175.7" height="15.0" fill="rgb(252,110,7)" rx="2" ry="2" />
+<text  x="58.04" y="1647.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>dstack_find_name_by_index (50,505,050 samples, 1.91%)</title><rect x="356.8" y="2037" width="22.5" height="15.0" fill="rgb(250,19,30)" rx="2" ry="2" />
+<text  x="359.79" y="2047.5" >d..</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1525" width="175.7" height="15.0" fill="rgb(223,169,35)" rx="2" ry="2" />
+<text  x="58.04" y="1535.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="2005" width="175.7" height="15.0" fill="rgb(245,221,20)" rx="2" ry="2" />
+<text  x="58.04" y="2015.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1205" width="175.7" height="15.0" fill="rgb(216,71,20)" rx="2" ry="2" />
+<text  x="58.04" y="1215.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="389" width="175.7" height="15.0" fill="rgb(244,67,31)" rx="2" ry="2" />
+<text  x="58.04" y="399.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="293" width="175.7" height="15.0" fill="rgb(253,105,10)" rx="2" ry="2" />
+<text  x="58.04" y="303.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="885" width="175.7" height="15.0" fill="rgb(254,16,3)" rx="2" ry="2" />
+<text  x="58.04" y="895.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1141" width="175.7" height="15.0" fill="rgb(240,10,35)" rx="2" ry="2" />
+<text  x="58.04" y="1151.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="533" width="175.7" height="15.0" fill="rgb(230,122,45)" rx="2" ry="2" />
+<text  x="58.04" y="543.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (30,303,030 samples, 1.15%)</title><rect x="325.3" y="2021" width="13.5" height="15.0" fill="rgb(252,116,13)" rx="2" ry="2" />
+<text  x="328.27" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="997" width="175.7" height="15.0" fill="rgb(221,104,27)" rx="2" ry="2" />
+<text  x="58.04" y="1007.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="373" width="175.7" height="15.0" fill="rgb(241,147,31)" rx="2" ry="2" />
+<text  x="58.04" y="383.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_matrix_multiply (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1797" width="4.5" height="15.0" fill="rgb(228,39,6)" rx="2" ry="2" />
+<text  x="328.27" y="1807.5" ></text>
+</g>
+<g >
+<title>cmsReverseToneCurveEx (10,101,010 samples, 0.38%)</title><rect x="505.4" y="2053" width="4.5" height="15.0" fill="rgb(215,148,48)" rx="2" ry="2" />
+<text  x="508.42" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (505,050,500 samples, 19.08%)</title><rect x="257.7" y="2053" width="225.2" height="15.0" fill="rgb(219,145,39)" rx="2" ry="2" />
+<text  x="260.71" y="2063.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1253" width="175.7" height="15.0" fill="rgb(246,28,18)" rx="2" ry="2" />
+<text  x="58.04" y="1263.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1717" width="175.7" height="15.0" fill="rgb(210,107,42)" rx="2" ry="2" />
+<text  x="58.04" y="1727.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1973" width="175.7" height="15.0" fill="rgb(222,216,52)" rx="2" ry="2" />
+<text  x="58.04" y="1983.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1173" width="175.7" height="15.0" fill="rgb(250,155,23)" rx="2" ry="2" />
+<text  x="58.04" y="1183.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1877" width="4.5" height="15.0" fill="rgb(234,187,15)" rx="2" ry="2" />
+<text  x="328.27" y="1887.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (1,333,333,320 samples, 50.38%)</title><rect x="595.5" y="2053" width="594.5" height="15.0" fill="rgb(241,117,46)" rx="2" ry="2" />
+<text  x="598.50" y="2063.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>llseek@GLIBC_2.2.5 (10,101,010 samples, 0.38%)</title><rect x="446.9" y="2037" width="4.5" height="15.0" fill="rgb(247,34,27)" rx="2" ry="2" />
+<text  x="449.87" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="101" width="175.7" height="15.0" fill="rgb(214,156,28)" rx="2" ry="2" />
+<text  x="58.04" y="111.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs_image_enum_alloc (10,101,010 samples, 0.38%)</title><rect x="388.3" y="2037" width="4.5" height="15.0" fill="rgb(208,131,30)" rx="2" ry="2" />
+<text  x="391.32" y="2047.5" ></text>
+</g>
+<g >
+<title>gs_swapcolors_quick (20,202,020 samples, 0.76%)</title><rect x="190.2" y="37" width="9.0" height="15.0" fill="rgb(251,138,19)" rx="2" ry="2" />
+<text  x="193.15" y="47.5" ></text>
+</g>
+<g >
+<title>[libfreetype.so.6.17.1] (20,202,020 samples, 0.76%)</title><rect x="316.3" y="2021" width="9.0" height="15.0" fill="rgb(229,114,17)" rx="2" ry="2" />
+<text  x="319.26" y="2031.5" ></text>
+</g>
+<g >
+<title>__memmove_avx_unaligned_erms (10,101,010 samples, 0.38%)</title><rect x="482.9" y="2053" width="4.5" height="15.0" fill="rgb(226,229,21)" rx="2" ry="2" />
+<text  x="485.90" y="2063.5" ></text>
+</g>
+<g >
+<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1909" width="306.3" height="15.0" fill="rgb(208,59,0)" rx="2" ry="2" />
+<text  x="886.74" y="1919.5" >[[kernel.kallsyms]]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1109" width="175.7" height="15.0" fill="rgb(209,70,7)" rx="2" ry="2" />
+<text  x="58.04" y="1119.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="485" width="175.7" height="15.0" fill="rgb(247,122,23)" rx="2" ry="2" />
+<text  x="58.04" y="495.5" >[libgs.so.9.50]</text>
+</g>
+</g>
+</svg>
