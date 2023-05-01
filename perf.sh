@@ -9,7 +9,7 @@ for malloc in "${mallocs[@]}"
 do
     for bm in "${bms[@]}"
     do
-	 echo "Running perf stat for malloc: $malloc and bm: $bm"
-         perf stat -o "results/$bm-$malloc-perf.txt" ../../bench.sh --procs=16 "$malloc" "$bm" > "results/$bm-$malloc-result"
+	    echo "Running perf stat for malloc: $malloc and bm: $bm"
+        perf stat -o "results/$bm-$malloc-perf.txt" ../../bench.sh --procs=16 "$malloc" "$bm" > "results/$bm-$malloc-result"
     done
 done

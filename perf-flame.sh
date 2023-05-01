@@ -10,9 +10,9 @@ for malloc in "${mallocs[@]}"
 do
     for bm in "${bms[@]}"
     do
-         echo "Running flamegraph for malloc: $malloc and bm: $bm"
-         log_file="results/$bm-$malloc-flamegraph.data"
-         touch "$log_file"
-         perf record -F 99 -a -g -- ../../bench.sh --procs=16 "$malloc" "$bm" -o "$log_file"
+         echo "Running flamegraph perf record for malloc: $malloc and bm: $bm"
+         log_file="results/$bm-$malloc-flamegraph.perf"
+         sudo perf record -F 99 -a -g -- ../../bench.sh --procs=16 "$malloc" "$bm"
+         mv perf.data "$log_file"
     done
 done
