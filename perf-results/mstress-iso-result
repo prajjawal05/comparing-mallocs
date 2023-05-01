@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  iso
+tests     :  mstress
+
+---- 1: mstressN
+
+run 1: mstressN iso: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/iso/build/libisoalloc.so ./mstress 16 50 25
+mstressN    iso   0:16.86 700780 21.40 7.07 0 104542
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+mstressN    iso   16.86 700780 21.40 7.07 0 104542
+

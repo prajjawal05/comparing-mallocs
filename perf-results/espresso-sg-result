@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  sg
+tests     :  espresso
+
+---- 1: espresso
+
+run 1: espresso sg: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/sg/libSlimGuard.so ./espresso ../../bench/espresso/largest.espresso
+espresso    sg    0:07.05 2348 7.00 0.04 0 464
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+espresso    sg    07.05 2348 7.00 0.04 0 464
+

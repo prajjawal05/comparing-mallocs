@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  sg
+tests     :  rptest
+
+---- 1: rptestN
+
+run 1: rptestN sg: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/sg/libSlimGuard.so ./rptest 16 0 1 2 500 1000 100 8 16000
+rptestN,sg: ops/sec: 368879, relative time: 5.421s
+rptestN     sg    0:5.421 124356 2.06 0.71 0 66378
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+rptestN     sg    5.421 124356 2.06 0.71 0 66378
+

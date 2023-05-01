@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  tc
+tests     :  espresso
+
+---- 1: espresso
+
+run 1: espresso tc: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/tc/.libs/libtcmalloc_minimal.so ./espresso ../../bench/espresso/largest.espresso
+espresso    tc    0:06.29 10292 6.26 0.02 0 1418
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+espresso    tc    06.29 10292 6.26 0.02 0 1418
+

@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:17:07 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 lt rptest':
+
+           4699.93 msec task-clock                #    0.276 CPUs utilized          
+            171544      context-switches          #   36.499 K/sec                  
+             29087      cpu-migrations            #    6.189 K/sec                  
+             37023      page-faults               #    7.877 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+      17.047683460 seconds time elapsed
+
+       4.233522000 seconds user
+       0.576394000 seconds sys
+
+

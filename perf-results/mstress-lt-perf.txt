@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:17:00 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 lt mstress':
+
+          11293.08 msec task-clock                #    1.493 CPUs utilized          
+            233653      context-switches          #   20.690 K/sec                  
+             20526      cpu-migrations            #    1.818 K/sec                  
+           1485728      page-faults               #  131.561 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       7.566282035 seconds time elapsed
+
+       7.084572000 seconds user
+       4.262667000 seconds sys
+
+

@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  lp
+tests     :  espresso
+
+---- 1: espresso
+
+run 1: espresso lp: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/lp/Source/bmalloc/libpas/build-cmake-default/Release/libpas_lib.so ./espresso ../../bench/espresso/largest.espresso
+espresso    lp    0:07.04 2880 7.02 0.02 0 491
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+espresso    lp    07.04 2880 7.02 0.02 0 491
+

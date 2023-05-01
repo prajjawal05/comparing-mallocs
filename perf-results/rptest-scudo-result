@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  scudo
+tests     :  rptest
+
+---- 1: rptestN
+
+run 1: rptestN scudo: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/scudo/compiler-rt/lib/scudo/standalone/libscudo.so ./rptest 16 0 1 2 500 1000 100 8 16000
+rptestN,scudo: ops/sec: 416377, relative time: 4.803s
+rptestN     scudo 0:4.803 123600 1.83 0.75 0 63338
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+rptestN     scudo 4.803 123600 1.83 0.75 0 63338
+

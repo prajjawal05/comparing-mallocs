@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:07:45 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 ff redis':
+
+            189.46 msec task-clock                #    0.035 CPUs utilized          
+               319      context-switches          #    1.684 K/sec                  
+                20      cpu-migrations            #  105.566 /sec                   
+              6029      page-faults               #   31.823 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       5.413807008 seconds time elapsed
+
+       0.077437000 seconds user
+       0.113654000 seconds sys
+
+

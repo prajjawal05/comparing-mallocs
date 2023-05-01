@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:14:35 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 je cfrac':
+
+           5836.50 msec task-clock                #    1.001 CPUs utilized          
+                67      context-switches          #   11.479 /sec                   
+                11      cpu-migrations            #    1.885 /sec                   
+              3431      page-faults               #  587.853 /sec                   
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       5.833519898 seconds time elapsed
+
+       5.828856000 seconds user
+       0.008383000 seconds sys
+
+

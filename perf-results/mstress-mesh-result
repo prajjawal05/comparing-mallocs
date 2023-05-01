@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  mesh
+tests     :  mstress
+
+---- 1: mstressN
+
+run 1: mstressN mesh: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/mesh/build/lib/libmesh.so ./mstress 16 50 25
+mstressN    mesh  0:08.97 361156 9.10 6.39 1482508 8353
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+mstressN    mesh  08.97 361156 9.10 6.39 1482508 8353
+

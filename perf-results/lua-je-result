@@ -1,0 +1,22 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  je
+tests     :  lua
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+
+---- 1: lua
+
+run 1: lua je: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/je/lib/libjemalloc.so make
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+rm -f liblua.a lua lapi.o lcode.o lctype.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o ltests.o lua.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o lutf8lib.o loadlib.o lcorolib.o linit.o
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+lua         je    0:06.46 75724 5.86 0.59 0 164215
+~/mimalloc-bench/out/bench
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+lua         je    06.46 75724 5.86 0.59 0 164215
+

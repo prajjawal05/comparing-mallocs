@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:19:38 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 mng espresso':
+
+          11107.86 msec task-clock                #    1.000 CPUs utilized          
+               102      context-switches          #    9.183 /sec                   
+                18      cpu-migrations            #    1.620 /sec                   
+            752963      page-faults               #   67.787 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+      11.105516307 seconds time elapsed
+
+       8.698221000 seconds user
+       2.410273000 seconds sys
+
+

@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:24:40 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 scudo espresso':
+
+           7346.84 msec task-clock                #    1.000 CPUs utilized          
+                77      context-switches          #   10.481 /sec                   
+                18      cpu-migrations            #    2.450 /sec                   
+              3813      page-faults               #  518.999 /sec                   
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       7.343926390 seconds time elapsed
+
+       7.315873000 seconds user
+       0.031636000 seconds sys
+
+

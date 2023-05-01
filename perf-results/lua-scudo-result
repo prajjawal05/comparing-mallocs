@@ -1,0 +1,22 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  scudo
+tests     :  lua
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+
+---- 1: lua
+
+run 1: lua scudo: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/scudo/compiler-rt/lib/scudo/standalone/libscudo.so make
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+rm -f liblua.a lua lapi.o lcode.o lctype.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o ltests.o lua.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o lutf8lib.o loadlib.o lcorolib.o linit.o
+~/mimalloc-bench/extern/lua ~/mimalloc-bench/out/bench
+lua         scudo 0:06.53 78840 6.02 0.51 0 192889
+~/mimalloc-bench/out/bench
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+lua         scudo 06.53 78840 6.02 0.51 0 192889
+

@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  mi
+tests     :  barnes
+
+---- 1: barnes
+
+run 1: barnes mi: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/mi/out/release/libmimalloc.so ./barnes
+barnes      mi    0:03.26 66908 3.24 0.01 0 1429
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+barnes      mi    03.26 66908 3.24 0.01 0 1429
+

@@ -1,0 +1,11 @@
+1) Running perf stat for malloc: dh and bm: lua
+cc1: fatal error: lapi.c: Too many open files
+
+2) Running perf stat for malloc: gd and bm: mstress
+6fc2f09ae700 [FATALERROR]:              ./mm.hh:60  : Couldn't do mmap (Cannot allocate memory) : startaddr (nil), sz 139000, protInfo=3, sharedInfo=16418
+
+3) No malloc named lf
+
+4) No results for nomesh memory allocator
+
+5) No results for sc memory allocator

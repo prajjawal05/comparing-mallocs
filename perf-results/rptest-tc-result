@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  tc
+tests     :  rptest
+
+---- 1: rptestN
+
+run 1: rptestN tc: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/tc/.libs/libtcmalloc_minimal.so ./rptest 16 0 1 2 500 1000 100 8 16000
+rptestN,tc: ops/sec: 568228, relative time: 3.519s
+rptestN     tc    0:3.519 133608 1.59 0.56 0 32221
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+rptestN     tc    3.519 133608 1.59 0.56 0 32221
+

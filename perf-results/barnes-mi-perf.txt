@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:18:47 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 mi barnes':
+
+           3295.23 msec task-clock                #    1.001 CPUs utilized          
+                53      context-switches          #   16.084 /sec                   
+                15      cpu-migrations            #    4.552 /sec                   
+              4653      page-faults               #    1.412 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       3.292731502 seconds time elapsed
+
+       3.278483000 seconds user
+       0.017577000 seconds sys
+
+

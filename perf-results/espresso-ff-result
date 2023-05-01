@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  ff
+tests     :  espresso
+
+---- 1: espresso
+
+run 1: espresso ff: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/ff/libffmallocnpmt.so ./espresso ../../bench/espresso/largest.espresso
+espresso    ff    0:08.84 42652 7.42 1.42 0 473334
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+espresso    ff    08.84 42652 7.42 1.42 0 473334
+

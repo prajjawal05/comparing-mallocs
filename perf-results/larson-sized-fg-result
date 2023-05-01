@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  fg
+tests     :  larson-sized
+
+---- 1: larsonN-sized
+
+run 1: larsonN-sized fg: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/fg/libfreeguard.so ./larson-sized 5 8 1000 5000 100 4141 16
+larsonN-sized,fg, relative time: 157.080s
+larsonN-sized fg    0:157.080 1000716 7.59 0.98 0 248739
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+larsonN-sized fg    157.080 1000716 7.59 0.98 0 248739
+

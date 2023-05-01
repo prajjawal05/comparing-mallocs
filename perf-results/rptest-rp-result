@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  rp
+tests     :  rptest
+
+---- 1: rptestN
+
+run 1: rptestN rp: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/rp/bin/linux/release/x86-64/librpmallocwrap.so ./rptest 16 0 1 2 500 1000 100 8 16000
+rptestN,rp: ops/sec: 581080, relative time: 3.441s
+rptestN     rp    0:3.441 336872 1.59 0.59 0 25022
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+rptestN     rp    3.441 336872 1.59 0.59 0 25022
+

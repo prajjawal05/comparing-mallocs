@@ -1,0 +1,20 @@
+# started on Sun Apr 30 22:06:19 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 dh larson-sized':
+
+          10375.30 msec task-clock                #    1.366 CPUs utilized          
+           1208516      context-switches          #  116.480 K/sec                  
+              1561      cpu-migrations            #  150.454 /sec                   
+             14036      page-faults               #    1.353 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       7.593311739 seconds time elapsed
+
+       5.747928000 seconds user
+       4.630562000 seconds sys
+
+

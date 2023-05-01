@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  dh
+tests     :  gs
+
+---- 1: gs
+
+run 1: gs dh: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/dh/src/libdieharder.so gs -dBATCH -dNODISPLAY /home/azureuser/mimalloc-bench/extern/large.pdf
+gs          dh    0:01.89 65204 1.70 0.19 0 78712
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+gs          dh    01.89 65204 1.70 0.19 0 78712
+

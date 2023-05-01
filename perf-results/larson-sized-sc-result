@@ -1,0 +1,21 @@
+
+warning: allocator 'sc' selected but it seems it is not installed (sys dh ff fg gd hd hm iso je lean lf lp lt lua mesh mi mng pa rp scudo sg sm sn tbb tc tcg mi-sec hml sn-sec)
+
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  sc
+tests     :  larson-sized
+
+---- 1: larsonN-sized
+
+run 1: larsonN-sized sc: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so ./larson-sized 5 8 1000 5000 100 4141 16
+larsonN-sized,sc, relative time: 49.102s
+larsonN-sized sc    0:49.102 130680 9.93 0.12 0 32092
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+larsonN-sized sc    49.102 130680 9.93 0.12 0 32092
+

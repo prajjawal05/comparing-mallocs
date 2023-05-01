@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  iso
+tests     :  gs
+
+---- 1: gs
+
+run 1: gs iso: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/iso/build/libisoalloc.so gs -dBATCH -dNODISPLAY /home/azureuser/mimalloc-bench/extern/large.pdf
+gs          iso   0:01.49 122388 1.39 0.09 0 10548
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+gs          iso   01.49 122388 1.39 0.09 0 10548
+

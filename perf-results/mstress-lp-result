@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  lp
+tests     :  mstress
+
+---- 1: mstressN
+
+run 1: mstressN lp: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/lp/Source/bmalloc/libpas/build-cmake-default/Release/libpas_lib.so ./mstress 16 50 25
+mstressN    lp    0:04.94 514548 7.50 1.74 0 748942
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+mstressN    lp    04.94 514548 7.50 1.74 0 748942
+

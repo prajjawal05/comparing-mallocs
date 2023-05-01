@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  gd
+tests     :  espresso
+
+---- 1: espresso
+
+run 1: espresso gd: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/gd/libguarder.so ./espresso ../../bench/espresso/largest.espresso
+espresso    gd    0:08.95 282164 8.78 0.16 0 70856
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+espresso    gd    08.95 282164 8.78 0.16 0 70856
+

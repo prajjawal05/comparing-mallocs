@@ -1,0 +1,490 @@
+Running perf stat for malloc: dh and bm: cfrac
+Running perf stat for malloc: dh and bm: espresso
+Running perf stat for malloc: dh and bm: barnes
+Running perf stat for malloc: dh and bm: redis
+Running perf stat for malloc: dh and bm: larson-sized
+Running perf stat for malloc: dh and bm: mstress
+Running perf stat for malloc: dh and bm: rptest
+Running perf stat for malloc: dh and bm: gs
+Running perf stat for malloc: dh and bm: lua
+cc1: fatal error: lapi.c: Too many open files
+compilation terminated.
+make: *** [<builtin>: lapi.o] Error 1
+Running perf stat for malloc: ff and bm: cfrac
+Running perf stat for malloc: ff and bm: espresso
+Running perf stat for malloc: ff and bm: barnes
+Running perf stat for malloc: ff and bm: redis
+Running perf stat for malloc: ff and bm: larson-sized
+Running perf stat for malloc: ff and bm: mstress
+Running perf stat for malloc: ff and bm: rptest
+Running perf stat for malloc: ff and bm: gs
+Running perf stat for malloc: ff and bm: lua
+Running perf stat for malloc: fg and bm: cfrac
+Running perf stat for malloc: fg and bm: espresso
+Running perf stat for malloc: fg and bm: barnes
+Running perf stat for malloc: fg and bm: redis
+Running perf stat for malloc: fg and bm: larson-sized
+Running perf stat for malloc: fg and bm: mstress
+Running perf stat for malloc: fg and bm: rptest
+Running perf stat for malloc: fg and bm: gs
+Running perf stat for malloc: fg and bm: lua
+Running perf stat for malloc: gd and bm: cfrac
+Running perf stat for malloc: gd and bm: espresso
+Running perf stat for malloc: gd and bm: barnes
+Running perf stat for malloc: gd and bm: redis
+Running perf stat for malloc: gd and bm: larson-sized
+Running perf stat for malloc: gd and bm: mstress
+6fc2f09ae700 [FATALERROR]:              ./mm.hh:60  : Couldn't do mmap (Cannot allocate memory) : startaddr (nil), sz 139000, protInfo=3, sharedInfo=16418
+Running perf stat for malloc: gd and bm: rptest
+Running perf stat for malloc: gd and bm: gs
+Running perf stat for malloc: gd and bm: lua
+Running perf stat for malloc: hd and bm: cfrac
+Running perf stat for malloc: hd and bm: espresso
+Running perf stat for malloc: hd and bm: barnes
+Running perf stat for malloc: hd and bm: redis
+Running perf stat for malloc: hd and bm: larson-sized
+Running perf stat for malloc: hd and bm: mstress
+Running perf stat for malloc: hd and bm: rptest
+Running perf stat for malloc: hd and bm: gs
+Running perf stat for malloc: hd and bm: lua
+Running perf stat for malloc: hm and bm: cfrac
+Running perf stat for malloc: hm and bm: espresso
+Running perf stat for malloc: hm and bm: barnes
+Running perf stat for malloc: hm and bm: redis
+Running perf stat for malloc: hm and bm: larson-sized
+Running perf stat for malloc: hm and bm: mstress
+Running perf stat for malloc: hm and bm: rptest
+Running perf stat for malloc: hm and bm: gs
+Running perf stat for malloc: hm and bm: lua
+Running perf stat for malloc: iso and bm: cfrac
+Running perf stat for malloc: iso and bm: espresso
+Running perf stat for malloc: iso and bm: barnes
+Running perf stat for malloc: iso and bm: redis
+Running perf stat for malloc: iso and bm: larson-sized
+Running perf stat for malloc: iso and bm: mstress
+Running perf stat for malloc: iso and bm: rptest
+Running perf stat for malloc: iso and bm: gs
+Running perf stat for malloc: iso and bm: lua
+Running perf stat for malloc: je and bm: cfrac
+Running perf stat for malloc: je and bm: espresso
+Running perf stat for malloc: je and bm: barnes
+Running perf stat for malloc: je and bm: redis
+Running perf stat for malloc: je and bm: larson-sized
+Running perf stat for malloc: je and bm: mstress
+Running perf stat for malloc: je and bm: rptest
+Running perf stat for malloc: je and bm: gs
+Running perf stat for malloc: je and bm: lua
+Running perf stat for malloc: lf and bm: cfrac
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: espresso
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: barnes
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: redis
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: larson-sized
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: mstress
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: rptest
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: gs
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lf and bm: lua
+
+warning: unknown option "lf".
+
+Running perf stat for malloc: lp and bm: cfrac
+Running perf stat for malloc: lp and bm: espresso
+Running perf stat for malloc: lp and bm: barnes
+Running perf stat for malloc: lp and bm: redis
+Running perf stat for malloc: lp and bm: larson-sized
+Running perf stat for malloc: lp and bm: mstress
+Running perf stat for malloc: lp and bm: rptest
+Running perf stat for malloc: lp and bm: gs
+Running perf stat for malloc: lp and bm: lua
+Running perf stat for malloc: lt and bm: cfrac
+Running perf stat for malloc: lt and bm: espresso
+Running perf stat for malloc: lt and bm: barnes
+Running perf stat for malloc: lt and bm: redis
+Running perf stat for malloc: lt and bm: larson-sized
+Running perf stat for malloc: lt and bm: mstress
+Running perf stat for malloc: lt and bm: rptest
+Running perf stat for malloc: lt and bm: gs
+Running perf stat for malloc: lt and bm: lua
+Running perf stat for malloc: mesh and bm: cfrac
+Running perf stat for malloc: mesh and bm: espresso
+Running perf stat for malloc: mesh and bm: barnes
+Running perf stat for malloc: mesh and bm: redis
+Running perf stat for malloc: mesh and bm: larson-sized
+Running perf stat for malloc: mesh and bm: mstress
+Running perf stat for malloc: mesh and bm: rptest
+Running perf stat for malloc: mesh and bm: gs
+Running perf stat for malloc: mesh and bm: lua
+Running perf stat for malloc: mi and bm: cfrac
+Running perf stat for malloc: mi and bm: espresso
+Running perf stat for malloc: mi and bm: barnes
+Running perf stat for malloc: mi and bm: redis
+Running perf stat for malloc: mi and bm: larson-sized
+Running perf stat for malloc: mi and bm: mstress
+Running perf stat for malloc: mi and bm: rptest
+Running perf stat for malloc: mi and bm: gs
+Running perf stat for malloc: mi and bm: lua
+Running perf stat for malloc: mng and bm: cfrac
+Running perf stat for malloc: mng and bm: espresso
+Running perf stat for malloc: mng and bm: barnes
+Running perf stat for malloc: mng and bm: redis
+Running perf stat for malloc: mng and bm: larson-sized
+Running perf stat for malloc: mng and bm: mstress
+Running perf stat for malloc: mng and bm: rptest
+Running perf stat for malloc: mng and bm: gs
+Running perf stat for malloc: mng and bm: lua
+Running perf stat for malloc: nomesh and bm: cfrac
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: espresso
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: barnes
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: redis
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: larson-sized
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: mstress
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: rptest
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: gs
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: nomesh and bm: lua
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/nomesh/build/lib/libmesh.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: pa and bm: cfrac
+Running perf stat for malloc: pa and bm: espresso
+Running perf stat for malloc: pa and bm: barnes
+Running perf stat for malloc: pa and bm: redis
+Running perf stat for malloc: pa and bm: larson-sized
+Running perf stat for malloc: pa and bm: mstress
+Running perf stat for malloc: pa and bm: rptest
+Running perf stat for malloc: pa and bm: gs
+Running perf stat for malloc: pa and bm: lua
+Running perf stat for malloc: rp and bm: cfrac
+Running perf stat for malloc: rp and bm: espresso
+Running perf stat for malloc: rp and bm: barnes
+Running perf stat for malloc: rp and bm: redis
+Running perf stat for malloc: rp and bm: larson-sized
+Running perf stat for malloc: rp and bm: mstress
+Running perf stat for malloc: rp and bm: rptest
+Running perf stat for malloc: rp and bm: gs
+Running perf stat for malloc: rp and bm: lua
+Running perf stat for malloc: sc and bm: cfrac
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: espresso
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: barnes
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: redis
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: larson-sized
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: mstress
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: rptest
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: gs
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: sc and bm: lua
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/home/azureuser/mimalloc-bench/extern/sc/out/Release/lib.target/libscalloc.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Running perf stat for malloc: scudo and bm: cfrac
+Running perf stat for malloc: scudo and bm: espresso
+Running perf stat for malloc: scudo and bm: barnes
+Running perf stat for malloc: scudo and bm: redis
+Running perf stat for malloc: scudo and bm: larson-sized
+Running perf stat for malloc: scudo and bm: mstress
+Running perf stat for malloc: scudo and bm: rptest
+Running perf stat for malloc: scudo and bm: gs
+Running perf stat for malloc: scudo and bm: lua
+Running perf stat for malloc: sg and bm: cfrac
+Running perf stat for malloc: sg and bm: espresso
+Running perf stat for malloc: sg and bm: barnes
+Running perf stat for malloc: sg and bm: redis
+Running perf stat for malloc: sg and bm: larson-sized
+Running perf stat for malloc: sg and bm: mstress
+Running perf stat for malloc: sg and bm: rptest
+Running perf stat for malloc: sg and bm: gs
+Running perf stat for malloc: sg and bm: lua
+Running perf stat for malloc: sm and bm: cfrac
+Running perf stat for malloc: sm and bm: espresso
+Running perf stat for malloc: sm and bm: barnes
+Running perf stat for malloc: sm and bm: redis
+Running perf stat for malloc: sm and bm: larson-sized
+Running perf stat for malloc: sm and bm: mstress
+Running perf stat for malloc: sm and bm: rptest
+Running perf stat for malloc: sm and bm: gs
+Running perf stat for malloc: sm and bm: lua
+Running perf stat for malloc: sn and bm: cfrac
+Running perf stat for malloc: sn and bm: espresso
+Running perf stat for malloc: sn and bm: barnes
+Running perf stat for malloc: sn and bm: redis
+Running perf stat for malloc: sn and bm: larson-sized
+Running perf stat for malloc: sn and bm: mstress
+Running perf stat for malloc: sn and bm: rptest
+Running perf stat for malloc: sn and bm: gs
+Running perf stat for malloc: sn and bm: lua
+Running perf stat for malloc: tbb and bm: cfrac
+Running perf stat for malloc: tbb and bm: espresso
+Running perf stat for malloc: tbb and bm: barnes
+Running perf stat for malloc: tbb and bm: redis
+Running perf stat for malloc: tbb and bm: larson-sized
+Running perf stat for malloc: tbb and bm: mstress
+Running perf stat for malloc: tbb and bm: rptest
+Running perf stat for malloc: tbb and bm: gs
+Running perf stat for malloc: tbb and bm: lua
+Running perf stat for malloc: tc and bm: cfrac
+Running perf stat for malloc: tc and bm: espresso
+Running perf stat for malloc: tc and bm: barnes
+Running perf stat for malloc: tc and bm: redis
+Running perf stat for malloc: tc and bm: larson-sized
+Running perf stat for malloc: tc and bm: mstress
+Running perf stat for malloc: tc and bm: rptest
+Running perf stat for malloc: tc and bm: gs
+Running perf stat for malloc: tc and bm: lua
+Running perf stat for malloc: tcg and bm: cfrac
+Running perf stat for malloc: tcg and bm: espresso
+Running perf stat for malloc: tcg and bm: barnes
+Running perf stat for malloc: tcg and bm: redis
+Running perf stat for malloc: tcg and bm: larson-sized
+Running perf stat for malloc: tcg and bm: mstress
+Running perf stat for malloc: tcg and bm: rptest
+Running perf stat for malloc: tcg and bm: gs
+Running perf stat for malloc: tcg and bm: lua

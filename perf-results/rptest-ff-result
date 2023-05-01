@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  ff
+tests     :  rptest
+
+---- 1: rptestN
+
+run 1: rptestN ff: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/ff/libffmallocnpmt.so ./rptest 16 0 1 2 500 1000 100 8 16000
+rptestN,ff: ops/sec: 81706, relative time: 24.478s
+rptestN     ff    0:24.478 142408 1.45 5.54 0 952487
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+rptestN     ff    24.478 142408 1.45 5.54 0 952487
+
