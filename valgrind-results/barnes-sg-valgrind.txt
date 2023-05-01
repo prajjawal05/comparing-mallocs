@@ -1,0 +1,111 @@
+==132396== Memcheck, a memory error detector
+==132396== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==132396== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==132396== Command: ../../bench.sh --procs=16 sg barnes
+==132396== Parent PID: 132395
+==132396== 
+==132397== 
+==132397== HEAP SUMMARY:
+==132397==     in use at exit: 45,119 bytes in 572 blocks
+==132397==   total heap usage: 2,015 allocs, 1,443 frees, 112,865 bytes allocated
+==132397== 
+==132397== LEAK SUMMARY:
+==132397==    definitely lost: 8 bytes in 1 blocks
+==132397==    indirectly lost: 0 bytes in 0 blocks
+==132397==      possibly lost: 0 bytes in 0 blocks
+==132397==    still reachable: 45,111 bytes in 571 blocks
+==132397==         suppressed: 0 bytes in 0 blocks
+==132397== Rerun with --leak-check=full to see details of leaked memory
+==132397== 
+==132397== For lists of detected and suppressed errors, rerun with: -s
+==132397== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132398== 
+==132398== HEAP SUMMARY:
+==132398==     in use at exit: 48,189 bytes in 711 blocks
+==132398==   total heap usage: 2,292 allocs, 1,581 frees, 115,166 bytes allocated
+==132398== 
+==132398== LEAK SUMMARY:
+==132398==    definitely lost: 8 bytes in 1 blocks
+==132398==    indirectly lost: 0 bytes in 0 blocks
+==132398==      possibly lost: 0 bytes in 0 blocks
+==132398==    still reachable: 48,181 bytes in 710 blocks
+==132398==         suppressed: 0 bytes in 0 blocks
+==132398== Rerun with --leak-check=full to see details of leaked memory
+==132398== 
+==132398== For lists of detected and suppressed errors, rerun with: -s
+==132398== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132402== 
+==132402== HEAP SUMMARY:
+==132402==     in use at exit: 46,518 bytes in 646 blocks
+==132402==   total heap usage: 2,422 allocs, 1,776 frees, 122,717 bytes allocated
+==132402== 
+==132402== LEAK SUMMARY:
+==132402==    definitely lost: 8 bytes in 1 blocks
+==132402==    indirectly lost: 0 bytes in 0 blocks
+==132402==      possibly lost: 0 bytes in 0 blocks
+==132402==    still reachable: 46,510 bytes in 645 blocks
+==132402==         suppressed: 0 bytes in 0 blocks
+==132402== Rerun with --leak-check=full to see details of leaked memory
+==132402== 
+==132402== For lists of detected and suppressed errors, rerun with: -s
+==132402== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132403== 
+==132403== HEAP SUMMARY:
+==132403==     in use at exit: 47,080 bytes in 662 blocks
+==132403==   total heap usage: 2,669 allocs, 2,007 frees, 128,268 bytes allocated
+==132403== 
+==132403== LEAK SUMMARY:
+==132403==    definitely lost: 8 bytes in 1 blocks
+==132403==    indirectly lost: 0 bytes in 0 blocks
+==132403==      possibly lost: 0 bytes in 0 blocks
+==132403==    still reachable: 47,072 bytes in 661 blocks
+==132403==         suppressed: 0 bytes in 0 blocks
+==132403== Rerun with --leak-check=full to see details of leaked memory
+==132403== 
+==132403== For lists of detected and suppressed errors, rerun with: -s
+==132403== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132404== 
+==132404== HEAP SUMMARY:
+==132404==     in use at exit: 47,402 bytes in 673 blocks
+==132404==   total heap usage: 2,827 allocs, 2,154 frees, 131,974 bytes allocated
+==132404== 
+==132404== LEAK SUMMARY:
+==132404==    definitely lost: 8 bytes in 1 blocks
+==132404==    indirectly lost: 0 bytes in 0 blocks
+==132404==      possibly lost: 0 bytes in 0 blocks
+==132404==    still reachable: 47,394 bytes in 672 blocks
+==132404==         suppressed: 0 bytes in 0 blocks
+==132404== Rerun with --leak-check=full to see details of leaked memory
+==132404== 
+==132404== For lists of detected and suppressed errors, rerun with: -s
+==132404== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132405== 
+==132405== HEAP SUMMARY:
+==132405==     in use at exit: 49,162 bytes in 709 blocks
+==132405==   total heap usage: 3,062 allocs, 2,353 frees, 172,630 bytes allocated
+==132405== 
+==132405== LEAK SUMMARY:
+==132405==    definitely lost: 8 bytes in 1 blocks
+==132405==    indirectly lost: 0 bytes in 0 blocks
+==132405==      possibly lost: 0 bytes in 0 blocks
+==132405==    still reachable: 49,154 bytes in 708 blocks
+==132405==         suppressed: 0 bytes in 0 blocks
+==132405== Rerun with --leak-check=full to see details of leaked memory
+==132405== 
+==132405== For lists of detected and suppressed errors, rerun with: -s
+==132405== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==132396== 
+==132396== HEAP SUMMARY:
+==132396==     in use at exit: 248,833 bytes in 6,076 blocks
+==132396==   total heap usage: 38,434 allocs, 32,358 frees, 1,847,157 bytes allocated
+==132396== 
+==132396== LEAK SUMMARY:
+==132396==    definitely lost: 8 bytes in 1 blocks
+==132396==    indirectly lost: 0 bytes in 0 blocks
+==132396==      possibly lost: 0 bytes in 0 blocks
+==132396==    still reachable: 248,825 bytes in 6,075 blocks
+==132396==         suppressed: 0 bytes in 0 blocks
+==132396== Rerun with --leak-check=full to see details of leaked memory
+==132396== 
+==132396== For lists of detected and suppressed errors, rerun with: -s
+==132396== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
