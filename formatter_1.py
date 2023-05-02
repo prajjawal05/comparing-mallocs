@@ -1,6 +1,12 @@
 import os
 import json
+import re
 filenames = os.listdir("perf-results")
+valgrindFiles = os.listdir("valgrind-results")
+if '.DS_Store' in filenames:
+    filenames.remove('.DS_Store')
+if '.DS_Store' in valgrindFiles:
+    valgrindFiles.remove('.DS_Store')
 
 def getDatafromResult() :   
     fileRead = open("perf-results/"+file)
@@ -14,11 +20,32 @@ def getDatafromResult() :
 
     return curr_dict
 
-def getDatafromPerf() :   
+def getDatafromResult2() :   
     fileRead = open("perf-results/"+file)
     names = file.split("-")
     fileContent = fileRead.readlines()
-    curr_dict = {"bm": names[0], "malloc":names[1]}
+    fileContentJsonData = fileContent[-2].split()
+    # print(fileContentJsonData)
+    if file.startswith("larson") :
+        curr_dict = {"bm": names[0], "malloc":names[2]}
+    else :
+        curr_dict = {"bm": names[0], "malloc":names[1]}
+    for i,data in enumerate(fileContentJsonData):
+        if i > 1 :
+            curr_dict[json_attr[i]]= data
+
+    print(curr_dict)
+    return curr_dict
+
+def getDatafromPerf() :   
+    fileRead = open("perf-results/"+file)
+    names = file.split("-")
+    print(names)
+    fileContent = fileRead.readlines()
+    if file.startswith("larson") :
+        curr_dict = {"bm": names[0], "malloc":names[2]}
+    else :
+        curr_dict = {"bm": names[0], "malloc":names[1]}
     fileContent = list(filter(lambda content: content.strip(), fileContent))
     for i,content in enumerate(fileContent):
         content = content.strip()
@@ -46,12 +73,10 @@ json_attr = {
 nam_dict = {}
 for file in filenames :
     if file.endswith("result"):
-        curr_dict = getDatafromResult()
-        # nam_dict[curr_dict[json[0]]].append(curr_dict)
+        curr_dict = getDatafromResult2()
     else :
         curr_dict = getDatafromPerf()
-        # print(curr_dict)
-        # break
+        
     benchmark = curr_dict["bm"]
     memalloc = curr_dict["malloc"]
     if benchmark not in nam_dict:
@@ -60,10 +85,27 @@ for file in filenames :
         nam_dict[benchmark][memalloc] = {}
     nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
 
-output = open("something.json", "w")
+output = open("benchmarkAllocData.json", "w")
 output.write(json.dumps(nam_dict))
 print(nam_dict)
-        
+
+
+#valgrind data
+for file in valgrindFiles :
+    processIdVsSummary ={}
+    fileContent = open("valgrind-results/"+file)
+    fileContent = fileContent.readlines()
+    # print(fileContent)
+
+    for content in fileContent:
+        content = content.strip()
+        if not content:
+            continue
+        processId = re.search('==(\d+)==', content).group(1)
+        # print(processId)
+
+    break
+    
 # print(nam_dict)
 
 
