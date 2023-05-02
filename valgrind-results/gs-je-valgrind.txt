@@ -1,111 +1,520 @@
-==124501== Memcheck, a memory error detector
-==124501== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==124501== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==124501== Command: ../../bench.sh --procs=16 je gs
-==124501== Parent PID: 124500
-==124501== 
-==124502== 
-==124502== HEAP SUMMARY:
-==124502==     in use at exit: 45,091 bytes in 572 blocks
-==124502==   total heap usage: 2,015 allocs, 1,443 frees, 112,833 bytes allocated
-==124502== 
-==124502== LEAK SUMMARY:
-==124502==    definitely lost: 8 bytes in 1 blocks
-==124502==    indirectly lost: 0 bytes in 0 blocks
-==124502==      possibly lost: 0 bytes in 0 blocks
-==124502==    still reachable: 45,083 bytes in 571 blocks
-==124502==         suppressed: 0 bytes in 0 blocks
-==124502== Rerun with --leak-check=full to see details of leaked memory
-==124502== 
-==124502== For lists of detected and suppressed errors, rerun with: -s
-==124502== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124503== 
-==124503== HEAP SUMMARY:
-==124503==     in use at exit: 48,161 bytes in 711 blocks
-==124503==   total heap usage: 2,292 allocs, 1,581 frees, 115,134 bytes allocated
-==124503== 
-==124503== LEAK SUMMARY:
-==124503==    definitely lost: 8 bytes in 1 blocks
-==124503==    indirectly lost: 0 bytes in 0 blocks
-==124503==      possibly lost: 0 bytes in 0 blocks
-==124503==    still reachable: 48,153 bytes in 710 blocks
-==124503==         suppressed: 0 bytes in 0 blocks
-==124503== Rerun with --leak-check=full to see details of leaked memory
-==124503== 
-==124503== For lists of detected and suppressed errors, rerun with: -s
-==124503== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124507== 
-==124507== HEAP SUMMARY:
-==124507==     in use at exit: 46,490 bytes in 646 blocks
-==124507==   total heap usage: 2,422 allocs, 1,776 frees, 122,685 bytes allocated
-==124507== 
-==124507== LEAK SUMMARY:
-==124507==    definitely lost: 8 bytes in 1 blocks
-==124507==    indirectly lost: 0 bytes in 0 blocks
-==124507==      possibly lost: 0 bytes in 0 blocks
-==124507==    still reachable: 46,482 bytes in 645 blocks
-==124507==         suppressed: 0 bytes in 0 blocks
-==124507== Rerun with --leak-check=full to see details of leaked memory
-==124507== 
-==124507== For lists of detected and suppressed errors, rerun with: -s
-==124507== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124508== 
-==124508== HEAP SUMMARY:
-==124508==     in use at exit: 47,052 bytes in 662 blocks
-==124508==   total heap usage: 2,669 allocs, 2,007 frees, 128,236 bytes allocated
-==124508== 
-==124508== LEAK SUMMARY:
-==124508==    definitely lost: 8 bytes in 1 blocks
-==124508==    indirectly lost: 0 bytes in 0 blocks
-==124508==      possibly lost: 0 bytes in 0 blocks
-==124508==    still reachable: 47,044 bytes in 661 blocks
-==124508==         suppressed: 0 bytes in 0 blocks
-==124508== Rerun with --leak-check=full to see details of leaked memory
-==124508== 
-==124508== For lists of detected and suppressed errors, rerun with: -s
-==124508== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124509== 
-==124509== HEAP SUMMARY:
-==124509==     in use at exit: 47,374 bytes in 673 blocks
-==124509==   total heap usage: 2,827 allocs, 2,154 frees, 131,942 bytes allocated
-==124509== 
-==124509== LEAK SUMMARY:
-==124509==    definitely lost: 8 bytes in 1 blocks
-==124509==    indirectly lost: 0 bytes in 0 blocks
-==124509==      possibly lost: 0 bytes in 0 blocks
-==124509==    still reachable: 47,366 bytes in 672 blocks
-==124509==         suppressed: 0 bytes in 0 blocks
-==124509== Rerun with --leak-check=full to see details of leaked memory
-==124509== 
-==124509== For lists of detected and suppressed errors, rerun with: -s
-==124509== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124510== 
-==124510== HEAP SUMMARY:
-==124510==     in use at exit: 49,134 bytes in 709 blocks
-==124510==   total heap usage: 3,062 allocs, 2,353 frees, 172,598 bytes allocated
-==124510== 
-==124510== LEAK SUMMARY:
-==124510==    definitely lost: 8 bytes in 1 blocks
-==124510==    indirectly lost: 0 bytes in 0 blocks
-==124510==      possibly lost: 0 bytes in 0 blocks
-==124510==    still reachable: 49,126 bytes in 708 blocks
-==124510==         suppressed: 0 bytes in 0 blocks
-==124510== Rerun with --leak-check=full to see details of leaked memory
-==124510== 
-==124510== For lists of detected and suppressed errors, rerun with: -s
-==124510== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==124501== 
-==124501== HEAP SUMMARY:
-==124501==     in use at exit: 248,766 bytes in 6,076 blocks
-==124501==   total heap usage: 38,873 allocs, 32,797 frees, 1,892,184 bytes allocated
-==124501== 
-==124501== LEAK SUMMARY:
-==124501==    definitely lost: 8 bytes in 1 blocks
-==124501==    indirectly lost: 0 bytes in 0 blocks
-==124501==      possibly lost: 0 bytes in 0 blocks
-==124501==    still reachable: 248,758 bytes in 6,075 blocks
-==124501==         suppressed: 0 bytes in 0 blocks
-==124501== Rerun with --leak-check=full to see details of leaked memory
-==124501== 
-==124501== For lists of detected and suppressed errors, rerun with: -s
-==124501== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==211597== Memcheck, a memory error detector
+==211597== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==211597== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==211597== Command: gs -dBATCH -dNODISPLAY /home/azureuser/mimalloc-bench/extern/large.pdf
+==211597== Parent PID: 211596
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D40B: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E54C5A: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D410: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E54C5A: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D40B: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C0375E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D410: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C0375E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x60AFD86: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x609ABA8: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x609ABB1: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ABE8: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ABED: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ABFA: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AC00: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D3C6: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C0375E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x4E4D3CA: gx_ht_threshold_row_bit (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4E2FA: gxht_thresh_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C0375E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC0458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC232E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC2625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x609ADB2: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ADE0: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ADE5: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ADF2: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ADF8: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x609AC62: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Conditional jump or move depends on uninitialised value(s)
+==211597==    at 0x609AD0A: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AD38: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AD3D: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AD4A: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AD50: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AF08: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AF0D: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AF1A: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AF20: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AC98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AC9D: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ACAA: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609ACB0: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AE70: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AE75: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AE82: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== Use of uninitialised value of size 8
+==211597==    at 0x609AE88: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60AFD98: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x60B06F3: cmsDoTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+==211597==    by 0x4C6B024: gscms_transform_color_buffer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C032F2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4C037F6: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E4F527: gx_image1_plane_data (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4E0E3D6: gs_image_next_planes (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EFE832: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECC720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4ECDC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597==    by 0x4EC03C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+==211597== 
+==211597== 
+==211597== HEAP SUMMARY:
+==211597==     in use at exit: 0 bytes in 0 blocks
+==211597==   total heap usage: 125,100 allocs, 125,100 frees, 4,149,824,291 bytes allocated
+==211597== 
+==211597== All heap blocks were freed -- no leaks are possible
+==211597== 
+==211597== Use --track-origins=yes to see where uninitialised values come from
+==211597== For lists of detected and suppressed errors, rerun with: -s
+==211597== ERROR SUMMARY: 198220 errors from 36 contexts (suppressed: 0 from 0)

@@ -1,0 +1,21 @@
+==211388== Memcheck, a memory error detector
+==211388== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==211388== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==211388== Command: ./cfrac 17545186520507317056371138836327483792789528
+==211388== Parent PID: 211387
+==211388== 
+==211388== 
+==211388== HEAP SUMMARY:
+==211388==     in use at exit: 2,608 bytes in 1 blocks
+==211388==   total heap usage: 91,530,284 allocs, 91,530,283 frees, 1,831,844,476 bytes allocated
+==211388== 
+==211388== LEAK SUMMARY:
+==211388==    definitely lost: 2,608 bytes in 1 blocks
+==211388==    indirectly lost: 0 bytes in 0 blocks
+==211388==      possibly lost: 0 bytes in 0 blocks
+==211388==    still reachable: 0 bytes in 0 blocks
+==211388==         suppressed: 0 bytes in 0 blocks
+==211388== Rerun with --leak-check=full to see details of leaked memory
+==211388== 
+==211388== For lists of detected and suppressed errors, rerun with: -s
+==211388== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

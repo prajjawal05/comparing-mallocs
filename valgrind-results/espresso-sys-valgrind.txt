@@ -1,0 +1,21 @@
+==211546== Memcheck, a memory error detector
+==211546== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==211546== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==211546== Command: ./espresso ../../bench/espresso/largest.espresso
+==211546== Parent PID: 211545
+==211546== 
+==211546== 
+==211546== HEAP SUMMARY:
+==211546==     in use at exit: 9,440 bytes in 20 blocks
+==211546==   total heap usage: 33,510,240 allocs, 33,510,220 frees, 3,726,595,880 bytes allocated
+==211546== 
+==211546== LEAK SUMMARY:
+==211546==    definitely lost: 0 bytes in 0 blocks
+==211546==    indirectly lost: 0 bytes in 0 blocks
+==211546==      possibly lost: 0 bytes in 0 blocks
+==211546==    still reachable: 9,440 bytes in 20 blocks
+==211546==         suppressed: 0 bytes in 0 blocks
+==211546== Rerun with --leak-check=full to see details of leaked memory
+==211546== 
+==211546== For lists of detected and suppressed errors, rerun with: -s
+==211546== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
