@@ -1,0 +1,20 @@
+==217552== Memcheck, a memory error detector
+==217552== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==217552== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==217552== Command: ./larson-sized 5 8 1000 5000 100 4141 16
+==217552== Parent PID: 217551
+==217552== 
+--217552-- WARNING: unhandled amd64-linux syscall: 334
+--217552-- You may be able to write your own handler.
+--217552-- Read the file README_MISSING_SYSCALL_OR_IOCTL.
+--217552-- Nevertheless we consider this a bug.  Please report
+--217552-- it at http://valgrind.org/support/bug_reports.html.
+==217552== 
+==217552== HEAP SUMMARY:
+==217552==     in use at exit: 40,266,663 bytes in 80,208 blocks
+==217552==   total heap usage: 97,300,210 allocs, 97,220,002 frees, 48,977,905,881 bytes allocated
+==217552== 
+==217552== For a detailed leak analysis, rerun with: --leak-check=full
+==217552== 
+==217552== For lists of detected and suppressed errors, rerun with: -s
+==217552== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -13,7 +13,7 @@ do
          echo "Running valgrind for malloc: $malloc and bm: $bm"
          log_file="results/$bm-$malloc-valgrind.txt"
          touch "$log_file"
-         sudo ../../bench.sh --procs=16 "$malloc" "$bm" # requires change in run_test, add valgrind --log-file=valgrind.txt
+         sudo ../../bench.sh --procs=16 "$malloc" "$bm" # requires change in run_test, add valgrind --leak-check=no --log-file=valgrind.txt
          mv valgrind.txt "$log_file"
          # run using nohup ./myscript.sh > output.log 2>&1 &
     done
