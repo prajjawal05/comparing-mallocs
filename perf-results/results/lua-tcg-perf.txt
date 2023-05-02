@@ -1,0 +1,20 @@
+# started on Tue May  2 05:04:13 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 tcg lua':
+
+           6352.27 msec task-clock                #    0.949 CPUs utilized          
+               536      context-switches          #   84.379 /sec                   
+                32      cpu-migrations            #    5.038 /sec                   
+            148464      page-faults               #   23.372 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       6.694775841 seconds time elapsed
+
+       5.732274000 seconds user
+       0.626211000 seconds sys
+
+

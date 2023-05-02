@@ -1,0 +1,22 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  hd
+tests     :  lua
+/home/azureuser/mimalloc-bench/extern/lua /home/azureuser/mimalloc-bench/out/bench
+
+---- 1: lua
+
+run 1: lua hd: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/hd/src/libhoard.so make
+/home/azureuser/mimalloc-bench/extern/lua /home/azureuser/mimalloc-bench/extern/lua /home/azureuser/mimalloc-bench/out/bench
+rm -f liblua.a lua lapi.o lcode.o lctype.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o ltests.o lua.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o lutf8lib.o loadlib.o lcorolib.o linit.o
+/home/azureuser/mimalloc-bench/extern/lua /home/azureuser/mimalloc-bench/out/bench
+lua         hd    0:06.20 79080 5.69 0.50 0 187509
+/home/azureuser/mimalloc-bench/out/bench
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+lua         hd    06.20 79080 5.69 0.50 0 187509
+

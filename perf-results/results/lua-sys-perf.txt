@@ -1,0 +1,20 @@
+# started on Tue May  2 05:04:47 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 sys lua':
+
+           6223.15 msec task-clock                #    1.000 CPUs utilized          
+               318      context-switches          #   51.100 /sec                   
+                58      cpu-migrations            #    9.320 /sec                   
+            174943      page-faults               #   28.112 K/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       6.223479550 seconds time elapsed
+
+       5.799696000 seconds user
+       0.427793000 seconds sys
+
+

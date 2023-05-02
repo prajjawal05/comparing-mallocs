@@ -1,8 +1,0 @@
-benchmarking on 16 cores.
-use '-h' or '--help' for help on configuration options.
-
-allocators: 
-tests     :  barnes
-
-warning: no allocators are specified.
-

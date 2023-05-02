@@ -1,0 +1,18 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  sys
+tests     :  larson-sized
+
+---- 1: larsonN-sized
+
+run 1: larsonN-sized sys: SYSMALLOC=1 ./larson-sized 5 8 1000 5000 100 4141 16
+larsonN-sized,sys, relative time: 44.341s
+larsonN-sized sys   0:44.341 130692 9.90 0.13 0 32579
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+larsonN-sized sys   44.341 130692 9.90 0.13 0 32579
+

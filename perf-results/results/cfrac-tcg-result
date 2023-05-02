@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  tcg
+tests     :  cfrac
+
+---- 1: cfrac
+
+run 1: cfrac tcg: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/tcg/bazel-bin/tcmalloc/libtcmalloc.so ./cfrac 17545186520507317056371138836327483792789528
+cfrac       tcg   0:06.34 14268 6.33 0.00 0 487
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+cfrac       tcg   06.34 14268 6.33 0.00 0 487
+

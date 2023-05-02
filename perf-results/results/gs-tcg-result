@@ -1,0 +1,17 @@
+benchmarking on 16 cores.
+use '-h' or '--help' for help on configuration options.
+
+allocators:  tcg
+tests     :  gs
+
+---- 1: gs
+
+run 1: gs tcg: LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/tcg/bazel-bin/tcmalloc/libtcmalloc.so gs -dBATCH -dNODISPLAY /home/azureuser/mimalloc-bench/extern/large.pdf
+gs          tcg   0:01.27 51516 1.23 0.03 0 1868
+
+results written to: /home/azureuser/mimalloc-bench/out/bench/benchres.csv
+
+#------------------------------------------------------------------
+# test    alloc   time  rss    user  sys  page-faults page-reclaims
+gs          tcg   01.27 51516 1.23 0.03 0 1868
+

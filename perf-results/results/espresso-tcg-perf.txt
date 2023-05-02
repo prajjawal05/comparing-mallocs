@@ -1,0 +1,20 @@
+# started on Tue May  2 05:03:58 2023
+
+
+ Performance counter stats for '../../bench.sh --procs=16 tcg espresso':
+
+           6621.95 msec task-clock                #    1.000 CPUs utilized          
+                67      context-switches          #   10.118 /sec                   
+                10      cpu-migrations            #    1.510 /sec                   
+              3855      page-faults               #  582.154 /sec                   
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       6.622866494 seconds time elapsed
+
+       6.588857000 seconds user
+       0.033833000 seconds sys
+
+
