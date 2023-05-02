@@ -8,6 +8,15 @@ if '.DS_Store' in filenames:
 if '.DS_Store' in valgrindFiles:
     valgrindFiles.remove('.DS_Store')
 
+
+def checkisNumber(s):
+    s_without_commas = s.replace(',', '')
+    return s_without_commas.isdigit()
+
+def getnumber(s):
+    s_without_commas = s.replace(',', '')
+    return int(s_without_commas)
+    
 def getDatafromResult() :   
     fileRead = open("perf-results/"+file)
     fileContent = fileRead.readlines()
@@ -20,13 +29,13 @@ def getDatafromResult() :
 
     return curr_dict
 
-def getDatafromResult2() :   
-    fileRead = open("perf-results/"+file)
-    names = file.split("-")
+def getDatafromResult2(file_name) :   
+    fileRead = open("perf-results/"+file_name)
+    names = file_name.split("-")
     fileContent = fileRead.readlines()
     fileContentJsonData = fileContent[-2].split()
     # print(fileContentJsonData)
-    if file.startswith("larson") :
+    if file_name.startswith("larson") :
         curr_dict = {"bm": names[0], "malloc":names[2]}
     else :
         curr_dict = {"bm": names[0], "malloc":names[1]}
@@ -37,12 +46,12 @@ def getDatafromResult2() :
     print(curr_dict)
     return curr_dict
 
-def getDatafromPerf() :   
-    fileRead = open("perf-results/"+file)
-    names = file.split("-")
+def getDatafromPerf(file_name) :   
+    fileRead = open("perf-results/"+file_name)
+    names = file_name.split("-")
     print(names)
     fileContent = fileRead.readlines()
-    if file.startswith("larson") :
+    if file_name.startswith("larson") :
         curr_dict = {"bm": names[0], "malloc":names[2]}
     else :
         curr_dict = {"bm": names[0], "malloc":names[1]}
@@ -57,6 +66,33 @@ def getDatafromPerf() :
         if i in [3,4,5]:
             curr_dict["perf-"+content[1]] = content[0]
     return curr_dict
+
+def getDatafromValgrind(file_name) :
+    fileRead = open("valgrind-results/"+file_name)
+    names = file_name.split("-")
+    fileContent = fileRead.readlines()
+    curr_dict={}
+    if file_name.startswith("larson") :
+        curr_dict = {"bm": names[0], "malloc":names[2]}
+    else :
+        curr_dict = {"bm": names[0], "malloc":names[1]}
+    fileContent = list(filter(lambda content: content.strip(), fileContent))
+
+    for content in fileContent:
+        if not content.__contains__("total heap usage"):
+            continue
+        content = content.split(" ")
+        num_content = list(filter(lambda c: checkisNumber(c), content))
+        num_content = list(map(lambda c: getnumber(c), num_content))
+        for i,data in enumerate(num_content):
+            curr_dict[valgrind_json[i]] = data
+
+        print(curr_dict)
+        return curr_dict
+        # print(num_content)
+    # print(fileContent)
+
+
 
 json_attr = {
     0:"bm",
@@ -73,10 +109,10 @@ json_attr = {
 nam_dict = {}
 for file in filenames :
     if file.endswith("result"):
-        curr_dict = getDatafromResult2()
+        curr_dict = getDatafromResult2(file)
     else :
-        curr_dict = getDatafromPerf()
-        
+        curr_dict = getDatafromPerf(file)
+    
     benchmark = curr_dict["bm"]
     memalloc = curr_dict["malloc"]
     if benchmark not in nam_dict:
@@ -85,28 +121,24 @@ for file in filenames :
         nam_dict[benchmark][memalloc] = {}
     nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
 
+
+
+valgrind_json = {
+    0:"allocs",
+    1: "frees",
+    2: "bytes allocated"
+}
+#valgrind data
+for file in valgrindFiles :
+    curr_dict = getDatafromValgrind(file)
+    benchmark = curr_dict["bm"]
+    memalloc = curr_dict["malloc"]    
+    nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
+    
+
 output = open("benchmarkAllocData.json", "w")
 output.write(json.dumps(nam_dict))
 print(nam_dict)
-
-
-#valgrind data
-for file in valgrindFiles :
-    processIdVsSummary ={}
-    fileContent = open("valgrind-results/"+file)
-    fileContent = fileContent.readlines()
-    # print(fileContent)
-
-    for content in fileContent:
-        content = content.strip()
-        if not content:
-            continue
-        processId = re.search('==(\d+)==', content).group(1)
-        # print(processId)
-
-    break
-    
-# print(nam_dict)
 
 
 
