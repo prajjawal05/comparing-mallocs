@@ -14,7 +14,10 @@
             "rss": "4768",
             "user": "6.01",
             "sys": "0",
-            "page-faults": "546"
+            "page-faults": "546",
+            "allocs": 91530285,
+            "frees": 91530284,
+            "bytes allocated": 1831917180
         },
         "je": {
             "bm": "cfrac",
@@ -30,7 +33,10 @@
             "rss": "9924",
             "user": "5.81",
             "sys": "0",
-            "page-faults": "243"
+            "page-faults": "243",
+            "allocs": 91530285,
+            "frees": 91530284,
+            "bytes allocated": 1831917180
         },
         "sm": {
             "bm": "cfrac",
@@ -46,7 +52,10 @@
             "rss": "42596",
             "user": "9.50",
             "sys": "0",
-            "page-faults": "292"
+            "page-faults": "292",
+            "allocs": 91530285,
+            "frees": 91530284,
+            "bytes allocated": 1831917180
         },
         "sys": {
             "bm": "cfrac",
@@ -62,7 +71,10 @@
             "rss": "3204",
             "user": "6.22",
             "sys": "0",
-            "page-faults": "424"
+            "page-faults": "424",
+            "allocs": 91530284,
+            "frees": 91530283,
+            "bytes allocated": 1831844476
         },
         "tcg": {
             "bm": "cfrac",
@@ -78,7 +90,10 @@
             "rss": "14268",
             "user": "6.33",
             "sys": "0",
-            "page-faults": "487"
+            "page-faults": "487",
+            "allocs": 91530287,
+            "frees": 91530286,
+            "bytes allocated": 1831917182
         }
     },
     "espresso": {
@@ -96,7 +111,10 @@
             "rss": "5412",
             "user": "6.42",
             "sys": "0",
-            "page-faults": "691"
+            "page-faults": "691",
+            "allocs": 33510241,
+            "frees": 33510221,
+            "bytes allocated": 3726668584
         },
         "je": {
             "bm": "espresso",
@@ -112,7 +130,10 @@
             "rss": "9860",
             "user": "6.39",
             "sys": "0",
-            "page-faults": "265"
+            "page-faults": "265",
+            "allocs": 33510241,
+            "frees": 33510221,
+            "bytes allocated": 3726668584
         },
         "sm": {
             "bm": "espresso",
@@ -128,7 +149,10 @@
             "rss": "71064",
             "user": "7.68",
             "sys": "0",
-            "page-faults": "291"
+            "page-faults": "291",
+            "allocs": 33510241,
+            "frees": 33510221,
+            "bytes allocated": 3726668584
         },
         "sys": {
             "bm": "espresso",
@@ -144,7 +168,10 @@
             "rss": "2400",
             "user": "6.99",
             "sys": "0",
-            "page-faults": "460"
+            "page-faults": "460",
+            "allocs": 33510240,
+            "frees": 33510220,
+            "bytes allocated": 3726595880
         },
         "tcg": {
             "bm": "espresso",
@@ -160,7 +187,10 @@
             "rss": "16980",
             "user": "6.56",
             "sys": "0",
-            "page-faults": "644"
+            "page-faults": "644",
+            "allocs": 33510243,
+            "frees": 33510223,
+            "bytes allocated": 3726668586
         }
     },
     "gs": {
@@ -178,7 +208,10 @@
             "rss": "42844",
             "user": "1.27",
             "sys": "0",
-            "page-faults": "7683"
+            "page-faults": "7683",
+            "allocs": 125100,
+            "frees": 125100,
+            "bytes allocated": 4149824291
         },
         "je": {
             "bm": "gs",
@@ -194,7 +227,10 @@
             "rss": "49156",
             "user": "1.25",
             "sys": "0",
-            "page-faults": "3640"
+            "page-faults": "3640",
+            "allocs": 125100,
+            "frees": 125100,
+            "bytes allocated": 4149824291
         },
         "sm": {
             "bm": "gs",
@@ -210,7 +246,10 @@
             "rss": "118024",
             "user": "1.25",
             "sys": "0",
-            "page-faults": "1666"
+            "page-faults": "1666",
+            "allocs": 125100,
+            "frees": 125100,
+            "bytes allocated": 4149824291
         },
         "sys": {
             "bm": "gs",
@@ -226,7 +265,10 @@
             "rss": "37300",
             "user": "1.26",
             "sys": "0",
-            "page-faults": "7145"
+            "page-faults": "7145",
+            "allocs": 124711,
+            "frees": 124711,
+            "bytes allocated": 4149556363
         },
         "tcg": {
             "bm": "gs",
@@ -242,7 +284,10 @@
             "rss": "51516",
             "user": "1.23",
             "sys": "0",
-            "page-faults": "1868"
+            "page-faults": "1868",
+            "allocs": 125152,
+            "frees": 125152,
+            "bytes allocated": 4149519893
         }
     },
     "larson": {
@@ -424,7 +469,10 @@
             "rss": "7488",
             "user": "0.00",
             "sys": "0",
-            "page-faults": "498"
+            "page-faults": "498",
+            "allocs": 113868,
+            "frees": 113860,
+            "bytes allocated": 25745084
         },
         "je": {
             "bm": "redis",
@@ -440,7 +488,10 @@
             "rss": "11480",
             "user": "0.00",
             "sys": "0",
-            "page-faults": "309"
+            "page-faults": "309",
+            "allocs": 113868,
+            "frees": 113860,
+            "bytes allocated": 25745084
         },
         "sm": {
             "bm": "redis",
@@ -456,7 +507,10 @@
             "rss": "64504",
             "user": "0.00",
             "sys": "0",
-            "page-faults": "367"
+            "page-faults": "367",
+            "allocs": 113868,
+            "frees": 113860,
+            "bytes allocated": 25745084
         },
         "sys": {
             "bm": "redis",
@@ -472,7 +526,10 @@
             "rss": "4620",
             "user": "0.00",
             "sys": "0",
-            "page-faults": "418"
+            "page-faults": "418",
+            "allocs": 113868,
+            "frees": 113860,
+            "bytes allocated": 25745084
         },
         "tcg": {
             "bm": "redis",
@@ -488,7 +545,10 @@
             "rss": "15928",
             "user": "0.00",
             "sys": "0",
-            "page-faults": "598"
+            "page-faults": "598",
+            "allocs": 113868,
+            "frees": 113860,
+            "bytes allocated": 25745084
         }
     }
 }
