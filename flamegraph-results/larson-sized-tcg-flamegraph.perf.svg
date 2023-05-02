@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="358" onload="init(evt)" viewBox="0 0 1200 358" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="502" onload="init(evt)" viewBox="0 0 1200 502" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,565 +421,517 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="358.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="502.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="341" > </text>
+<text id="details" x="10.00" y="485" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="341" > </text>
+<text id="matched" x="1090.00" y="485" > </text>
 <g id="frames">
 <g >
-<title>_dl_mcount_wrapper_check (10,101,010 samples, 0.07%)</title><rect x="10.8" y="261" width="0.9" height="15.0" fill="rgb(221,208,49)" rx="2" ry="2" />
-<text  x="13.84" y="271.5" ></text>
+<title>larson-sized (9,999,999,900 samples, 70.82%)</title><rect x="11.7" y="437" width="835.6" height="15.0" fill="rgb(238,128,38)" rx="2" ry="2" />
+<text  x="14.69" y="447.5" >larson-sized</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="197" width="1.7" height="15.0" fill="rgb(209,71,24)" rx="2" ry="2" />
-<text  x="849.11" y="207.5" ></text>
+<title>tcmalloc_internal_tls_fetch_pic (20,202,020 samples, 0.14%)</title><rect x="584.8" y="341" width="1.7" height="15.0" fill="rgb(244,85,52)" rx="2" ry="2" />
+<text  x="587.81" y="351.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="101" width="1.7" height="15.0" fill="rgb(217,101,44)" rx="2" ry="2" />
-<text  x="849.11" y="111.5" ></text>
+<title>tcmalloc::tcmalloc_internal::SampleRecorder&lt;tcmalloc::tcmalloc_internal::SampledAllocation, tcmalloc::tcmalloc_internal::SampledAllocationAllocator&gt;::Register&lt;tcmalloc::tcmalloc_internal::StackTrace&gt; (10,101,010 samples, 0.07%)</title><rect x="746.0" y="373" width="0.9" height="15.0" fill="rgb(219,71,18)" rx="2" ry="2" />
+<text  x="749.02" y="383.5" ></text>
 </g>
 <g >
-<title>all (14,141,414,000 samples, 100%)</title><rect x="10.0" y="309" width="1180.0" height="15.0" fill="rgb(217,130,44)" rx="2" ry="2" />
-<text  x="13.00" y="319.5" ></text>
+<title>__cpuidle_text_start (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="261" width="169.7" height="15.0" fill="rgb(226,165,53)" rx="2" ry="2" />
+<text  x="1022.50" y="271.5" >__cpuidle_text_start</text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Overflow (10,101,010 samples, 0.07%)</title><rect x="64.8" y="213" width="0.8" height="15.0" fill="rgb(213,34,53)" rx="2" ry="2" />
-<text  x="67.79" y="223.5" ></text>
+<title>tasklet_action_common.isra.0 (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="229" width="0.8" height="15.0" fill="rgb(235,147,50)" rx="2" ry="2" />
+<text  x="1021.66" y="239.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="245" width="0.9" height="15.0" fill="rgb(231,112,32)" rx="2" ry="2" />
-<text  x="66.94" y="255.5" ></text>
+<title>lookup_fast (10,101,010 samples, 0.07%)</title><rect x="849.0" y="245" width="0.8" height="15.0" fill="rgb(220,61,42)" rx="2" ry="2" />
+<text  x="852.00" y="255.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="181" width="1.7" height="15.0" fill="rgb(229,41,15)" rx="2" ry="2" />
-<text  x="849.11" y="191.5" ></text>
+<title>_dl_addr (10,101,010 samples, 0.07%)</title><rect x="1189.2" y="421" width="0.8" height="15.0" fill="rgb(248,184,49)" rx="2" ry="2" />
+<text  x="1192.16" y="431.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (30,303,030 samples, 0.21%)</title><rect x="848.6" y="277" width="2.6" height="15.0" fill="rgb(220,170,50)" rx="2" ry="2" />
-<text  x="851.64" y="287.5" ></text>
+<title>__open64 (20,202,020 samples, 0.14%)</title><rect x="848.2" y="405" width="1.6" height="15.0" fill="rgb(239,42,19)" rx="2" ry="2" />
+<text  x="851.15" y="415.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="85" width="0.9" height="15.0" fill="rgb(229,178,14)" rx="2" ry="2" />
-<text  x="66.94" y="95.5" ></text>
+<title>[libtcmalloc.so] (10,101,010 samples, 0.07%)</title><rect x="532.5" y="373" width="0.8" height="15.0" fill="rgb(219,130,1)" rx="2" ry="2" />
+<text  x="535.47" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="213" width="0.9" height="15.0" fill="rgb(225,213,17)" rx="2" ry="2" />
-<text  x="66.94" y="223.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (10,101,010 samples, 0.07%)</title><rect x="843.9" y="405" width="0.9" height="15.0" fill="rgb(225,33,23)" rx="2" ry="2" />
+<text  x="846.93" y="415.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::Span::Sample (10,101,010 samples, 0.07%)</title><rect x="751.7" y="229" width="0.9" height="15.0" fill="rgb(235,32,51)" rx="2" ry="2" />
-<text  x="754.71" y="239.5" ></text>
+<title>pid_revalidate (10,101,010 samples, 0.07%)</title><rect x="849.0" y="229" width="0.8" height="15.0" fill="rgb(246,154,40)" rx="2" ry="2" />
+<text  x="852.00" y="239.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (30,303,030 samples, 0.21%)</title><rect x="843.6" y="261" width="2.5" height="15.0" fill="rgb(210,71,6)" rx="2" ry="2" />
-<text  x="846.59" y="271.5" ></text>
+<title>slow_alloc&lt;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;, decltype (30,303,030 samples, 0.21%)</title><rect x="745.2" y="405" width="2.5" height="15.0" fill="rgb(231,12,26)" rx="2" ry="2" />
+<text  x="748.18" y="415.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::huge_page_allocator_internal::HugePageAwareAllocator&lt;tcmalloc::tcmalloc_internal::huge_page_allocator_internal::StaticForwarder&gt;::Delete (10,101,010 samples, 0.07%)</title><rect x="535.9" y="229" width="0.9" height="15.0" fill="rgb(215,120,47)" rx="2" ry="2" />
-<text  x="538.94" y="239.5" ></text>
+<title>do_user_addr_fault (10,101,010 samples, 0.07%)</title><rect x="843.9" y="309" width="0.9" height="15.0" fill="rgb(228,159,20)" rx="2" ry="2" />
+<text  x="846.93" y="319.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="10.0" y="261" width="0.8" height="15.0" fill="rgb(223,135,25)" rx="2" ry="2" />
-<text  x="13.00" y="271.5" ></text>
+<title>[libtcmalloc.so] (10,101,010 samples, 0.07%)</title><rect x="518.1" y="373" width="0.9" height="15.0" fill="rgb(215,183,36)" rx="2" ry="2" />
+<text  x="521.13" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="181" width="171.9" height="15.0" fill="rgb(214,2,50)" rx="2" ry="2" />
-<text  x="1021.06" y="191.5" >[[kernel.kallsyms]]</text>
+<title>TCMallocInternalNewArray (191,919,190 samples, 1.36%)</title><rect x="34.5" y="421" width="16.0" height="15.0" fill="rgb(226,20,17)" rx="2" ry="2" />
+<text  x="37.48" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="133" width="171.9" height="15.0" fill="rgb(210,134,15)" rx="2" ry="2" />
-<text  x="1021.06" y="143.5" >[[kernel.kallsyms]]</text>
+<title>__mbrtowc (10,101,010 samples, 0.07%)</title><rect x="10.0" y="405" width="0.8" height="15.0" fill="rgb(240,128,45)" rx="2" ry="2" />
+<text  x="13.00" y="415.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="245" width="171.9" height="15.0" fill="rgb(213,171,5)" rx="2" ry="2" />
-<text  x="1021.06" y="255.5" >[unknown]</text>
+<title>__do_huge_pmd_anonymous_page (10,101,010 samples, 0.07%)</title><rect x="843.9" y="245" width="0.9" height="15.0" fill="rgb(239,60,5)" rx="2" ry="2" />
+<text  x="846.93" y="255.5" ></text>
 </g>
 <g >
-<title>slow_alloc&lt;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;, decltype (60,606,060 samples, 0.43%)</title><rect x="750.0" y="261" width="5.1" height="15.0" fill="rgb(239,81,41)" rx="2" ry="2" />
-<text  x="753.03" y="271.5" ></text>
+<title>default_idle_call (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="357" width="169.7" height="15.0" fill="rgb(225,135,30)" rx="2" ry="2" />
+<text  x="852.84" y="367.5" >default_idle_call</text>
 </g>
 <g >
-<title>__clone (10,101,010 samples, 0.07%)</title><rect x="63.9" y="261" width="0.9" height="15.0" fill="rgb(225,225,30)" rx="2" ry="2" />
-<text  x="66.94" y="271.5" ></text>
+<title>__handle_mm_fault (10,101,010 samples, 0.07%)</title><rect x="843.9" y="277" width="0.9" height="15.0" fill="rgb(251,107,26)" rx="2" ry="2" />
+<text  x="846.93" y="287.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="847.8" y="261" width="0.8" height="15.0" fill="rgb(248,196,28)" rx="2" ry="2" />
-<text  x="850.80" y="271.5" ></text>
+<title>[libtcmalloc.so] (20,202,020 samples, 0.14%)</title><rect x="743.5" y="405" width="1.7" height="15.0" fill="rgb(249,183,7)" rx="2" ry="2" />
+<text  x="746.49" y="415.5" ></text>
 </g>
 <g >
-<title>TCMallocInternalDeleteArraySized (131,313,130 samples, 0.93%)</title><rect x="13.4" y="277" width="10.9" height="15.0" fill="rgb(225,85,27)" rx="2" ry="2" />
-<text  x="16.37" y="287.5" ></text>
+<title>runthreads (20,202,020 samples, 0.14%)</title><rect x="843.1" y="421" width="1.7" height="15.0" fill="rgb(216,18,51)" rx="2" ry="2" />
+<text  x="846.09" y="431.5" ></text>
 </g>
 <g >
-<title>larson-sized (10,040,403,940 samples, 71.00%)</title><rect x="13.4" y="293" width="837.8" height="15.0" fill="rgb(251,107,22)" rx="2" ry="2" />
-<text  x="16.37" y="303.5" >larson-sized</text>
+<title>__memmove_avx_unaligned_erms (20,202,020 samples, 0.14%)</title><rect x="533.3" y="373" width="1.7" height="15.0" fill="rgb(221,141,9)" rx="2" ry="2" />
+<text  x="536.32" y="383.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (10,101,010 samples, 0.07%)</title><rect x="64.8" y="197" width="0.8" height="15.0" fill="rgb(230,86,28)" rx="2" ry="2" />
-<text  x="67.79" y="207.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="71.6" y="421" width="0.9" height="15.0" fill="rgb(227,166,23)" rx="2" ry="2" />
+<text  x="74.62" y="431.5" ></text>
 </g>
 <g >
-<title>TCMallocInternalNewArray (262,626,260 samples, 1.86%)</title><rect x="24.3" y="277" width="21.9" height="15.0" fill="rgb(218,21,47)" rx="2" ry="2" />
-<text  x="27.33" y="287.5" >T..</text>
+<title>scsi_mq_done (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="181" width="0.8" height="15.0" fill="rgb(242,121,27)" rx="2" ry="2" />
+<text  x="1021.66" y="191.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="165" width="0.9" height="15.0" fill="rgb(223,165,53)" rx="2" ry="2" />
-<text  x="68.63" y="175.5" ></text>
+<title>pid_update_inode (10,101,010 samples, 0.07%)</title><rect x="849.0" y="213" width="0.8" height="15.0" fill="rgb(240,112,10)" rx="2" ry="2" />
+<text  x="852.00" y="223.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::(anonymous namespace)::do_free_pages (30,303,030 samples, 0.21%)</title><rect x="534.3" y="245" width="2.5" height="15.0" fill="rgb(226,94,34)" rx="2" ry="2" />
-<text  x="537.26" y="255.5" ></text>
+<title>[libtcmalloc.so] (10,101,010 samples, 0.07%)</title><rect x="584.0" y="341" width="0.8" height="15.0" fill="rgb(205,188,42)" rx="2" ry="2" />
+<text  x="586.96" y="351.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="117" width="171.9" height="15.0" fill="rgb(226,93,9)" rx="2" ry="2" />
-<text  x="1021.06" y="127.5" >[[kernel.kallsyms]]</text>
+<title>TcmallocSlab_Internal_PopBatch (151,515,150 samples, 1.07%)</title><rect x="573.8" y="357" width="12.7" height="15.0" fill="rgb(248,85,33)" rx="2" ry="2" />
+<text  x="576.83" y="367.5" ></text>
 </g>
 <g >
-<title>swapper (4,060,606,020 samples, 28.71%)</title><rect x="851.2" y="293" width="338.8" height="15.0" fill="rgb(222,191,26)" rx="2" ry="2" />
-<text  x="854.17" y="303.5" >swapper</text>
+<title>x86_64_start_kernel (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="405" width="169.7" height="15.0" fill="rgb(239,50,52)" rx="2" ry="2" />
+<text  x="1022.50" y="415.5" >x86_64_start_kernel</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="133" width="0.9" height="15.0" fill="rgb(206,181,18)" rx="2" ry="2" />
-<text  x="68.63" y="143.5" ></text>
+<title>TCMallocInternalDeleteArraySized (2,494,949,470 samples, 17.67%)</title><rect x="399.1" y="405" width="208.5" height="15.0" fill="rgb(229,228,52)" rx="2" ry="2" />
+<text  x="402.11" y="415.5" >TCMallocInternalDeleteArray..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="165" width="0.9" height="15.0" fill="rgb(205,180,11)" rx="2" ry="2" />
-<text  x="66.94" y="175.5" ></text>
+<title>do_syscall_64 (20,202,020 samples, 0.14%)</title><rect x="848.2" y="373" width="1.6" height="15.0" fill="rgb(222,167,3)" rx="2" ry="2" />
+<text  x="851.15" y="383.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="261" width="171.9" height="15.0" fill="rgb(223,109,27)" rx="2" ry="2" />
-<text  x="1021.06" y="271.5" >[unknown]</text>
+<title>security_task_getsecid_subj (10,101,010 samples, 0.07%)</title><rect x="848.2" y="245" width="0.8" height="15.0" fill="rgb(222,229,29)" rx="2" ry="2" />
+<text  x="851.15" y="255.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::central_freelist_internal::CentralFreeList&lt;tcmalloc::tcmalloc_internal::central_freelist_internal::StaticForwarder&gt;::RemoveRange (20,202,020 samples, 0.14%)</title><rect x="846.1" y="229" width="1.7" height="15.0" fill="rgb(224,50,2)" rx="2" ry="2" />
-<text  x="849.11" y="239.5" ></text>
+<title>[libjemalloc.so.2] (10,101,010 samples, 0.07%)</title><rect x="847.3" y="405" width="0.9" height="15.0" fill="rgb(251,76,54)" rx="2" ry="2" />
+<text  x="850.31" y="415.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="847.8" y="213" width="0.8" height="15.0" fill="rgb(231,169,35)" rx="2" ry="2" />
-<text  x="850.80" y="223.5" ></text>
+<title>asm_sysvec_hyperv_callback (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="309" width="0.8" height="15.0" fill="rgb(220,117,31)" rx="2" ry="2" />
+<text  x="1021.66" y="319.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="37" width="1.7" height="15.0" fill="rgb(205,219,40)" rx="2" ry="2" />
-<text  x="849.11" y="47.5" ></text>
+<title>do_idle (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="373" width="169.7" height="15.0" fill="rgb(242,101,34)" rx="2" ry="2" />
+<text  x="852.84" y="383.5" >do_idle</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="229" width="166.9" height="15.0" fill="rgb(208,31,19)" rx="2" ry="2" />
-<text  x="854.17" y="239.5" >[[kernel.kallsyms]]</text>
+<title>[libtcmalloc.so] (40,404,040 samples, 0.29%)</title><rect x="813.5" y="357" width="3.4" height="15.0" fill="rgb(228,54,41)" rx="2" ry="2" />
+<text  x="816.55" y="367.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="229" width="171.9" height="15.0" fill="rgb(224,66,17)" rx="2" ry="2" />
-<text  x="1021.06" y="239.5" >[unknown]</text>
+<title>asm_exc_page_fault (10,101,010 samples, 0.07%)</title><rect x="843.9" y="341" width="0.9" height="15.0" fill="rgb(244,206,1)" rx="2" ry="2" />
+<text  x="846.93" y="351.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="165" width="0.9" height="15.0" fill="rgb(249,53,26)" rx="2" ry="2" />
-<text  x="13.84" y="175.5" ></text>
+<title>exercise_heap (9,222,222,130 samples, 65.31%)</title><rect x="72.5" y="421" width="770.6" height="15.0" fill="rgb(251,164,43)" rx="2" ry="2" />
+<text  x="75.46" y="431.5" >exercise_heap</text>
 </g>
 <g >
-<title>malloc (10,101,010 samples, 0.07%)</title><rect x="11.7" y="277" width="0.8" height="15.0" fill="rgb(239,73,4)" rx="2" ry="2" />
-<text  x="14.69" y="287.5" ></text>
+<title>irq_exit_rcu (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="277" width="0.8" height="15.0" fill="rgb(217,205,52)" rx="2" ry="2" />
+<text  x="1021.66" y="287.5" ></text>
 </g>
 <g >
-<title>exercise_heap (9,333,333,240 samples, 66.00%)</title><rect x="67.3" y="277" width="778.8" height="15.0" fill="rgb(227,207,45)" rx="2" ry="2" />
-<text  x="70.31" y="287.5" >exercise_heap</text>
+<title>default_idle_call (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="293" width="169.7" height="15.0" fill="rgb(235,90,11)" rx="2" ry="2" />
+<text  x="1022.50" y="303.5" >default_idle_call</text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (828,282,820 samples, 5.86%)</title><rect x="773.6" y="245" width="69.1" height="15.0" fill="rgb(250,175,36)" rx="2" ry="2" />
-<text  x="776.63" y="255.5" >tcmallo..</text>
+<title>sysvec_hyperv_callback (10,101,010 samples, 0.07%)</title><rect x="742.6" y="373" width="0.9" height="15.0" fill="rgb(251,150,33)" rx="2" ry="2" />
+<text  x="745.65" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="149" width="0.9" height="15.0" fill="rgb(242,30,5)" rx="2" ry="2" />
-<text  x="66.94" y="159.5" ></text>
+<title>path_openat (20,202,020 samples, 0.14%)</title><rect x="848.2" y="293" width="1.6" height="15.0" fill="rgb(230,17,51)" rx="2" ry="2" />
+<text  x="851.15" y="303.5" ></text>
 </g>
 <g >
-<title>do_lookup_x (10,101,010 samples, 0.07%)</title><rect x="12.5" y="277" width="0.9" height="15.0" fill="rgb(238,19,9)" rx="2" ry="2" />
-<text  x="15.53" y="287.5" ></text>
+<title>tasklet_action (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="245" width="0.8" height="15.0" fill="rgb(239,25,48)" rx="2" ry="2" />
+<text  x="1021.66" y="255.5" ></text>
 </g>
 <g >
-<title>TCMallocInternalDeleteArraySized (10,101,010 samples, 0.07%)</title><rect x="64.8" y="245" width="0.8" height="15.0" fill="rgb(225,91,34)" rx="2" ry="2" />
-<text  x="67.79" y="255.5" ></text>
+<title>redis-server (30,303,030 samples, 0.21%)</title><rect x="847.3" y="437" width="2.5" height="15.0" fill="rgb(206,43,21)" rx="2" ry="2" />
+<text  x="850.31" y="447.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="133" width="1.7" height="15.0" fill="rgb(225,25,9)" rx="2" ry="2" />
-<text  x="849.11" y="143.5" ></text>
+<title>tcmalloc::tcmalloc_internal::Sampler::RecordAllocationSlow (10,101,010 samples, 0.07%)</title><rect x="746.9" y="389" width="0.8" height="15.0" fill="rgb(230,125,16)" rx="2" ry="2" />
+<text  x="749.87" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="213" width="166.9" height="15.0" fill="rgb(218,178,54)" rx="2" ry="2" />
-<text  x="854.17" y="223.5" >[[kernel.kallsyms]]</text>
+<title>all (14,121,211,980 samples, 100%)</title><rect x="10.0" y="453" width="1180.0" height="15.0" fill="rgb(207,178,37)" rx="2" ry="2" />
+<text  x="13.00" y="463.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="181" width="0.9" height="15.0" fill="rgb(240,191,51)" rx="2" ry="2" />
-<text  x="66.94" y="191.5" ></text>
+<title>cpu_startup_entry (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="389" width="169.7" height="15.0" fill="rgb(212,198,38)" rx="2" ry="2" />
+<text  x="852.84" y="399.5" >cpu_startup_entry</text>
 </g>
 <g >
-<title>[libtcmalloc.so] (40,404,040 samples, 0.29%)</title><rect x="764.4" y="245" width="3.3" height="15.0" fill="rgb(206,217,12)" rx="2" ry="2" />
-<text  x="767.36" y="255.5" ></text>
+<title>TCMallocInternalDeleteArraySized (10,101,010 samples, 0.07%)</title><rect x="71.6" y="389" width="0.9" height="15.0" fill="rgb(234,187,43)" rx="2" ry="2" />
+<text  x="74.62" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (4,060,606,020 samples, 28.71%)</title><rect x="851.2" y="277" width="338.8" height="15.0" fill="rgb(242,29,2)" rx="2" ry="2" />
-<text  x="854.17" y="287.5" >[[kernel.kallsyms]]</text>
+<title>start_secondary (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="405" width="169.7" height="15.0" fill="rgb(210,173,8)" rx="2" ry="2" />
+<text  x="852.84" y="415.5" >start_secondary</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="85" width="1.7" height="15.0" fill="rgb(218,102,12)" rx="2" ry="2" />
-<text  x="849.11" y="95.5" ></text>
+<title>tcmalloc_internal_tls_fetch_pic (40,404,040 samples, 0.29%)</title><rect x="816.9" y="357" width="3.4" height="15.0" fill="rgb(244,40,22)" rx="2" ry="2" />
+<text  x="819.92" y="367.5" ></text>
 </g>
 <g >
-<title>tcmalloc_internal_tls_fetch_pic (20,202,020 samples, 0.14%)</title><rect x="841.1" y="229" width="1.6" height="15.0" fill="rgb(231,207,27)" rx="2" ry="2" />
-<text  x="844.06" y="239.5" ></text>
+<title>scsi_io_completion (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="117" width="0.8" height="15.0" fill="rgb(247,158,38)" rx="2" ry="2" />
+<text  x="1021.66" y="127.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="181" width="0.9" height="15.0" fill="rgb(245,201,36)" rx="2" ry="2" />
-<text  x="68.63" y="191.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (222,222,220 samples, 1.57%)</title><rect x="586.5" y="357" width="18.6" height="15.0" fill="rgb(245,105,20)" rx="2" ry="2" />
+<text  x="589.49" y="367.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="181" width="166.9" height="15.0" fill="rgb(220,121,0)" rx="2" ry="2" />
-<text  x="854.17" y="191.5" >[[kernel.kallsyms]]</text>
+<title>bench.sh (20,202,020 samples, 0.14%)</title><rect x="10.0" y="437" width="1.7" height="15.0" fill="rgb(253,200,30)" rx="2" ry="2" />
+<text  x="13.00" y="447.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="245" width="166.9" height="15.0" fill="rgb(220,163,17)" rx="2" ry="2" />
-<text  x="854.17" y="255.5" >[[kernel.kallsyms]]</text>
+<title>storvsc_on_channel_callback (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="197" width="0.8" height="15.0" fill="rgb(230,93,24)" rx="2" ry="2" />
+<text  x="1021.66" y="207.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (232,323,230 samples, 1.64%)</title><rect x="601.7" y="213" width="19.4" height="15.0" fill="rgb(249,124,23)" rx="2" ry="2" />
-<text  x="604.69" y="223.5" ></text>
+<title>[unknown] (30,303,030 samples, 0.21%)</title><rect x="847.3" y="421" width="2.5" height="15.0" fill="rgb(252,50,8)" rx="2" ry="2" />
+<text  x="850.31" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="69" width="0.9" height="15.0" fill="rgb(228,136,32)" rx="2" ry="2" />
-<text  x="66.94" y="79.5" ></text>
+<title>tcmalloc::tcmalloc_internal::SampleifyAllocation&lt;tcmalloc::tcmalloc_internal::Static, tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::NullOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt; &gt; (20,202,020 samples, 0.14%)</title><rect x="745.2" y="389" width="1.7" height="15.0" fill="rgb(245,103,14)" rx="2" ry="2" />
+<text  x="748.18" y="399.5" ></text>
 </g>
 <g >
-<title>__madvise (10,101,010 samples, 0.07%)</title><rect x="65.6" y="277" width="0.9" height="15.0" fill="rgb(253,207,32)" rx="2" ry="2" />
-<text  x="68.63" y="287.5" ></text>
+<title>bio_endio (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="69" width="0.8" height="15.0" fill="rgb(226,97,18)" rx="2" ry="2" />
+<text  x="1021.66" y="79.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="261" width="0.9" height="15.0" fill="rgb(216,134,18)" rx="2" ry="2" />
-<text  x="68.63" y="271.5" ></text>
+<title>time (10,101,010 samples, 0.07%)</title><rect x="1189.2" y="437" width="0.8" height="15.0" fill="rgb(245,25,22)" rx="2" ry="2" />
+<text  x="1192.16" y="447.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::HugePageFiller&lt;tcmalloc::tcmalloc_internal::PageTracker&gt;::UpdateFillerStatsTracker (10,101,010 samples, 0.07%)</title><rect x="753.4" y="197" width="0.8" height="15.0" fill="rgb(207,118,7)" rx="2" ry="2" />
-<text  x="756.40" y="207.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Overflow (858,585,850 samples, 6.08%)</title><rect x="535.0" y="373" width="71.8" height="15.0" fill="rgb(210,136,42)" rx="2" ry="2" />
+<text  x="538.01" y="383.5" >tcmalloc..</text>
 </g>
 <g >
-<title>[larson-sized] (212,121,210 samples, 1.50%)</title><rect x="46.2" y="277" width="17.7" height="15.0" fill="rgb(212,144,42)" rx="2" ry="2" />
-<text  x="49.24" y="287.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (20,202,020 samples, 0.14%)</title><rect x="848.2" y="389" width="1.6" height="15.0" fill="rgb(209,39,48)" rx="2" ry="2" />
+<text  x="851.15" y="399.5" ></text>
 </g>
 <g >
-<title>[libtcmalloc.so] (20,202,020 samples, 0.14%)</title><rect x="816.6" y="213" width="1.7" height="15.0" fill="rgb(243,35,1)" rx="2" ry="2" />
-<text  x="819.61" y="223.5" ></text>
+<title>do_huge_pmd_anonymous_page (10,101,010 samples, 0.07%)</title><rect x="843.9" y="261" width="0.9" height="15.0" fill="rgb(244,2,33)" rx="2" ry="2" />
+<text  x="846.93" y="271.5" ></text>
 </g>
 <g >
-<title>absl::GetCurrentTimeNanos (10,101,010 samples, 0.07%)</title><rect x="750.9" y="229" width="0.8" height="15.0" fill="rgb(233,220,48)" rx="2" ry="2" />
-<text  x="753.87" y="239.5" ></text>
+<title>__lock_text_start (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="37" width="0.8" height="15.0" fill="rgb(230,188,28)" rx="2" ry="2" />
+<text  x="1021.66" y="47.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::Span::BuildFreelist (20,202,020 samples, 0.14%)</title><rect x="846.1" y="213" width="1.7" height="15.0" fill="rgb(247,172,30)" rx="2" ry="2" />
-<text  x="849.11" y="223.5" ></text>
+<title>link_path_walk.part.0 (10,101,010 samples, 0.07%)</title><rect x="849.0" y="277" width="0.8" height="15.0" fill="rgb(233,87,37)" rx="2" ry="2" />
+<text  x="852.00" y="287.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::huge_page_allocator_internal::HugePageAwareAllocator&lt;tcmalloc::tcmalloc_internal::huge_page_allocator_internal::StaticForwarder&gt;::New (20,202,020 samples, 0.14%)</title><rect x="752.6" y="229" width="1.6" height="15.0" fill="rgb(250,195,18)" rx="2" ry="2" />
-<text  x="755.56" y="239.5" ></text>
+<title>command_substitute (10,101,010 samples, 0.07%)</title><rect x="10.8" y="421" width="0.9" height="15.0" fill="rgb(235,219,52)" rx="2" ry="2" />
+<text  x="13.84" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="149" width="1.7" height="15.0" fill="rgb(250,78,44)" rx="2" ry="2" />
-<text  x="849.11" y="159.5" ></text>
+<title>TCMallocInternalNewArray (10,101,010 samples, 0.07%)</title><rect x="843.1" y="405" width="0.8" height="15.0" fill="rgb(205,194,44)" rx="2" ry="2" />
+<text  x="846.09" y="415.5" ></text>
 </g>
 <g >
-<title>tcmalloc_internal_tls_fetch_pic (10,101,010 samples, 0.07%)</title><rect x="820.8" y="213" width="0.9" height="15.0" fill="rgb(213,181,23)" rx="2" ry="2" />
-<text  x="823.83" y="223.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Deallocate (1,060,606,050 samples, 7.51%)</title><rect x="519.0" y="389" width="88.6" height="15.0" fill="rgb(236,69,20)" rx="2" ry="2" />
+<text  x="521.97" y="399.5" >tcmalloc::..</text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (232,323,230 samples, 1.64%)</title><rect x="821.7" y="229" width="19.4" height="15.0" fill="rgb(219,26,10)" rx="2" ry="2" />
-<text  x="824.67" y="239.5" ></text>
+<title>TcmallocSlab_Internal_PopBatch (10,101,010 samples, 0.07%)</title><rect x="531.6" y="373" width="0.9" height="15.0" fill="rgb(244,64,8)" rx="2" ry="2" />
+<text  x="534.63" y="383.5" ></text>
 </g>
 <g >
-<title>TcmallocSlab_Internal_PushBatch (101,010,100 samples, 0.71%)</title><rect x="813.2" y="229" width="8.5" height="15.0" fill="rgb(209,148,52)" rx="2" ry="2" />
-<text  x="816.24" y="239.5" ></text>
+<title>log2@@GLIBC_2.29 (10,101,010 samples, 0.07%)</title><rect x="746.9" y="373" width="0.8" height="15.0" fill="rgb(226,177,38)" rx="2" ry="2" />
+<text  x="749.87" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="847.8" y="197" width="0.8" height="15.0" fill="rgb(208,45,45)" rx="2" ry="2" />
-<text  x="850.80" y="207.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (949,494,940 samples, 6.72%)</title><rect x="762.1" y="389" width="79.3" height="15.0" fill="rgb(216,23,21)" rx="2" ry="2" />
+<text  x="765.06" y="399.5" >tcmalloc:..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="213" width="0.9" height="15.0" fill="rgb(229,45,8)" rx="2" ry="2" />
-<text  x="68.63" y="223.5" ></text>
+<title>clear_huge_page (10,101,010 samples, 0.07%)</title><rect x="843.9" y="229" width="0.9" height="15.0" fill="rgb(213,53,15)" rx="2" ry="2" />
+<text  x="846.93" y="239.5" ></text>
 </g>
 <g >
-<title>tcmalloc_internal_tls_fetch_pic (10,101,010 samples, 0.07%)</title><rect x="621.1" y="213" width="0.8" height="15.0" fill="rgb(254,26,9)" rx="2" ry="2" />
-<text  x="624.07" y="223.5" ></text>
+<title>tcmalloc_internal_tls_fetch_pic (20,202,020 samples, 0.14%)</title><rect x="605.1" y="357" width="1.7" height="15.0" fill="rgb(215,57,31)" rx="2" ry="2" />
+<text  x="608.06" y="367.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="197" width="0.9" height="15.0" fill="rgb(243,4,49)" rx="2" ry="2" />
-<text  x="68.63" y="207.5" ></text>
+<title>secondary_startup_64_no_verify (4,060,606,020 samples, 28.76%)</title><rect x="849.8" y="421" width="339.4" height="15.0" fill="rgb(227,141,22)" rx="2" ry="2" />
+<text  x="852.84" y="431.5" >secondary_startup_64_no_verify</text>
 </g>
 <g >
-<title>TCMallocInternalDeleteArraySized (2,636,363,610 samples, 18.64%)</title><rect x="401.9" y="261" width="220.0" height="15.0" fill="rgb(208,43,54)" rx="2" ry="2" />
-<text  x="404.93" y="271.5" >TCMallocInternalDeleteArraySi..</text>
+<title>ext4_end_bio (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="53" width="0.8" height="15.0" fill="rgb(223,181,32)" rx="2" ry="2" />
+<text  x="1021.66" y="63.5" ></text>
 </g>
 <g >
-<title>runthreads (10,101,010 samples, 0.07%)</title><rect x="64.8" y="261" width="0.8" height="15.0" fill="rgb(214,183,7)" rx="2" ry="2" />
-<text  x="67.79" y="271.5" ></text>
+<title>tcmalloc_internal_tls_fetch_pic (20,202,020 samples, 0.14%)</title><rect x="839.7" y="373" width="1.7" height="15.0" fill="rgb(248,78,54)" rx="2" ry="2" />
+<text  x="842.71" y="383.5" ></text>
 </g>
 <g >
-<title>TcmallocSlab_Internal_PopBatch (10,101,010 samples, 0.07%)</title><rect x="555.3" y="229" width="0.9" height="15.0" fill="rgb(221,156,18)" rx="2" ry="2" />
-<text  x="558.33" y="239.5" ></text>
+<title>scsi_finish_command (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="133" width="0.8" height="15.0" fill="rgb(227,70,48)" rx="2" ry="2" />
+<text  x="1021.66" y="143.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="149" width="0.9" height="15.0" fill="rgb(223,95,52)" rx="2" ry="2" />
-<text  x="13.84" y="159.5" ></text>
+<title>handle_mm_fault (10,101,010 samples, 0.07%)</title><rect x="843.9" y="293" width="0.9" height="15.0" fill="rgb(242,109,42)" rx="2" ry="2" />
+<text  x="846.93" y="303.5" ></text>
 </g>
 <g >
-<title>start_thread (10,101,010 samples, 0.07%)</title><rect x="847.8" y="277" width="0.8" height="15.0" fill="rgb(238,124,5)" rx="2" ry="2" />
-<text  x="850.80" y="287.5" ></text>
+<title>__softirqentry_text_start (10,101,010 samples, 0.07%)</title><rect x="742.6" y="341" width="0.9" height="15.0" fill="rgb(214,170,27)" rx="2" ry="2" />
+<text  x="745.65" y="351.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::AllocatedBytes (10,101,010 samples, 0.07%)</title><rect x="535.1" y="229" width="0.8" height="15.0" fill="rgb(228,130,7)" rx="2" ry="2" />
-<text  x="538.10" y="239.5" ></text>
+<title>sysvec_hyperv_callback (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="293" width="0.8" height="15.0" fill="rgb(229,100,2)" rx="2" ry="2" />
+<text  x="1021.66" y="303.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="11.7" y="261" width="0.8" height="15.0" fill="rgb(250,196,5)" rx="2" ry="2" />
-<text  x="14.69" y="271.5" ></text>
+<title>do_open.isra.0 (10,101,010 samples, 0.07%)</title><rect x="848.2" y="277" width="0.8" height="15.0" fill="rgb(215,182,54)" rx="2" ry="2" />
+<text  x="851.15" y="287.5" ></text>
 </g>
 <g >
-<title>tcmalloc_internal_tls_fetch_pic (60,606,060 samples, 0.43%)</title><rect x="596.6" y="197" width="5.1" height="15.0" fill="rgb(209,153,40)" rx="2" ry="2" />
-<text  x="599.63" y="207.5" ></text>
+<title>rest_init (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="341" width="169.7" height="15.0" fill="rgb(210,44,40)" rx="2" ry="2" />
+<text  x="1022.50" y="351.5" >rest_init</text>
 </g>
 <g >
-<title>hash_insert (10,101,010 samples, 0.07%)</title><rect x="10.0" y="245" width="0.8" height="15.0" fill="rgb(249,37,1)" rx="2" ry="2" />
-<text  x="13.00" y="255.5" ></text>
+<title>exc_page_fault (10,101,010 samples, 0.07%)</title><rect x="843.9" y="325" width="0.9" height="15.0" fill="rgb(237,108,50)" rx="2" ry="2" />
+<text  x="846.93" y="335.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (1,050,505,040 samples, 7.43%)</title><rect x="755.1" y="261" width="87.6" height="15.0" fill="rgb(240,205,16)" rx="2" ry="2" />
-<text  x="758.09" y="271.5" >tcmalloc::..</text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (212,121,210 samples, 1.50%)</title><rect x="822.0" y="373" width="17.7" height="15.0" fill="rgb(219,213,11)" rx="2" ry="2" />
+<text  x="824.99" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="11.7" y="245" width="0.8" height="15.0" fill="rgb(206,30,13)" rx="2" ry="2" />
-<text  x="14.69" y="255.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (1,121,212,110 samples, 7.94%)</title><rect x="747.7" y="405" width="93.7" height="15.0" fill="rgb(206,197,24)" rx="2" ry="2" />
+<text  x="750.71" y="415.5" >tcmalloc::t..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="847.8" y="245" width="0.8" height="15.0" fill="rgb(247,90,29)" rx="2" ry="2" />
-<text  x="850.80" y="255.5" ></text>
+<title>tcmalloc::tcmalloc_internal::central_freelist_internal::CentralFreeList&lt;tcmalloc::tcmalloc_internal::central_freelist_internal::StaticForwarder&gt;::RemoveRange (10,101,010 samples, 0.07%)</title><rect x="843.9" y="373" width="0.9" height="15.0" fill="rgb(216,141,47)" rx="2" ry="2" />
+<text  x="846.93" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="149" width="0.9" height="15.0" fill="rgb(216,36,45)" rx="2" ry="2" />
-<text  x="68.63" y="159.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::UpdateCapacity (10,101,010 samples, 0.07%)</title><rect x="606.8" y="373" width="0.8" height="15.0" fill="rgb(234,179,17)" rx="2" ry="2" />
+<text  x="609.75" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="197" width="0.9" height="15.0" fill="rgb(221,124,42)" rx="2" ry="2" />
-<text  x="13.84" y="207.5" ></text>
+<title>TCMallocInternalDeleteArraySized (272,727,270 samples, 1.93%)</title><rect x="11.7" y="421" width="22.8" height="15.0" fill="rgb(233,126,43)" rx="2" ry="2" />
+<text  x="14.69" y="431.5" >T..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="117" width="1.7" height="15.0" fill="rgb(235,30,40)" rx="2" ry="2" />
-<text  x="849.11" y="127.5" ></text>
+<title>clear_page_erms (10,101,010 samples, 0.07%)</title><rect x="843.9" y="213" width="0.9" height="15.0" fill="rgb(234,186,27)" rx="2" ry="2" />
+<text  x="846.93" y="223.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="213" width="171.9" height="15.0" fill="rgb(223,182,18)" rx="2" ry="2" />
-<text  x="1021.06" y="223.5" >[unknown]</text>
+<title>blk_mq_complete_request (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="165" width="0.8" height="15.0" fill="rgb(230,219,1)" rx="2" ry="2" />
+<text  x="1021.66" y="175.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::SampleifyAllocation&lt;tcmalloc::tcmalloc_internal::Static, tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::NullOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt; &gt; (40,404,040 samples, 0.29%)</title><rect x="750.9" y="245" width="3.3" height="15.0" fill="rgb(224,126,27)" rx="2" ry="2" />
-<text  x="753.87" y="255.5" ></text>
+<title>do_sys_open (20,202,020 samples, 0.14%)</title><rect x="848.2" y="341" width="1.6" height="15.0" fill="rgb(232,120,54)" rx="2" ry="2" />
+<text  x="851.15" y="351.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="165" width="171.9" height="15.0" fill="rgb(206,17,21)" rx="2" ry="2" />
-<text  x="1021.06" y="175.5" >[[kernel.kallsyms]]</text>
+<title>ima_file_check (10,101,010 samples, 0.07%)</title><rect x="848.2" y="261" width="0.8" height="15.0" fill="rgb(217,206,3)" rx="2" ry="2" />
+<text  x="851.15" y="271.5" ></text>
 </g>
 <g >
-<title>__sched_yield (10,101,010 samples, 0.07%)</title><rect x="66.5" y="277" width="0.8" height="15.0" fill="rgb(209,164,16)" rx="2" ry="2" />
-<text  x="69.47" y="287.5" ></text>
+<title>cpu_startup_entry (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="325" width="169.7" height="15.0" fill="rgb(216,118,11)" rx="2" ry="2" />
+<text  x="1022.50" y="335.5" >cpu_startup_entry</text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::TimeSeriesTracker&lt;tcmalloc::tcmalloc_internal::FillerStatsTracker&lt;600ul&gt;::FillerStatsEntry, tcmalloc::tcmalloc_internal::FillerStatsTracker&lt;600ul&gt;::FillerStats, 600ul&gt;::UpdateClock (10,101,010 samples, 0.07%)</title><rect x="753.4" y="181" width="0.8" height="15.0" fill="rgb(213,212,23)" rx="2" ry="2" />
-<text  x="756.40" y="191.5" ></text>
+<title>asm_sysvec_hyperv_callback (10,101,010 samples, 0.07%)</title><rect x="742.6" y="389" width="0.9" height="15.0" fill="rgb(251,97,41)" rx="2" ry="2" />
+<text  x="745.65" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="149" width="171.9" height="15.0" fill="rgb(228,35,28)" rx="2" ry="2" />
-<text  x="1021.06" y="159.5" >[[kernel.kallsyms]]</text>
+<title>arch_cpu_idle (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="341" width="169.7" height="15.0" fill="rgb(232,166,0)" rx="2" ry="2" />
+<text  x="852.84" y="351.5" >arch_cpu_idle</text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Deallocate (10,101,010 samples, 0.07%)</title><rect x="64.8" y="229" width="0.8" height="15.0" fill="rgb(244,225,30)" rx="2" ry="2" />
-<text  x="67.79" y="239.5" ></text>
+<title>absl::base_internal::SpinLock::SlowLock (10,101,010 samples, 0.07%)</title><rect x="820.3" y="373" width="0.8" height="15.0" fill="rgb(212,214,5)" rx="2" ry="2" />
+<text  x="823.30" y="383.5" ></text>
 </g>
 <g >
-<title>TCMallocInternalNewArray (1,515,151,500 samples, 10.71%)</title><rect x="621.9" y="261" width="126.4" height="15.0" fill="rgb(242,6,11)" rx="2" ry="2" />
-<text  x="624.91" y="271.5" >TCMallocInterna..</text>
+<title>absl::Now (10,101,010 samples, 0.07%)</title><rect x="745.2" y="373" width="0.8" height="15.0" fill="rgb(238,59,1)" rx="2" ry="2" />
+<text  x="748.18" y="383.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::Sampler::RecordAllocationSlow (10,101,010 samples, 0.07%)</title><rect x="754.2" y="245" width="0.9" height="15.0" fill="rgb(213,151,49)" rx="2" ry="2" />
-<text  x="757.24" y="255.5" ></text>
+<title>absl::base_internal::SpinLock::SpinLoop (10,101,010 samples, 0.07%)</title><rect x="821.1" y="373" width="0.9" height="15.0" fill="rgb(206,90,23)" rx="2" ry="2" />
+<text  x="824.14" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="101" width="0.9" height="15.0" fill="rgb(214,200,10)" rx="2" ry="2" />
-<text  x="66.94" y="111.5" ></text>
+<title>vmbus_on_event (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="213" width="0.8" height="15.0" fill="rgb(239,7,31)" rx="2" ry="2" />
+<text  x="1021.66" y="223.5" ></text>
 </g>
 <g >
-<title>runthreads (20,202,020 samples, 0.14%)</title><rect x="846.1" y="277" width="1.7" height="15.0" fill="rgb(241,17,17)" rx="2" ry="2" />
-<text  x="849.11" y="287.5" ></text>
+<title>swapper (4,060,606,020 samples, 28.76%)</title><rect x="849.8" y="437" width="339.4" height="15.0" fill="rgb(252,27,40)" rx="2" ry="2" />
+<text  x="852.84" y="447.5" >swapper</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="245" width="0.9" height="15.0" fill="rgb(242,183,52)" rx="2" ry="2" />
-<text  x="13.84" y="255.5" ></text>
+<title>__cpuidle_text_start (2,030,303,010 samples, 14.38%)</title><rect x="849.8" y="325" width="169.7" height="15.0" fill="rgb(240,97,39)" rx="2" ry="2" />
+<text  x="852.84" y="335.5" >__cpuidle_text_start</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="133" width="0.9" height="15.0" fill="rgb(220,111,10)" rx="2" ry="2" />
-<text  x="13.84" y="143.5" ></text>
+<title>TcmallocSlab_Internal_PushBatch (161,616,160 samples, 1.14%)</title><rect x="806.8" y="373" width="13.5" height="15.0" fill="rgb(211,39,33)" rx="2" ry="2" />
+<text  x="809.80" y="383.5" ></text>
 </g>
 <g >
-<title>log2@@GLIBC_2.29 (10,101,010 samples, 0.07%)</title><rect x="754.2" y="229" width="0.9" height="15.0" fill="rgb(240,32,32)" rx="2" ry="2" />
-<text  x="757.24" y="239.5" ></text>
+<title>__softirqentry_text_start (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="261" width="0.8" height="15.0" fill="rgb(227,118,52)" rx="2" ry="2" />
+<text  x="1021.66" y="271.5" ></text>
 </g>
 <g >
-<title>[libtcmalloc.so] (20,202,020 samples, 0.14%)</title><rect x="748.3" y="261" width="1.7" height="15.0" fill="rgb(227,131,26)" rx="2" ry="2" />
-<text  x="751.34" y="271.5" ></text>
+<title>walk_component (10,101,010 samples, 0.07%)</title><rect x="849.0" y="261" width="0.8" height="15.0" fill="rgb(221,117,33)" rx="2" ry="2" />
+<text  x="852.00" y="271.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Deallocate (10,101,010 samples, 0.07%)</title><rect x="842.7" y="261" width="0.9" height="15.0" fill="rgb(213,135,50)" rx="2" ry="2" />
-<text  x="845.74" y="271.5" ></text>
+<title>do_filp_open (20,202,020 samples, 0.14%)</title><rect x="848.2" y="309" width="1.6" height="15.0" fill="rgb(254,160,21)" rx="2" ry="2" />
+<text  x="851.15" y="319.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="69" width="1.7" height="15.0" fill="rgb(228,166,39)" rx="2" ry="2" />
-<text  x="849.11" y="79.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (10,101,010 samples, 0.07%)</title><rect x="841.4" y="405" width="0.8" height="15.0" fill="rgb(253,8,43)" rx="2" ry="2" />
+<text  x="844.40" y="415.5" ></text>
 </g>
 <g >
-<title>TcmallocSlab_Internal_PopBatch (111,111,110 samples, 0.79%)</title><rect x="592.4" y="213" width="9.3" height="15.0" fill="rgb(248,95,47)" rx="2" ry="2" />
-<text  x="595.41" y="223.5" ></text>
+<title>scsi_complete (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="149" width="0.8" height="15.0" fill="rgb(229,103,27)" rx="2" ry="2" />
+<text  x="1021.66" y="159.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="847.8" y="229" width="0.8" height="15.0" fill="rgb(206,10,0)" rx="2" ry="2" />
-<text  x="850.80" y="239.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (30,303,030 samples, 0.21%)</title><rect x="844.8" y="421" width="2.5" height="15.0" fill="rgb(240,14,34)" rx="2" ry="2" />
+<text  x="847.78" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="181" width="0.9" height="15.0" fill="rgb(211,106,32)" rx="2" ry="2" />
-<text  x="13.84" y="191.5" ></text>
+<title>irq_exit_rcu (10,101,010 samples, 0.07%)</title><rect x="742.6" y="357" width="0.9" height="15.0" fill="rgb(240,58,28)" rx="2" ry="2" />
+<text  x="745.65" y="367.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="245" width="0.9" height="15.0" fill="rgb(207,192,49)" rx="2" ry="2" />
-<text  x="68.63" y="255.5" ></text>
+<title>arch_call_rest_init (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="357" width="169.7" height="15.0" fill="rgb(240,39,0)" rx="2" ry="2" />
+<text  x="1022.50" y="367.5" >arch_call_rest_init</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.0" y="229" width="0.8" height="15.0" fill="rgb(241,39,1)" rx="2" ry="2" />
-<text  x="13.00" y="239.5" ></text>
+<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (10,101,010 samples, 0.07%)</title><rect x="843.9" y="389" width="0.9" height="15.0" fill="rgb(254,184,4)" rx="2" ry="2" />
+<text  x="846.93" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="53" width="1.7" height="15.0" fill="rgb(215,165,9)" rx="2" ry="2" />
-<text  x="849.11" y="63.5" ></text>
+<title>[libtcmalloc.so] (30,303,030 samples, 0.21%)</title><rect x="757.8" y="389" width="2.6" height="15.0" fill="rgb(250,126,17)" rx="2" ry="2" />
+<text  x="760.84" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="133" width="0.9" height="15.0" fill="rgb(221,166,28)" rx="2" ry="2" />
-<text  x="66.94" y="143.5" ></text>
+<title>tcmalloc::tcmalloc_internal::invoke_delete_hooks_and_free&lt;&amp;tcmalloc::tcmalloc_internal::(anonymous namespace)::do_free_pages,  (10,101,010 samples, 0.07%)</title><rect x="842.2" y="405" width="0.9" height="15.0" fill="rgb(211,127,1)" rx="2" ry="2" />
+<text  x="845.25" y="415.5" ></text>
 </g>
 <g >
-<title>TcmallocSlab_Internal_PushBatch (10,101,010 samples, 0.07%)</title><rect x="763.5" y="245" width="0.9" height="15.0" fill="rgb(211,176,30)" rx="2" ry="2" />
-<text  x="766.51" y="255.5" ></text>
+<title>task_dump_owner (10,101,010 samples, 0.07%)</title><rect x="849.0" y="197" width="0.8" height="15.0" fill="rgb(233,99,31)" rx="2" ry="2" />
+<text  x="852.00" y="207.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="229" width="0.9" height="15.0" fill="rgb(208,147,12)" rx="2" ry="2" />
-<text  x="13.84" y="239.5" ></text>
+<title>__memmove_avx_unaligned_erms (20,202,020 samples, 0.14%)</title><rect x="760.4" y="389" width="1.7" height="15.0" fill="rgb(231,87,33)" rx="2" ry="2" />
+<text  x="763.37" y="399.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,060,606,040 samples, 14.57%)</title><rect x="1018.1" y="197" width="171.9" height="15.0" fill="rgb(220,160,34)" rx="2" ry="2" />
-<text  x="1021.06" y="207.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="10.0" y="421" width="0.8" height="15.0" fill="rgb(221,183,50)" rx="2" ry="2" />
+<text  x="13.00" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.14%)</title><rect x="846.1" y="165" width="1.7" height="15.0" fill="rgb(205,198,7)" rx="2" ry="2" />
-<text  x="849.11" y="175.5" ></text>
+<title>tcmalloc::tcmalloc_internal::(anonymous namespace)::do_free_pages (10,101,010 samples, 0.07%)</title><rect x="518.1" y="389" width="0.9" height="15.0" fill="rgb(216,217,26)" rx="2" ry="2" />
+<text  x="521.13" y="399.5" ></text>
 </g>
 <g >
-<title>bench.sh (30,303,030 samples, 0.21%)</title><rect x="10.0" y="293" width="2.5" height="15.0" fill="rgb(219,197,27)" rx="2" ry="2" />
-<text  x="13.00" y="303.5" ></text>
+<title>runthreads (10,101,010 samples, 0.07%)</title><rect x="71.6" y="405" width="0.9" height="15.0" fill="rgb(226,115,31)" rx="2" ry="2" />
+<text  x="74.62" y="415.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.14%)</title><rect x="10.0" y="277" width="1.7" height="15.0" fill="rgb(205,138,47)" rx="2" ry="2" />
-<text  x="13.00" y="287.5" ></text>
+<title>blk_update_request (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="85" width="0.8" height="15.0" fill="rgb(249,48,21)" rx="2" ry="2" />
+<text  x="1021.66" y="95.5" ></text>
 </g>
 <g >
-<title>[libtcmalloc.so] (10,101,010 samples, 0.07%)</title><rect x="595.8" y="197" width="0.8" height="15.0" fill="rgb(227,131,18)" rx="2" ry="2" />
-<text  x="598.79" y="207.5" ></text>
+<title>[larson-sized] (252,525,250 samples, 1.79%)</title><rect x="50.5" y="421" width="21.1" height="15.0" fill="rgb(225,122,34)" rx="2" ry="2" />
+<text  x="53.52" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="11.7" y="229" width="0.8" height="15.0" fill="rgb(224,27,44)" rx="2" ry="2" />
-<text  x="14.69" y="239.5" ></text>
+<title>do_idle (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="309" width="169.7" height="15.0" fill="rgb(213,94,46)" rx="2" ry="2" />
+<text  x="1022.50" y="319.5" >do_idle</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="229" width="0.9" height="15.0" fill="rgb(220,66,3)" rx="2" ry="2" />
-<text  x="66.94" y="239.5" ></text>
+<title>start_kernel (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="373" width="169.7" height="15.0" fill="rgb(238,97,32)" rx="2" ry="2" />
+<text  x="1022.50" y="383.5" >start_kernel</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.0" y="213" width="0.8" height="15.0" fill="rgb(239,221,7)" rx="2" ry="2" />
-<text  x="13.00" y="223.5" ></text>
+<title>scsi_end_request (10,101,010 samples, 0.07%)</title><rect x="1018.7" y="101" width="0.8" height="15.0" fill="rgb(212,164,40)" rx="2" ry="2" />
+<text  x="1021.66" y="111.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Deallocate (1,020,202,010 samples, 7.21%)</title><rect x="536.8" y="245" width="85.1" height="15.0" fill="rgb(211,22,36)" rx="2" ry="2" />
-<text  x="539.79" y="255.5" >tcmalloc::..</text>
+<title>__x64_sys_openat (20,202,020 samples, 0.14%)</title><rect x="848.2" y="357" width="1.6" height="15.0" fill="rgb(254,156,54)" rx="2" ry="2" />
+<text  x="851.15" y="367.5" ></text>
 </g>
 <g >
-<title>tcmalloc::tcmalloc_internal::HugePageFiller&lt;tcmalloc::tcmalloc_internal::PageTracker&gt;::TryGet (10,101,010 samples, 0.07%)</title><rect x="753.4" y="213" width="0.8" height="15.0" fill="rgb(221,143,13)" rx="2" ry="2" />
-<text  x="756.40" y="223.5" ></text>
+<title>do_sys_openat2 (20,202,020 samples, 0.14%)</title><rect x="848.2" y="325" width="1.6" height="15.0" fill="rgb(248,109,53)" rx="2" ry="2" />
+<text  x="851.15" y="335.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="261" width="166.9" height="15.0" fill="rgb(247,124,12)" rx="2" ry="2" />
-<text  x="854.17" y="271.5" >[[kernel.kallsyms]]</text>
+<title>arch_cpu_idle (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="277" width="169.7" height="15.0" fill="rgb(224,202,51)" rx="2" ry="2" />
+<text  x="1022.50" y="287.5" >arch_cpu_idle</text>
 </g>
 <g >
-<title>dirname (10,101,010 samples, 0.07%)</title><rect x="12.5" y="293" width="0.9" height="15.0" fill="rgb(219,78,27)" rx="2" ry="2" />
-<text  x="15.53" y="303.5" ></text>
+<title>tcmalloc::tcmalloc_internal::Span::BuildFreelist (10,101,010 samples, 0.07%)</title><rect x="843.9" y="357" width="0.9" height="15.0" fill="rgb(248,220,5)" rx="2" ry="2" />
+<text  x="846.93" y="367.5" ></text>
 </g>
 <g >
-<title>__memmove_chk_avx_unaligned_erms (10,101,010 samples, 0.07%)</title><rect x="772.8" y="245" width="0.8" height="15.0" fill="rgb(241,28,18)" rx="2" ry="2" />
-<text  x="775.79" y="255.5" ></text>
+<title>x86_64_start_reservations (2,030,303,010 samples, 14.38%)</title><rect x="1019.5" y="389" width="169.7" height="15.0" fill="rgb(241,38,9)" rx="2" ry="2" />
+<text  x="1022.50" y="399.5" >x86_64_start_reservat..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="65.6" y="229" width="0.9" height="15.0" fill="rgb(207,160,53)" rx="2" ry="2" />
-<text  x="68.63" y="239.5" ></text>
-</g>
-<g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Refill (20,202,020 samples, 0.14%)</title><rect x="846.1" y="245" width="1.7" height="15.0" fill="rgb(217,206,33)" rx="2" ry="2" />
-<text  x="849.11" y="255.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (1,999,999,980 samples, 14.14%)</title><rect x="851.2" y="197" width="166.9" height="15.0" fill="rgb(222,70,43)" rx="2" ry="2" />
-<text  x="854.17" y="207.5" >[[kernel.kallsyms]]</text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="117" width="0.9" height="15.0" fill="rgb(220,190,42)" rx="2" ry="2" />
-<text  x="66.94" y="127.5" ></text>
-</g>
-<g >
-<title>__tls_get_addr (30,303,030 samples, 0.21%)</title><rect x="818.3" y="213" width="2.5" height="15.0" fill="rgb(220,107,39)" rx="2" ry="2" />
-<text  x="821.30" y="223.5" ></text>
-</g>
-<g >
-<title>[unknown] (20,202,020 samples, 0.14%)</title><rect x="63.9" y="277" width="1.7" height="15.0" fill="rgb(206,170,14)" rx="2" ry="2" />
-<text  x="66.94" y="287.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.0" y="197" width="0.8" height="15.0" fill="rgb(249,223,7)" rx="2" ry="2" />
-<text  x="13.00" y="207.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="213" width="0.9" height="15.0" fill="rgb(254,114,39)" rx="2" ry="2" />
-<text  x="13.84" y="223.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="63.9" y="197" width="0.9" height="15.0" fill="rgb(231,172,33)" rx="2" ry="2" />
-<text  x="66.94" y="207.5" ></text>
-</g>
-<g >
-<title>__memmove_avx_unaligned_erms (60,606,060 samples, 0.43%)</title><rect x="767.7" y="245" width="5.1" height="15.0" fill="rgb(229,59,35)" rx="2" ry="2" />
-<text  x="770.73" y="255.5" ></text>
-</g>
-<g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Overflow (767,676,760 samples, 5.43%)</title><rect x="557.9" y="229" width="64.0" height="15.0" fill="rgb(248,19,18)" rx="2" ry="2" />
-<text  x="560.86" y="239.5" >tcmallo..</text>
-</g>
-<g >
-<title>tcmalloc::tcmalloc_internal::cpu_cache_internal::CpuCache&lt;tcmalloc::tcmalloc_internal::cpu_cache_internal::StaticForwarder&gt;::Allocate&lt;&amp;tcmalloc::tcmalloc_internal::TCMallocPolicy&lt;tcmalloc::tcmalloc_internal::CppOomPolicy, tcmalloc::tcmalloc_internal::DefaultAlignPolicy, tcmalloc::tcmalloc_internal::AllocationAccessHotPolicy, tcmalloc::tcmalloc_internal::InvokeHooksPolicy, tcmalloc::tcmalloc_internal::NonSizeReturningPolicy, tcmalloc::tcmalloc_internal::LocalNumaPartitionPolicy&gt;::handle_oom&gt; (20,202,020 samples, 0.14%)</title><rect x="846.1" y="261" width="1.7" height="15.0" fill="rgb(234,7,2)" rx="2" ry="2" />
-<text  x="849.11" y="271.5" ></text>
-</g>
-<g >
-<title>__memmove_avx_unaligned_erms (20,202,020 samples, 0.14%)</title><rect x="556.2" y="229" width="1.7" height="15.0" fill="rgb(252,144,11)" rx="2" ry="2" />
-<text  x="559.17" y="239.5" ></text>
+<title>TCMallocInternalNewArray (1,626,262,610 samples, 11.52%)</title><rect x="607.6" y="405" width="135.9" height="15.0" fill="rgb(246,191,16)" rx="2" ry="2" />
+<text  x="610.60" y="415.5" >TCMallocInternalN..</text>
 </g>
 </g>
 </svg>

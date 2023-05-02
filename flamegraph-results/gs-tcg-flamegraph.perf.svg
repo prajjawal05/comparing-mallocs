@@ -430,936 +430,1480 @@
 <text id="matched" x="1090.00" y="2117" > </text>
 <g id="frames">
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="821" width="175.7" height="15.0" fill="rgb(245,147,30)" rx="2" ry="2" />
-<text  x="58.04" y="831.5" >[libgs.so.9.50]</text>
+<title>syscall_enter_from_user_mode (10,101,010 samples, 0.39%)</title><rect x="353.0" y="1989" width="4.6" height="15.0" fill="rgb(247,28,20)" rx="2" ry="2" />
+<text  x="356.02" y="1999.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1653" width="175.7" height="15.0" fill="rgb(227,203,17)" rx="2" ry="2" />
-<text  x="58.04" y="1663.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="997" width="9.2" height="15.0" fill="rgb(236,27,43)" rx="2" ry="2" />
+<text  x="319.43" y="1007.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="805" width="175.7" height="15.0" fill="rgb(253,204,5)" rx="2" ry="2" />
-<text  x="58.04" y="815.5" >[libgs.so.9.50]</text>
+<title>ztoken (10,101,010 samples, 0.39%)</title><rect x="229.5" y="37" width="4.6" height="15.0" fill="rgb(236,184,13)" rx="2" ry="2" />
+<text  x="232.53" y="47.5" ></text>
 </g>
 <g >
-<title>alloc_find_save (10,101,010 samples, 0.38%)</title><rect x="226.2" y="37" width="4.5" height="15.0" fill="rgb(238,66,4)" rx="2" ry="2" />
-<text  x="229.18" y="47.5" ></text>
-</g>
-<g >
-<title>gx_image_enum_begin (10,101,010 samples, 0.38%)</title><rect x="428.9" y="2037" width="4.5" height="15.0" fill="rgb(221,67,13)" rx="2" ry="2" />
-<text  x="431.85" y="2047.5" ></text>
-</g>
-<g >
-<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2005" width="306.3" height="15.0" fill="rgb(220,96,21)" rx="2" ry="2" />
-<text  x="886.74" y="2015.5" >[unknown]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="501" width="175.7" height="15.0" fill="rgb(241,203,26)" rx="2" ry="2" />
-<text  x="58.04" y="511.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>dict_put (10,101,010 samples, 0.38%)</title><rect x="334.3" y="2005" width="4.5" height="15.0" fill="rgb(219,152,7)" rx="2" ry="2" />
-<text  x="337.27" y="2015.5" ></text>
-</g>
-<g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1845" width="4.5" height="15.0" fill="rgb(236,158,23)" rx="2" ry="2" />
-<text  x="328.27" y="1855.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1733" width="175.7" height="15.0" fill="rgb(233,82,2)" rx="2" ry="2" />
-<text  x="58.04" y="1743.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1925" width="175.7" height="15.0" fill="rgb(207,42,0)" rx="2" ry="2" />
-<text  x="58.04" y="1935.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>gx_cpath_init_contained_shared (10,101,010 samples, 0.38%)</title><rect x="424.4" y="2037" width="4.5" height="15.0" fill="rgb(227,200,36)" rx="2" ry="2" />
-<text  x="427.35" y="2047.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1925" width="306.3" height="15.0" fill="rgb(206,211,38)" rx="2" ry="2" />
-<text  x="886.74" y="1935.5" >[[kernel.kallsyms]]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="117" width="175.7" height="15.0" fill="rgb(215,18,36)" rx="2" ry="2" />
-<text  x="58.04" y="127.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>_dl_sysdep_start (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2037" width="4.5" height="15.0" fill="rgb(228,173,4)" rx="2" ry="2" />
-<text  x="17.50" y="2047.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="517" width="175.7" height="15.0" fill="rgb(209,93,51)" rx="2" ry="2" />
-<text  x="58.04" y="527.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>gs_alloc_ref_array (10,101,010 samples, 0.38%)</title><rect x="550.5" y="2053" width="4.5" height="15.0" fill="rgb(238,51,34)" rx="2" ry="2" />
-<text  x="553.46" y="2063.5" ></text>
-</g>
-<g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2053" width="4.5" height="15.0" fill="rgb(241,95,8)" rx="2" ry="2" />
-<text  x="13.00" y="2063.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1797" width="175.7" height="15.0" fill="rgb(250,116,27)" rx="2" ry="2" />
-<text  x="58.04" y="1807.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1189" width="175.7" height="15.0" fill="rgb(240,0,44)" rx="2" ry="2" />
-<text  x="58.04" y="1199.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1221" width="175.7" height="15.0" fill="rgb(223,116,24)" rx="2" ry="2" />
-<text  x="58.04" y="1231.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (80,808,080 samples, 3.05%)</title><rect x="262.2" y="2037" width="36.0" height="15.0" fill="rgb(210,6,14)" rx="2" ry="2" />
-<text  x="265.21" y="2047.5" >[li..</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1829" width="175.7" height="15.0" fill="rgb(214,65,49)" rx="2" ry="2" />
-<text  x="58.04" y="1839.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="453" width="175.7" height="15.0" fill="rgb(251,54,17)" rx="2" ry="2" />
-<text  x="58.04" y="463.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>gs_currentcharmatrix (10,101,010 samples, 0.38%)</title><rect x="329.8" y="1989" width="4.5" height="15.0" fill="rgb(210,81,47)" rx="2" ry="2" />
-<text  x="332.77" y="1999.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1125" width="175.7" height="15.0" fill="rgb(241,76,28)" rx="2" ry="2" />
-<text  x="58.04" y="1135.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1909" width="175.7" height="15.0" fill="rgb(238,12,21)" rx="2" ry="2" />
-<text  x="58.04" y="1919.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[unknown] (323,232,320 samples, 12.21%)</title><rect x="68.5" y="53" width="144.2" height="15.0" fill="rgb(221,142,14)" rx="2" ry="2" />
-<text  x="71.55" y="63.5" >[unknown]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="725" width="175.7" height="15.0" fill="rgb(219,184,30)" rx="2" ry="2" />
-<text  x="58.04" y="735.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2021" width="4.5" height="15.0" fill="rgb(252,136,15)" rx="2" ry="2" />
-<text  x="436.36" y="2031.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1493" width="175.7" height="15.0" fill="rgb(236,2,29)" rx="2" ry="2" />
-<text  x="58.04" y="1503.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>obj_eq (20,202,020 samples, 0.76%)</title><rect x="460.4" y="2037" width="9.0" height="15.0" fill="rgb(205,141,47)" rx="2" ry="2" />
-<text  x="463.38" y="2047.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1429" width="175.7" height="15.0" fill="rgb(205,127,37)" rx="2" ry="2" />
-<text  x="58.04" y="1439.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="901" width="175.7" height="15.0" fill="rgb(228,3,41)" rx="2" ry="2" />
-<text  x="58.04" y="911.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1157" width="175.7" height="15.0" fill="rgb(242,19,33)" rx="2" ry="2" />
-<text  x="58.04" y="1167.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="2021" width="175.7" height="15.0" fill="rgb(205,82,38)" rx="2" ry="2" />
-<text  x="58.04" y="2031.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="581" width="175.7" height="15.0" fill="rgb(236,9,43)" rx="2" ry="2" />
-<text  x="58.04" y="591.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="565" width="175.7" height="15.0" fill="rgb(234,169,8)" rx="2" ry="2" />
-<text  x="58.04" y="575.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1685" width="175.7" height="15.0" fill="rgb(231,80,43)" rx="2" ry="2" />
-<text  x="58.04" y="1695.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="661" width="175.7" height="15.0" fill="rgb(209,174,9)" rx="2" ry="2" />
-<text  x="58.04" y="671.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[unknown] (40,404,040 samples, 1.53%)</title><rect x="212.7" y="53" width="18.0" height="15.0" fill="rgb(242,135,38)" rx="2" ry="2" />
-<text  x="215.67" y="63.5" ></text>
-</g>
-<g >
-<title>ref_stack_index (10,101,010 samples, 0.38%)</title><rect x="343.3" y="2021" width="4.5" height="15.0" fill="rgb(208,165,46)" rx="2" ry="2" />
-<text  x="346.28" y="2031.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2005" width="4.5" height="15.0" fill="rgb(250,9,38)" rx="2" ry="2" />
-<text  x="436.36" y="2015.5" ></text>
-</g>
-<g >
-<title>packed_get (10,101,010 samples, 0.38%)</title><rect x="469.4" y="2037" width="4.5" height="15.0" fill="rgb(225,99,13)" rx="2" ry="2" />
-<text  x="472.39" y="2047.5" ></text>
-</g>
-<g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1973" width="4.5" height="15.0" fill="rgb(210,195,33)" rx="2" ry="2" />
-<text  x="328.27" y="1983.5" ></text>
-</g>
-<g >
-<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1989" width="306.3" height="15.0" fill="rgb(251,183,16)" rx="2" ry="2" />
-<text  x="886.74" y="1999.5" >[unknown]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="85" width="175.7" height="15.0" fill="rgb(225,167,34)" rx="2" ry="2" />
-<text  x="58.04" y="95.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>bench.sh (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2069" width="4.5" height="15.0" fill="rgb(221,48,26)" rx="2" ry="2" />
+<title>bench.sh (10,101,010 samples, 0.39%)</title><rect x="10.0" y="2069" width="4.6" height="15.0" fill="rgb(247,57,3)" rx="2" ry="2" />
 <text  x="13.00" y="2079.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1781" width="175.7" height="15.0" fill="rgb(233,197,8)" rx="2" ry="2" />
-<text  x="58.04" y="1791.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="613" width="173.8" height="15.0" fill="rgb(213,214,49)" rx="2" ry="2" />
+<text  x="63.31" y="623.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1397" width="175.7" height="15.0" fill="rgb(207,19,29)" rx="2" ry="2" />
-<text  x="58.04" y="1407.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1685" width="9.2" height="15.0" fill="rgb(236,228,23)" rx="2" ry="2" />
+<text  x="319.43" y="1695.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="261" width="175.7" height="15.0" fill="rgb(244,34,27)" rx="2" ry="2" />
-<text  x="58.04" y="271.5" >[libgs.so.9.50]</text>
+<title>[liblcms2.so.2.0.8] (30,303,030 samples, 1.16%)</title><rect x="275.3" y="2037" width="13.7" height="15.0" fill="rgb(245,16,4)" rx="2" ry="2" />
+<text  x="278.27" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="757" width="175.7" height="15.0" fill="rgb(236,71,39)" rx="2" ry="2" />
-<text  x="58.04" y="767.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="229" width="173.8" height="15.0" fill="rgb(250,121,46)" rx="2" ry="2" />
+<text  x="63.31" y="239.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1349" width="175.7" height="15.0" fill="rgb(242,34,48)" rx="2" ry="2" />
-<text  x="58.04" y="1359.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1589" width="173.8" height="15.0" fill="rgb(207,135,1)" rx="2" ry="2" />
+<text  x="63.31" y="1599.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>sed (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2069" width="4.5" height="15.0" fill="rgb(244,139,0)" rx="2" ry="2" />
-<text  x="593.99" y="2079.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="485" width="9.2" height="15.0" fill="rgb(216,82,54)" rx="2" ry="2" />
+<text  x="319.43" y="495.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (454,545,450 samples, 17.18%)</title><rect x="28.0" y="2053" width="202.7" height="15.0" fill="rgb(229,20,30)" rx="2" ry="2" />
-<text  x="31.02" y="2063.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="693" width="173.8" height="15.0" fill="rgb(234,82,22)" rx="2" ry="2" />
+<text  x="63.31" y="703.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>adler32_z (10,101,010 samples, 0.38%)</title><rect x="496.4" y="2053" width="4.5" height="15.0" fill="rgb(237,5,8)" rx="2" ry="2" />
-<text  x="499.41" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="805" width="9.2" height="15.0" fill="rgb(230,142,23)" rx="2" ry="2" />
+<text  x="319.43" y="815.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1669" width="175.7" height="15.0" fill="rgb(213,188,14)" rx="2" ry="2" />
-<text  x="58.04" y="1679.5" >[libgs.so.9.50]</text>
+<title>ep_poll (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1973" width="4.6" height="15.0" fill="rgb(222,132,49)" rx="2" ry="2" />
+<text  x="589.28" y="1983.5" ></text>
 </g>
 <g >
-<title>__memset_avx2_erms (10,101,010 samples, 0.38%)</title><rect x="59.5" y="37" width="4.5" height="15.0" fill="rgb(236,26,24)" rx="2" ry="2" />
-<text  x="62.54" y="47.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="117" width="9.2" height="15.0" fill="rgb(246,215,38)" rx="2" ry="2" />
+<text  x="319.43" y="127.5" ></text>
 </g>
 <g >
-<title>inflate (20,202,020 samples, 0.76%)</title><rect x="437.9" y="2037" width="9.0" height="15.0" fill="rgb(218,183,32)" rx="2" ry="2" />
-<text  x="440.86" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1797" width="9.2" height="15.0" fill="rgb(225,147,33)" rx="2" ry="2" />
+<text  x="319.43" y="1807.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1957" width="4.5" height="15.0" fill="rgb(244,166,7)" rx="2" ry="2" />
-<text  x="328.27" y="1967.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1797" width="173.8" height="15.0" fill="rgb(205,87,4)" rx="2" ry="2" />
+<text  x="63.31" y="1807.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1893" width="4.5" height="15.0" fill="rgb(207,159,31)" rx="2" ry="2" />
-<text  x="328.27" y="1903.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="853" width="9.2" height="15.0" fill="rgb(229,126,6)" rx="2" ry="2" />
+<text  x="319.43" y="863.5" ></text>
 </g>
 <g >
-<title>clump_locate_ptr (10,101,010 samples, 0.38%)</title><rect x="500.9" y="2053" width="4.5" height="15.0" fill="rgb(242,110,47)" rx="2" ry="2" />
-<text  x="503.92" y="2063.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="805" width="173.8" height="15.0" fill="rgb(211,28,12)" rx="2" ry="2" />
+<text  x="63.31" y="815.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="149" width="175.7" height="15.0" fill="rgb(249,119,19)" rx="2" ry="2" />
-<text  x="58.04" y="159.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="245" width="173.8" height="15.0" fill="rgb(242,6,42)" rx="2" ry="2" />
+<text  x="63.31" y="255.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="165" width="175.7" height="15.0" fill="rgb(241,120,49)" rx="2" ry="2" />
-<text  x="58.04" y="175.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1605" width="9.2" height="15.0" fill="rgb(210,169,2)" rx="2" ry="2" />
+<text  x="319.43" y="1615.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1749" width="175.7" height="15.0" fill="rgb(237,211,41)" rx="2" ry="2" />
-<text  x="58.04" y="1759.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1333" width="173.8" height="15.0" fill="rgb(214,105,21)" rx="2" ry="2" />
+<text  x="63.31" y="1343.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (30,303,030 samples, 1.15%)</title><rect x="55.0" y="53" width="13.5" height="15.0" fill="rgb(229,11,32)" rx="2" ry="2" />
-<text  x="58.04" y="63.5" ></text>
+<title>ialloc_set_space (10,101,010 samples, 0.39%)</title><rect x="449.1" y="2037" width="4.5" height="15.0" fill="rgb(220,112,50)" rx="2" ry="2" />
+<text  x="452.07" y="2047.5" ></text>
 </g>
 <g >
-<title>_dl_relocate_object (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2005" width="4.5" height="15.0" fill="rgb(220,44,20)" rx="2" ry="2" />
-<text  x="17.50" y="2015.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.39%)</title><rect x="353.0" y="2021" width="4.6" height="15.0" fill="rgb(229,102,16)" rx="2" ry="2" />
+<text  x="356.02" y="2031.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="837" width="175.7" height="15.0" fill="rgb(244,130,35)" rx="2" ry="2" />
-<text  x="58.04" y="847.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (30,303,030 samples, 1.16%)</title><rect x="261.6" y="2037" width="13.7" height="15.0" fill="rgb(235,189,6)" rx="2" ry="2" />
+<text  x="264.55" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1013" width="175.7" height="15.0" fill="rgb(246,6,33)" rx="2" ry="2" />
-<text  x="58.04" y="1023.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="197" width="173.8" height="15.0" fill="rgb(224,114,53)" rx="2" ry="2" />
+<text  x="63.31" y="207.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="133" width="175.7" height="15.0" fill="rgb(215,146,37)" rx="2" ry="2" />
-<text  x="58.04" y="143.5" >[libgs.so.9.50]</text>
+<title>zop_def (10,101,010 samples, 0.39%)</title><rect x="499.4" y="2037" width="4.6" height="15.0" fill="rgb(242,158,7)" rx="2" ry="2" />
+<text  x="502.38" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1461" width="175.7" height="15.0" fill="rgb(215,129,50)" rx="2" ry="2" />
-<text  x="58.04" y="1471.5" >[libgs.so.9.50]</text>
+<title>zne (10,101,010 samples, 0.39%)</title><rect x="206.7" y="37" width="4.5" height="15.0" fill="rgb(245,72,20)" rx="2" ry="2" />
+<text  x="209.67" y="47.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1237" width="175.7" height="15.0" fill="rgb(209,53,51)" rx="2" ry="2" />
-<text  x="58.04" y="1247.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1285" width="9.2" height="15.0" fill="rgb(236,194,53)" rx="2" ry="2" />
+<text  x="319.43" y="1295.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="773" width="175.7" height="15.0" fill="rgb(205,108,9)" rx="2" ry="2" />
-<text  x="58.04" y="783.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="197" width="9.2" height="15.0" fill="rgb(218,115,38)" rx="2" ry="2" />
+<text  x="319.43" y="207.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2053" width="4.5" height="15.0" fill="rgb(233,123,32)" rx="2" ry="2" />
-<text  x="593.99" y="2063.5" ></text>
+<title>gs_lib_ctx_get_interp_instance (10,101,010 samples, 0.39%)</title><rect x="398.8" y="2037" width="4.5" height="15.0" fill="rgb(246,107,42)" rx="2" ry="2" />
+<text  x="401.76" y="2047.5" ></text>
 </g>
 <g >
-<title>[unknown] (40,404,040 samples, 1.53%)</title><rect x="212.7" y="69" width="18.0" height="15.0" fill="rgb(207,207,38)" rx="2" ry="2" />
-<text  x="215.67" y="79.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1109" width="9.2" height="15.0" fill="rgb(252,63,7)" rx="2" ry="2" />
+<text  x="319.43" y="1119.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2053" width="4.5" height="15.0" fill="rgb(240,93,41)" rx="2" ry="2" />
-<text  x="17.50" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="421" width="9.2" height="15.0" fill="rgb(236,192,3)" rx="2" ry="2" />
+<text  x="319.43" y="431.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2005" width="288.2" height="15.0" fill="rgb(234,191,49)" rx="2" ry="2" />
-<text  x="598.50" y="2015.5" >[[kernel.kallsyms]]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="181" width="173.8" height="15.0" fill="rgb(213,196,45)" rx="2" ry="2" />
+<text  x="63.31" y="191.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="229" width="175.7" height="15.0" fill="rgb(225,66,45)" rx="2" ry="2" />
-<text  x="58.04" y="239.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="501" width="173.8" height="15.0" fill="rgb(247,83,28)" rx="2" ry="2" />
+<text  x="63.31" y="511.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs_setcolorspace (10,101,010 samples, 0.38%)</title><rect x="419.8" y="2037" width="4.6" height="15.0" fill="rgb(236,224,10)" rx="2" ry="2" />
-<text  x="422.85" y="2047.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1941" width="173.8" height="15.0" fill="rgb(217,188,31)" rx="2" ry="2" />
+<text  x="63.31" y="1951.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>zindex (10,101,010 samples, 0.38%)</title><rect x="203.7" y="37" width="4.5" height="15.0" fill="rgb(210,33,17)" rx="2" ry="2" />
-<text  x="206.66" y="47.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="901" width="9.2" height="15.0" fill="rgb(226,17,4)" rx="2" ry="2" />
+<text  x="319.43" y="911.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="613" width="175.7" height="15.0" fill="rgb(252,45,17)" rx="2" ry="2" />
-<text  x="58.04" y="623.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="341" width="9.2" height="15.0" fill="rgb(205,160,27)" rx="2" ry="2" />
+<text  x="319.43" y="351.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="469" width="175.7" height="15.0" fill="rgb(247,20,10)" rx="2" ry="2" />
-<text  x="58.04" y="479.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="293" width="173.8" height="15.0" fill="rgb(248,215,10)" rx="2" ry="2" />
+<text  x="63.31" y="303.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs_c_glyph_name (10,101,010 samples, 0.38%)</title><rect x="555.0" y="2053" width="4.5" height="15.0" fill="rgb(229,217,29)" rx="2" ry="2" />
-<text  x="557.96" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1909" width="9.2" height="15.0" fill="rgb(251,159,31)" rx="2" ry="2" />
+<text  x="319.43" y="1919.5" ></text>
 </g>
 <g >
-<title>make_child (10,101,010 samples, 0.38%)</title><rect x="10.0" y="2037" width="4.5" height="15.0" fill="rgb(222,27,45)" rx="2" ry="2" />
-<text  x="13.00" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="469" width="9.2" height="15.0" fill="rgb(210,151,12)" rx="2" ry="2" />
+<text  x="319.43" y="479.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1317" width="175.7" height="15.0" fill="rgb(241,25,9)" rx="2" ry="2" />
-<text  x="58.04" y="1327.5" >[libgs.so.9.50]</text>
+<title>redis-server (10,101,010 samples, 0.39%)</title><rect x="586.3" y="2069" width="4.6" height="15.0" fill="rgb(205,13,50)" rx="2" ry="2" />
+<text  x="589.28" y="2079.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="693" width="175.7" height="15.0" fill="rgb(208,146,48)" rx="2" ry="2" />
-<text  x="58.04" y="703.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1733" width="9.2" height="15.0" fill="rgb(220,75,48)" rx="2" ry="2" />
+<text  x="319.43" y="1743.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="245" width="175.7" height="15.0" fill="rgb(226,100,54)" rx="2" ry="2" />
-<text  x="58.04" y="255.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (10,101,010 samples, 0.39%)</title><rect x="453.6" y="2005" width="4.6" height="15.0" fill="rgb(207,44,20)" rx="2" ry="2" />
+<text  x="456.64" y="2015.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="965" width="175.7" height="15.0" fill="rgb(232,212,3)" rx="2" ry="2" />
-<text  x="58.04" y="975.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="133" width="9.2" height="15.0" fill="rgb(206,130,3)" rx="2" ry="2" />
+<text  x="319.43" y="143.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="629" width="175.7" height="15.0" fill="rgb(219,142,18)" rx="2" ry="2" />
-<text  x="58.04" y="639.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1093" width="173.8" height="15.0" fill="rgb(246,102,45)" rx="2" ry="2" />
+<text  x="63.31" y="1103.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1269" width="175.7" height="15.0" fill="rgb(219,99,45)" rx="2" ry="2" />
-<text  x="58.04" y="1279.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1973" width="173.8" height="15.0" fill="rgb(226,84,4)" rx="2" ry="2" />
+<text  x="63.31" y="1983.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1845" width="175.7" height="15.0" fill="rgb(248,36,3)" rx="2" ry="2" />
-<text  x="58.04" y="1855.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1461" width="173.8" height="15.0" fill="rgb(229,49,37)" rx="2" ry="2" />
+<text  x="63.31" y="1471.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1861" width="4.5" height="15.0" fill="rgb(215,196,16)" rx="2" ry="2" />
-<text  x="328.27" y="1871.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="165" width="173.8" height="15.0" fill="rgb(253,195,19)" rx="2" ry="2" />
+<text  x="63.31" y="175.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>names_ref (10,101,010 samples, 0.38%)</title><rect x="338.8" y="2021" width="4.5" height="15.0" fill="rgb(245,80,28)" rx="2" ry="2" />
-<text  x="341.78" y="2031.5" ></text>
+<title>getname (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1941" width="4.5" height="15.0" fill="rgb(249,138,9)" rx="2" ry="2" />
+<text  x="593.85" y="1951.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.76%)</title><rect x="325.3" y="2005" width="9.0" height="15.0" fill="rgb(248,59,25)" rx="2" ry="2" />
-<text  x="328.27" y="2015.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="389" width="173.8" height="15.0" fill="rgb(215,57,17)" rx="2" ry="2" />
+<text  x="63.31" y="399.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>refcpy_to_old (10,101,010 samples, 0.38%)</title><rect x="473.9" y="2037" width="4.5" height="15.0" fill="rgb(248,151,9)" rx="2" ry="2" />
-<text  x="476.89" y="2047.5" ></text>
+<title>schedule_hrtimeout_range_clock (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1941" width="4.6" height="15.0" fill="rgb(219,4,25)" rx="2" ry="2" />
+<text  x="589.28" y="1951.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1029" width="175.7" height="15.0" fill="rgb(210,198,42)" rx="2" ry="2" />
-<text  x="58.04" y="1039.5" >[libgs.so.9.50]</text>
+<title>array_get (50,505,050 samples, 1.94%)</title><rect x="362.2" y="2037" width="22.8" height="15.0" fill="rgb(243,202,45)" rx="2" ry="2" />
+<text  x="365.17" y="2047.5" >a..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1973" width="306.3" height="15.0" fill="rgb(240,12,2)" rx="2" ry="2" />
-<text  x="886.74" y="1983.5" >[[kernel.kallsyms]]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1429" width="173.8" height="15.0" fill="rgb(219,82,14)" rx="2" ry="2" />
+<text  x="63.31" y="1439.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs (1,282,828,270 samples, 48.47%)</title><rect x="19.0" y="2069" width="572.0" height="15.0" fill="rgb(208,19,32)" rx="2" ry="2" />
-<text  x="22.01" y="2079.5" >gs</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="373" width="9.2" height="15.0" fill="rgb(214,129,51)" rx="2" ry="2" />
+<text  x="319.43" y="383.5" ></text>
 </g>
 <g >
-<title>names_ref (10,101,010 samples, 0.38%)</title><rect x="455.9" y="2037" width="4.5" height="15.0" fill="rgb(217,132,21)" rx="2" ry="2" />
-<text  x="458.88" y="2047.5" ></text>
+<title>zindex (20,202,020 samples, 0.78%)</title><rect x="490.2" y="2037" width="9.2" height="15.0" fill="rgb(251,84,5)" rx="2" ry="2" />
+<text  x="493.23" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1333" width="175.7" height="15.0" fill="rgb(219,27,54)" rx="2" ry="2" />
-<text  x="58.04" y="1343.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="741" width="9.2" height="15.0" fill="rgb(240,99,32)" rx="2" ry="2" />
+<text  x="319.43" y="751.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1989" width="288.2" height="15.0" fill="rgb(248,190,17)" rx="2" ry="2" />
-<text  x="598.50" y="1999.5" >[[kernel.kallsyms]]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="261" width="173.8" height="15.0" fill="rgb(217,140,14)" rx="2" ry="2" />
+<text  x="63.31" y="271.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="677" width="175.7" height="15.0" fill="rgb(251,60,12)" rx="2" ry="2" />
-<text  x="58.04" y="687.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="565" width="9.2" height="15.0" fill="rgb(236,94,28)" rx="2" ry="2" />
+<text  x="319.43" y="575.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1413" width="175.7" height="15.0" fill="rgb(245,85,13)" rx="2" ry="2" />
-<text  x="58.04" y="1423.5" >[libgs.so.9.50]</text>
+<title>[time] (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="2037" width="4.6" height="15.0" fill="rgb(222,0,34)" rx="2" ry="2" />
+<text  x="1188.43" y="2047.5" ></text>
 </g>
 <g >
-<title>cmsEvalToneCurveFloat (10,101,010 samples, 0.38%)</title><rect x="352.3" y="2037" width="4.5" height="15.0" fill="rgb(218,115,48)" rx="2" ry="2" />
-<text  x="355.29" y="2047.5" ></text>
+<title>clump_splay_walk_fwd (10,101,010 samples, 0.39%)</title><rect x="69.5" y="37" width="4.5" height="15.0" fill="rgb(250,52,26)" rx="2" ry="2" />
+<text  x="72.46" y="47.5" ></text>
 </g>
 <g >
-<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2037" width="306.3" height="15.0" fill="rgb(235,5,36)" rx="2" ry="2" />
-<text  x="886.74" y="2047.5" >[unknown]</text>
+<title>copy_user_generic_unrolled (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="1925" width="4.6" height="15.0" fill="rgb(241,55,32)" rx="2" ry="2" />
+<text  x="1188.43" y="1935.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="405" width="175.7" height="15.0" fill="rgb(215,104,26)" rx="2" ry="2" />
-<text  x="58.04" y="415.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1573" width="173.8" height="15.0" fill="rgb(209,10,17)" rx="2" ry="2" />
+<text  x="63.31" y="1583.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libz.so.1.2.11] (10,101,010 samples, 0.38%)</title><rect x="307.3" y="2037" width="4.5" height="15.0" fill="rgb(207,116,49)" rx="2" ry="2" />
-<text  x="310.25" y="2047.5" ></text>
+<title>llseek@GLIBC_2.2.5 (10,101,010 samples, 0.39%)</title><rect x="458.2" y="2037" width="4.6" height="15.0" fill="rgb(254,80,47)" rx="2" ry="2" />
+<text  x="461.22" y="2047.5" ></text>
 </g>
 <g >
-<title>[libfreetype.so.6.17.1] (10,101,010 samples, 0.38%)</title><rect x="23.5" y="2053" width="4.5" height="15.0" fill="rgb(224,36,8)" rx="2" ry="2" />
-<text  x="26.51" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1541" width="9.2" height="15.0" fill="rgb(217,37,19)" rx="2" ry="2" />
+<text  x="319.43" y="1551.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="853" width="175.7" height="15.0" fill="rgb(207,22,41)" rx="2" ry="2" />
-<text  x="58.04" y="863.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1941" width="9.2" height="15.0" fill="rgb(230,101,28)" rx="2" ry="2" />
+<text  x="319.43" y="1951.5" ></text>
 </g>
 <g >
-<title>gs_type1_decrypt (10,101,010 samples, 0.38%)</title><rect x="559.5" y="2053" width="4.5" height="15.0" fill="rgb(251,19,6)" rx="2" ry="2" />
-<text  x="562.47" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1413" width="9.2" height="15.0" fill="rgb(222,33,37)" rx="2" ry="2" />
+<text  x="319.43" y="1423.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1621" width="175.7" height="15.0" fill="rgb(245,54,44)" rx="2" ry="2" />
-<text  x="58.04" y="1631.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1733" width="173.8" height="15.0" fill="rgb(241,207,54)" rx="2" ry="2" />
+<text  x="63.31" y="1743.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1989" width="175.7" height="15.0" fill="rgb(230,195,9)" rx="2" ry="2" />
-<text  x="58.04" y="1999.5" >[libgs.so.9.50]</text>
+<title>gx_image1_plane_data (10,101,010 samples, 0.39%)</title><rect x="568.0" y="2053" width="4.6" height="15.0" fill="rgb(231,26,20)" rx="2" ry="2" />
+<text  x="570.98" y="2063.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1941" width="4.5" height="15.0" fill="rgb(235,200,53)" rx="2" ry="2" />
-<text  x="328.27" y="1951.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1221" width="9.2" height="15.0" fill="rgb(243,223,10)" rx="2" ry="2" />
+<text  x="319.43" y="1231.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="325" width="175.7" height="15.0" fill="rgb(230,103,2)" rx="2" ry="2" />
-<text  x="58.04" y="335.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1525" width="173.8" height="15.0" fill="rgb(234,74,34)" rx="2" ry="2" />
+<text  x="63.31" y="1535.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="949" width="175.7" height="15.0" fill="rgb(206,8,50)" rx="2" ry="2" />
-<text  x="58.04" y="959.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="2037" width="173.8" height="15.0" fill="rgb(242,206,46)" rx="2" ry="2" />
+<text  x="63.31" y="2047.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1365" width="175.7" height="15.0" fill="rgb(212,228,15)" rx="2" ry="2" />
-<text  x="58.04" y="1375.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="677" width="173.8" height="15.0" fill="rgb(223,96,45)" rx="2" ry="2" />
+<text  x="63.31" y="687.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1973" width="288.2" height="15.0" fill="rgb(241,82,40)" rx="2" ry="2" />
-<text  x="598.50" y="1983.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1173" width="9.2" height="15.0" fill="rgb(233,171,42)" rx="2" ry="2" />
+<text  x="319.43" y="1183.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1957" width="175.7" height="15.0" fill="rgb(236,4,15)" rx="2" ry="2" />
-<text  x="58.04" y="1967.5" >[libgs.so.9.50]</text>
+<title>names_ref (20,202,020 samples, 0.78%)</title><rect x="339.3" y="2021" width="9.1" height="15.0" fill="rgb(216,36,35)" rx="2" ry="2" />
+<text  x="342.30" y="2031.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1701" width="175.7" height="15.0" fill="rgb(221,176,39)" rx="2" ry="2" />
-<text  x="58.04" y="1711.5" >[libgs.so.9.50]</text>
+<title>epoll_wait (10,101,010 samples, 0.39%)</title><rect x="586.3" y="2053" width="4.6" height="15.0" fill="rgb(205,203,37)" rx="2" ry="2" />
+<text  x="589.28" y="2063.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (404,040,400 samples, 15.27%)</title><rect x="50.5" y="2037" width="180.2" height="15.0" fill="rgb(221,166,3)" rx="2" ry="2" />
-<text  x="53.53" y="2047.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1365" width="9.2" height="15.0" fill="rgb(234,22,40)" rx="2" ry="2" />
+<text  x="319.43" y="1375.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="917" width="175.7" height="15.0" fill="rgb(216,180,7)" rx="2" ry="2" />
-<text  x="58.04" y="927.5" >[libgs.so.9.50]</text>
+<title>do_idle (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="2005" width="462.0" height="15.0" fill="rgb(207,56,0)" rx="2" ry="2" />
+<text  x="598.43" y="2015.5" >do_idle</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (30,303,030 samples, 1.15%)</title><rect x="212.7" y="37" width="13.5" height="15.0" fill="rgb(243,203,24)" rx="2" ry="2" />
-<text  x="215.67" y="47.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1157" width="173.8" height="15.0" fill="rgb(222,72,30)" rx="2" ry="2" />
+<text  x="63.31" y="1167.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="197" width="175.7" height="15.0" fill="rgb(237,103,24)" rx="2" ry="2" />
-<text  x="58.04" y="207.5" >[libgs.so.9.50]</text>
+<title>__x64_sys_epoll_wait (10,101,010 samples, 0.39%)</title><rect x="586.3" y="2005" width="4.6" height="15.0" fill="rgb(242,24,47)" rx="2" ry="2" />
+<text  x="589.28" y="2015.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1829" width="4.5" height="15.0" fill="rgb(240,149,32)" rx="2" ry="2" />
-<text  x="328.27" y="1839.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1781" width="9.2" height="15.0" fill="rgb(237,227,8)" rx="2" ry="2" />
+<text  x="319.43" y="1791.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1957" width="306.3" height="15.0" fill="rgb(245,154,28)" rx="2" ry="2" />
-<text  x="886.74" y="1967.5" >[[kernel.kallsyms]]</text>
+<title>dstack_find_name_by_index (20,202,020 samples, 0.78%)</title><rect x="385.0" y="2037" width="9.2" height="15.0" fill="rgb(214,156,9)" rx="2" ry="2" />
+<text  x="388.04" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1861" width="175.7" height="15.0" fill="rgb(250,16,47)" rx="2" ry="2" />
-<text  x="58.04" y="1871.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1493" width="9.2" height="15.0" fill="rgb(249,129,49)" rx="2" ry="2" />
+<text  x="319.43" y="1503.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="789" width="175.7" height="15.0" fill="rgb(241,6,20)" rx="2" ry="2" />
-<text  x="58.04" y="799.5" >[libgs.so.9.50]</text>
+<title>[unknown] (30,303,030 samples, 1.16%)</title><rect x="311.9" y="2021" width="13.7" height="15.0" fill="rgb(233,209,42)" rx="2" ry="2" />
+<text  x="314.86" y="2031.5" ></text>
 </g>
 <g >
-<title>WRF_wbyte (10,101,010 samples, 0.38%)</title><rect x="311.8" y="2021" width="4.5" height="15.0" fill="rgb(224,151,41)" rx="2" ry="2" />
-<text  x="314.76" y="2031.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="389" width="9.2" height="15.0" fill="rgb(225,29,23)" rx="2" ry="2" />
+<text  x="319.43" y="399.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1445" width="175.7" height="15.0" fill="rgb(240,215,51)" rx="2" ry="2" />
-<text  x="58.04" y="1455.5" >[libgs.so.9.50]</text>
+<title>default_idle_call (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="1989" width="462.0" height="15.0" fill="rgb(213,160,47)" rx="2" ry="2" />
+<text  x="598.43" y="1999.5" >default_idle_call</text>
 </g>
 <g >
-<title>gs_scan_token (50,505,050 samples, 1.91%)</title><rect x="397.3" y="2037" width="22.5" height="15.0" fill="rgb(232,200,26)" rx="2" ry="2" />
-<text  x="400.33" y="2047.5" >g..</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="613" width="9.2" height="15.0" fill="rgb(221,60,13)" rx="2" ry="2" />
+<text  x="319.43" y="623.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="1957" width="288.2" height="15.0" fill="rgb(243,23,24)" rx="2" ry="2" />
-<text  x="598.50" y="1967.5" >[[kernel.kallsyms]]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1685" width="173.8" height="15.0" fill="rgb(248,147,3)" rx="2" ry="2" />
+<text  x="63.31" y="1695.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="357" width="175.7" height="15.0" fill="rgb(208,214,1)" rx="2" ry="2" />
-<text  x="58.04" y="367.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="965" width="9.2" height="15.0" fill="rgb(217,50,45)" rx="2" ry="2" />
+<text  x="319.43" y="975.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="341" width="175.7" height="15.0" fill="rgb(219,16,53)" rx="2" ry="2" />
-<text  x="58.04" y="351.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1893" width="173.8" height="15.0" fill="rgb(225,107,2)" rx="2" ry="2" />
+<text  x="63.31" y="1903.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="421" width="175.7" height="15.0" fill="rgb(240,53,39)" rx="2" ry="2" />
-<text  x="58.04" y="431.5" >[libgs.so.9.50]</text>
+<title>arch_call_rest_init (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1989" width="128.0" height="15.0" fill="rgb(213,84,54)" rx="2" ry="2" />
+<text  x="1060.36" y="1999.5" >arch_call_rest_i..</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="549" width="175.7" height="15.0" fill="rgb(238,141,21)" rx="2" ry="2" />
-<text  x="58.04" y="559.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="245" width="9.2" height="15.0" fill="rgb(240,204,13)" rx="2" ry="2" />
+<text  x="319.43" y="255.5" ></text>
 </g>
 <g >
-<title>intel_check_word.isra.0 (10,101,010 samples, 0.38%)</title><rect x="591.0" y="2037" width="4.5" height="15.0" fill="rgb(224,210,27)" rx="2" ry="2" />
-<text  x="593.99" y="2047.5" ></text>
+<title>dict_find (30,303,030 samples, 1.16%)</title><rect x="540.5" y="2053" width="13.8" height="15.0" fill="rgb(230,178,26)" rx="2" ry="2" />
+<text  x="543.54" y="2063.5" ></text>
 </g>
 <g >
-<title>[libfreetype.so.6.17.1] (10,101,010 samples, 0.38%)</title><rect x="257.7" y="2037" width="4.5" height="15.0" fill="rgb(247,59,16)" rx="2" ry="2" />
-<text  x="260.71" y="2047.5" ></text>
+<title>do_execveat_common.isra.0 (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="1957" width="4.6" height="15.0" fill="rgb(222,115,2)" rx="2" ry="2" />
+<text  x="1188.43" y="1967.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="869" width="175.7" height="15.0" fill="rgb(254,168,38)" rx="2" ry="2" />
-<text  x="58.04" y="879.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1221" width="173.8" height="15.0" fill="rgb(242,94,31)" rx="2" ry="2" />
+<text  x="63.31" y="1231.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 3.05%)</title><rect x="311.8" y="2037" width="36.0" height="15.0" fill="rgb(205,14,41)" rx="2" ry="2" />
-<text  x="314.76" y="2047.5" >[un..</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1285" width="173.8" height="15.0" fill="rgb(214,219,9)" rx="2" ry="2" />
+<text  x="63.31" y="1295.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="2021" width="306.3" height="15.0" fill="rgb(247,217,13)" rx="2" ry="2" />
-<text  x="886.74" y="2031.5" >[unknown]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="693" width="9.2" height="15.0" fill="rgb(226,110,0)" rx="2" ry="2" />
+<text  x="319.43" y="703.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1813" width="175.7" height="15.0" fill="rgb(211,77,20)" rx="2" ry="2" />
-<text  x="58.04" y="1823.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="949" width="173.8" height="15.0" fill="rgb(249,13,12)" rx="2" ry="2" />
+<text  x="63.31" y="959.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="437" width="175.7" height="15.0" fill="rgb(237,222,11)" rx="2" ry="2" />
-<text  x="58.04" y="447.5" >[libgs.so.9.50]</text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.39%)</title><rect x="590.9" y="2021" width="4.5" height="15.0" fill="rgb(220,147,52)" rx="2" ry="2" />
+<text  x="593.85" y="2031.5" ></text>
 </g>
 <g >
-<title>gs_gstate_release (10,101,010 samples, 0.38%)</title><rect x="383.8" y="2037" width="4.5" height="15.0" fill="rgb(213,46,27)" rx="2" ry="2" />
-<text  x="386.82" y="2047.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="645" width="173.8" height="15.0" fill="rgb(223,85,4)" rx="2" ry="2" />
+<text  x="63.31" y="655.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs_currentcpsimode (10,101,010 samples, 0.38%)</title><rect x="379.3" y="2037" width="4.5" height="15.0" fill="rgb(246,202,52)" rx="2" ry="2" />
-<text  x="382.31" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="981" width="9.2" height="15.0" fill="rgb(220,8,35)" rx="2" ry="2" />
+<text  x="319.43" y="991.5" ></text>
 </g>
 <g >
-<title>gs_grestore_only (20,202,020 samples, 0.76%)</title><rect x="181.1" y="37" width="9.1" height="15.0" fill="rgb(240,71,32)" rx="2" ry="2" />
-<text  x="184.15" y="47.5" ></text>
+<title>default_idle_call (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1925" width="128.0" height="15.0" fill="rgb(227,132,34)" rx="2" ry="2" />
+<text  x="1060.36" y="1935.5" >default_idle_call</text>
 </g>
 <g >
-<title>zroll (10,101,010 samples, 0.38%)</title><rect x="208.2" y="37" width="4.5" height="15.0" fill="rgb(213,41,19)" rx="2" ry="2" />
-<text  x="211.17" y="47.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1861" width="173.8" height="15.0" fill="rgb(252,16,31)" rx="2" ry="2" />
+<text  x="63.31" y="1871.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libz.so.1.2.11] (60,606,060 samples, 2.29%)</title><rect x="230.7" y="2053" width="27.0" height="15.0" fill="rgb(226,154,17)" rx="2" ry="2" />
-<text  x="233.69" y="2063.5" >[..</text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="2005" width="4.6" height="15.0" fill="rgb(250,176,43)" rx="2" ry="2" />
+<text  x="1188.43" y="2015.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1909" width="4.5" height="15.0" fill="rgb(242,31,29)" rx="2" ry="2" />
-<text  x="328.27" y="1919.5" ></text>
+<title>do_syscall_64 (10,101,010 samples, 0.39%)</title><rect x="590.9" y="2005" width="4.5" height="15.0" fill="rgb(237,175,14)" rx="2" ry="2" />
+<text  x="593.85" y="2015.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="933" width="175.7" height="15.0" fill="rgb(205,153,22)" rx="2" ry="2" />
-<text  x="58.04" y="943.5" >[libgs.so.9.50]</text>
+<title>gs_scan_token (10,101,010 samples, 0.39%)</title><rect x="554.3" y="2053" width="4.5" height="15.0" fill="rgb(245,166,43)" rx="2" ry="2" />
+<text  x="557.26" y="2063.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="181" width="175.7" height="15.0" fill="rgb(254,74,11)" rx="2" ry="2" />
-<text  x="58.04" y="191.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1029" width="173.8" height="15.0" fill="rgb(212,167,24)" rx="2" ry="2" />
+<text  x="63.31" y="1039.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="709" width="175.7" height="15.0" fill="rgb(209,121,26)" rx="2" ry="2" />
-<text  x="58.04" y="719.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="853" width="173.8" height="15.0" fill="rgb(219,94,26)" rx="2" ry="2" />
+<text  x="63.31" y="863.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1573" width="175.7" height="15.0" fill="rgb(253,191,29)" rx="2" ry="2" />
-<text  x="58.04" y="1583.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1509" width="173.8" height="15.0" fill="rgb(213,214,47)" rx="2" ry="2" />
+<text  x="63.31" y="1519.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>array_get (10,101,010 samples, 0.38%)</title><rect x="347.8" y="2037" width="4.5" height="15.0" fill="rgb(206,224,51)" rx="2" ry="2" />
-<text  x="350.79" y="2047.5" ></text>
+<title>zfor (10,101,010 samples, 0.39%)</title><rect x="202.1" y="37" width="4.6" height="15.0" fill="rgb(252,113,3)" rx="2" ry="2" />
+<text  x="205.09" y="47.5" ></text>
 </g>
 <g >
-<title>[liblcms2.so.2.0.8] (20,202,020 samples, 0.76%)</title><rect x="298.2" y="2037" width="9.1" height="15.0" fill="rgb(245,226,26)" rx="2" ry="2" />
-<text  x="301.24" y="2047.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="437" width="173.8" height="15.0" fill="rgb(218,173,1)" rx="2" ry="2" />
+<text  x="63.31" y="447.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1989" width="4.5" height="15.0" fill="rgb(219,209,10)" rx="2" ry="2" />
-<text  x="328.27" y="1999.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1093" width="9.2" height="15.0" fill="rgb(229,12,48)" rx="2" ry="2" />
+<text  x="319.43" y="1103.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1477" width="175.7" height="15.0" fill="rgb(230,16,40)" rx="2" ry="2" />
-<text  x="58.04" y="1487.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="901" width="173.8" height="15.0" fill="rgb(243,88,35)" rx="2" ry="2" />
+<text  x="63.31" y="911.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1813" width="4.5" height="15.0" fill="rgb(223,164,48)" rx="2" ry="2" />
-<text  x="328.27" y="1823.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="917" width="9.2" height="15.0" fill="rgb(246,76,18)" rx="2" ry="2" />
+<text  x="319.43" y="927.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2021" width="288.2" height="15.0" fill="rgb(248,12,42)" rx="2" ry="2" />
-<text  x="598.50" y="2031.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="293" width="9.2" height="15.0" fill="rgb(253,106,48)" rx="2" ry="2" />
+<text  x="319.43" y="303.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1893" width="175.7" height="15.0" fill="rgb(245,99,0)" rx="2" ry="2" />
-<text  x="58.04" y="1903.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="773" width="173.8" height="15.0" fill="rgb(223,83,46)" rx="2" ry="2" />
+<text  x="63.31" y="783.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1925" width="4.5" height="15.0" fill="rgb(238,116,52)" rx="2" ry="2" />
-<text  x="328.27" y="1935.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="821" width="173.8" height="15.0" fill="rgb(226,73,11)" rx="2" ry="2" />
+<text  x="63.31" y="831.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>dl_main (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2021" width="4.5" height="15.0" fill="rgb(239,16,17)" rx="2" ry="2" />
-<text  x="17.50" y="2031.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1045" width="173.8" height="15.0" fill="rgb(246,178,28)" rx="2" ry="2" />
+<text  x="63.31" y="1055.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>__pthread_mutex_unlock (20,202,020 samples, 0.76%)</title><rect x="487.4" y="2053" width="9.0" height="15.0" fill="rgb(213,184,45)" rx="2" ry="2" />
-<text  x="490.40" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1749" width="9.2" height="15.0" fill="rgb(237,132,49)" rx="2" ry="2" />
+<text  x="319.43" y="1759.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1877" width="175.7" height="15.0" fill="rgb(233,99,50)" rx="2" ry="2" />
-<text  x="58.04" y="1887.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="341" width="173.8" height="15.0" fill="rgb(219,116,30)" rx="2" ry="2" />
+<text  x="63.31" y="351.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (646,464,640 samples, 24.43%)</title><rect x="595.5" y="2037" width="288.2" height="15.0" fill="rgb(220,113,27)" rx="2" ry="2" />
-<text  x="598.50" y="2047.5" >[[kernel.kallsyms]]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1541" width="175.7" height="15.0" fill="rgb(214,73,7)" rx="2" ry="2" />
-<text  x="58.04" y="1551.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (252,525,250 samples, 9.54%)</title><rect x="68.5" y="37" width="112.6" height="15.0" fill="rgb(234,201,24)" rx="2" ry="2" />
-<text  x="71.55" y="47.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1509" width="175.7" height="15.0" fill="rgb(231,42,1)" rx="2" ry="2" />
-<text  x="58.04" y="1519.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1605" width="175.7" height="15.0" fill="rgb(213,80,45)" rx="2" ry="2" />
-<text  x="58.04" y="1615.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="981" width="175.7" height="15.0" fill="rgb(223,150,32)" rx="2" ry="2" />
-<text  x="58.04" y="991.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="645" width="175.7" height="15.0" fill="rgb(242,106,50)" rx="2" ry="2" />
-<text  x="58.04" y="655.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1301" width="175.7" height="15.0" fill="rgb(245,109,14)" rx="2" ry="2" />
-<text  x="58.04" y="1311.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1941" width="175.7" height="15.0" fill="rgb(239,85,41)" rx="2" ry="2" />
-<text  x="58.04" y="1951.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="277" width="175.7" height="15.0" fill="rgb(220,222,29)" rx="2" ry="2" />
-<text  x="58.04" y="287.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>dstack_find_name_by_index (40,404,040 samples, 1.53%)</title><rect x="532.4" y="2053" width="18.1" height="15.0" fill="rgb(248,37,29)" rx="2" ry="2" />
-<text  x="535.44" y="2063.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (353,535,350 samples, 13.36%)</title><rect x="55.0" y="69" width="157.7" height="15.0" fill="rgb(239,183,39)" rx="2" ry="2" />
-<text  x="58.04" y="79.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1285" width="175.7" height="15.0" fill="rgb(241,74,53)" rx="2" ry="2" />
-<text  x="58.04" y="1295.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1381" width="175.7" height="15.0" fill="rgb(242,154,41)" rx="2" ry="2" />
-<text  x="58.04" y="1391.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>zdiv (10,101,010 samples, 0.38%)</title><rect x="199.2" y="37" width="4.5" height="15.0" fill="rgb(227,131,51)" rx="2" ry="2" />
-<text  x="202.16" y="47.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1589" width="175.7" height="15.0" fill="rgb(252,11,17)" rx="2" ry="2" />
-<text  x="58.04" y="1599.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>ptr_is_within_mem_clumps (10,101,010 samples, 0.38%)</title><rect x="64.0" y="37" width="4.5" height="15.0" fill="rgb(221,115,16)" rx="2" ry="2" />
-<text  x="67.05" y="47.5" ></text>
-</g>
-<g >
-<title>dirname (10,101,010 samples, 0.38%)</title><rect x="14.5" y="2069" width="4.5" height="15.0" fill="rgb(251,52,47)" rx="2" ry="2" />
-<text  x="17.50" y="2079.5" ></text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1557" width="175.7" height="15.0" fill="rgb(231,80,31)" rx="2" ry="2" />
-<text  x="58.04" y="1567.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="741" width="175.7" height="15.0" fill="rgb(225,178,17)" rx="2" ry="2" />
-<text  x="58.04" y="751.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>swapper (1,333,333,320 samples, 50.38%)</title><rect x="595.5" y="2069" width="594.5" height="15.0" fill="rgb(254,109,1)" rx="2" ry="2" />
-<text  x="598.50" y="2079.5" >swapper</text>
-</g>
-<g >
-<title>names_ref (60,606,060 samples, 2.29%)</title><rect x="564.0" y="2053" width="27.0" height="15.0" fill="rgb(239,142,34)" rx="2" ry="2" />
-<text  x="566.97" y="2063.5" >n..</text>
-</g>
-<g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1045" width="175.7" height="15.0" fill="rgb(239,70,25)" rx="2" ry="2" />
-<text  x="58.04" y="1055.5" >[libgs.so.9.50]</text>
-</g>
-<g >
-<title>all (2,646,464,620 samples, 100%)</title><rect x="10.0" y="2085" width="1180.0" height="15.0" fill="rgb(240,220,1)" rx="2" ry="2" />
+<title>all (2,606,060,580 samples, 100%)</title><rect x="10.0" y="2085" width="1180.0" height="15.0" fill="rgb(217,73,28)" rx="2" ry="2" />
 <text  x="13.00" y="2095.5" ></text>
 </g>
 <g >
-<title>gs_moveto_aux (10,101,010 samples, 0.38%)</title><rect x="392.8" y="2037" width="4.5" height="15.0" fill="rgb(213,62,37)" rx="2" ry="2" />
-<text  x="395.82" y="2047.5" ></text>
+<title>gx_cpath_init_contained_shared (10,101,010 samples, 0.39%)</title><rect x="430.8" y="2037" width="4.5" height="15.0" fill="rgb(206,127,26)" rx="2" ry="2" />
+<text  x="433.78" y="2047.5" ></text>
 </g>
 <g >
-<title>dict_find (50,505,050 samples, 1.91%)</title><rect x="509.9" y="2053" width="22.5" height="15.0" fill="rgb(234,155,10)" rx="2" ry="2" />
-<text  x="512.92" y="2063.5" >d..</text>
+<title>packed_get (20,202,020 samples, 0.78%)</title><rect x="481.1" y="2037" width="9.1" height="15.0" fill="rgb(215,160,18)" rx="2" ry="2" />
+<text  x="484.09" y="2047.5" ></text>
 </g>
 <g >
-<title>igc_reloc_string (10,101,010 samples, 0.38%)</title><rect x="433.4" y="2037" width="4.5" height="15.0" fill="rgb(207,134,35)" rx="2" ry="2" />
-<text  x="436.36" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1893" width="9.2" height="15.0" fill="rgb(224,22,21)" rx="2" ry="2" />
+<text  x="319.43" y="1903.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="213" width="175.7" height="15.0" fill="rgb(244,33,14)" rx="2" ry="2" />
-<text  x="58.04" y="223.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="501" width="9.2" height="15.0" fill="rgb(245,72,43)" rx="2" ry="2" />
+<text  x="319.43" y="511.5" ></text>
 </g>
 <g >
-<title>lookup_gs_simple_font_encoding (10,101,010 samples, 0.38%)</title><rect x="451.4" y="2037" width="4.5" height="15.0" fill="rgb(227,219,8)" rx="2" ry="2" />
-<text  x="454.37" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="277" width="9.2" height="15.0" fill="rgb(215,123,27)" rx="2" ry="2" />
+<text  x="319.43" y="287.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="597" width="175.7" height="15.0" fill="rgb(249,69,37)" rx="2" ry="2" />
-<text  x="58.04" y="607.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (262,626,260 samples, 10.08%)</title><rect x="74.0" y="37" width="118.9" height="15.0" fill="rgb(231,101,26)" rx="2" ry="2" />
+<text  x="77.03" y="47.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="309" width="175.7" height="15.0" fill="rgb(236,189,37)" rx="2" ry="2" />
-<text  x="58.04" y="319.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1845" width="9.2" height="15.0" fill="rgb(224,61,26)" rx="2" ry="2" />
+<text  x="319.43" y="1855.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1061" width="175.7" height="15.0" fill="rgb(231,73,18)" rx="2" ry="2" />
-<text  x="58.04" y="1071.5" >[libgs.so.9.50]</text>
+<title>arch_cpu_idle (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1909" width="128.0" height="15.0" fill="rgb(224,131,19)" rx="2" ry="2" />
+<text  x="1060.36" y="1919.5" >arch_cpu_idle</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1893" width="306.3" height="15.0" fill="rgb(206,146,21)" rx="2" ry="2" />
-<text  x="886.74" y="1903.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1301" width="9.2" height="15.0" fill="rgb(254,155,23)" rx="2" ry="2" />
+<text  x="319.43" y="1311.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1765" width="175.7" height="15.0" fill="rgb(245,87,5)" rx="2" ry="2" />
-<text  x="58.04" y="1775.5" >[libgs.so.9.50]</text>
+<title>__GI___open64_nocancel (10,101,010 samples, 0.39%)</title><rect x="590.9" y="2037" width="4.5" height="15.0" fill="rgb(218,68,4)" rx="2" ry="2" />
+<text  x="593.85" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1077" width="175.7" height="15.0" fill="rgb(219,104,48)" rx="2" ry="2" />
-<text  x="58.04" y="1087.5" >[libgs.so.9.50]</text>
+<title>gs_swapcolors_quick (10,101,010 samples, 0.39%)</title><rect x="197.5" y="37" width="4.6" height="15.0" fill="rgb(212,45,45)" rx="2" ry="2" />
+<text  x="200.52" y="47.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (10,101,010 samples, 0.38%)</title><rect x="55.0" y="37" width="4.5" height="15.0" fill="rgb(243,28,34)" rx="2" ry="2" />
-<text  x="58.04" y="47.5" ></text>
+<title>gx_cpath_to_path_synthesize (20,202,020 samples, 0.78%)</title><rect x="439.9" y="2037" width="9.2" height="15.0" fill="rgb(240,191,52)" rx="2" ry="2" />
+<text  x="442.92" y="2047.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1093" width="175.7" height="15.0" fill="rgb(245,80,24)" rx="2" ry="2" />
-<text  x="58.04" y="1103.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="869" width="9.2" height="15.0" fill="rgb(241,120,34)" rx="2" ry="2" />
+<text  x="319.43" y="879.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1941" width="306.3" height="15.0" fill="rgb(214,35,20)" rx="2" ry="2" />
-<text  x="886.74" y="1951.5" >[[kernel.kallsyms]]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1253" width="173.8" height="15.0" fill="rgb(207,48,33)" rx="2" ry="2" />
+<text  x="63.31" y="1263.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>zif (10,101,010 samples, 0.38%)</title><rect x="478.4" y="2037" width="4.5" height="15.0" fill="rgb(206,6,34)" rx="2" ry="2" />
-<text  x="481.40" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1637" width="9.2" height="15.0" fill="rgb(226,112,10)" rx="2" ry="2" />
+<text  x="319.43" y="1647.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1637" width="175.7" height="15.0" fill="rgb(252,110,7)" rx="2" ry="2" />
-<text  x="58.04" y="1647.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1045" width="9.2" height="15.0" fill="rgb(222,45,14)" rx="2" ry="2" />
+<text  x="319.43" y="1055.5" ></text>
 </g>
 <g >
-<title>dstack_find_name_by_index (50,505,050 samples, 1.91%)</title><rect x="356.8" y="2037" width="22.5" height="15.0" fill="rgb(250,19,30)" rx="2" ry="2" />
-<text  x="359.79" y="2047.5" >d..</text>
+<title>__GI___execve (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="2021" width="4.6" height="15.0" fill="rgb(250,120,8)" rx="2" ry="2" />
+<text  x="1188.43" y="2031.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1525" width="175.7" height="15.0" fill="rgb(223,169,35)" rx="2" ry="2" />
-<text  x="58.04" y="1535.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="2005" width="173.8" height="15.0" fill="rgb(239,36,27)" rx="2" ry="2" />
+<text  x="63.31" y="2015.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="2005" width="175.7" height="15.0" fill="rgb(245,221,20)" rx="2" ry="2" />
-<text  x="58.04" y="2015.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1077" width="173.8" height="15.0" fill="rgb(224,82,2)" rx="2" ry="2" />
+<text  x="63.31" y="1087.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1205" width="175.7" height="15.0" fill="rgb(216,71,20)" rx="2" ry="2" />
-<text  x="58.04" y="1215.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1717" width="173.8" height="15.0" fill="rgb(242,73,43)" rx="2" ry="2" />
+<text  x="63.31" y="1727.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="389" width="175.7" height="15.0" fill="rgb(244,67,31)" rx="2" ry="2" />
-<text  x="58.04" y="399.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (343,434,340 samples, 13.18%)</title><rect x="60.3" y="69" width="155.5" height="15.0" fill="rgb(234,65,19)" rx="2" ry="2" />
+<text  x="63.31" y="79.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="293" width="175.7" height="15.0" fill="rgb(253,105,10)" rx="2" ry="2" />
-<text  x="58.04" y="303.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1957" width="173.8" height="15.0" fill="rgb(219,121,41)" rx="2" ry="2" />
+<text  x="63.31" y="1967.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="885" width="175.7" height="15.0" fill="rgb(254,16,3)" rx="2" ry="2" />
-<text  x="58.04" y="895.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1989" width="9.2" height="15.0" fill="rgb(239,205,0)" rx="2" ry="2" />
+<text  x="319.43" y="1999.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1141" width="175.7" height="15.0" fill="rgb(240,10,35)" rx="2" ry="2" />
-<text  x="58.04" y="1151.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="965" width="173.8" height="15.0" fill="rgb(249,37,15)" rx="2" ry="2" />
+<text  x="63.31" y="975.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="533" width="175.7" height="15.0" fill="rgb(230,122,45)" rx="2" ry="2" />
-<text  x="58.04" y="543.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1909" width="173.8" height="15.0" fill="rgb(240,9,0)" rx="2" ry="2" />
+<text  x="63.31" y="1919.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 1.15%)</title><rect x="325.3" y="2021" width="13.5" height="15.0" fill="rgb(252,116,13)" rx="2" ry="2" />
-<text  x="328.27" y="2031.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="629" width="9.2" height="15.0" fill="rgb(237,225,33)" rx="2" ry="2" />
+<text  x="319.43" y="639.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="997" width="175.7" height="15.0" fill="rgb(221,104,27)" rx="2" ry="2" />
-<text  x="58.04" y="1007.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1317" width="173.8" height="15.0" fill="rgb(234,63,47)" rx="2" ry="2" />
+<text  x="63.31" y="1327.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="373" width="175.7" height="15.0" fill="rgb(241,147,31)" rx="2" ry="2" />
-<text  x="58.04" y="383.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1109" width="173.8" height="15.0" fill="rgb(219,125,50)" rx="2" ry="2" />
+<text  x="63.31" y="1119.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs_matrix_multiply (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1797" width="4.5" height="15.0" fill="rgb(228,39,6)" rx="2" ry="2" />
-<text  x="328.27" y="1807.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="709" width="173.8" height="15.0" fill="rgb(217,181,31)" rx="2" ry="2" />
+<text  x="63.31" y="719.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>cmsReverseToneCurveEx (10,101,010 samples, 0.38%)</title><rect x="505.4" y="2053" width="4.5" height="15.0" fill="rgb(215,148,48)" rx="2" ry="2" />
-<text  x="508.42" y="2063.5" ></text>
+<title>__memcmp_avx2_movbe (40,404,040 samples, 1.55%)</title><rect x="513.1" y="2053" width="18.3" height="15.0" fill="rgb(231,183,33)" rx="2" ry="2" />
+<text  x="516.10" y="2063.5" ></text>
 </g>
 <g >
-<title>[unknown] (505,050,500 samples, 19.08%)</title><rect x="257.7" y="2053" width="225.2" height="15.0" fill="rgb(219,145,39)" rx="2" ry="2" />
-<text  x="260.71" y="2063.5" >[unknown]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1621" width="9.2" height="15.0" fill="rgb(248,71,40)" rx="2" ry="2" />
+<text  x="319.43" y="1631.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1253" width="175.7" height="15.0" fill="rgb(246,28,18)" rx="2" ry="2" />
-<text  x="58.04" y="1263.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="581" width="173.8" height="15.0" fill="rgb(236,26,51)" rx="2" ry="2" />
+<text  x="63.31" y="591.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1717" width="175.7" height="15.0" fill="rgb(210,107,42)" rx="2" ry="2" />
-<text  x="58.04" y="1727.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="709" width="9.2" height="15.0" fill="rgb(238,26,39)" rx="2" ry="2" />
+<text  x="319.43" y="719.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1973" width="175.7" height="15.0" fill="rgb(222,216,52)" rx="2" ry="2" />
-<text  x="58.04" y="1983.5" >[libgs.so.9.50]</text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1605" width="173.8" height="15.0" fill="rgb(205,21,48)" rx="2" ry="2" />
+<text  x="63.31" y="1615.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1173" width="175.7" height="15.0" fill="rgb(250,155,23)" rx="2" ry="2" />
-<text  x="58.04" y="1183.5" >[libgs.so.9.50]</text>
+<title>names_ref (30,303,030 samples, 1.16%)</title><rect x="572.6" y="2053" width="13.7" height="15.0" fill="rgb(229,182,37)" rx="2" ry="2" />
+<text  x="575.56" y="2063.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.38%)</title><rect x="325.3" y="1877" width="4.5" height="15.0" fill="rgb(234,187,15)" rx="2" ry="2" />
-<text  x="328.27" y="1887.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1317" width="9.2" height="15.0" fill="rgb(249,138,12)" rx="2" ry="2" />
+<text  x="319.43" y="1327.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (1,333,333,320 samples, 50.38%)</title><rect x="595.5" y="2053" width="594.5" height="15.0" fill="rgb(241,117,46)" rx="2" ry="2" />
-<text  x="598.50" y="2063.5" >[[kernel.kallsyms]]</text>
+<title>igc_reloc_string (10,101,010 samples, 0.39%)</title><rect x="453.6" y="2037" width="4.6" height="15.0" fill="rgb(240,199,8)" rx="2" ry="2" />
+<text  x="456.64" y="2047.5" ></text>
 </g>
 <g >
-<title>llseek@GLIBC_2.2.5 (10,101,010 samples, 0.38%)</title><rect x="446.9" y="2037" width="4.5" height="15.0" fill="rgb(247,34,27)" rx="2" ry="2" />
-<text  x="449.87" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1509" width="9.2" height="15.0" fill="rgb(216,150,0)" rx="2" ry="2" />
+<text  x="319.43" y="1519.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="101" width="175.7" height="15.0" fill="rgb(214,156,28)" rx="2" ry="2" />
-<text  x="58.04" y="111.5" >[libgs.so.9.50]</text>
+<title>WRF_wbyte (20,202,020 samples, 0.78%)</title><rect x="293.6" y="2021" width="9.1" height="15.0" fill="rgb(243,181,22)" rx="2" ry="2" />
+<text  x="296.57" y="2031.5" ></text>
 </g>
 <g >
-<title>gs_image_enum_alloc (10,101,010 samples, 0.38%)</title><rect x="388.3" y="2037" width="4.5" height="15.0" fill="rgb(208,131,30)" rx="2" ry="2" />
-<text  x="391.32" y="2047.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1813" width="173.8" height="15.0" fill="rgb(245,95,30)" rx="2" ry="2" />
+<text  x="63.31" y="1823.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>gs_swapcolors_quick (20,202,020 samples, 0.76%)</title><rect x="190.2" y="37" width="9.0" height="15.0" fill="rgb(251,138,19)" rx="2" ry="2" />
-<text  x="193.15" y="47.5" ></text>
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="629" width="173.8" height="15.0" fill="rgb(212,207,40)" rx="2" ry="2" />
+<text  x="63.31" y="639.5" >[libgs.so.9.50]</text>
 </g>
 <g >
-<title>[libfreetype.so.6.17.1] (20,202,020 samples, 0.76%)</title><rect x="316.3" y="2021" width="9.0" height="15.0" fill="rgb(229,114,17)" rx="2" ry="2" />
-<text  x="319.26" y="2031.5" ></text>
+<title>gs_scan_token (50,505,050 samples, 1.94%)</title><rect x="403.3" y="2037" width="22.9" height="15.0" fill="rgb(222,194,45)" rx="2" ry="2" />
+<text  x="406.33" y="2047.5" >g..</text>
 </g>
 <g >
-<title>__memmove_avx_unaligned_erms (10,101,010 samples, 0.38%)</title><rect x="482.9" y="2053" width="4.5" height="15.0" fill="rgb(226,229,21)" rx="2" ry="2" />
-<text  x="485.90" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1189" width="9.2" height="15.0" fill="rgb(245,54,20)" rx="2" ry="2" />
+<text  x="319.43" y="1199.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (686,868,680 samples, 25.95%)</title><rect x="883.7" y="1909" width="306.3" height="15.0" fill="rgb(208,59,0)" rx="2" ry="2" />
-<text  x="886.74" y="1919.5" >[[kernel.kallsyms]]</text>
+<title>__cpuidle_text_start (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="1957" width="462.0" height="15.0" fill="rgb(252,164,52)" rx="2" ry="2" />
+<text  x="598.43" y="1967.5" >__cpuidle_text_start</text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="1109" width="175.7" height="15.0" fill="rgb(209,70,7)" rx="2" ry="2" />
-<text  x="58.04" y="1119.5" >[libgs.so.9.50]</text>
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="85" width="9.2" height="15.0" fill="rgb(206,202,54)" rx="2" ry="2" />
+<text  x="319.43" y="95.5" ></text>
 </g>
 <g >
-<title>[libgs.so.9.50] (393,939,390 samples, 14.89%)</title><rect x="55.0" y="485" width="175.7" height="15.0" fill="rgb(247,122,23)" rx="2" ry="2" />
-<text  x="58.04" y="495.5" >[libgs.so.9.50]</text>
+<title>swapper (1,303,030,290 samples, 50.00%)</title><rect x="595.4" y="2069" width="590.0" height="15.0" fill="rgb(233,22,45)" rx="2" ry="2" />
+<text  x="598.43" y="2079.5" >swapper</text>
+</g>
+<g >
+<title>cmsReverseToneCurveEx (10,101,010 samples, 0.39%)</title><rect x="536.0" y="2053" width="4.5" height="15.0" fill="rgb(253,100,24)" rx="2" ry="2" />
+<text  x="538.97" y="2063.5" ></text>
+</g>
+<g >
+<title>__fxstat64 (10,101,010 samples, 0.39%)</title><rect x="353.0" y="2037" width="4.6" height="15.0" fill="rgb(225,89,15)" rx="2" ry="2" />
+<text  x="356.02" y="2047.5" ></text>
+</g>
+<g >
+<title>[libz.so.1.2.11] (60,606,060 samples, 2.33%)</title><rect x="234.1" y="2053" width="27.5" height="15.0" fill="rgb(235,62,54)" rx="2" ry="2" />
+<text  x="237.11" y="2063.5" >[..</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1237" width="9.2" height="15.0" fill="rgb(253,4,39)" rx="2" ry="2" />
+<text  x="319.43" y="1247.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="517" width="9.2" height="15.0" fill="rgb(236,27,47)" rx="2" ry="2" />
+<text  x="319.43" y="527.5" ></text>
+</g>
+<g >
+<title>do_sys_open (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1973" width="4.5" height="15.0" fill="rgb(214,112,46)" rx="2" ry="2" />
+<text  x="593.85" y="1983.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="309" width="173.8" height="15.0" fill="rgb(209,133,18)" rx="2" ry="2" />
+<text  x="63.31" y="319.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1557" width="9.2" height="15.0" fill="rgb(219,124,27)" rx="2" ry="2" />
+<text  x="319.43" y="1567.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1365" width="173.8" height="15.0" fill="rgb(214,184,37)" rx="2" ry="2" />
+<text  x="63.31" y="1375.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>schedule (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1925" width="4.6" height="15.0" fill="rgb(234,139,2)" rx="2" ry="2" />
+<text  x="589.28" y="1935.5" ></text>
+</g>
+<g >
+<title>zxor (10,101,010 samples, 0.39%)</title><rect x="211.2" y="37" width="4.6" height="15.0" fill="rgb(214,30,18)" rx="2" ry="2" />
+<text  x="214.24" y="47.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="757" width="9.2" height="15.0" fill="rgb(214,11,6)" rx="2" ry="2" />
+<text  x="319.43" y="767.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1429" width="9.2" height="15.0" fill="rgb(229,145,29)" rx="2" ry="2" />
+<text  x="319.43" y="1439.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="133" width="173.8" height="15.0" fill="rgb(231,67,41)" rx="2" ry="2" />
+<text  x="63.31" y="143.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1125" width="173.8" height="15.0" fill="rgb(240,117,44)" rx="2" ry="2" />
+<text  x="63.31" y="1135.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1141" width="173.8" height="15.0" fill="rgb(248,14,8)" rx="2" ry="2" />
+<text  x="63.31" y="1151.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>cpu_startup_entry (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1957" width="128.0" height="15.0" fill="rgb(215,38,41)" rx="2" ry="2" />
+<text  x="1060.36" y="1967.5" >cpu_startup_entry</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1013" width="173.8" height="15.0" fill="rgb(227,101,29)" rx="2" ry="2" />
+<text  x="63.31" y="1023.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>x86_64_start_reservations (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="2021" width="128.0" height="15.0" fill="rgb(250,65,6)" rx="2" ry="2" />
+<text  x="1060.36" y="2031.5" >x86_64_start_res..</text>
+</g>
+<g >
+<title>WRF_wstring (10,101,010 samples, 0.39%)</title><rect x="302.7" y="2021" width="4.6" height="15.0" fill="rgb(249,210,22)" rx="2" ry="2" />
+<text  x="305.71" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="213" width="173.8" height="15.0" fill="rgb(228,105,32)" rx="2" ry="2" />
+<text  x="63.31" y="223.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="437" width="9.2" height="15.0" fill="rgb(247,52,52)" rx="2" ry="2" />
+<text  x="319.43" y="447.5" ></text>
+</g>
+<g >
+<title>[libz.so.1.2.11] (10,101,010 samples, 0.39%)</title><rect x="289.0" y="2037" width="4.6" height="15.0" fill="rgb(208,65,8)" rx="2" ry="2" />
+<text  x="291.99" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="421" width="173.8" height="15.0" fill="rgb(231,96,54)" rx="2" ry="2" />
+<text  x="63.31" y="431.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="869" width="173.8" height="15.0" fill="rgb(251,141,21)" rx="2" ry="2" />
+<text  x="63.31" y="879.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="997" width="173.8" height="15.0" fill="rgb(227,130,37)" rx="2" ry="2" />
+<text  x="63.31" y="1007.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="773" width="9.2" height="15.0" fill="rgb(205,190,2)" rx="2" ry="2" />
+<text  x="319.43" y="783.5" ></text>
+</g>
+<g >
+<title>dict_put (10,101,010 samples, 0.39%)</title><rect x="330.2" y="2021" width="4.5" height="15.0" fill="rgb(239,39,26)" rx="2" ry="2" />
+<text  x="333.16" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1381" width="173.8" height="15.0" fill="rgb(216,136,39)" rx="2" ry="2" />
+<text  x="63.31" y="1391.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="165" width="9.2" height="15.0" fill="rgb(240,192,33)" rx="2" ry="2" />
+<text  x="319.43" y="175.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1573" width="9.2" height="15.0" fill="rgb(207,16,0)" rx="2" ry="2" />
+<text  x="319.43" y="1583.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="85" width="173.8" height="15.0" fill="rgb(229,149,34)" rx="2" ry="2" />
+<text  x="63.31" y="95.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="533" width="9.2" height="15.0" fill="rgb(246,59,25)" rx="2" ry="2" />
+<text  x="319.43" y="543.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="533" width="173.8" height="15.0" fill="rgb(251,67,24)" rx="2" ry="2" />
+<text  x="63.31" y="543.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="789" width="173.8" height="15.0" fill="rgb(212,155,22)" rx="2" ry="2" />
+<text  x="63.31" y="799.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>__x64_sys_openat (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1989" width="4.5" height="15.0" fill="rgb(224,185,47)" rx="2" ry="2" />
+<text  x="593.85" y="1999.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1253" width="9.2" height="15.0" fill="rgb(211,12,39)" rx="2" ry="2" />
+<text  x="319.43" y="1263.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.39%)</title><rect x="453.6" y="2021" width="4.6" height="15.0" fill="rgb(216,73,42)" rx="2" ry="2" />
+<text  x="456.64" y="2031.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1381" width="9.2" height="15.0" fill="rgb(251,180,43)" rx="2" ry="2" />
+<text  x="319.43" y="1391.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1333" width="9.2" height="15.0" fill="rgb(240,92,1)" rx="2" ry="2" />
+<text  x="319.43" y="1343.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="101" width="9.2" height="15.0" fill="rgb(249,106,17)" rx="2" ry="2" />
+<text  x="319.43" y="111.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1845" width="173.8" height="15.0" fill="rgb(253,148,5)" rx="2" ry="2" />
+<text  x="63.31" y="1855.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1205" width="9.2" height="15.0" fill="rgb(227,95,14)" rx="2" ry="2" />
+<text  x="319.43" y="1215.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="357" width="173.8" height="15.0" fill="rgb(230,87,2)" rx="2" ry="2" />
+<text  x="63.31" y="367.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1557" width="173.8" height="15.0" fill="rgb(223,47,16)" rx="2" ry="2" />
+<text  x="63.31" y="1567.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="277" width="173.8" height="15.0" fill="rgb(242,34,27)" rx="2" ry="2" />
+<text  x="63.31" y="287.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>start_kernel (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="2005" width="128.0" height="15.0" fill="rgb(236,19,8)" rx="2" ry="2" />
+<text  x="1060.36" y="2015.5" >start_kernel</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1413" width="173.8" height="15.0" fill="rgb(246,159,34)" rx="2" ry="2" />
+<text  x="63.31" y="1423.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="581" width="9.2" height="15.0" fill="rgb(244,84,34)" rx="2" ry="2" />
+<text  x="319.43" y="591.5" ></text>
+</g>
+<g >
+<title>__strcmp_avx2 (10,101,010 samples, 0.39%)</title><rect x="357.6" y="2037" width="4.6" height="15.0" fill="rgb(254,6,0)" rx="2" ry="2" />
+<text  x="360.60" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1525" width="9.2" height="15.0" fill="rgb(234,188,23)" rx="2" ry="2" />
+<text  x="319.43" y="1535.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="2005" width="9.2" height="15.0" fill="rgb(224,86,33)" rx="2" ry="2" />
+<text  x="319.43" y="2015.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1621" width="173.8" height="15.0" fill="rgb(251,184,52)" rx="2" ry="2" />
+<text  x="63.31" y="1631.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="405" width="173.8" height="15.0" fill="rgb(218,105,39)" rx="2" ry="2" />
+<text  x="63.31" y="415.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="725" width="9.2" height="15.0" fill="rgb(226,207,9)" rx="2" ry="2" />
+<text  x="319.43" y="735.5" ></text>
+</g>
+<g >
+<title>secondary_startup_64_no_verify (1,303,030,290 samples, 50.00%)</title><rect x="595.4" y="2053" width="590.0" height="15.0" fill="rgb(251,87,50)" rx="2" ry="2" />
+<text  x="598.43" y="2063.5" >secondary_startup_64_no_verify</text>
+</g>
+<g >
+<title>do_syscall_64 (10,101,010 samples, 0.39%)</title><rect x="353.0" y="2005" width="4.6" height="15.0" fill="rgb(248,78,23)" rx="2" ry="2" />
+<text  x="356.02" y="2015.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1957" width="9.2" height="15.0" fill="rgb(209,38,33)" rx="2" ry="2" />
+<text  x="319.43" y="1967.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="453" width="9.2" height="15.0" fill="rgb(238,76,45)" rx="2" ry="2" />
+<text  x="319.43" y="463.5" ></text>
+</g>
+<g >
+<title>sed (10,101,010 samples, 0.39%)</title><rect x="590.9" y="2069" width="4.5" height="15.0" fill="rgb(239,138,52)" rx="2" ry="2" />
+<text  x="593.85" y="2079.5" ></text>
+</g>
+<g >
+<title>schedule_hrtimeout_range (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1957" width="4.6" height="15.0" fill="rgb(210,123,42)" rx="2" ry="2" />
+<text  x="589.28" y="1967.5" ></text>
+</g>
+<g >
+<title>[unknown] (121,212,120 samples, 4.65%)</title><rect x="293.6" y="2037" width="54.8" height="15.0" fill="rgb(206,94,38)" rx="2" ry="2" />
+<text  x="296.57" y="2047.5" >[unkn..</text>
+</g>
+<g >
+<title>dstack_find_name_by_index (10,101,010 samples, 0.39%)</title><rect x="334.7" y="2021" width="4.6" height="15.0" fill="rgb(238,23,37)" rx="2" ry="2" />
+<text  x="337.73" y="2031.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1765" width="9.2" height="15.0" fill="rgb(224,42,23)" rx="2" ry="2" />
+<text  x="319.43" y="1775.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="725" width="173.8" height="15.0" fill="rgb(244,115,1)" rx="2" ry="2" />
+<text  x="63.31" y="735.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="149" width="9.2" height="15.0" fill="rgb(213,80,9)" rx="2" ry="2" />
+<text  x="319.43" y="159.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="485" width="173.8" height="15.0" fill="rgb(222,93,6)" rx="2" ry="2" />
+<text  x="63.31" y="495.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1653" width="9.2" height="15.0" fill="rgb(232,34,7)" rx="2" ry="2" />
+<text  x="319.43" y="1663.5" ></text>
+</g>
+<g >
+<title>__sched_text_start (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1909" width="4.6" height="15.0" fill="rgb(233,23,47)" rx="2" ry="2" />
+<text  x="589.28" y="1919.5" ></text>
+</g>
+<g >
+<title>__memchr_avx2 (10,101,010 samples, 0.39%)</title><rect x="325.6" y="2021" width="4.6" height="15.0" fill="rgb(242,180,38)" rx="2" ry="2" />
+<text  x="328.58" y="2031.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1029" width="9.2" height="15.0" fill="rgb(224,24,20)" rx="2" ry="2" />
+<text  x="319.43" y="1039.5" ></text>
+</g>
+<g >
+<title>kmem_cache_alloc (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1909" width="4.5" height="15.0" fill="rgb(254,225,51)" rx="2" ry="2" />
+<text  x="593.85" y="1919.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1301" width="173.8" height="15.0" fill="rgb(212,139,24)" rx="2" ry="2" />
+<text  x="63.31" y="1311.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="53" width="9.2" height="15.0" fill="rgb(224,178,52)" rx="2" ry="2" />
+<text  x="319.43" y="63.5" ></text>
+</g>
+<g >
+<title>finish_task_switch (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1893" width="4.6" height="15.0" fill="rgb(208,14,26)" rx="2" ry="2" />
+<text  x="589.28" y="1903.5" ></text>
+</g>
+<g >
+<title>do_sys_openat2 (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1957" width="4.5" height="15.0" fill="rgb(226,110,24)" rx="2" ry="2" />
+<text  x="593.85" y="1967.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="757" width="173.8" height="15.0" fill="rgb(205,132,40)" rx="2" ry="2" />
+<text  x="63.31" y="767.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1445" width="173.8" height="15.0" fill="rgb(237,146,25)" rx="2" ry="2" />
+<text  x="63.31" y="1455.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1237" width="173.8" height="15.0" fill="rgb(219,125,52)" rx="2" ry="2" />
+<text  x="63.31" y="1247.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="885" width="9.2" height="15.0" fill="rgb(247,203,19)" rx="2" ry="2" />
+<text  x="319.43" y="895.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1349" width="173.8" height="15.0" fill="rgb(222,16,37)" rx="2" ry="2" />
+<text  x="63.31" y="1359.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1173" width="173.8" height="15.0" fill="rgb(221,180,37)" rx="2" ry="2" />
+<text  x="63.31" y="1183.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1829" width="9.2" height="15.0" fill="rgb(240,229,11)" rx="2" ry="2" />
+<text  x="319.43" y="1839.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1973" width="9.2" height="15.0" fill="rgb(225,41,23)" rx="2" ry="2" />
+<text  x="319.43" y="1983.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1445" width="9.2" height="15.0" fill="rgb(222,220,53)" rx="2" ry="2" />
+<text  x="319.43" y="1455.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1269" width="173.8" height="15.0" fill="rgb(213,134,33)" rx="2" ry="2" />
+<text  x="63.31" y="1279.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1877" width="9.2" height="15.0" fill="rgb(235,166,9)" rx="2" ry="2" />
+<text  x="319.43" y="1887.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="549" width="173.8" height="15.0" fill="rgb(219,129,54)" rx="2" ry="2" />
+<text  x="63.31" y="559.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1749" width="173.8" height="15.0" fill="rgb(205,29,38)" rx="2" ry="2" />
+<text  x="63.31" y="1759.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>start_secondary (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="2037" width="462.0" height="15.0" fill="rgb(223,29,23)" rx="2" ry="2" />
+<text  x="598.43" y="2047.5" >start_secondary</text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="2053" width="4.6" height="15.0" fill="rgb(222,95,7)" rx="2" ry="2" />
+<text  x="1188.43" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="933" width="9.2" height="15.0" fill="rgb(226,7,22)" rx="2" ry="2" />
+<text  x="319.43" y="943.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="645" width="9.2" height="15.0" fill="rgb(213,113,22)" rx="2" ry="2" />
+<text  x="319.43" y="655.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="69" width="9.2" height="15.0" fill="rgb(210,139,51)" rx="2" ry="2" />
+<text  x="319.43" y="79.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="453" width="173.8" height="15.0" fill="rgb(228,49,22)" rx="2" ry="2" />
+<text  x="63.31" y="463.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (10,101,010 samples, 0.39%)</title><rect x="311.9" y="2005" width="4.5" height="15.0" fill="rgb(229,66,26)" rx="2" ry="2" />
+<text  x="314.86" y="2015.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1653" width="173.8" height="15.0" fill="rgb(247,58,29)" rx="2" ry="2" />
+<text  x="63.31" y="1663.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libfreetype.so.6.17.1] (10,101,010 samples, 0.39%)</title><rect x="307.3" y="2021" width="4.6" height="15.0" fill="rgb(206,36,21)" rx="2" ry="2" />
+<text  x="310.29" y="2031.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1077" width="9.2" height="15.0" fill="rgb(227,74,5)" rx="2" ry="2" />
+<text  x="319.43" y="1087.5" ></text>
+</g>
+<g >
+<title>gx_cpath_to_path (10,101,010 samples, 0.39%)</title><rect x="435.3" y="2037" width="4.6" height="15.0" fill="rgb(246,64,10)" rx="2" ry="2" />
+<text  x="438.35" y="2047.5" ></text>
+</g>
+<g >
+<title>_IO_file_seekoff@@GLIBC_2.2.5 (10,101,010 samples, 0.39%)</title><rect x="348.4" y="2037" width="4.6" height="15.0" fill="rgb(231,83,20)" rx="2" ry="2" />
+<text  x="351.45" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (10,101,010 samples, 0.39%)</title><rect x="10.0" y="2053" width="4.6" height="15.0" fill="rgb(207,126,32)" rx="2" ry="2" />
+<text  x="13.00" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1701" width="9.2" height="15.0" fill="rgb(237,59,42)" rx="2" ry="2" />
+<text  x="319.43" y="1711.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="565" width="173.8" height="15.0" fill="rgb(229,100,49)" rx="2" ry="2" />
+<text  x="63.31" y="575.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>__mbrtowc (10,101,010 samples, 0.39%)</title><rect x="10.0" y="2037" width="4.6" height="15.0" fill="rgb(222,98,5)" rx="2" ry="2" />
+<text  x="13.00" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1477" width="173.8" height="15.0" fill="rgb(239,205,0)" rx="2" ry="2" />
+<text  x="63.31" y="1487.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>__x64_sys_execve (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="1973" width="4.6" height="15.0" fill="rgb(250,52,0)" rx="2" ry="2" />
+<text  x="1188.43" y="1983.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1765" width="173.8" height="15.0" fill="rgb(245,69,19)" rx="2" ry="2" />
+<text  x="63.31" y="1775.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="181" width="9.2" height="15.0" fill="rgb(232,228,29)" rx="2" ry="2" />
+<text  x="319.43" y="191.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="677" width="9.2" height="15.0" fill="rgb(207,146,18)" rx="2" ry="2" />
+<text  x="319.43" y="687.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="37" width="9.2" height="15.0" fill="rgb(210,113,23)" rx="2" ry="2" />
+<text  x="319.43" y="47.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1397" width="173.8" height="15.0" fill="rgb(220,38,31)" rx="2" ry="2" />
+<text  x="63.31" y="1407.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1125" width="9.2" height="15.0" fill="rgb(205,177,38)" rx="2" ry="2" />
+<text  x="319.43" y="1135.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="357" width="9.2" height="15.0" fill="rgb(243,71,6)" rx="2" ry="2" />
+<text  x="319.43" y="367.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1541" width="173.8" height="15.0" fill="rgb(249,11,10)" rx="2" ry="2" />
+<text  x="63.31" y="1551.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="261" width="9.2" height="15.0" fill="rgb(233,43,43)" rx="2" ry="2" />
+<text  x="319.43" y="271.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="309" width="9.2" height="15.0" fill="rgb(247,73,15)" rx="2" ry="2" />
+<text  x="319.43" y="319.5" ></text>
+</g>
+<g >
+<title>time (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="2069" width="4.6" height="15.0" fill="rgb(217,51,50)" rx="2" ry="2" />
+<text  x="1188.43" y="2079.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1157" width="9.2" height="15.0" fill="rgb(214,67,35)" rx="2" ry="2" />
+<text  x="319.43" y="1167.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="597" width="173.8" height="15.0" fill="rgb(224,152,7)" rx="2" ry="2" />
+<text  x="63.31" y="607.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="101" width="173.8" height="15.0" fill="rgb(250,88,17)" rx="2" ry="2" />
+<text  x="63.31" y="111.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libfreetype.so.6.17.1] (20,202,020 samples, 0.78%)</title><rect x="19.1" y="2053" width="9.2" height="15.0" fill="rgb(245,227,49)" rx="2" ry="2" />
+<text  x="22.15" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="597" width="9.2" height="15.0" fill="rgb(228,224,54)" rx="2" ry="2" />
+<text  x="319.43" y="607.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1477" width="9.2" height="15.0" fill="rgb(211,102,18)" rx="2" ry="2" />
+<text  x="319.43" y="1487.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="821" width="9.2" height="15.0" fill="rgb(230,151,49)" rx="2" ry="2" />
+<text  x="319.43" y="831.5" ></text>
+</g>
+<g >
+<title>dstack_find_name_by_index (10,101,010 samples, 0.39%)</title><rect x="192.9" y="37" width="4.6" height="15.0" fill="rgb(236,199,37)" rx="2" ry="2" />
+<text  x="195.95" y="47.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1925" width="9.2" height="15.0" fill="rgb(231,104,33)" rx="2" ry="2" />
+<text  x="319.43" y="1935.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="933" width="173.8" height="15.0" fill="rgb(221,71,30)" rx="2" ry="2" />
+<text  x="63.31" y="943.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1349" width="9.2" height="15.0" fill="rgb(232,66,6)" rx="2" ry="2" />
+<text  x="319.43" y="1359.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="325" width="9.2" height="15.0" fill="rgb(252,59,21)" rx="2" ry="2" />
+<text  x="319.43" y="335.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1669" width="173.8" height="15.0" fill="rgb(253,18,1)" rx="2" ry="2" />
+<text  x="63.31" y="1679.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1397" width="9.2" height="15.0" fill="rgb(207,62,24)" rx="2" ry="2" />
+<text  x="319.43" y="1407.5" ></text>
+</g>
+<g >
+<title>arch_cpu_idle (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="1973" width="462.0" height="15.0" fill="rgb(241,24,17)" rx="2" ry="2" />
+<text  x="598.43" y="1983.5" >arch_cpu_idle</text>
+</g>
+<g >
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.39%)</title><rect x="586.3" y="2037" width="4.6" height="15.0" fill="rgb(218,79,19)" rx="2" ry="2" />
+<text  x="589.28" y="2047.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="789" width="9.2" height="15.0" fill="rgb(245,214,22)" rx="2" ry="2" />
+<text  x="319.43" y="799.5" ></text>
+</g>
+<g >
+<title>do_epoll_wait (10,101,010 samples, 0.39%)</title><rect x="586.3" y="1989" width="4.6" height="15.0" fill="rgb(218,38,18)" rx="2" ry="2" />
+<text  x="589.28" y="1999.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1781" width="173.8" height="15.0" fill="rgb(243,105,22)" rx="2" ry="2" />
+<text  x="63.31" y="1791.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="549" width="9.2" height="15.0" fill="rgb(228,121,34)" rx="2" ry="2" />
+<text  x="319.43" y="559.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="117" width="173.8" height="15.0" fill="rgb(211,206,32)" rx="2" ry="2" />
+<text  x="63.31" y="127.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (313,131,310 samples, 12.02%)</title><rect x="74.0" y="53" width="141.8" height="15.0" fill="rgb(224,1,12)" rx="2" ry="2" />
+<text  x="77.03" y="63.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1701" width="173.8" height="15.0" fill="rgb(213,131,46)" rx="2" ry="2" />
+<text  x="63.31" y="1711.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="885" width="173.8" height="15.0" fill="rgb(249,208,52)" rx="2" ry="2" />
+<text  x="63.31" y="895.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>abs (10,101,010 samples, 0.39%)</title><rect x="531.4" y="2053" width="4.6" height="15.0" fill="rgb(245,97,43)" rx="2" ry="2" />
+<text  x="534.40" y="2063.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="2021" width="173.8" height="15.0" fill="rgb(232,52,47)" rx="2" ry="2" />
+<text  x="63.31" y="2031.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>__cpuidle_text_start (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1893" width="128.0" height="15.0" fill="rgb(235,2,31)" rx="2" ry="2" />
+<text  x="1060.36" y="1903.5" >__cpuidle_text_s..</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1269" width="9.2" height="15.0" fill="rgb(250,55,13)" rx="2" ry="2" />
+<text  x="319.43" y="1279.5" ></text>
+</g>
+<g >
+<title>names_ref (40,404,040 samples, 1.55%)</title><rect x="462.8" y="2037" width="18.3" height="15.0" fill="rgb(236,179,1)" rx="2" ry="2" />
+<text  x="465.79" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (30,303,030 samples, 1.16%)</title><rect x="60.3" y="53" width="13.7" height="15.0" fill="rgb(237,137,21)" rx="2" ry="2" />
+<text  x="63.31" y="63.5" ></text>
+</g>
+<g >
+<title>do_idle (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1941" width="128.0" height="15.0" fill="rgb(247,141,37)" rx="2" ry="2" />
+<text  x="1060.36" y="1951.5" >do_idle</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1637" width="173.8" height="15.0" fill="rgb(243,22,26)" rx="2" ry="2" />
+<text  x="63.31" y="1647.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>gs (1,262,626,250 samples, 48.45%)</title><rect x="14.6" y="2069" width="571.7" height="15.0" fill="rgb(232,204,46)" rx="2" ry="2" />
+<text  x="17.57" y="2079.5" >gs</text>
+</g>
+<g >
+<title>gs_screen_currentpoint (10,101,010 samples, 0.39%)</title><rect x="426.2" y="2037" width="4.6" height="15.0" fill="rgb(216,10,17)" rx="2" ry="2" />
+<text  x="429.20" y="2047.5" ></text>
+</g>
+<g >
+<title>do_syscall_64 (10,101,010 samples, 0.39%)</title><rect x="586.3" y="2021" width="4.6" height="15.0" fill="rgb(216,141,49)" rx="2" ry="2" />
+<text  x="589.28" y="2031.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="661" width="173.8" height="15.0" fill="rgb(243,210,12)" rx="2" ry="2" />
+<text  x="63.31" y="671.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1589" width="9.2" height="15.0" fill="rgb(229,144,19)" rx="2" ry="2" />
+<text  x="319.43" y="1599.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="981" width="173.8" height="15.0" fill="rgb(236,75,24)" rx="2" ry="2" />
+<text  x="63.31" y="991.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (454,545,450 samples, 17.44%)</title><rect x="28.3" y="2053" width="205.8" height="15.0" fill="rgb(233,146,21)" rx="2" ry="2" />
+<text  x="31.29" y="2063.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (545,454,540 samples, 20.93%)</title><rect x="261.6" y="2053" width="246.9" height="15.0" fill="rgb(211,3,17)" rx="2" ry="2" />
+<text  x="264.55" y="2063.5" >[unknown]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1061" width="173.8" height="15.0" fill="rgb(251,153,40)" rx="2" ry="2" />
+<text  x="63.31" y="1071.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1717" width="9.2" height="15.0" fill="rgb(221,193,36)" rx="2" ry="2" />
+<text  x="319.43" y="1727.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="229" width="9.2" height="15.0" fill="rgb(222,55,4)" rx="2" ry="2" />
+<text  x="319.43" y="239.5" ></text>
+</g>
+<g >
+<title>getname_flags (10,101,010 samples, 0.39%)</title><rect x="590.9" y="1925" width="4.5" height="15.0" fill="rgb(216,87,4)" rx="2" ry="2" />
+<text  x="593.85" y="1935.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="949" width="9.2" height="15.0" fill="rgb(218,129,32)" rx="2" ry="2" />
+<text  x="319.43" y="959.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (30,303,030 samples, 1.16%)</title><rect x="215.8" y="37" width="13.7" height="15.0" fill="rgb(254,118,5)" rx="2" ry="2" />
+<text  x="218.81" y="47.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1061" width="9.2" height="15.0" fill="rgb(248,183,17)" rx="2" ry="2" />
+<text  x="319.43" y="1071.5" ></text>
+</g>
+<g >
+<title>rest_init (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="1973" width="128.0" height="15.0" fill="rgb(254,125,15)" rx="2" ry="2" />
+<text  x="1060.36" y="1983.5" >rest_init</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="917" width="173.8" height="15.0" fill="rgb(237,130,36)" rx="2" ry="2" />
+<text  x="63.31" y="927.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1189" width="173.8" height="15.0" fill="rgb(207,50,12)" rx="2" ry="2" />
+<text  x="63.31" y="1199.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1493" width="173.8" height="15.0" fill="rgb(220,59,29)" rx="2" ry="2" />
+<text  x="63.31" y="1503.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1205" width="173.8" height="15.0" fill="rgb(207,229,33)" rx="2" ry="2" />
+<text  x="63.31" y="1215.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1877" width="173.8" height="15.0" fill="rgb(239,113,35)" rx="2" ry="2" />
+<text  x="63.31" y="1887.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="405" width="9.2" height="15.0" fill="rgb(233,87,1)" rx="2" ry="2" />
+<text  x="319.43" y="415.5" ></text>
+</g>
+<g >
+<title>[unknown] (40,404,040 samples, 1.55%)</title><rect x="215.8" y="53" width="18.3" height="15.0" fill="rgb(217,70,8)" rx="2" ry="2" />
+<text  x="218.81" y="63.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1861" width="9.2" height="15.0" fill="rgb(217,43,51)" rx="2" ry="2" />
+<text  x="319.43" y="1871.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1829" width="173.8" height="15.0" fill="rgb(254,65,29)" rx="2" ry="2" />
+<text  x="63.31" y="1839.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1925" width="173.8" height="15.0" fill="rgb(223,117,16)" rx="2" ry="2" />
+<text  x="63.31" y="1935.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="837" width="173.8" height="15.0" fill="rgb(251,206,40)" rx="2" ry="2" />
+<text  x="63.31" y="847.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="837" width="9.2" height="15.0" fill="rgb(222,194,27)" rx="2" ry="2" />
+<text  x="319.43" y="847.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1461" width="9.2" height="15.0" fill="rgb(206,173,39)" rx="2" ry="2" />
+<text  x="319.43" y="1471.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="213" width="9.2" height="15.0" fill="rgb(222,18,37)" rx="2" ry="2" />
+<text  x="319.43" y="223.5" ></text>
+</g>
+<g >
+<title>gs_type1_decrypt (20,202,020 samples, 0.78%)</title><rect x="558.8" y="2053" width="9.2" height="15.0" fill="rgb(248,160,46)" rx="2" ry="2" />
+<text  x="561.84" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1813" width="9.2" height="15.0" fill="rgb(225,177,54)" rx="2" ry="2" />
+<text  x="319.43" y="1823.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="469" width="173.8" height="15.0" fill="rgb(213,177,30)" rx="2" ry="2" />
+<text  x="63.31" y="479.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="1989" width="173.8" height="15.0" fill="rgb(220,213,43)" rx="2" ry="2" />
+<text  x="63.31" y="1999.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>copy_strings.isra.0 (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="1941" width="4.6" height="15.0" fill="rgb(216,211,24)" rx="2" ry="2" />
+<text  x="1188.43" y="1951.5" ></text>
+</g>
+<g >
+<title>do_syscall_64 (10,101,010 samples, 0.39%)</title><rect x="1185.4" y="1989" width="4.6" height="15.0" fill="rgb(237,81,47)" rx="2" ry="2" />
+<text  x="1188.43" y="1999.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1141" width="9.2" height="15.0" fill="rgb(205,216,14)" rx="2" ry="2" />
+<text  x="319.43" y="1151.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="741" width="173.8" height="15.0" fill="rgb(241,100,40)" rx="2" ry="2" />
+<text  x="63.31" y="751.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="325" width="173.8" height="15.0" fill="rgb(214,166,41)" rx="2" ry="2" />
+<text  x="63.31" y="335.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>zop_sub (10,101,010 samples, 0.39%)</title><rect x="504.0" y="2037" width="4.5" height="15.0" fill="rgb(242,173,18)" rx="2" ry="2" />
+<text  x="506.95" y="2047.5" ></text>
+</g>
+<g >
+<title>gs_image_next_planes (10,101,010 samples, 0.39%)</title><rect x="394.2" y="2037" width="4.6" height="15.0" fill="rgb(222,104,8)" rx="2" ry="2" />
+<text  x="397.19" y="2047.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="373" width="173.8" height="15.0" fill="rgb(251,192,43)" rx="2" ry="2" />
+<text  x="63.31" y="383.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>cpu_startup_entry (1,020,202,010 samples, 39.15%)</title><rect x="595.4" y="2021" width="462.0" height="15.0" fill="rgb(232,73,45)" rx="2" ry="2" />
+<text  x="598.43" y="2031.5" >cpu_startup_entry</text>
+</g>
+<g >
+<title>_dl_map_object (10,101,010 samples, 0.39%)</title><rect x="590.9" y="2053" width="4.5" height="15.0" fill="rgb(248,179,3)" rx="2" ry="2" />
+<text  x="593.85" y="2063.5" ></text>
+</g>
+<g >
+<title>__ctype_b_loc (10,101,010 samples, 0.39%)</title><rect x="508.5" y="2053" width="4.6" height="15.0" fill="rgb(219,166,31)" rx="2" ry="2" />
+<text  x="511.53" y="2063.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1013" width="9.2" height="15.0" fill="rgb(245,215,9)" rx="2" ry="2" />
+<text  x="319.43" y="1023.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="517" width="173.8" height="15.0" fill="rgb(224,113,45)" rx="2" ry="2" />
+<text  x="63.31" y="527.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>[libgs.so.9.50] (383,838,380 samples, 14.73%)</title><rect x="60.3" y="149" width="173.8" height="15.0" fill="rgb(251,102,8)" rx="2" ry="2" />
+<text  x="63.31" y="159.5" >[libgs.so.9.50]</text>
+</g>
+<g >
+<title>x86_64_start_kernel (282,828,280 samples, 10.85%)</title><rect x="1057.4" y="2037" width="128.0" height="15.0" fill="rgb(226,216,32)" rx="2" ry="2" />
+<text  x="1060.36" y="2047.5" >x86_64_start_ker..</text>
+</g>
+<g >
+<title>[unknown] (40,404,040 samples, 1.55%)</title><rect x="215.8" y="69" width="18.3" height="15.0" fill="rgb(217,142,29)" rx="2" ry="2" />
+<text  x="218.81" y="79.5" ></text>
+</g>
+<g >
+<title>[libgs.so.9.50] (20,202,020 samples, 0.78%)</title><rect x="60.3" y="37" width="9.2" height="15.0" fill="rgb(246,127,36)" rx="2" ry="2" />
+<text  x="63.31" y="47.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="1669" width="9.2" height="15.0" fill="rgb(222,219,10)" rx="2" ry="2" />
+<text  x="319.43" y="1679.5" ></text>
+</g>
+<g >
+<title>[unknown] (20,202,020 samples, 0.78%)</title><rect x="316.4" y="661" width="9.2" height="15.0" fill="rgb(251,162,5)" rx="2" ry="2" />
+<text  x="319.43" y="671.5" ></text>
 </g>
 </g>
 </svg>

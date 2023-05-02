@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="2134" onload="init(evt)" viewBox="0 0 1200 2134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="1510" onload="init(evt)" viewBox="0 0 1200 1510" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,1457 +421,1325 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="2134.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="1510.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="2117" > </text>
+<text id="details" x="10.00" y="1493" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="2117" > </text>
+<text id="matched" x="1090.00" y="1493" > </text>
 <g id="frames">
 <g >
-<title>[libsupermalloc.so] (20,202,020 samples, 0.13%)</title><rect x="530.3" y="2037" width="1.5" height="15.0" fill="rgb(205,208,48)" rx="2" ry="2" />
-<text  x="533.27" y="2047.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="853" width="9.2" height="15.0" fill="rgb(229,147,43)" rx="2" ry="2" />
+<text  x="29.90" y="863.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="1957" width="0.8" height="15.0" fill="rgb(213,19,15)" rx="2" ry="2" />
-<text  x="604.53" y="1967.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="37" width="0.7" height="15.0" fill="rgb(212,112,6)" rx="2" ry="2" />
+<text  x="30.67" y="47.5" ></text>
 </g>
 <g >
-<title>setp_equal (10,101,010 samples, 0.06%)</title><rect x="223.0" y="2021" width="0.8" height="15.0" fill="rgb(235,211,32)" rx="2" ry="2" />
-<text  x="226.01" y="2031.5" ></text>
+<title>schedule (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1381" width="0.7" height="15.0" fill="rgb(214,103,48)" rx="2" ry="2" />
+<text  x="606.07" y="1391.5" ></text>
 </g>
 <g >
-<title>full_row (10,101,010 samples, 0.06%)</title><rect x="359.4" y="2037" width="0.8" height="15.0" fill="rgb(238,20,5)" rx="2" ry="2" />
-<text  x="362.40" y="2047.5" ></text>
+<title>__secure_computing (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1333" width="0.7" height="15.0" fill="rgb(221,171,15)" rx="2" ry="2" />
+<text  x="13.77" y="1343.5" ></text>
 </g>
 <g >
-<title>d1_order (20,202,020 samples, 0.13%)</title><rect x="466.7" y="2053" width="1.5" height="15.0" fill="rgb(218,200,12)" rx="2" ry="2" />
-<text  x="469.68" y="2063.5" ></text>
+<title>thread_group_cputime_adjusted (10,101,010 samples, 0.07%)</title><rect x="414.9" y="1349" width="0.7" height="15.0" fill="rgb(215,215,44)" rx="2" ry="2" />
+<text  x="417.86" y="1359.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1765" width="0.7" height="15.0" fill="rgb(242,41,36)" rx="2" ry="2" />
-<text  x="1025.96" y="1775.5" ></text>
+<title>do_sys_times (10,101,010 samples, 0.07%)</title><rect x="414.9" y="1365" width="0.7" height="15.0" fill="rgb(220,70,15)" rx="2" ry="2" />
+<text  x="417.86" y="1375.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (10,101,010 samples, 0.06%)</title><rect x="228.4" y="2005" width="0.7" height="15.0" fill="rgb(227,89,36)" rx="2" ry="2" />
-<text  x="231.38" y="2015.5" ></text>
+<title>__libc_start_main (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1429" width="0.8" height="15.0" fill="rgb(205,193,44)" rx="2" ry="2" />
+<text  x="605.30" y="1439.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1973" width="0.8" height="15.0" fill="rgb(242,107,39)" rx="2" ry="2" />
-<text  x="14.53" y="1983.5" ></text>
+<title>cached_malloc (60,606,060 samples, 0.39%)</title><rect x="526.2" y="1413" width="4.7" height="15.0" fill="rgb(221,115,46)" rx="2" ry="2" />
+<text  x="529.25" y="1423.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="465.1" y="2037" width="0.8" height="15.0" fill="rgb(245,155,38)" rx="2" ry="2" />
-<text  x="468.14" y="2047.5" ></text>
+<title>ext4_finish_bio (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1333" width="0.8" height="15.0" fill="rgb(253,76,4)" rx="2" ry="2" />
+<text  x="606.84" y="1343.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="2037" width="166.3" height="15.0" fill="rgb(208,193,52)" rx="2" ry="2" />
-<text  x="1026.73" y="2047.5" >[unknown]</text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1013" width="9.2" height="15.0" fill="rgb(238,69,24)" rx="2" ry="2" />
+<text  x="29.90" y="1023.5" ></text>
 </g>
 <g >
-<title>intel_check_word.isra.0 (10,101,010 samples, 0.06%)</title><rect x="10.8" y="2037" width="0.7" height="15.0" fill="rgb(236,140,45)" rx="2" ry="2" />
-<text  x="13.77" y="2047.5" ></text>
+<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="27.7" y="741" width="6.1" height="15.0" fill="rgb(230,210,2)" rx="2" ry="2" />
+<text  x="30.67" y="751.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="2021" width="0.8" height="15.0" fill="rgb(205,79,16)" rx="2" ry="2" />
-<text  x="604.53" y="2031.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="293" width="1.5" height="15.0" fill="rgb(247,109,52)" rx="2" ry="2" />
+<text  x="30.67" y="303.5" ></text>
 </g>
 <g >
-<title>compl_lift (70,707,070 samples, 0.45%)</title><rect x="293.5" y="2037" width="5.4" height="15.0" fill="rgb(252,91,22)" rx="2" ry="2" />
-<text  x="296.51" y="2047.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="85" width="0.7" height="15.0" fill="rgb(235,229,3)" rx="2" ry="2" />
+<text  x="30.67" y="95.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="757" width="1.5" height="15.0" fill="rgb(211,221,24)" rx="2" ry="2" />
-<text  x="26.79" y="767.5" ></text>
+<title>kvp_respond_to_host (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1285" width="0.8" height="15.0" fill="rgb(241,218,18)" rx="2" ry="2" />
+<text  x="605.30" y="1295.5" ></text>
 </g>
 <g >
-<title>kworker/0:2-eve (10,101,010 samples, 0.06%)</title><rect x="601.5" y="2069" width="0.8" height="15.0" fill="rgb(227,71,1)" rx="2" ry="2" />
-<text  x="604.53" y="2079.5" ></text>
+<title>maybe_initialize_malloc (30,303,030 samples, 0.20%)</title><rect x="354.2" y="1413" width="2.3" height="15.0" fill="rgb(208,200,26)" rx="2" ry="2" />
+<text  x="357.17" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="2005" width="2.3" height="15.0" fill="rgb(206,226,1)" rx="2" ry="2" />
-<text  x="602.23" y="2015.5" ></text>
+<title>do_syscall_64 (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1381" width="0.7" height="15.0" fill="rgb(212,198,37)" rx="2" ry="2" />
+<text  x="13.77" y="1391.5" ></text>
 </g>
 <g >
-<title>__memmove_avx_unaligned_erms (10,101,010 samples, 0.06%)</title><rect x="415.3" y="2053" width="0.8" height="15.0" fill="rgb(237,74,44)" rx="2" ry="2" />
-<text  x="418.34" y="2063.5" ></text>
+<title>ksys_read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1349" width="0.8" height="15.0" fill="rgb(208,4,46)" rx="2" ry="2" />
+<text  x="604.54" y="1359.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="1022.2" y="1909" width="1.5" height="15.0" fill="rgb(250,118,44)" rx="2" ry="2" />
-<text  x="1025.19" y="1919.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1125" width="9.2" height="15.0" fill="rgb(210,67,31)" rx="2" ry="2" />
+<text  x="29.90" y="1135.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="1022.2" y="1893" width="1.5" height="15.0" fill="rgb(241,181,37)" rx="2" ry="2" />
-<text  x="1025.19" y="1903.5" ></text>
+<title>__GI___execve (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1429" width="0.8" height="15.0" fill="rgb(220,205,32)" rx="2" ry="2" />
+<text  x="15.30" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="901" width="1.5" height="15.0" fill="rgb(216,29,14)" rx="2" ry="2" />
-<text  x="26.79" y="911.5" ></text>
+<title>sm_col_contains (70,707,070 samples, 0.46%)</title><rect x="404.9" y="1413" width="5.3" height="15.0" fill="rgb(209,188,40)" rx="2" ry="2" />
+<text  x="407.87" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="565" width="0.7" height="15.0" fill="rgb(211,63,8)" rx="2" ry="2" />
-<text  x="27.56" y="575.5" ></text>
+<title>python3 (10,101,010 samples, 0.07%)</title><rect x="604.6" y="1445" width="0.8" height="15.0" fill="rgb(239,101,12)" rx="2" ry="2" />
+<text  x="607.61" y="1455.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1829" width="0.7" height="15.0" fill="rgb(250,35,3)" rx="2" ry="2" />
-<text  x="1025.96" y="1839.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="965" width="9.2" height="15.0" fill="rgb(221,160,12)" rx="2" ry="2" />
+<text  x="29.90" y="975.5" ></text>
 </g>
 <g >
-<title>sm_row_insert (20,202,020 samples, 0.13%)</title><rect x="228.4" y="2021" width="1.5" height="15.0" fill="rgb(217,97,30)" rx="2" ry="2" />
-<text  x="231.38" y="2031.5" ></text>
+<title>ext4_release_io_end (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1349" width="0.8" height="15.0" fill="rgb(237,164,20)" rx="2" ry="2" />
+<text  x="606.84" y="1359.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="805" width="1.5" height="15.0" fill="rgb(210,0,36)" rx="2" ry="2" />
-<text  x="26.79" y="815.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1157" width="9.2" height="15.0" fill="rgb(212,95,3)" rx="2" ry="2" />
+<text  x="29.90" y="1167.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1685" width="0.7" height="15.0" fill="rgb(209,191,4)" rx="2" ry="2" />
-<text  x="1025.96" y="1695.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="805" width="9.2" height="15.0" fill="rgb(241,38,18)" rx="2" ry="2" />
+<text  x="29.90" y="815.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="997" width="1.5" height="15.0" fill="rgb(225,89,33)" rx="2" ry="2" />
-<text  x="26.79" y="1007.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="26.1" y="1365" width="0.8" height="15.0" fill="rgb(214,79,30)" rx="2" ry="2" />
+<text  x="29.13" y="1375.5" ></text>
 </g>
 <g >
-<title>all (15,555,555,400 samples, 100%)</title><rect x="10.0" y="2085" width="1180.0" height="15.0" fill="rgb(224,51,34)" rx="2" ry="2" />
-<text  x="13.00" y="2095.5" ></text>
+<title>elf_map (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1301" width="0.8" height="15.0" fill="rgb(235,73,32)" rx="2" ry="2" />
+<text  x="15.30" y="1311.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1941" width="2.3" height="15.0" fill="rgb(235,161,7)" rx="2" ry="2" />
-<text  x="602.23" y="1951.5" ></text>
+<title>set_or (80,808,080 samples, 0.52%)</title><rect x="540.8" y="1429" width="6.2" height="15.0" fill="rgb(251,168,10)" rx="2" ry="2" />
+<text  x="543.85" y="1439.5" ></text>
 </g>
 <g >
-<title>scofactor (10,101,010 samples, 0.06%)</title><rect x="222.2" y="2021" width="0.8" height="15.0" fill="rgb(230,126,16)" rx="2" ry="2" />
-<text  x="225.25" y="2031.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1397" width="0.8" height="15.0" fill="rgb(254,25,41)" rx="2" ry="2" />
+<text  x="605.30" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="85" width="0.7" height="15.0" fill="rgb(233,159,1)" rx="2" ry="2" />
-<text  x="27.56" y="95.5" ></text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="35.4" y="789" width="0.7" height="15.0" fill="rgb(233,14,10)" rx="2" ry="2" />
+<text  x="38.35" y="799.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="53" width="0.7" height="15.0" fill="rgb(215,203,30)" rx="2" ry="2" />
-<text  x="27.56" y="63.5" ></text>
+<title>sm_row_dominance (10,101,010 samples, 0.07%)</title><rect x="600.0" y="1429" width="0.8" height="15.0" fill="rgb(209,120,29)" rx="2" ry="2" />
+<text  x="603.00" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1605" width="6.9" height="15.0" fill="rgb(208,32,51)" rx="2" ry="2" />
-<text  x="26.03" y="1615.5" ></text>
+<title>free (20,202,020 samples, 0.13%)</title><rect x="351.1" y="1413" width="1.5" height="15.0" fill="rgb(240,149,42)" rx="2" ry="2" />
+<text  x="354.09" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1893" width="166.3" height="15.0" fill="rgb(216,131,53)" rx="2" ry="2" />
-<text  x="1026.73" y="1903.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="885" width="9.2" height="15.0" fill="rgb(253,52,18)" rx="2" ry="2" />
+<text  x="29.90" y="895.5" ></text>
 </g>
 <g >
-<title>compl_cube (50,505,050 samples, 0.32%)</title><rect x="289.7" y="2037" width="3.8" height="15.0" fill="rgb(236,23,52)" rx="2" ry="2" />
-<text  x="292.68" y="2047.5" ></text>
+<title>__key.101675 (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1301" width="0.7" height="15.0" fill="rgb(232,88,41)" rx="2" ry="2" />
+<text  x="13.77" y="1311.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="1022.2" y="1925" width="1.5" height="15.0" fill="rgb(250,133,6)" rx="2" ry="2" />
-<text  x="1025.19" y="1935.5" ></text>
+<title>[unknown] (40,404,040 samples, 0.26%)</title><rect x="27.7" y="501" width="3.0" height="15.0" fill="rgb(219,194,18)" rx="2" ry="2" />
+<text  x="30.67" y="511.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="981" width="1.5" height="15.0" fill="rgb(230,14,17)" rx="2" ry="2" />
-<text  x="26.79" y="991.5" ></text>
+<title>__vma_link_rb (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1205" width="0.8" height="15.0" fill="rgb(245,214,2)" rx="2" ry="2" />
+<text  x="15.30" y="1215.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="581" width="0.7" height="15.0" fill="rgb(243,175,20)" rx="2" ry="2" />
-<text  x="27.56" y="591.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1045" width="9.2" height="15.0" fill="rgb(233,178,2)" rx="2" ry="2" />
+<text  x="29.90" y="1055.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (7,737,373,660 samples, 49.74%)</title><rect x="603.1" y="2053" width="586.9" height="15.0" fill="rgb(246,6,1)" rx="2" ry="2" />
-<text  x="606.06" y="2063.5" >[[kernel.kallsyms]]</text>
+<title>page_mapping (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1301" width="0.8" height="15.0" fill="rgb(221,150,9)" rx="2" ry="2" />
+<text  x="606.84" y="1311.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1029" width="2.3" height="15.0" fill="rgb(239,158,10)" rx="2" ry="2" />
-<text  x="26.79" y="1039.5" ></text>
+<title>sccc (20,202,020 samples, 0.13%)</title><rect x="222.8" y="1397" width="1.5" height="15.0" fill="rgb(208,65,18)" rx="2" ry="2" />
+<text  x="225.80" y="1407.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1637" width="0.7" height="15.0" fill="rgb(229,140,19)" rx="2" ry="2" />
-<text  x="1025.96" y="1647.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="53" width="0.7" height="15.0" fill="rgb(237,104,2)" rx="2" ry="2" />
+<text  x="30.67" y="63.5" ></text>
 </g>
 <g >
-<title>object_base (10,101,010 samples, 0.06%)</title><rect x="29.2" y="1445" width="0.7" height="15.0" fill="rgb(211,101,33)" rx="2" ry="2" />
-<text  x="32.16" y="1455.5" ></text>
+<title>default_idle_call (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1301" width="69.9" height="15.0" fill="rgb(254,44,31)" rx="2" ry="2" />
+<text  x="1123.09" y="1311.5" >default..</text>
 </g>
 <g >
-<title>sccc (10,101,010 samples, 0.06%)</title><rect x="33.8" y="2005" width="0.7" height="15.0" fill="rgb(229,216,36)" rx="2" ry="2" />
-<text  x="36.75" y="2015.5" ></text>
+<title>smpboot_thread_fn (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1397" width="0.7" height="15.0" fill="rgb(212,55,7)" rx="2" ry="2" />
+<text  x="606.07" y="1407.5" ></text>
 </g>
 <g >
-<title>size_2_bin (50,505,050 samples, 0.32%)</title><rect x="557.1" y="2053" width="3.8" height="15.0" fill="rgb(231,7,9)" rx="2" ry="2" />
-<text  x="560.09" y="2063.5" ></text>
+<title>arch_cpu_idle (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1285" width="69.9" height="15.0" fill="rgb(239,132,54)" rx="2" ry="2" />
+<text  x="1123.09" y="1295.5" >arch_cp..</text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="885" width="1.5" height="15.0" fill="rgb(207,142,48)" rx="2" ry="2" />
-<text  x="26.79" y="895.5" ></text>
+<title>tautology (10,101,010 samples, 0.07%)</title><rect x="258.9" y="1397" width="0.8" height="15.0" fill="rgb(205,210,0)" rx="2" ry="2" />
+<text  x="261.91" y="1407.5" ></text>
 </g>
 <g >
-<title>taut_special_cases (363,636,360 samples, 2.34%)</title><rect x="232.2" y="2021" width="27.6" height="15.0" fill="rgb(248,128,0)" rx="2" ry="2" />
-<text  x="235.21" y="2031.5" >t..</text>
+<title>cached_free (10,101,010 samples, 0.07%)</title><rect x="33.8" y="741" width="0.8" height="15.0" fill="rgb(230,145,36)" rx="2" ry="2" />
+<text  x="36.82" y="751.5" ></text>
 </g>
 <g >
-<title>maybe_initialize_malloc (20,202,020 samples, 0.13%)</title><rect x="364.0" y="2037" width="1.5" height="15.0" fill="rgb(235,226,44)" rx="2" ry="2" />
-<text  x="367.00" y="2047.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1285" width="10.0" height="15.0" fill="rgb(211,18,6)" rx="2" ry="2" />
+<text  x="29.90" y="1295.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="304.2" y="2021" width="0.8" height="15.0" fill="rgb(223,176,13)" rx="2" ry="2" />
-<text  x="307.23" y="2031.5" ></text>
+<title>cached_malloc (30,303,030 samples, 0.20%)</title><rect x="423.3" y="1429" width="2.3" height="15.0" fill="rgb(250,135,35)" rx="2" ry="2" />
+<text  x="426.31" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1909" width="8.4" height="15.0" fill="rgb(222,22,38)" rx="2" ry="2" />
-<text  x="25.26" y="1919.5" ></text>
+<title>force_lower (50,505,050 samples, 0.33%)</title><rect x="347.3" y="1413" width="3.8" height="15.0" fill="rgb(215,185,40)" rx="2" ry="2" />
+<text  x="350.25" y="1423.5" ></text>
 </g>
 <g >
-<title>sm_col_alloc (20,202,020 samples, 0.13%)</title><rect x="560.9" y="2053" width="1.6" height="15.0" fill="rgb(219,100,7)" rx="2" ry="2" />
-<text  x="563.92" y="2063.5" ></text>
+<title>scofactor (393,939,390 samples, 2.54%)</title><rect x="500.9" y="1429" width="30.0" height="15.0" fill="rgb(220,128,18)" rx="2" ry="2" />
+<text  x="503.90" y="1439.5" >sc..</text>
 </g>
 <g >
-<title>set_or (101,010,100 samples, 0.65%)</title><rect x="547.1" y="2053" width="7.7" height="15.0" fill="rgb(216,110,44)" rx="2" ry="2" />
-<text  x="550.13" y="2063.5" ></text>
+<title>sccc_special_cases (10,101,010 samples, 0.07%)</title><rect x="224.3" y="1397" width="0.8" height="15.0" fill="rgb(226,179,8)" rx="2" ry="2" />
+<text  x="227.34" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1557" width="6.9" height="15.0" fill="rgb(215,79,5)" rx="2" ry="2" />
-<text  x="26.03" y="1567.5" ></text>
+<title>worker_thread (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1397" width="0.8" height="15.0" fill="rgb(240,70,16)" rx="2" ry="2" />
+<text  x="606.84" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="69" width="0.7" height="15.0" fill="rgb(219,176,49)" rx="2" ry="2" />
-<text  x="27.56" y="79.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1429" width="0.7" height="15.0" fill="rgb(223,174,52)" rx="2" ry="2" />
+<text  x="13.77" y="1439.5" ></text>
 </g>
 <g >
-<title>essen_parts (151,515,150 samples, 0.97%)</title><rect x="335.6" y="2037" width="11.5" height="15.0" fill="rgb(209,74,53)" rx="2" ry="2" />
-<text  x="338.65" y="2047.5" ></text>
+<title>cached_free (10,101,010 samples, 0.07%)</title><rect x="40.0" y="1381" width="0.7" height="15.0" fill="rgb(250,201,0)" rx="2" ry="2" />
+<text  x="42.96" y="1391.5" ></text>
 </g>
 <g >
-<title>python3 (10,101,010 samples, 0.06%)</title><rect x="602.3" y="2069" width="0.8" height="15.0" fill="rgb(242,212,12)" rx="2" ry="2" />
-<text  x="605.30" y="2079.5" ></text>
+<title>[libsupermalloc.so] (30,303,030 samples, 0.20%)</title><rect x="565.4" y="1413" width="2.3" height="15.0" fill="rgb(209,34,26)" rx="2" ry="2" />
+<text  x="568.43" y="1423.5" ></text>
 </g>
 <g >
-<title>free (10,101,010 samples, 0.06%)</title><rect x="41.4" y="2021" width="0.8" height="15.0" fill="rgb(209,113,51)" rx="2" ry="2" />
-<text  x="44.42" y="2031.5" ></text>
+<title>kvp_on_msg (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1301" width="0.8" height="15.0" fill="rgb(220,176,13)" rx="2" ry="2" />
+<text  x="605.30" y="1311.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="2053" width="2.3" height="15.0" fill="rgb(228,68,54)" rx="2" ry="2" />
-<text  x="602.23" y="2063.5" ></text>
+<title>__x64_sys_execve (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1381" width="0.8" height="15.0" fill="rgb(226,16,30)" rx="2" ry="2" />
+<text  x="15.30" y="1391.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="1941" width="0.7" height="15.0" fill="rgb(217,65,52)" rx="2" ry="2" />
-<text  x="13.77" y="1951.5" ></text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="32.3" y="677" width="0.7" height="15.0" fill="rgb(205,88,51)" rx="2" ry="2" />
+<text  x="35.28" y="687.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1621" width="6.9" height="15.0" fill="rgb(207,33,35)" rx="2" ry="2" />
-<text  x="26.03" y="1631.5" ></text>
+<title>sm_col_alloc (10,101,010 samples, 0.07%)</title><rect x="560.1" y="1429" width="0.7" height="15.0" fill="rgb(244,10,34)" rx="2" ry="2" />
+<text  x="563.05" y="1439.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="2005" width="420.6" height="15.0" fill="rgb(221,159,9)" rx="2" ry="2" />
-<text  x="606.06" y="2015.5" >[[kernel.kallsyms]]</text>
+<title>set_diff (50,505,050 samples, 0.33%)</title><rect x="537.0" y="1429" width="3.8" height="15.0" fill="rgb(252,119,18)" rx="2" ry="2" />
+<text  x="540.01" y="1439.5" ></text>
 </g>
 <g >
-<title>massive_count (282,828,280 samples, 1.82%)</title><rect x="472.0" y="2053" width="21.5" height="15.0" fill="rgb(217,159,45)" rx="2" ry="2" />
-<text  x="475.04" y="2063.5" >m..</text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1173" width="10.0" height="15.0" fill="rgb(249,58,48)" rx="2" ry="2" />
+<text  x="29.90" y="1183.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="789" width="1.5" height="15.0" fill="rgb(234,102,9)" rx="2" ry="2" />
-<text  x="26.79" y="799.5" ></text>
+<title>exec_binprm (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1333" width="0.8" height="15.0" fill="rgb(246,191,13)" rx="2" ry="2" />
+<text  x="15.30" y="1343.5" ></text>
 </g>
 <g >
-<title>cached_malloc (70,707,070 samples, 0.45%)</title><rect x="581.6" y="2037" width="5.4" height="15.0" fill="rgb(238,199,50)" rx="2" ry="2" />
-<text  x="584.61" y="2047.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="645" width="4.6" height="15.0" fill="rgb(251,8,9)" rx="2" ry="2" />
+<text  x="30.67" y="655.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="1989" width="420.6" height="15.0" fill="rgb(231,53,22)" rx="2" ry="2" />
-<text  x="606.06" y="1999.5" >[[kernel.kallsyms]]</text>
+<title>vm_munmap (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1285" width="0.8" height="15.0" fill="rgb(253,26,44)" rx="2" ry="2" />
+<text  x="15.30" y="1295.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (30,303,030 samples, 0.19%)</title><rect x="12.3" y="2053" width="2.3" height="15.0" fill="rgb(237,6,10)" rx="2" ry="2" />
-<text  x="15.30" y="2063.5" ></text>
+<title>do_syscall_64 (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1381" width="0.8" height="15.0" fill="rgb(223,209,40)" rx="2" ry="2" />
+<text  x="604.54" y="1391.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="2021" width="2.3" height="15.0" fill="rgb(226,137,6)" rx="2" ry="2" />
-<text  x="602.23" y="2031.5" ></text>
+<title>cached_free (10,101,010 samples, 0.07%)</title><rect x="30.0" y="485" width="0.7" height="15.0" fill="rgb(217,188,25)" rx="2" ry="2" />
+<text  x="32.97" y="495.5" ></text>
 </g>
 <g >
-<title>_IO_getc (10,101,010 samples, 0.06%)</title><rect x="265.2" y="2037" width="0.7" height="15.0" fill="rgb(218,158,40)" rx="2" ry="2" />
-<text  x="268.16" y="2047.5" ></text>
+<title>cubelist_partition (10,101,010 samples, 0.07%)</title><rect x="453.3" y="1429" width="0.7" height="15.0" fill="rgb(230,48,44)" rx="2" ry="2" />
+<text  x="456.27" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1637" width="6.9" height="15.0" fill="rgb(230,188,34)" rx="2" ry="2" />
-<text  x="26.03" y="1647.5" ></text>
+<title>do_idle (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1317" width="69.9" height="15.0" fill="rgb(205,155,28)" rx="2" ry="2" />
+<text  x="1123.09" y="1327.5" >do_idle</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1925" width="2.3" height="15.0" fill="rgb(226,33,23)" rx="2" ry="2" />
-<text  x="602.23" y="1935.5" ></text>
+<title>do_idle (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1381" width="514.7" height="15.0" fill="rgb(236,213,28)" rx="2" ry="2" />
+<text  x="608.38" y="1391.5" >do_idle</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="1925" width="0.7" height="15.0" fill="rgb(241,225,47)" rx="2" ry="2" />
-<text  x="13.77" y="1935.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1205" width="10.0" height="15.0" fill="rgb(236,129,15)" rx="2" ry="2" />
+<text  x="29.90" y="1215.5" ></text>
 </g>
 <g >
-<title>mlx5e_napi_poll (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1845" width="0.7" height="15.0" fill="rgb(217,2,25)" rx="2" ry="2" />
-<text  x="1025.96" y="1855.5" ></text>
+<title>init_cache (10,101,010 samples, 0.07%)</title><rect x="36.9" y="1301" width="0.8" height="15.0" fill="rgb(209,179,16)" rx="2" ry="2" />
+<text  x="39.89" y="1311.5" ></text>
 </g>
 <g >
-<title>sm_col_dominance (30,303,030 samples, 0.19%)</title><rect x="411.5" y="2037" width="2.3" height="15.0" fill="rgb(240,152,53)" rx="2" ry="2" />
-<text  x="414.51" y="2047.5" ></text>
+<title>cached_malloc (20,202,020 samples, 0.13%)</title><rect x="403.3" y="1397" width="1.6" height="15.0" fill="rgb(248,199,38)" rx="2" ry="2" />
+<text  x="406.33" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1413" width="6.2" height="15.0" fill="rgb(246,111,40)" rx="2" ry="2" />
-<text  x="26.03" y="1423.5" ></text>
+<title>[unknown] (50,505,050 samples, 0.33%)</title><rect x="27.7" y="517" width="3.8" height="15.0" fill="rgb(220,69,52)" rx="2" ry="2" />
+<text  x="30.67" y="527.5" ></text>
 </g>
 <g >
-<title>sm_insert (131,313,130 samples, 0.84%)</title><rect x="578.5" y="2053" width="10.0" height="15.0" fill="rgb(239,223,21)" rx="2" ry="2" />
-<text  x="581.55" y="2063.5" ></text>
+<title>x86_64_start_kernel (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1413" width="69.9" height="15.0" fill="rgb(227,147,3)" rx="2" ry="2" />
+<text  x="1123.09" y="1423.5" >x86_64_..</text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1317" width="6.2" height="15.0" fill="rgb(226,219,54)" rx="2" ry="2" />
-<text  x="26.03" y="1327.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="565" width="4.6" height="15.0" fill="rgb(236,211,12)" rx="2" ry="2" />
+<text  x="30.67" y="575.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1925" width="8.4" height="15.0" fill="rgb(213,2,28)" rx="2" ry="2" />
-<text  x="25.26" y="1935.5" ></text>
+<title>swapper (7,686,868,610 samples, 49.54%)</title><rect x="605.4" y="1445" width="584.6" height="15.0" fill="rgb(220,84,25)" rx="2" ry="2" />
+<text  x="608.38" y="1455.5" >swapper</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="2021" width="0.8" height="15.0" fill="rgb(239,179,1)" rx="2" ry="2" />
-<text  x="14.53" y="2031.5" ></text>
+<title>__GI___ioctl (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1413" width="0.7" height="15.0" fill="rgb(217,154,7)" rx="2" ry="2" />
+<text  x="13.77" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="2053" width="0.8" height="15.0" fill="rgb(249,162,5)" rx="2" ry="2" />
-<text  x="604.53" y="2063.5" ></text>
+<title>sm_row_insert (10,101,010 samples, 0.07%)</title><rect x="232.0" y="1397" width="0.8" height="15.0" fill="rgb(205,186,47)" rx="2" ry="2" />
+<text  x="235.02" y="1407.5" ></text>
 </g>
 <g >
-<title>bench.sh (10,101,010 samples, 0.06%)</title><rect x="10.0" y="2069" width="0.8" height="15.0" fill="rgb(243,199,53)" rx="2" ry="2" />
-<text  x="13.00" y="2079.5" ></text>
+<title>[unknown] (202,020,200 samples, 1.30%)</title><rect x="26.1" y="1397" width="15.4" height="15.0" fill="rgb(253,119,53)" rx="2" ry="2" />
+<text  x="29.13" y="1407.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (20,202,020 samples, 0.13%)</title><rect x="20.7" y="2005" width="1.6" height="15.0" fill="rgb(241,110,42)" rx="2" ry="2" />
-<text  x="23.73" y="2015.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="580.0" y="1413" width="0.8" height="15.0" fill="rgb(205,127,10)" rx="2" ry="2" />
+<text  x="583.03" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="1957" width="0.7" height="15.0" fill="rgb(213,201,28)" rx="2" ry="2" />
-<text  x="13.77" y="1967.5" ></text>
+<title>cached_malloc (161,616,160 samples, 1.04%)</title><rect x="583.1" y="1413" width="12.3" height="15.0" fill="rgb(247,224,17)" rx="2" ry="2" />
+<text  x="586.10" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1717" width="0.7" height="15.0" fill="rgb(207,170,33)" rx="2" ry="2" />
-<text  x="1025.96" y="1727.5" ></text>
+<title>__vm_munmap (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1269" width="0.8" height="15.0" fill="rgb(241,94,33)" rx="2" ry="2" />
+<text  x="15.30" y="1279.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="2005" width="0.8" height="15.0" fill="rgb(225,211,46)" rx="2" ry="2" />
-<text  x="14.53" y="2015.5" ></text>
+<title>read_cube (20,202,020 samples, 0.13%)</title><rect x="498.6" y="1429" width="1.5" height="15.0" fill="rgb(248,191,47)" rx="2" ry="2" />
+<text  x="501.59" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1877" width="8.4" height="15.0" fill="rgb(221,156,23)" rx="2" ry="2" />
-<text  x="25.26" y="1887.5" ></text>
+<title>free (10,101,010 samples, 0.07%)</title><rect x="30.7" y="501" width="0.8" height="15.0" fill="rgb(226,9,42)" rx="2" ry="2" />
+<text  x="33.74" y="511.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (10,101,010 samples, 0.06%)</title><rect x="278.2" y="2037" width="0.7" height="15.0" fill="rgb(222,147,47)" rx="2" ry="2" />
-<text  x="281.18" y="2047.5" ></text>
+<title>sf_list (20,202,020 samples, 0.13%)</title><rect x="403.3" y="1413" width="1.6" height="15.0" fill="rgb(239,121,40)" rx="2" ry="2" />
+<text  x="406.33" y="1423.5" ></text>
 </g>
 <g >
-<title>sm_row_alloc (60,606,060 samples, 0.39%)</title><rect x="590.8" y="2053" width="4.6" height="15.0" fill="rgb(213,12,42)" rx="2" ry="2" />
-<text  x="593.81" y="2063.5" ></text>
+<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="27.7" y="773" width="7.7" height="15.0" fill="rgb(246,190,30)" rx="2" ry="2" />
+<text  x="30.67" y="783.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1589" width="6.9" height="15.0" fill="rgb(219,96,44)" rx="2" ry="2" />
-<text  x="26.03" y="1599.5" ></text>
+<title>sccc_special_cases (60,606,060 samples, 0.39%)</title><rect x="381.8" y="1413" width="4.6" height="15.0" fill="rgb(237,144,34)" rx="2" ry="2" />
+<text  x="384.82" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1301" width="6.2" height="15.0" fill="rgb(254,16,9)" rx="2" ry="2" />
-<text  x="26.03" y="1311.5" ></text>
+<title>[unknown] (70,707,070 samples, 0.46%)</title><rect x="27.7" y="693" width="5.3" height="15.0" fill="rgb(235,76,19)" rx="2" ry="2" />
+<text  x="30.67" y="703.5" ></text>
 </g>
 <g >
-<title>cached_free (30,303,030 samples, 0.19%)</title><rect x="38.4" y="2021" width="2.2" height="15.0" fill="rgb(240,218,16)" rx="2" ry="2" />
-<text  x="41.35" y="2031.5" ></text>
+<title>ret_from_fork (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1429" width="0.8" height="15.0" fill="rgb(231,162,54)" rx="2" ry="2" />
+<text  x="606.84" y="1439.5" ></text>
 </g>
 <g >
-<title>sm_row_dominance (30,303,030 samples, 0.19%)</title><rect x="596.2" y="2053" width="2.3" height="15.0" fill="rgb(208,135,35)" rx="2" ry="2" />
-<text  x="599.17" y="2063.5" ></text>
+<title>feasibly_covered (10,101,010 samples, 0.07%)</title><rect x="346.5" y="1413" width="0.8" height="15.0" fill="rgb(248,107,53)" rx="2" ry="2" />
+<text  x="349.48" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (70,707,070 samples, 0.45%)</title><rect x="23.8" y="1253" width="5.4" height="15.0" fill="rgb(241,146,29)" rx="2" ry="2" />
-<text  x="26.79" y="1263.5" ></text>
+<title>object_base (303,030,300 samples, 1.95%)</title><rect x="357.2" y="1413" width="23.1" height="15.0" fill="rgb(237,29,19)" rx="2" ry="2" />
+<text  x="360.24" y="1423.5" >o..</text>
 </g>
 <g >
-<title>object_base (40,404,040 samples, 0.26%)</title><rect x="219.2" y="2021" width="3.0" height="15.0" fill="rgb(213,45,34)" rx="2" ry="2" />
-<text  x="222.18" y="2031.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1397" width="0.8" height="15.0" fill="rgb(205,226,12)" rx="2" ry="2" />
+<text  x="604.54" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="629" width="0.7" height="15.0" fill="rgb(252,222,21)" rx="2" ry="2" />
-<text  x="27.56" y="639.5" ></text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="31.5" y="533" width="0.8" height="15.0" fill="rgb(216,170,47)" rx="2" ry="2" />
+<text  x="34.51" y="543.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1973" width="166.3" height="15.0" fill="rgb(214,224,34)" rx="2" ry="2" />
-<text  x="1026.73" y="1983.5" >[[kernel.kallsyms]]</text>
+<title>cached_free (70,707,070 samples, 0.46%)</title><rect x="417.9" y="1429" width="5.4" height="15.0" fill="rgb(207,38,26)" rx="2" ry="2" />
+<text  x="420.93" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1669" width="6.9" height="15.0" fill="rgb(212,123,47)" rx="2" ry="2" />
-<text  x="26.03" y="1679.5" ></text>
+<title>__do_munmap (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1253" width="0.8" height="15.0" fill="rgb(228,45,28)" rx="2" ry="2" />
+<text  x="15.30" y="1263.5" ></text>
 </g>
 <g >
-<title>cubelist_partition (10,101,010 samples, 0.06%)</title><rect x="465.9" y="2053" width="0.8" height="15.0" fill="rgb(247,144,27)" rx="2" ry="2" />
-<text  x="468.91" y="2063.5" ></text>
+<title>kworker/u4:2-ev (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1445" width="0.8" height="15.0" fill="rgb(229,175,14)" rx="2" ry="2" />
+<text  x="606.84" y="1455.5" ></text>
 </g>
 <g >
-<title>unravel_range (10,101,010 samples, 0.06%)</title><rect x="598.5" y="2053" width="0.7" height="15.0" fill="rgb(252,70,50)" rx="2" ry="2" />
-<text  x="601.47" y="2063.5" ></text>
+<title>cdist01 (30,303,030 samples, 0.20%)</title><rect x="282.0" y="1413" width="2.3" height="15.0" fill="rgb(235,95,26)" rx="2" ry="2" />
+<text  x="284.95" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1861" width="8.4" height="15.0" fill="rgb(235,177,25)" rx="2" ry="2" />
-<text  x="25.26" y="1871.5" ></text>
+<title>[unknown] (5,212,121,160 samples, 33.59%)</title><rect x="17.7" y="1429" width="396.4" height="15.0" fill="rgb(241,133,14)" rx="2" ry="2" />
+<text  x="20.68" y="1439.5" >[unknown]</text>
 </g>
 <g >
-<title>complement (70,707,070 samples, 0.45%)</title><rect x="299.6" y="2037" width="5.4" height="15.0" fill="rgb(211,100,45)" rx="2" ry="2" />
-<text  x="302.64" y="2047.5" ></text>
+<title>x86_64_start_reservations (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1397" width="69.9" height="15.0" fill="rgb(232,46,26)" rx="2" ry="2" />
+<text  x="1123.09" y="1407.5" >x86_64_..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="1957" width="420.6" height="15.0" fill="rgb(249,169,52)" rx="2" ry="2" />
-<text  x="606.06" y="1967.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="245" width="1.5" height="15.0" fill="rgb(254,78,35)" rx="2" ry="2" />
+<text  x="30.67" y="255.5" ></text>
 </g>
 <g >
-<title>sm_col_contains (10,101,010 samples, 0.06%)</title><rect x="410.7" y="2037" width="0.8" height="15.0" fill="rgb(226,29,25)" rx="2" ry="2" />
-<text  x="413.74" y="2047.5" ></text>
+<title>read (10,101,010 samples, 0.07%)</title><rect x="380.3" y="1413" width="0.8" height="15.0" fill="rgb(228,1,26)" rx="2" ry="2" />
+<text  x="383.29" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="293" width="0.7" height="15.0" fill="rgb(242,221,26)" rx="2" ry="2" />
-<text  x="27.56" y="303.5" ></text>
+<title>[python3.8] (10,101,010 samples, 0.07%)</title><rect x="604.6" y="1413" width="0.8" height="15.0" fill="rgb(235,138,15)" rx="2" ry="2" />
+<text  x="607.61" y="1423.5" ></text>
 </g>
 <g >
-<title>set_copy (10,101,010 samples, 0.06%)</title><rect x="392.4" y="2037" width="0.7" height="15.0" fill="rgb(206,62,29)" rx="2" ry="2" />
-<text  x="395.35" y="2047.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="133" width="0.7" height="15.0" fill="rgb(237,75,15)" rx="2" ry="2" />
+<text  x="30.67" y="143.5" ></text>
 </g>
 <g >
-<title>[espresso] (10,101,010 samples, 0.06%)</title><rect x="14.6" y="2037" width="0.8" height="15.0" fill="rgb(249,11,12)" rx="2" ry="2" />
-<text  x="17.60" y="2047.5" ></text>
+<title>start_secondary (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1413" width="514.7" height="15.0" fill="rgb(225,81,49)" rx="2" ry="2" />
+<text  x="608.38" y="1423.5" >start_secondary</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="1973" width="0.7" height="15.0" fill="rgb(251,81,51)" rx="2" ry="2" />
-<text  x="13.77" y="1983.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1413" width="0.8" height="15.0" fill="rgb(207,207,32)" rx="2" ry="2" />
+<text  x="15.30" y="1423.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="556.3" y="2037" width="0.8" height="15.0" fill="rgb(232,168,42)" rx="2" ry="2" />
-<text  x="559.32" y="2047.5" ></text>
+<title>cb_consensus (10,101,010 samples, 0.07%)</title><rect x="281.2" y="1413" width="0.8" height="15.0" fill="rgb(242,223,50)" rx="2" ry="2" />
+<text  x="284.18" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="949" width="1.5" height="15.0" fill="rgb(233,132,51)" rx="2" ry="2" />
-<text  x="26.79" y="959.5" ></text>
+<title>do_execveat_common.isra.0 (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1365" width="0.8" height="15.0" fill="rgb(254,197,8)" rx="2" ry="2" />
+<text  x="15.30" y="1375.5" ></text>
 </g>
 <g >
-<title>object_base (282,828,280 samples, 1.82%)</title><rect x="369.4" y="2037" width="21.4" height="15.0" fill="rgb(224,189,10)" rx="2" ry="2" />
-<text  x="372.36" y="2047.5" >o..</text>
+<title>arch_call_rest_init (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1365" width="69.9" height="15.0" fill="rgb(246,187,20)" rx="2" ry="2" />
+<text  x="1123.09" y="1375.5" >arch_ca..</text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="501.9" y="2037" width="0.8" height="15.0" fill="rgb(213,190,24)" rx="2" ry="2" />
-<text  x="504.92" y="2047.5" ></text>
+<title>__tls_get_addr (30,303,030 samples, 0.20%)</title><rect x="272.7" y="1413" width="2.3" height="15.0" fill="rgb(242,215,41)" rx="2" ry="2" />
+<text  x="275.73" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1845" width="8.4" height="15.0" fill="rgb(205,59,1)" rx="2" ry="2" />
-<text  x="25.26" y="1855.5" ></text>
+<title>filemap_get_read_batch (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1237" width="0.8" height="15.0" fill="rgb(241,53,41)" rx="2" ry="2" />
+<text  x="604.54" y="1247.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="117" width="0.7" height="15.0" fill="rgb(214,167,22)" rx="2" ry="2" />
-<text  x="27.56" y="127.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="933" width="9.2" height="15.0" fill="rgb(235,15,46)" rx="2" ry="2" />
+<text  x="29.90" y="943.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="261" width="0.7" height="15.0" fill="rgb(243,200,5)" rx="2" ry="2" />
-<text  x="27.56" y="271.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="181" width="1.5" height="15.0" fill="rgb(242,36,31)" rx="2" ry="2" />
+<text  x="30.67" y="191.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="1013" width="1.5" height="15.0" fill="rgb(222,201,35)" rx="2" ry="2" />
-<text  x="26.79" y="1023.5" ></text>
+<title>complement (20,202,020 samples, 0.13%)</title><rect x="41.5" y="1397" width="1.5" height="15.0" fill="rgb(236,45,24)" rx="2" ry="2" />
+<text  x="44.50" y="1407.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1989" width="0.8" height="15.0" fill="rgb(223,219,4)" rx="2" ry="2" />
-<text  x="14.53" y="1999.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="213" width="1.5" height="15.0" fill="rgb(206,124,48)" rx="2" ry="2" />
+<text  x="30.67" y="223.5" ></text>
 </g>
 <g >
-<title>init_cache (40,404,040 samples, 0.26%)</title><rect x="360.2" y="2037" width="3.0" height="15.0" fill="rgb(225,104,50)" rx="2" ry="2" />
-<text  x="363.17" y="2047.5" ></text>
+<title>elim_lowering (373,737,370 samples, 2.41%)</title><rect x="303.5" y="1413" width="28.4" height="15.0" fill="rgb(218,20,34)" rx="2" ry="2" />
+<text  x="306.46" y="1423.5" >el..</text>
 </g>
 <g >
-<title>cached_malloc (40,404,040 samples, 0.26%)</title><rect x="262.1" y="2005" width="3.1" height="15.0" fill="rgb(236,69,49)" rx="2" ry="2" />
-<text  x="265.09" y="2015.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1093" width="9.2" height="15.0" fill="rgb(208,178,2)" rx="2" ry="2" />
+<text  x="29.90" y="1103.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1349" width="6.2" height="15.0" fill="rgb(232,2,49)" rx="2" ry="2" />
-<text  x="26.03" y="1359.5" ></text>
+<title>cached_malloc (10,101,010 samples, 0.07%)</title><rect x="223.6" y="1381" width="0.7" height="15.0" fill="rgb(215,60,23)" rx="2" ry="2" />
+<text  x="226.57" y="1391.5" ></text>
 </g>
 <g >
-<title>feasibly_covered (20,202,020 samples, 0.13%)</title><rect x="348.7" y="2037" width="1.5" height="15.0" fill="rgb(207,216,13)" rx="2" ry="2" />
-<text  x="351.68" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="325" width="1.5" height="15.0" fill="rgb(235,114,54)" rx="2" ry="2" />
+<text  x="30.67" y="335.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="181" width="0.7" height="15.0" fill="rgb(235,157,11)" rx="2" ry="2" />
-<text  x="27.56" y="191.5" ></text>
+<title>compl_lift (70,707,070 samples, 0.46%)</title><rect x="285.8" y="1413" width="5.4" height="15.0" fill="rgb(228,9,52)" rx="2" ry="2" />
+<text  x="288.79" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1957" width="166.3" height="15.0" fill="rgb(215,26,42)" rx="2" ry="2" />
-<text  x="1026.73" y="1967.5" >[[kernel.kallsyms]]</text>
+<title>cached_malloc (20,202,020 samples, 0.13%)</title><rect x="384.9" y="1397" width="1.5" height="15.0" fill="rgb(220,65,17)" rx="2" ry="2" />
+<text  x="387.90" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="597" width="0.7" height="15.0" fill="rgb(246,165,46)" rx="2" ry="2" />
-<text  x="27.56" y="607.5" ></text>
+<title>[unknown] (70,707,070 samples, 0.46%)</title><rect x="27.7" y="725" width="5.3" height="15.0" fill="rgb(223,10,24)" rx="2" ry="2" />
+<text  x="30.67" y="735.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="165" width="0.7" height="15.0" fill="rgb(245,40,11)" rx="2" ry="2" />
-<text  x="27.56" y="175.5" ></text>
+<title>set_clear (20,202,020 samples, 0.13%)</title><rect x="225.1" y="1397" width="1.5" height="15.0" fill="rgb(241,126,26)" rx="2" ry="2" />
+<text  x="228.10" y="1407.5" ></text>
 </g>
 <g >
-<title>[python3.8] (10,101,010 samples, 0.06%)</title><rect x="602.3" y="2037" width="0.8" height="15.0" fill="rgb(210,147,25)" rx="2" ry="2" />
-<text  x="605.30" y="2047.5" ></text>
+<title>do_sm_minimum_cover (80,808,080 samples, 0.52%)</title><rect x="297.3" y="1413" width="6.2" height="15.0" fill="rgb(205,133,13)" rx="2" ry="2" />
+<text  x="300.32" y="1423.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (30,303,030 samples, 0.19%)</title><rect x="422.2" y="2053" width="2.3" height="15.0" fill="rgb(253,49,7)" rx="2" ry="2" />
-<text  x="425.23" y="2063.5" ></text>
+<title>setp_disjoint (20,202,020 samples, 0.13%)</title><rect x="393.3" y="1413" width="1.6" height="15.0" fill="rgb(219,71,21)" rx="2" ry="2" />
+<text  x="396.35" y="1423.5" ></text>
 </g>
 <g >
-<title>mincov (40,404,040 samples, 0.26%)</title><rect x="365.5" y="2037" width="3.1" height="15.0" fill="rgb(214,212,4)" rx="2" ry="2" />
-<text  x="368.53" y="2047.5" ></text>
+<title>thread_group_cputime (10,101,010 samples, 0.07%)</title><rect x="414.9" y="1333" width="0.7" height="15.0" fill="rgb(241,35,48)" rx="2" ry="2" />
+<text  x="417.86" y="1343.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1541" width="6.9" height="15.0" fill="rgb(236,197,9)" rx="2" ry="2" />
-<text  x="26.03" y="1551.5" ></text>
+<title>cached_malloc (10,101,010 samples, 0.07%)</title><rect x="42.3" y="1381" width="0.7" height="15.0" fill="rgb(223,228,2)" rx="2" ry="2" />
+<text  x="45.27" y="1391.5" ></text>
 </g>
 <g >
-<title>__pthread_setspecific (10,101,010 samples, 0.06%)</title><rect x="464.4" y="2037" width="0.7" height="15.0" fill="rgb(206,125,52)" rx="2" ry="2" />
-<text  x="467.38" y="2047.5" ></text>
+<title>maybe_initialize_malloc (50,505,050 samples, 0.33%)</title><rect x="494.0" y="1429" width="3.8" height="15.0" fill="rgb(221,101,34)" rx="2" ry="2" />
+<text  x="496.98" y="1439.5" ></text>
 </g>
 <g >
-<title>complement (20,202,020 samples, 0.13%)</title><rect x="464.4" y="2053" width="1.5" height="15.0" fill="rgb(233,228,42)" rx="2" ry="2" />
-<text  x="467.38" y="2063.5" ></text>
+<title>__x64_sys_read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1365" width="0.8" height="15.0" fill="rgb(208,52,11)" rx="2" ry="2" />
+<text  x="604.54" y="1375.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="453" width="0.7" height="15.0" fill="rgb(211,9,26)" rx="2" ry="2" />
-<text  x="27.56" y="463.5" ></text>
+<title>vma_gap_callbacks_rotate (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1189" width="0.8" height="15.0" fill="rgb(239,203,8)" rx="2" ry="2" />
+<text  x="15.30" y="1199.5" ></text>
 </g>
 <g >
-<title>cached_malloc (30,303,030 samples, 0.19%)</title><rect x="426.1" y="2053" width="2.3" height="15.0" fill="rgb(231,180,28)" rx="2" ry="2" />
-<text  x="429.06" y="2063.5" ></text>
+<title>cached_malloc (10,101,010 samples, 0.07%)</title><rect x="296.5" y="1397" width="0.8" height="15.0" fill="rgb(222,79,51)" rx="2" ry="2" />
+<text  x="299.55" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1653" width="6.9" height="15.0" fill="rgb(217,191,34)" rx="2" ry="2" />
-<text  x="26.03" y="1663.5" ></text>
+<title>set_merge (20,202,020 samples, 0.13%)</title><rect x="391.8" y="1413" width="1.5" height="15.0" fill="rgb(251,53,54)" rx="2" ry="2" />
+<text  x="394.81" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1733" width="7.7" height="15.0" fill="rgb(223,43,52)" rx="2" ry="2" />
-<text  x="26.03" y="1743.5" ></text>
+<title>entry_SYSCALL_64_after_hwframe (20,202,020 samples, 0.13%)</title><rect x="414.9" y="1413" width="1.5" height="15.0" fill="rgb(231,174,44)" rx="2" ry="2" />
+<text  x="417.86" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="645" width="0.7" height="15.0" fill="rgb(205,168,50)" rx="2" ry="2" />
-<text  x="27.56" y="655.5" ></text>
+<title>__times (20,202,020 samples, 0.13%)</title><rect x="414.9" y="1429" width="1.5" height="15.0" fill="rgb(221,34,47)" rx="2" ry="2" />
+<text  x="417.86" y="1439.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="2005" width="0.7" height="15.0" fill="rgb(220,109,37)" rx="2" ry="2" />
-<text  x="13.77" y="2015.5" ></text>
+<title>complement (50,505,050 samples, 0.33%)</title><rect x="293.5" y="1413" width="3.8" height="15.0" fill="rgb(222,56,17)" rx="2" ry="2" />
+<text  x="296.48" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1781" width="0.7" height="15.0" fill="rgb(237,166,43)" rx="2" ry="2" />
-<text  x="1025.96" y="1791.5" ></text>
+<title>compl_cube (20,202,020 samples, 0.13%)</title><rect x="284.3" y="1413" width="1.5" height="15.0" fill="rgb(221,100,22)" rx="2" ry="2" />
+<text  x="287.26" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (181,818,180 samples, 1.17%)</title><rect x="20.7" y="2021" width="13.8" height="15.0" fill="rgb(209,190,40)" rx="2" ry="2" />
-<text  x="23.73" y="2031.5" ></text>
+<title>set_copy (40,404,040 samples, 0.26%)</title><rect x="386.4" y="1413" width="3.1" height="15.0" fill="rgb(207,115,10)" rx="2" ry="2" />
+<text  x="389.43" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="602.3" y="2053" width="0.8" height="15.0" fill="rgb(205,153,14)" rx="2" ry="2" />
-<text  x="605.30" y="2063.5" ></text>
+<title>init_cache (20,202,020 samples, 0.13%)</title><rect x="595.4" y="1413" width="1.5" height="15.0" fill="rgb(221,11,52)" rx="2" ry="2" />
+<text  x="598.39" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="149" width="0.7" height="15.0" fill="rgb(206,177,7)" rx="2" ry="2" />
-<text  x="27.56" y="159.5" ></text>
+<title>hv_ringbuffer_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1237" width="0.8" height="15.0" fill="rgb(220,182,49)" rx="2" ry="2" />
+<text  x="605.30" y="1247.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (20,202,020 samples, 0.13%)</title><rect x="592.3" y="2037" width="1.6" height="15.0" fill="rgb(238,83,34)" rx="2" ry="2" />
-<text  x="595.34" y="2047.5" ></text>
+<title>clock_gettime@GLIBC_2.2.5 (10,101,010 samples, 0.07%)</title><rect x="11.5" y="1429" width="0.8" height="15.0" fill="rgb(248,47,16)" rx="2" ry="2" />
+<text  x="14.54" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="725" width="0.7" height="15.0" fill="rgb(241,110,16)" rx="2" ry="2" />
-<text  x="27.56" y="735.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="373" width="1.5" height="15.0" fill="rgb(213,212,11)" rx="2" ry="2" />
+<text  x="30.67" y="383.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (40,404,040 samples, 0.26%)</title><rect x="419.2" y="2005" width="3.0" height="15.0" fill="rgb(226,204,53)" rx="2" ry="2" />
-<text  x="422.17" y="2015.5" ></text>
+<title>[unknown] (3,101,010,070 samples, 19.99%)</title><rect x="23.8" y="1413" width="235.9" height="15.0" fill="rgb(205,178,3)" rx="2" ry="2" />
+<text  x="26.83" y="1423.5" >[unknown]</text>
 </g>
 <g >
-<title>[libsupermalloc.so] (20,202,020 samples, 0.13%)</title><rect x="571.6" y="2037" width="1.6" height="15.0" fill="rgb(236,78,29)" rx="2" ry="2" />
-<text  x="574.65" y="2047.5" ></text>
+<title>vmbus_sendpacket (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1269" width="0.8" height="15.0" fill="rgb(221,15,29)" rx="2" ry="2" />
+<text  x="605.30" y="1279.5" ></text>
 </g>
 <g >
-<title>read (30,303,030 samples, 0.19%)</title><rect x="599.2" y="2037" width="2.3" height="15.0" fill="rgb(235,42,5)" rx="2" ry="2" />
-<text  x="602.23" y="2047.5" ></text>
+<title>compl_merge (30,303,030 samples, 0.20%)</title><rect x="291.2" y="1413" width="2.3" height="15.0" fill="rgb(218,174,48)" rx="2" ry="2" />
+<text  x="294.17" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="1941" width="0.8" height="15.0" fill="rgb(236,135,50)" rx="2" ry="2" />
-<text  x="604.53" y="1951.5" ></text>
+<title>[unknown] (30,303,030 samples, 0.20%)</title><rect x="27.7" y="469" width="2.3" height="15.0" fill="rgb(207,175,10)" rx="2" ry="2" />
+<text  x="30.67" y="479.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1333" width="6.2" height="15.0" fill="rgb(215,187,35)" rx="2" ry="2" />
-<text  x="26.03" y="1343.5" ></text>
+<title>__vdso_clock_gettime (10,101,010 samples, 0.07%)</title><rect x="11.5" y="1413" width="0.8" height="15.0" fill="rgb(224,54,14)" rx="2" ry="2" />
+<text  x="14.54" y="1423.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="22.3" y="1829" width="0.7" height="15.0" fill="rgb(219,195,16)" rx="2" ry="2" />
-<text  x="25.26" y="1839.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="405" width="1.5" height="15.0" fill="rgb(220,171,50)" rx="2" ry="2" />
+<text  x="30.67" y="415.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1653" width="0.7" height="15.0" fill="rgb(218,224,32)" rx="2" ry="2" />
-<text  x="1025.96" y="1663.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="613" width="4.6" height="15.0" fill="rgb(216,46,35)" rx="2" ry="2" />
+<text  x="30.67" y="623.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="917" width="1.5" height="15.0" fill="rgb(248,13,23)" rx="2" ry="2" />
-<text  x="26.79" y="927.5" ></text>
+<title>[libsupermalloc.so] (60,606,060 samples, 0.39%)</title><rect x="13.1" y="1429" width="4.6" height="15.0" fill="rgb(216,68,29)" rx="2" ry="2" />
+<text  x="16.07" y="1439.5" ></text>
 </g>
 <g >
-<title>solution_free (10,101,010 samples, 0.06%)</title><rect x="231.4" y="2021" width="0.8" height="15.0" fill="rgb(234,3,14)" rx="2" ry="2" />
-<text  x="234.44" y="2031.5" ></text>
+<title>cached_free (20,202,020 samples, 0.13%)</title><rect x="279.6" y="1413" width="1.6" height="15.0" fill="rgb(231,168,32)" rx="2" ry="2" />
+<text  x="282.65" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="2005" width="0.8" height="15.0" fill="rgb(229,113,42)" rx="2" ry="2" />
-<text  x="604.53" y="2015.5" ></text>
+<title>set_diff (10,101,010 samples, 0.07%)</title><rect x="389.5" y="1413" width="0.8" height="15.0" fill="rgb(218,200,46)" rx="2" ry="2" />
+<text  x="392.51" y="1423.5" ></text>
 </g>
 <g >
-<title>init_cache (10,101,010 samples, 0.06%)</title><rect x="229.1" y="2005" width="0.8" height="15.0" fill="rgb(246,158,34)" rx="2" ry="2" />
-<text  x="232.14" y="2015.5" ></text>
+<title>__memset_avx2_unaligned_erms (10,101,010 samples, 0.07%)</title><rect x="414.1" y="1429" width="0.8" height="15.0" fill="rgb(250,222,16)" rx="2" ry="2" />
+<text  x="417.09" y="1439.5" ></text>
 </g>
 <g >
-<title>cached_free (10,101,010 samples, 0.06%)</title><rect x="27.6" y="1221" width="0.8" height="15.0" fill="rgb(246,190,38)" rx="2" ry="2" />
-<text  x="30.62" y="1231.5" ></text>
+<title>end_page_writeback (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1317" width="0.8" height="15.0" fill="rgb(246,105,2)" rx="2" ry="2" />
+<text  x="606.84" y="1327.5" ></text>
 </g>
 <g >
-<title>massive_count (2,111,111,090 samples, 13.57%)</title><rect x="59.0" y="2021" width="160.2" height="15.0" fill="rgb(228,55,27)" rx="2" ry="2" />
-<text  x="62.04" y="2031.5" >massive_count</text>
+<title>ret_from_fork (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1429" width="0.7" height="15.0" fill="rgb(217,101,19)" rx="2" ry="2" />
+<text  x="606.07" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1525" width="6.9" height="15.0" fill="rgb(213,84,15)" rx="2" ry="2" />
-<text  x="26.03" y="1535.5" ></text>
+<title>env (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1445" width="0.8" height="15.0" fill="rgb(220,90,46)" rx="2" ry="2" />
+<text  x="15.30" y="1455.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1093" width="2.3" height="15.0" fill="rgb(251,23,12)" rx="2" ry="2" />
-<text  x="26.79" y="1103.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="39.2" y="1381" width="0.8" height="15.0" fill="rgb(245,67,10)" rx="2" ry="2" />
+<text  x="42.19" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="341" width="0.7" height="15.0" fill="rgb(231,94,53)" rx="2" ry="2" />
-<text  x="27.56" y="351.5" ></text>
+<title>[unknown] (151,515,150 samples, 0.98%)</title><rect x="26.9" y="1333" width="11.5" height="15.0" fill="rgb(249,8,44)" rx="2" ry="2" />
+<text  x="29.90" y="1343.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1813" width="0.7" height="15.0" fill="rgb(244,120,13)" rx="2" ry="2" />
-<text  x="1025.96" y="1823.5" ></text>
+<title>free (20,202,020 samples, 0.13%)</title><rect x="456.3" y="1429" width="1.6" height="15.0" fill="rgb(215,177,32)" rx="2" ry="2" />
+<text  x="459.34" y="1439.5" ></text>
 </g>
 <g >
-<title>sm_row_contains (10,101,010 samples, 0.06%)</title><rect x="595.4" y="2053" width="0.8" height="15.0" fill="rgb(234,47,37)" rx="2" ry="2" />
-<text  x="598.40" y="2063.5" ></text>
+<title>set_dist (20,202,020 samples, 0.13%)</title><rect x="390.3" y="1413" width="1.5" height="15.0" fill="rgb(239,79,35)" rx="2" ry="2" />
+<text  x="393.27" y="1423.5" ></text>
 </g>
 <g >
-<title>compl_merge (10,101,010 samples, 0.06%)</title><rect x="298.9" y="2037" width="0.7" height="15.0" fill="rgb(205,228,22)" rx="2" ry="2" />
-<text  x="301.87" y="2047.5" ></text>
+<title>sccc (10,101,010 samples, 0.07%)</title><rect x="38.4" y="1365" width="0.8" height="15.0" fill="rgb(211,154,42)" rx="2" ry="2" />
+<text  x="41.42" y="1375.5" ></text>
 </g>
 <g >
-<title>_int_malloc (10,101,010 samples, 0.06%)</title><rect x="10.0" y="2053" width="0.8" height="15.0" fill="rgb(232,163,3)" rx="2" ry="2" />
-<text  x="13.00" y="2063.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1253" width="10.0" height="15.0" fill="rgb(218,111,29)" rx="2" ry="2" />
+<text  x="29.90" y="1263.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="965" width="1.5" height="15.0" fill="rgb(225,28,14)" rx="2" ry="2" />
-<text  x="26.79" y="975.5" ></text>
+<title>[unknown] (171,717,170 samples, 1.11%)</title><rect x="26.1" y="1381" width="13.1" height="15.0" fill="rgb(238,141,31)" rx="2" ry="2" />
+<text  x="29.13" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (40,404,040 samples, 0.26%)</title><rect x="23.8" y="1125" width="3.1" height="15.0" fill="rgb(243,23,29)" rx="2" ry="2" />
-<text  x="26.79" y="1135.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1061" width="9.2" height="15.0" fill="rgb(232,106,10)" rx="2" ry="2" />
+<text  x="29.90" y="1071.5" ></text>
 </g>
 <g >
-<title>dirname (10,101,010 samples, 0.06%)</title><rect x="10.8" y="2069" width="0.7" height="15.0" fill="rgb(248,61,36)" rx="2" ry="2" />
-<text  x="13.77" y="2079.5" ></text>
+<title>cached_malloc (10,101,010 samples, 0.07%)</title><rect x="234.3" y="1381" width="0.8" height="15.0" fill="rgb(248,194,20)" rx="2" ry="2" />
+<text  x="237.32" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="741" width="1.5" height="15.0" fill="rgb(211,13,19)" rx="2" ry="2" />
-<text  x="26.79" y="751.5" ></text>
+<title>sm_delrow.part.0 (10,101,010 samples, 0.07%)</title><rect x="561.6" y="1429" width="0.8" height="15.0" fill="rgb(229,141,32)" rx="2" ry="2" />
+<text  x="564.59" y="1439.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1957" width="0.8" height="15.0" fill="rgb(228,120,54)" rx="2" ry="2" />
-<text  x="14.53" y="1967.5" ></text>
+<title>cpu_startup_entry (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1333" width="69.9" height="15.0" fill="rgb(239,213,6)" rx="2" ry="2" />
+<text  x="1123.09" y="1343.5" >cpu_sta..</text>
 </g>
 <g >
-<title>cached_free (10,101,010 samples, 0.06%)</title><rect x="30.7" y="1973" width="0.8" height="15.0" fill="rgb(236,104,38)" rx="2" ry="2" />
-<text  x="33.69" y="1983.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="901" width="9.2" height="15.0" fill="rgb(214,182,7)" rx="2" ry="2" />
+<text  x="29.90" y="911.5" ></text>
 </g>
 <g >
-<title>[unknown] (50,505,050 samples, 0.32%)</title><rect x="23.8" y="1189" width="3.8" height="15.0" fill="rgb(249,46,18)" rx="2" ry="2" />
-<text  x="26.79" y="1199.5" ></text>
+<title>__cpuidle_text_start (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1269" width="69.9" height="15.0" fill="rgb(227,214,16)" rx="2" ry="2" />
+<text  x="1123.09" y="1279.5" >__cpuid..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="420.7" y="1957" width="1.5" height="15.0" fill="rgb(250,63,27)" rx="2" ry="2" />
-<text  x="423.70" y="1967.5" ></text>
+<title>[libsupermalloc.so] (30,303,030 samples, 0.20%)</title><rect x="23.8" y="1397" width="2.3" height="15.0" fill="rgb(229,25,48)" rx="2" ry="2" />
+<text  x="26.83" y="1407.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="1973" width="0.8" height="15.0" fill="rgb(229,148,49)" rx="2" ry="2" />
-<text  x="604.53" y="1983.5" ></text>
+<title>do_syscall_64 (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1381" width="0.8" height="15.0" fill="rgb(239,14,35)" rx="2" ry="2" />
+<text  x="605.30" y="1391.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="1973" width="420.6" height="15.0" fill="rgb(212,192,22)" rx="2" ry="2" />
-<text  x="606.06" y="1983.5" >[[kernel.kallsyms]]</text>
+<title>sm_insert (10,101,010 samples, 0.07%)</title><rect x="411.8" y="1413" width="0.8" height="15.0" fill="rgb(253,42,1)" rx="2" ry="2" />
+<text  x="414.78" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="1989" width="0.8" height="15.0" fill="rgb(237,222,1)" rx="2" ry="2" />
-<text  x="604.53" y="1999.5" ></text>
+<title>__pthread_setspecific (171,717,170 samples, 1.11%)</title><rect x="259.7" y="1413" width="13.0" height="15.0" fill="rgb(247,215,32)" rx="2" ry="2" />
+<text  x="262.67" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="421" width="0.7" height="15.0" fill="rgb(244,213,39)" rx="2" ry="2" />
-<text  x="27.56" y="431.5" ></text>
+<title>sm_row_free (20,202,020 samples, 0.13%)</title><rect x="412.6" y="1413" width="1.5" height="15.0" fill="rgb(208,88,52)" rx="2" ry="2" />
+<text  x="415.55" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1973" width="2.3" height="15.0" fill="rgb(244,163,30)" rx="2" ry="2" />
-<text  x="602.23" y="1983.5" ></text>
+<title>sm_mincov (30,303,030 samples, 0.20%)</title><rect x="229.7" y="1397" width="2.3" height="15.0" fill="rgb(246,143,10)" rx="2" ry="2" />
+<text  x="232.71" y="1407.5" ></text>
 </g>
 <g >
-<title>sm_insert (10,101,010 samples, 0.06%)</title><rect x="413.8" y="2037" width="0.8" height="15.0" fill="rgb(216,14,4)" rx="2" ry="2" />
-<text  x="416.81" y="2047.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="981" width="9.2" height="15.0" fill="rgb(224,48,49)" rx="2" ry="2" />
+<text  x="29.90" y="991.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1941" width="0.8" height="15.0" fill="rgb(213,124,33)" rx="2" ry="2" />
-<text  x="14.53" y="1951.5" ></text>
+<title>espresso (7,737,373,660 samples, 49.87%)</title><rect x="13.1" y="1445" width="588.4" height="15.0" fill="rgb(222,17,34)" rx="2" ry="2" />
+<text  x="16.07" y="1455.5" >espresso</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="600.0" y="1877" width="1.5" height="15.0" fill="rgb(223,175,32)" rx="2" ry="2" />
-<text  x="603.00" y="1887.5" ></text>
+<title>mincov (10,101,010 samples, 0.07%)</title><rect x="356.5" y="1413" width="0.7" height="15.0" fill="rgb(237,220,47)" rx="2" ry="2" />
+<text  x="359.47" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="197" width="0.7" height="15.0" fill="rgb(239,45,40)" rx="2" ry="2" />
-<text  x="27.56" y="207.5" ></text>
+<title>secondary_startup_64_no_verify (7,686,868,610 samples, 49.54%)</title><rect x="605.4" y="1429" width="584.6" height="15.0" fill="rgb(218,84,22)" rx="2" ry="2" />
+<text  x="608.38" y="1439.5" >secondary_startup_64_no_verify</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="533" width="0.7" height="15.0" fill="rgb(228,41,17)" rx="2" ry="2" />
-<text  x="27.56" y="543.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="69" width="0.7" height="15.0" fill="rgb(254,121,33)" rx="2" ry="2" />
+<text  x="30.67" y="79.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="23.8" y="725" width="0.8" height="15.0" fill="rgb(238,203,12)" rx="2" ry="2" />
-<text  x="26.79" y="735.5" ></text>
+<title>hvt_op_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1317" width="0.8" height="15.0" fill="rgb(245,22,40)" rx="2" ry="2" />
+<text  x="605.30" y="1327.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (30,303,030 samples, 0.19%)</title><rect x="36.1" y="2021" width="2.3" height="15.0" fill="rgb(221,2,3)" rx="2" ry="2" />
-<text  x="39.05" y="2031.5" ></text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="37.7" y="1317" width="0.7" height="15.0" fill="rgb(244,80,35)" rx="2" ry="2" />
+<text  x="40.66" y="1327.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="420.7" y="1973" width="1.5" height="15.0" fill="rgb(206,185,42)" rx="2" ry="2" />
-<text  x="423.70" y="1983.5" ></text>
+<title>msort_with_tmp.part.0 (10,101,010 samples, 0.07%)</title><rect x="497.8" y="1429" width="0.8" height="15.0" fill="rgb(241,106,7)" rx="2" ry="2" />
+<text  x="500.83" y="1439.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1909" width="0.8" height="15.0" fill="rgb(241,210,43)" rx="2" ry="2" />
-<text  x="14.53" y="1919.5" ></text>
+<title>sm_insert (292,929,290 samples, 1.89%)</title><rect x="574.6" y="1429" width="22.3" height="15.0" fill="rgb(207,88,26)" rx="2" ry="2" />
+<text  x="577.65" y="1439.5" >s..</text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1957" width="8.4" height="15.0" fill="rgb(216,202,22)" rx="2" ry="2" />
-<text  x="25.26" y="1967.5" ></text>
+<title>[libsupermalloc.so] (40,404,040 samples, 0.26%)</title><rect x="521.6" y="1413" width="3.1" height="15.0" fill="rgb(214,47,22)" rx="2" ry="2" />
+<text  x="524.64" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="389" width="0.7" height="15.0" fill="rgb(252,66,28)" rx="2" ry="2" />
-<text  x="27.56" y="399.5" ></text>
+<title>set_and (70,707,070 samples, 0.46%)</title><rect x="531.6" y="1429" width="5.4" height="15.0" fill="rgb(219,80,37)" rx="2" ry="2" />
+<text  x="534.63" y="1439.5" ></text>
 </g>
 <g >
-<title>sf_new (10,101,010 samples, 0.06%)</title><rect x="556.3" y="2053" width="0.8" height="15.0" fill="rgb(250,50,28)" rx="2" ry="2" />
-<text  x="559.32" y="2063.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1141" width="9.2" height="15.0" fill="rgb(248,16,14)" rx="2" ry="2" />
+<text  x="29.90" y="1151.5" ></text>
 </g>
 <g >
-<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="22.3" y="2005" width="9.2" height="15.0" fill="rgb(210,111,17)" rx="2" ry="2" />
-<text  x="25.26" y="2015.5" ></text>
+<title>ksoftirqd/1 (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1445" width="0.7" height="15.0" fill="rgb(217,121,3)" rx="2" ry="2" />
+<text  x="606.07" y="1455.5" ></text>
 </g>
 <g >
-<title>sm_minimum_cover (10,101,010 samples, 0.06%)</title><rect x="588.5" y="2053" width="0.8" height="15.0" fill="rgb(233,60,12)" rx="2" ry="2" />
-<text  x="591.51" y="2063.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="821" width="9.2" height="15.0" fill="rgb(232,50,25)" rx="2" ry="2" />
+<text  x="29.90" y="831.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="213" width="0.7" height="15.0" fill="rgb(206,199,45)" rx="2" ry="2" />
-<text  x="27.56" y="223.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="869" width="9.2" height="15.0" fill="rgb(205,196,38)" rx="2" ry="2" />
+<text  x="29.90" y="879.5" ></text>
 </g>
 <g >
-<title>__pthread_setspecific (151,515,150 samples, 0.97%)</title><rect x="265.9" y="2037" width="11.5" height="15.0" fill="rgb(213,40,40)" rx="2" ry="2" />
-<text  x="268.92" y="2047.5" ></text>
+<title>[unknown] (30,303,030 samples, 0.20%)</title><rect x="27.7" y="485" width="2.3" height="15.0" fill="rgb(249,16,45)" rx="2" ry="2" />
+<text  x="30.67" y="495.5" ></text>
 </g>
 <g >
-<title>setup_BB_CC (181,818,180 samples, 1.17%)</title><rect x="396.2" y="2037" width="13.8" height="15.0" fill="rgb(244,121,33)" rx="2" ry="2" />
-<text  x="399.18" y="2047.5" ></text>
+<title>sm_minimum_cover (10,101,010 samples, 0.07%)</title><rect x="596.9" y="1429" width="0.8" height="15.0" fill="rgb(237,91,19)" rx="2" ry="2" />
+<text  x="599.93" y="1439.5" ></text>
 </g>
 <g >
-<title>unravel_range (10,101,010 samples, 0.06%)</title><rect x="414.6" y="2037" width="0.7" height="15.0" fill="rgb(222,107,25)" rx="2" ry="2" />
-<text  x="417.57" y="2047.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1029" width="9.2" height="15.0" fill="rgb(240,2,0)" rx="2" ry="2" />
+<text  x="29.90" y="1039.5" ></text>
 </g>
 <g >
-<title>sf_count (20,202,020 samples, 0.13%)</title><rect x="554.8" y="2053" width="1.5" height="15.0" fill="rgb(214,202,34)" rx="2" ry="2" />
-<text  x="557.79" y="2063.5" ></text>
+<title>kthread (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1413" width="0.7" height="15.0" fill="rgb(254,221,18)" rx="2" ry="2" />
+<text  x="606.07" y="1423.5" ></text>
 </g>
 <g >
-<title>__pthread_setspecific (10,101,010 samples, 0.06%)</title><rect x="580.8" y="2037" width="0.8" height="15.0" fill="rgb(240,144,31)" rx="2" ry="2" />
-<text  x="583.84" y="2047.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="597" width="4.6" height="15.0" fill="rgb(209,195,20)" rx="2" ry="2" />
+<text  x="30.67" y="607.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="245" width="0.7" height="15.0" fill="rgb(221,183,36)" rx="2" ry="2" />
-<text  x="27.56" y="255.5" ></text>
+<title>select_feasible (10,101,010 samples, 0.07%)</title><rect x="530.9" y="1429" width="0.7" height="15.0" fill="rgb(254,146,18)" rx="2" ry="2" />
+<text  x="533.86" y="1439.5" ></text>
 </g>
 <g >
-<title>set_and (40,404,040 samples, 0.26%)</title><rect x="536.4" y="2053" width="3.1" height="15.0" fill="rgb(250,210,8)" rx="2" ry="2" />
-<text  x="539.40" y="2063.5" ></text>
+<title>filemap_read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1269" width="0.8" height="15.0" fill="rgb(253,23,9)" rx="2" ry="2" />
+<text  x="604.54" y="1279.5" ></text>
 </g>
 <g >
-<title>sm_resize (20,202,020 samples, 0.13%)</title><rect x="589.3" y="2053" width="1.5" height="15.0" fill="rgb(237,134,13)" rx="2" ry="2" />
-<text  x="592.27" y="2063.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="357" width="1.5" height="15.0" fill="rgb(244,163,44)" rx="2" ry="2" />
+<text  x="30.67" y="367.5" ></text>
 </g>
 <g >
-<title>realloc (20,202,020 samples, 0.13%)</title><rect x="500.4" y="2053" width="1.5" height="15.0" fill="rgb(218,149,18)" rx="2" ry="2" />
-<text  x="503.39" y="2063.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="582.3" y="1413" width="0.8" height="15.0" fill="rgb(253,53,45)" rx="2" ry="2" />
+<text  x="585.33" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1397" width="6.2" height="15.0" fill="rgb(226,72,40)" rx="2" ry="2" />
-<text  x="26.03" y="1407.5" ></text>
+<title>start_kernel (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1381" width="69.9" height="15.0" fill="rgb(240,175,12)" rx="2" ry="2" />
+<text  x="1123.09" y="1391.5" >start_k..</text>
 </g>
 <g >
-<title>irred_split_cover (10,101,010 samples, 0.06%)</title><rect x="363.2" y="2037" width="0.8" height="15.0" fill="rgb(228,170,41)" rx="2" ry="2" />
-<text  x="366.23" y="2047.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1237" width="10.0" height="15.0" fill="rgb(208,135,43)" rx="2" ry="2" />
+<text  x="29.90" y="1247.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (40,404,040 samples, 0.26%)</title><rect x="419.2" y="2021" width="3.0" height="15.0" fill="rgb(243,18,33)" rx="2" ry="2" />
-<text  x="422.17" y="2031.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="101" width="0.7" height="15.0" fill="rgb(208,33,4)" rx="2" ry="2" />
+<text  x="30.67" y="111.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1781" width="7.7" height="15.0" fill="rgb(232,102,41)" rx="2" ry="2" />
-<text  x="26.03" y="1791.5" ></text>
+<title>init_cache (10,101,010 samples, 0.07%)</title><rect x="353.4" y="1413" width="0.8" height="15.0" fill="rgb(207,216,41)" rx="2" ry="2" />
+<text  x="356.40" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="853" width="1.5" height="15.0" fill="rgb(230,94,4)" rx="2" ry="2" />
-<text  x="26.79" y="863.5" ></text>
+<title>syscall_trace_enter.isra.0 (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1349" width="0.7" height="15.0" fill="rgb(250,159,40)" rx="2" ry="2" />
+<text  x="13.77" y="1359.5" ></text>
 </g>
 <g >
-<title>cached_free (10,101,010 samples, 0.06%)</title><rect x="26.1" y="1109" width="0.8" height="15.0" fill="rgb(221,130,6)" rx="2" ry="2" />
-<text  x="29.09" y="1119.5" ></text>
+<title>__vma_adjust (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1221" width="0.8" height="15.0" fill="rgb(212,71,40)" rx="2" ry="2" />
+<text  x="15.30" y="1231.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="589.3" y="2037" width="0.7" height="15.0" fill="rgb(206,45,16)" rx="2" ry="2" />
-<text  x="592.27" y="2047.5" ></text>
+<title>cpu_startup_entry (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1397" width="514.7" height="15.0" fill="rgb(248,164,18)" rx="2" ry="2" />
+<text  x="608.38" y="1407.5" >cpu_startup_entry</text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1893" width="8.4" height="15.0" fill="rgb(216,72,35)" rx="2" ry="2" />
-<text  x="25.26" y="1903.5" ></text>
+<title>bprm_execve (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1349" width="0.8" height="15.0" fill="rgb(219,217,25)" rx="2" ry="2" />
+<text  x="15.30" y="1359.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1797" width="7.7" height="15.0" fill="rgb(244,23,4)" rx="2" ry="2" />
-<text  x="26.03" y="1807.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="295.8" y="1397" width="0.7" height="15.0" fill="rgb(238,204,12)" rx="2" ry="2" />
+<text  x="298.78" y="1407.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1957" width="2.3" height="15.0" fill="rgb(211,97,34)" rx="2" ry="2" />
-<text  x="602.23" y="1967.5" ></text>
+<title>__seccomp_filter (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1317" width="0.7" height="15.0" fill="rgb(211,130,25)" rx="2" ry="2" />
+<text  x="13.77" y="1327.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1445" width="6.2" height="15.0" fill="rgb(218,29,13)" rx="2" ry="2" />
-<text  x="26.03" y="1455.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="581" width="4.6" height="15.0" fill="rgb(212,160,49)" rx="2" ry="2" />
+<text  x="30.67" y="591.5" ></text>
 </g>
 <g >
-<title>read_cube (20,202,020 samples, 0.13%)</title><rect x="498.9" y="2053" width="1.5" height="15.0" fill="rgb(247,181,24)" rx="2" ry="2" />
-<text  x="501.86" y="2063.5" ></text>
+<title>sm_delcol.part.0 (10,101,010 samples, 0.07%)</title><rect x="40.7" y="1381" width="0.8" height="15.0" fill="rgb(222,206,27)" rx="2" ry="2" />
+<text  x="43.73" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="2005" width="166.3" height="15.0" fill="rgb(231,67,35)" rx="2" ry="2" />
-<text  x="1026.73" y="2015.5" >[unknown]</text>
+<title>finish_task_switch (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1349" width="0.7" height="15.0" fill="rgb(214,170,2)" rx="2" ry="2" />
+<text  x="606.07" y="1359.5" ></text>
 </g>
 <g >
-<title>mini_sort (10,101,010 samples, 0.06%)</title><rect x="368.6" y="2037" width="0.8" height="15.0" fill="rgb(234,229,50)" rx="2" ry="2" />
-<text  x="371.60" y="2047.5" ></text>
+<title>syscall_enter_from_user_mode (10,101,010 samples, 0.07%)</title><rect x="415.6" y="1381" width="0.8" height="15.0" fill="rgb(209,196,6)" rx="2" ry="2" />
+<text  x="418.62" y="1391.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="309.6" y="2021" width="0.8" height="15.0" fill="rgb(228,33,10)" rx="2" ry="2" />
-<text  x="312.60" y="2031.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1301" width="10.0" height="15.0" fill="rgb(228,79,43)" rx="2" ry="2" />
+<text  x="29.90" y="1311.5" ></text>
 </g>
 <g >
-<title>[unknown] (5,282,828,230 samples, 33.96%)</title><rect x="14.6" y="2053" width="400.7" height="15.0" fill="rgb(253,62,52)" rx="2" ry="2" />
-<text  x="17.60" y="2063.5" >[unknown]</text>
+<title>__lock_text_start (10,101,010 samples, 0.07%)</title><rect x="414.9" y="1317" width="0.7" height="15.0" fill="rgb(220,108,24)" rx="2" ry="2" />
+<text  x="417.86" y="1327.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1893" width="2.3" height="15.0" fill="rgb(215,209,29)" rx="2" ry="2" />
-<text  x="602.23" y="1903.5" ></text>
+<title>set_ord (10,101,010 samples, 0.07%)</title><rect x="547.0" y="1429" width="0.8" height="15.0" fill="rgb(210,165,41)" rx="2" ry="2" />
+<text  x="549.99" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="773" width="1.5" height="15.0" fill="rgb(254,116,23)" rx="2" ry="2" />
-<text  x="26.79" y="783.5" ></text>
+<title>ksys_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1349" width="0.8" height="15.0" fill="rgb(213,29,15)" rx="2" ry="2" />
+<text  x="605.30" y="1359.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1797" width="0.7" height="15.0" fill="rgb(243,204,15)" rx="2" ry="2" />
-<text  x="1025.96" y="1807.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="416.4" y="1429" width="0.8" height="15.0" fill="rgb(237,111,40)" rx="2" ry="2" />
+<text  x="419.39" y="1439.5" ></text>
 </g>
 <g >
-<title>force_lower (40,404,040 samples, 0.26%)</title><rect x="350.2" y="2037" width="3.1" height="15.0" fill="rgb(222,204,26)" rx="2" ry="2" />
-<text  x="353.21" y="2047.5" ></text>
+<title>sm_col_dominance (10,101,010 samples, 0.07%)</title><rect x="410.2" y="1413" width="0.8" height="15.0" fill="rgb(235,91,44)" rx="2" ry="2" />
+<text  x="413.25" y="1423.5" ></text>
 </g>
 <g >
-<title>sm_row_intersects (20,202,020 samples, 0.13%)</title><rect x="229.9" y="2021" width="1.5" height="15.0" fill="rgb(247,144,42)" rx="2" ry="2" />
-<text  x="232.91" y="2031.5" ></text>
+<title>cached_malloc (10,101,010 samples, 0.07%)</title><rect x="599.2" y="1413" width="0.8" height="15.0" fill="rgb(217,226,44)" rx="2" ry="2" />
+<text  x="602.23" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="229" width="0.7" height="15.0" fill="rgb(221,193,49)" rx="2" ry="2" />
-<text  x="27.56" y="239.5" ></text>
+<title>vmbus_setevent (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1221" width="0.8" height="15.0" fill="rgb(217,123,5)" rx="2" ry="2" />
+<text  x="605.30" y="1231.5" ></text>
 </g>
 <g >
-<title>cb_consensus (10,101,010 samples, 0.06%)</title><rect x="287.4" y="2037" width="0.7" height="15.0" fill="rgb(208,8,21)" rx="2" ry="2" />
-<text  x="290.38" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="197" width="1.5" height="15.0" fill="rgb(254,138,53)" rx="2" ry="2" />
+<text  x="30.67" y="207.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="677" width="0.7" height="15.0" fill="rgb(250,140,1)" rx="2" ry="2" />
-<text  x="27.56" y="687.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1221" width="10.0" height="15.0" fill="rgb(245,135,48)" rx="2" ry="2" />
+<text  x="29.90" y="1231.5" ></text>
 </g>
 <g >
-<title>cached_malloc (20,202,020 samples, 0.13%)</title><rect x="593.9" y="2037" width="1.5" height="15.0" fill="rgb(252,176,31)" rx="2" ry="2" />
-<text  x="596.87" y="2047.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="117" width="0.7" height="15.0" fill="rgb(236,116,6)" rx="2" ry="2" />
+<text  x="30.67" y="127.5" ></text>
 </g>
 <g >
-<title>essen_raising (20,202,020 samples, 0.13%)</title><rect x="347.1" y="2037" width="1.6" height="15.0" fill="rgb(239,100,5)" rx="2" ry="2" />
-<text  x="350.14" y="2047.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="661" width="4.6" height="15.0" fill="rgb(210,55,50)" rx="2" ry="2" />
+<text  x="30.67" y="671.5" ></text>
 </g>
 <g >
-<title>cofactor (474,747,470 samples, 3.05%)</title><rect x="428.4" y="2053" width="36.0" height="15.0" fill="rgb(227,51,50)" rx="2" ry="2" />
-<text  x="431.36" y="2063.5" >cof..</text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="33.0" y="725" width="0.8" height="15.0" fill="rgb(224,110,36)" rx="2" ry="2" />
+<text  x="36.05" y="735.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="549" width="0.7" height="15.0" fill="rgb(237,195,41)" rx="2" ry="2" />
-<text  x="27.56" y="559.5" ></text>
+<title>free (10,101,010 samples, 0.07%)</title><rect x="29.2" y="437" width="0.8" height="15.0" fill="rgb(252,182,44)" rx="2" ry="2" />
+<text  x="32.21" y="447.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1061" width="2.3" height="15.0" fill="rgb(242,195,13)" rx="2" ry="2" />
-<text  x="26.79" y="1071.5" ></text>
+<title>sf_count (20,202,020 samples, 0.13%)</title><rect x="547.8" y="1429" width="1.5" height="15.0" fill="rgb(237,54,37)" rx="2" ry="2" />
+<text  x="550.76" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="661" width="0.7" height="15.0" fill="rgb(209,3,54)" rx="2" ry="2" />
-<text  x="27.56" y="671.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="26.9" y="789" width="0.8" height="15.0" fill="rgb(228,204,18)" rx="2" ry="2" />
+<text  x="29.90" y="799.5" ></text>
 </g>
 <g >
-<title>sf_unlist (10,101,010 samples, 0.06%)</title><rect x="226.1" y="2021" width="0.7" height="15.0" fill="rgb(218,71,19)" rx="2" ry="2" />
-<text  x="229.08" y="2031.5" ></text>
+<title>malloc (10,101,010 samples, 0.07%)</title><rect x="10.0" y="1429" width="0.8" height="15.0" fill="rgb(254,204,31)" rx="2" ry="2" />
+<text  x="13.00" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="357" width="0.7" height="15.0" fill="rgb(246,211,31)" rx="2" ry="2" />
-<text  x="27.56" y="367.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1429" width="0.8" height="15.0" fill="rgb(220,87,19)" rx="2" ry="2" />
+<text  x="604.54" y="1439.5" ></text>
 </g>
 <g >
-<title>sccc_special_cases (20,202,020 samples, 0.13%)</title><rect x="390.8" y="2037" width="1.6" height="15.0" fill="rgb(239,43,21)" rx="2" ry="2" />
-<text  x="393.82" y="2047.5" ></text>
+<title>setp_implies (40,404,040 samples, 0.26%)</title><rect x="226.6" y="1397" width="3.1" height="15.0" fill="rgb(231,31,14)" rx="2" ry="2" />
+<text  x="229.64" y="1407.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (10,101,010 samples, 0.06%)</title><rect x="24.6" y="37" width="0.7" height="15.0" fill="rgb(217,92,40)" rx="2" ry="2" />
-<text  x="27.56" y="47.5" ></text>
+<title>d1_order (30,303,030 samples, 0.20%)</title><rect x="454.0" y="1429" width="2.3" height="15.0" fill="rgb(210,217,32)" rx="2" ry="2" />
+<text  x="457.04" y="1439.5" ></text>
 </g>
 <g >
-<title>scofactor (444,444,440 samples, 2.86%)</title><rect x="502.7" y="2053" width="33.7" height="15.0" fill="rgb(237,217,41)" rx="2" ry="2" />
-<text  x="505.69" y="2063.5" >sc..</text>
+<title>massive_count (414,141,410 samples, 2.67%)</title><rect x="462.5" y="1429" width="31.5" height="15.0" fill="rgb(227,76,13)" rx="2" ry="2" />
+<text  x="465.49" y="1439.5" >ma..</text>
 </g>
 <g >
-<title>cached_free (20,202,020 samples, 0.13%)</title><rect x="424.5" y="2053" width="1.6" height="15.0" fill="rgb(213,68,13)" rx="2" ry="2" />
-<text  x="427.53" y="2063.5" ></text>
+<title>sm_col_contains (10,101,010 samples, 0.07%)</title><rect x="560.8" y="1429" width="0.8" height="15.0" fill="rgb(252,119,34)" rx="2" ry="2" />
+<text  x="563.82" y="1439.5" ></text>
 </g>
 <g >
-<title>sf_list (10,101,010 samples, 0.06%)</title><rect x="410.0" y="2037" width="0.7" height="15.0" fill="rgb(225,9,51)" rx="2" ry="2" />
-<text  x="412.97" y="2047.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="604.6" y="1429" width="0.8" height="15.0" fill="rgb(245,160,21)" rx="2" ry="2" />
+<text  x="607.61" y="1439.5" ></text>
 </g>
 <g >
-<title>sm_delrow.part.0 (10,101,010 samples, 0.06%)</title><rect x="226.8" y="2021" width="0.8" height="15.0" fill="rgb(221,27,20)" rx="2" ry="2" />
-<text  x="229.84" y="2031.5" ></text>
+<title>read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1413" width="0.8" height="15.0" fill="rgb(233,25,39)" rx="2" ry="2" />
+<text  x="604.54" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1429" width="6.2" height="15.0" fill="rgb(235,5,54)" rx="2" ry="2" />
-<text  x="26.03" y="1439.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1077" width="9.2" height="15.0" fill="rgb(224,209,48)" rx="2" ry="2" />
+<text  x="29.90" y="1087.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="501.2" y="2037" width="0.7" height="15.0" fill="rgb(223,100,12)" rx="2" ry="2" />
-<text  x="504.16" y="2047.5" ></text>
+<title>syscall_enter_from_user_mode (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1365" width="0.7" height="15.0" fill="rgb(249,151,28)" rx="2" ry="2" />
+<text  x="13.77" y="1375.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="23.0" y="1269" width="0.8" height="15.0" fill="rgb(218,17,22)" rx="2" ry="2" />
-<text  x="26.03" y="1279.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="549" width="4.6" height="15.0" fill="rgb(239,0,5)" rx="2" ry="2" />
+<text  x="30.67" y="559.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1461" width="6.9" height="15.0" fill="rgb(227,81,47)" rx="2" ry="2" />
-<text  x="26.03" y="1471.5" ></text>
+<title>__sched_text_start (10,101,010 samples, 0.07%)</title><rect x="603.1" y="1365" width="0.7" height="15.0" fill="rgb(218,98,28)" rx="2" ry="2" />
+<text  x="606.07" y="1375.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1941" width="166.3" height="15.0" fill="rgb(215,140,34)" rx="2" ry="2" />
-<text  x="1026.73" y="1951.5" >[[kernel.kallsyms]]</text>
+<title>sm_row_alloc (30,303,030 samples, 0.20%)</title><rect x="597.7" y="1429" width="2.3" height="15.0" fill="rgb(230,198,1)" rx="2" ry="2" />
+<text  x="600.70" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (40,404,040 samples, 0.26%)</title><rect x="23.8" y="1157" width="3.1" height="15.0" fill="rgb(240,129,43)" rx="2" ry="2" />
-<text  x="26.79" y="1167.5" ></text>
+<title>essen_parts (191,919,190 samples, 1.24%)</title><rect x="331.9" y="1413" width="14.6" height="15.0" fill="rgb(223,17,23)" rx="2" ry="2" />
+<text  x="334.89" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="420.7" y="1989" width="1.5" height="15.0" fill="rgb(232,5,12)" rx="2" ry="2" />
-<text  x="423.70" y="1999.5" ></text>
+<title>bit_index (10,101,010 samples, 0.07%)</title><rect x="417.2" y="1429" width="0.7" height="15.0" fill="rgb(219,112,24)" rx="2" ry="2" />
+<text  x="420.16" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1045" width="2.3" height="15.0" fill="rgb(231,124,18)" rx="2" ry="2" />
-<text  x="26.79" y="1055.5" ></text>
+<title>taut_special_cases (313,131,310 samples, 2.02%)</title><rect x="235.1" y="1397" width="23.8" height="15.0" fill="rgb(223,165,21)" rx="2" ry="2" />
+<text  x="238.09" y="1407.5" >t..</text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="373" width="0.7" height="15.0" fill="rgb(221,85,52)" rx="2" ry="2" />
-<text  x="27.56" y="383.5" ></text>
+<title>cofactor (343,434,340 samples, 2.21%)</title><rect x="426.4" y="1429" width="26.1" height="15.0" fill="rgb(225,86,50)" rx="2" ry="2" />
+<text  x="429.38" y="1439.5" >c..</text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1573" width="6.9" height="15.0" fill="rgb(224,195,0)" rx="2" ry="2" />
-<text  x="26.03" y="1583.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="917" width="9.2" height="15.0" fill="rgb(217,17,16)" rx="2" ry="2" />
+<text  x="29.90" y="927.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="410.0" y="2021" width="0.7" height="15.0" fill="rgb(224,44,12)" rx="2" ry="2" />
-<text  x="412.97" y="2031.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="309" width="1.5" height="15.0" fill="rgb(226,73,18)" rx="2" ry="2" />
+<text  x="30.67" y="319.5" ></text>
 </g>
 <g >
-<title>sm_col_dominance (30,303,030 samples, 0.19%)</title><rect x="562.5" y="2053" width="2.3" height="15.0" fill="rgb(215,70,46)" rx="2" ry="2" />
-<text  x="565.45" y="2063.5" ></text>
+<title>cached_malloc (70,707,070 samples, 0.46%)</title><rect x="567.7" y="1413" width="5.4" height="15.0" fill="rgb(224,77,51)" rx="2" ry="2" />
+<text  x="570.73" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="869" width="1.5" height="15.0" fill="rgb(243,1,53)" rx="2" ry="2" />
-<text  x="26.79" y="879.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1189" width="10.0" height="15.0" fill="rgb(253,36,16)" rx="2" ry="2" />
+<text  x="29.90" y="1199.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="1022.2" y="1941" width="1.5" height="15.0" fill="rgb(223,62,39)" rx="2" ry="2" />
-<text  x="1025.19" y="1951.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="232.0" y="1381" width="0.8" height="15.0" fill="rgb(254,93,8)" rx="2" ry="2" />
+<text  x="235.02" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="405" width="0.7" height="15.0" fill="rgb(254,115,33)" rx="2" ry="2" />
-<text  x="27.56" y="415.5" ></text>
+<title>massive_count (1,999,999,980 samples, 12.89%)</title><rect x="69.2" y="1397" width="152.1" height="15.0" fill="rgb(210,42,1)" rx="2" ry="2" />
+<text  x="72.15" y="1407.5" >massive_count</text>
 </g>
 <g >
-<title>__times (10,101,010 samples, 0.06%)</title><rect x="277.4" y="2037" width="0.8" height="15.0" fill="rgb(226,156,3)" rx="2" ry="2" />
-<text  x="280.42" y="2047.5" ></text>
+<title>[unknown] (131,313,130 samples, 0.85%)</title><rect x="26.9" y="1269" width="10.0" height="15.0" fill="rgb(240,65,15)" rx="2" ry="2" />
+<text  x="29.90" y="1279.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1893" width="0.8" height="15.0" fill="rgb(210,209,20)" rx="2" ry="2" />
-<text  x="14.53" y="1903.5" ></text>
+<title>object_base (10,101,010 samples, 0.07%)</title><rect x="36.1" y="1157" width="0.8" height="15.0" fill="rgb(244,87,16)" rx="2" ry="2" />
+<text  x="39.12" y="1167.5" ></text>
 </g>
 <g >
-<title>[unknown] (40,404,040 samples, 0.26%)</title><rect x="23.8" y="1141" width="3.1" height="15.0" fill="rgb(234,45,9)" rx="2" ry="2" />
-<text  x="26.79" y="1151.5" ></text>
+<title>filemap_get_pages (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1253" width="0.8" height="15.0" fill="rgb(249,60,17)" rx="2" ry="2" />
+<text  x="604.54" y="1263.5" ></text>
 </g>
 <g >
-<title>object_base (10,101,010 samples, 0.06%)</title><rect x="25.3" y="1013" width="0.8" height="15.0" fill="rgb(233,206,5)" rx="2" ry="2" />
-<text  x="28.32" y="1023.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="229" width="1.5" height="15.0" fill="rgb(233,186,31)" rx="2" ry="2" />
+<text  x="30.67" y="239.5" ></text>
 </g>
 <g >
-<title>__memset_avx2_unaligned_erms (30,303,030 samples, 0.19%)</title><rect x="416.1" y="2053" width="2.3" height="15.0" fill="rgb(239,88,8)" rx="2" ry="2" />
-<text  x="419.10" y="2063.5" ></text>
+<title>solution_dup (10,101,010 samples, 0.07%)</title><rect x="234.3" y="1397" width="0.8" height="15.0" fill="rgb(209,205,36)" rx="2" ry="2" />
+<text  x="237.32" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1477" width="6.9" height="15.0" fill="rgb(243,35,9)" rx="2" ry="2" />
-<text  x="26.03" y="1487.5" ></text>
+<title>malloc (60,606,060 samples, 0.39%)</title><rect x="457.9" y="1429" width="4.6" height="15.0" fill="rgb(250,65,2)" rx="2" ry="2" />
+<text  x="460.88" y="1439.5" ></text>
 </g>
 <g >
-<title>__tls_get_addr (10,101,010 samples, 0.06%)</title><rect x="31.5" y="2005" width="0.7" height="15.0" fill="rgb(219,113,23)" rx="2" ry="2" />
-<text  x="34.45" y="2015.5" ></text>
+<title>[libsupermalloc.so] (80,808,080 samples, 0.52%)</title><rect x="17.7" y="1413" width="6.1" height="15.0" fill="rgb(223,182,16)" rx="2" ry="2" />
+<text  x="20.68" y="1423.5" ></text>
 </g>
 <g >
-<title>cached_free (80,808,080 samples, 0.52%)</title><rect x="281.2" y="2037" width="6.2" height="15.0" fill="rgb(248,113,49)" rx="2" ry="2" />
-<text  x="284.25" y="2047.5" ></text>
+<title>[unknown] (50,505,050 samples, 0.33%)</title><rect x="27.7" y="533" width="3.8" height="15.0" fill="rgb(228,143,27)" rx="2" ry="2" />
+<text  x="30.67" y="543.5" ></text>
 </g>
 <g >
-<title>setp_equal (20,202,020 samples, 0.13%)</title><rect x="394.6" y="2037" width="1.6" height="15.0" fill="rgb(232,0,29)" rx="2" ry="2" />
-<text  x="397.65" y="2047.5" ></text>
+<title>sm_row_intersects (20,202,020 samples, 0.13%)</title><rect x="232.8" y="1397" width="1.5" height="15.0" fill="rgb(239,5,51)" rx="2" ry="2" />
+<text  x="235.79" y="1407.5" ></text>
 </g>
 <g >
-<title>set_diff (90,909,090 samples, 0.58%)</title><rect x="539.5" y="2053" width="6.9" height="15.0" fill="rgb(233,13,50)" rx="2" ry="2" />
-<text  x="542.47" y="2063.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="629" width="4.6" height="15.0" fill="rgb(235,6,17)" rx="2" ry="2" />
+<text  x="30.67" y="639.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="517" width="0.7" height="15.0" fill="rgb(223,170,19)" rx="2" ry="2" />
-<text  x="27.56" y="527.5" ></text>
+<title>vfs_read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1333" width="0.8" height="15.0" fill="rgb(222,6,42)" rx="2" ry="2" />
+<text  x="604.54" y="1343.5" ></text>
 </g>
 <g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="465.9" y="2037" width="0.8" height="15.0" fill="rgb(215,127,17)" rx="2" ry="2" />
-<text  x="468.91" y="2047.5" ></text>
+<title>vmbus_sendpacket_getid (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1253" width="0.8" height="15.0" fill="rgb(245,0,33)" rx="2" ry="2" />
+<text  x="605.30" y="1263.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="469" width="0.7" height="15.0" fill="rgb(227,33,53)" rx="2" ry="2" />
-<text  x="27.56" y="479.5" ></text>
+<title>all (15,515,151,360 samples, 100%)</title><rect x="10.0" y="1461" width="1180.0" height="15.0" fill="rgb(232,47,8)" rx="2" ry="2" />
+<text  x="13.00" y="1471.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="2021" width="420.6" height="15.0" fill="rgb(248,54,42)" rx="2" ry="2" />
-<text  x="606.06" y="2031.5" >[[kernel.kallsyms]]</text>
+<title>object_base (20,202,020 samples, 0.13%)</title><rect x="221.3" y="1397" width="1.5" height="15.0" fill="rgb(224,189,39)" rx="2" ry="2" />
+<text  x="224.26" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (70,707,070 samples, 0.45%)</title><rect x="23.8" y="1269" width="5.4" height="15.0" fill="rgb(233,58,19)" rx="2" ry="2" />
-<text  x="26.79" y="1279.5" ></text>
+<title>__cpuidle_text_start (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1333" width="514.7" height="15.0" fill="rgb(251,42,51)" rx="2" ry="2" />
+<text  x="608.38" y="1343.5" >__cpuidle_text_start</text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1765" width="7.7" height="15.0" fill="rgb(242,139,35)" rx="2" ry="2" />
-<text  x="26.03" y="1775.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="500.1" y="1413" width="0.8" height="15.0" fill="rgb(234,147,1)" rx="2" ry="2" />
+<text  x="503.13" y="1423.5" ></text>
 </g>
 <g >
-<title>full_row (222,222,220 samples, 1.43%)</title><rect x="42.2" y="2021" width="16.8" height="15.0" fill="rgb(238,183,49)" rx="2" ry="2" />
-<text  x="45.18" y="2031.5" ></text>
+<title>[unknown] (151,515,150 samples, 0.98%)</title><rect x="26.9" y="1365" width="11.5" height="15.0" fill="rgb(205,21,45)" rx="2" ry="2" />
+<text  x="29.90" y="1375.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="613" width="0.7" height="15.0" fill="rgb(240,100,9)" rx="2" ry="2" />
-<text  x="27.56" y="623.5" ></text>
+<title>complement (10,101,010 samples, 0.07%)</title><rect x="452.5" y="1429" width="0.8" height="15.0" fill="rgb(213,225,18)" rx="2" ry="2" />
+<text  x="455.50" y="1439.5" ></text>
 </g>
 <g >
-<title>set_dist (10,101,010 samples, 0.06%)</title><rect x="546.4" y="2053" width="0.7" height="15.0" fill="rgb(252,30,11)" rx="2" ry="2" />
-<text  x="549.36" y="2063.5" ></text>
+<title>hv_kvp_daemon (20,202,020 samples, 0.13%)</title><rect x="601.5" y="1445" width="1.6" height="15.0" fill="rgb(206,176,37)" rx="2" ry="2" />
+<text  x="604.54" y="1455.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="1989" width="0.7" height="15.0" fill="rgb(235,50,36)" rx="2" ry="2" />
-<text  x="13.77" y="1999.5" ></text>
+<title>[unknown] (30,303,030 samples, 0.20%)</title><rect x="27.7" y="453" width="2.3" height="15.0" fill="rgb(239,191,33)" rx="2" ry="2" />
+<text  x="30.67" y="463.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="501" width="0.7" height="15.0" fill="rgb(234,176,10)" rx="2" ry="2" />
-<text  x="27.56" y="511.5" ></text>
+<title>kthread (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1413" width="0.8" height="15.0" fill="rgb(244,117,48)" rx="2" ry="2" />
+<text  x="606.84" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="2053" width="0.7" height="15.0" fill="rgb(213,168,36)" rx="2" ry="2" />
-<text  x="13.77" y="2063.5" ></text>
+<title>[unknown] (70,707,070 samples, 0.46%)</title><rect x="27.7" y="709" width="5.3" height="15.0" fill="rgb(235,158,48)" rx="2" ry="2" />
+<text  x="30.67" y="719.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="133" width="0.7" height="15.0" fill="rgb(219,114,41)" rx="2" ry="2" />
-<text  x="27.56" y="143.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="261" width="1.5" height="15.0" fill="rgb(248,213,43)" rx="2" ry="2" />
+<text  x="30.67" y="271.5" ></text>
 </g>
 <g >
-<title>elim_lowering (333,333,330 samples, 2.14%)</title><rect x="310.4" y="2037" width="25.2" height="15.0" fill="rgb(207,72,47)" rx="2" ry="2" />
-<text  x="313.36" y="2047.5" >e..</text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="165" width="1.5" height="15.0" fill="rgb(247,166,38)" rx="2" ry="2" />
+<text  x="30.67" y="175.5" ></text>
 </g>
 <g >
-<title>msort_with_tmp.part.0 (10,101,010 samples, 0.06%)</title><rect x="498.1" y="2053" width="0.8" height="15.0" fill="rgb(239,189,11)" rx="2" ry="2" />
-<text  x="501.09" y="2063.5" ></text>
+<title>process_one_work (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1381" width="0.8" height="15.0" fill="rgb(229,176,52)" rx="2" ry="2" />
+<text  x="606.84" y="1391.5" ></text>
 </g>
 <g >
-<title>cached_malloc (20,202,020 samples, 0.13%)</title><rect x="560.9" y="2037" width="1.6" height="15.0" fill="rgb(224,90,15)" rx="2" ry="2" />
-<text  x="563.92" y="2047.5" ></text>
+<title>full_row (333,333,330 samples, 2.15%)</title><rect x="43.0" y="1397" width="25.4" height="15.0" fill="rgb(252,18,27)" rx="2" ry="2" />
+<text  x="46.03" y="1407.5" >f..</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (5,545,454,490 samples, 35.65%)</title><rect x="603.1" y="2037" width="420.6" height="15.0" fill="rgb(247,224,34)" rx="2" ry="2" />
-<text  x="606.06" y="2047.5" >[[kernel.kallsyms]]</text>
+<title>ext4_end_io_rsv_work (10,101,010 samples, 0.07%)</title><rect x="603.8" y="1365" width="0.8" height="15.0" fill="rgb(254,76,39)" rx="2" ry="2" />
+<text  x="606.84" y="1375.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="485" width="0.7" height="15.0" fill="rgb(205,39,34)" rx="2" ry="2" />
-<text  x="27.56" y="495.5" ></text>
+<title>__tls_get_addr (20,202,020 samples, 0.13%)</title><rect x="524.7" y="1413" width="1.5" height="15.0" fill="rgb(252,14,5)" rx="2" ry="2" />
+<text  x="527.71" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1669" width="0.7" height="15.0" fill="rgb(232,229,47)" rx="2" ry="2" />
-<text  x="1025.96" y="1679.5" ></text>
+<title>realloc (10,101,010 samples, 0.07%)</title><rect x="500.1" y="1429" width="0.8" height="15.0" fill="rgb(238,34,13)" rx="2" ry="2" />
+<text  x="503.13" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1717" width="7.7" height="15.0" fill="rgb(252,110,36)" rx="2" ry="2" />
-<text  x="26.03" y="1727.5" ></text>
+<title>__split_vma (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1237" width="0.8" height="15.0" fill="rgb(231,195,18)" rx="2" ry="2" />
+<text  x="15.30" y="1247.5" ></text>
 </g>
 <g >
-<title>object_base (10,101,010 samples, 0.06%)</title><rect x="28.4" y="1221" width="0.8" height="15.0" fill="rgb(227,167,52)" rx="2" ry="2" />
-<text  x="31.39" y="1231.5" ></text>
+<title>read_cube (10,101,010 samples, 0.07%)</title><rect x="381.1" y="1413" width="0.7" height="15.0" fill="rgb(211,41,30)" rx="2" ry="2" />
+<text  x="384.05" y="1423.5" ></text>
 </g>
 <g >
-<title>swapper (7,737,373,660 samples, 49.74%)</title><rect x="603.1" y="2069" width="586.9" height="15.0" fill="rgb(245,213,29)" rx="2" ry="2" />
-<text  x="606.06" y="2079.5" >swapper</text>
+<title>do_syscall_64 (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1397" width="0.8" height="15.0" fill="rgb(209,87,12)" rx="2" ry="2" />
+<text  x="15.30" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="709" width="0.7" height="15.0" fill="rgb(227,90,36)" rx="2" ry="2" />
-<text  x="27.56" y="719.5" ></text>
+<title>cactive (10,101,010 samples, 0.07%)</title><rect x="425.6" y="1429" width="0.8" height="15.0" fill="rgb(243,7,2)" rx="2" ry="2" />
+<text  x="428.61" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (50,505,050 samples, 0.32%)</title><rect x="23.8" y="1221" width="3.8" height="15.0" fill="rgb(227,200,29)" rx="2" ry="2" />
-<text  x="26.79" y="1231.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="437" width="1.5" height="15.0" fill="rgb(254,100,11)" rx="2" ry="2" />
+<text  x="30.67" y="447.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="1022.2" y="1877" width="1.5" height="15.0" fill="rgb(214,56,25)" rx="2" ry="2" />
-<text  x="1025.19" y="1887.5" ></text>
+<title>[unknown] (60,606,060 samples, 0.39%)</title><rect x="27.7" y="677" width="4.6" height="15.0" fill="rgb(209,165,38)" rx="2" ry="2" />
+<text  x="30.67" y="687.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1989" width="2.3" height="15.0" fill="rgb(208,126,47)" rx="2" ry="2" />
-<text  x="602.23" y="1999.5" ></text>
+<title>size_2_bin (141,414,140 samples, 0.91%)</title><rect x="549.3" y="1429" width="10.8" height="15.0" fill="rgb(209,197,12)" rx="2" ry="2" />
+<text  x="552.30" y="1439.5" ></text>
 </g>
 <g >
-<title>cdist01 (20,202,020 samples, 0.13%)</title><rect x="288.1" y="2037" width="1.6" height="15.0" fill="rgb(233,22,18)" rx="2" ry="2" />
-<text  x="291.14" y="2047.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="341" width="1.5" height="15.0" fill="rgb(244,125,54)" rx="2" ry="2" />
+<text  x="30.67" y="351.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="277" width="0.7" height="15.0" fill="rgb(251,106,10)" rx="2" ry="2" />
-<text  x="27.56" y="287.5" ></text>
+<title>__pthread_setspecific (20,202,020 samples, 0.13%)</title><rect x="580.8" y="1413" width="1.5" height="15.0" fill="rgb(206,172,22)" rx="2" ry="2" />
+<text  x="583.79" y="1423.5" ></text>
 </g>
 <g >
-<title>__memset_avx2_unaligned_erms (20,202,020 samples, 0.13%)</title><rect x="34.5" y="2021" width="1.6" height="15.0" fill="rgb(214,113,2)" rx="2" ry="2" />
-<text  x="37.52" y="2031.5" ></text>
+<title>sm_dup (161,616,160 samples, 1.04%)</title><rect x="562.4" y="1429" width="12.2" height="15.0" fill="rgb(246,46,41)" rx="2" ry="2" />
+<text  x="565.36" y="1439.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="101" width="0.7" height="15.0" fill="rgb(246,225,41)" rx="2" ry="2" />
-<text  x="27.56" y="111.5" ></text>
+<title>__GI___libc_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1413" width="0.8" height="15.0" fill="rgb(229,216,21)" rx="2" ry="2" />
+<text  x="605.30" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1077" width="2.3" height="15.0" fill="rgb(209,5,28)" rx="2" ry="2" />
-<text  x="26.79" y="1087.5" ></text>
+<title>setup_BB_CC (111,111,110 samples, 0.72%)</title><rect x="394.9" y="1413" width="8.4" height="15.0" fill="rgb(227,185,19)" rx="2" ry="2" />
+<text  x="397.88" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="837" width="1.5" height="15.0" fill="rgb(235,122,14)" rx="2" ry="2" />
-<text  x="26.79" y="847.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="277" width="1.5" height="15.0" fill="rgb(223,148,15)" rx="2" ry="2" />
+<text  x="30.67" y="287.5" ></text>
 </g>
 <g >
-<title>binate_split_select (30,303,030 samples, 0.19%)</title><rect x="278.9" y="2037" width="2.3" height="15.0" fill="rgb(213,95,5)" rx="2" ry="2" />
-<text  x="281.95" y="2047.5" ></text>
+<title>ext4_file_read_iter (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1301" width="0.8" height="15.0" fill="rgb(236,111,40)" rx="2" ry="2" />
+<text  x="604.54" y="1311.5" ></text>
 </g>
 <g >
-<title>maybe_initialize_malloc (60,606,060 samples, 0.39%)</title><rect x="493.5" y="2053" width="4.6" height="15.0" fill="rgb(229,191,40)" rx="2" ry="2" />
-<text  x="496.49" y="2063.5" ></text>
+<title>bench.sh (10,101,010 samples, 0.07%)</title><rect x="10.0" y="1445" width="0.8" height="15.0" fill="rgb(213,29,3)" rx="2" ry="2" />
+<text  x="13.00" y="1455.5" ></text>
 </g>
 <g >
-<title>gimpel_reduce (10,101,010 samples, 0.06%)</title><rect x="468.2" y="2053" width="0.8" height="15.0" fill="rgb(211,69,40)" rx="2" ry="2" />
-<text  x="471.21" y="2063.5" ></text>
+<title>__x64_sys_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1365" width="0.8" height="15.0" fill="rgb(210,156,14)" rx="2" ry="2" />
+<text  x="605.30" y="1375.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1861" width="0.7" height="15.0" fill="rgb(228,33,50)" rx="2" ry="2" />
-<text  x="1025.96" y="1871.5" ></text>
+<title>init_cache (10,101,010 samples, 0.07%)</title><rect x="68.4" y="1397" width="0.8" height="15.0" fill="rgb(206,73,0)" rx="2" ry="2" />
+<text  x="71.39" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="933" width="1.5" height="15.0" fill="rgb(213,208,33)" rx="2" ry="2" />
-<text  x="26.79" y="943.5" ></text>
+<title>binate_split_select (60,606,060 samples, 0.39%)</title><rect x="275.0" y="1413" width="4.6" height="15.0" fill="rgb(227,144,35)" rx="2" ry="2" />
+<text  x="278.04" y="1423.5" ></text>
 </g>
 <g >
-<title>sm_dup (181,818,180 samples, 1.17%)</title><rect x="564.8" y="2053" width="13.7" height="15.0" fill="rgb(244,203,6)" rx="2" ry="2" />
-<text  x="567.75" y="2063.5" ></text>
+<title>unravel_range (10,101,010 samples, 0.07%)</title><rect x="600.8" y="1429" width="0.7" height="15.0" fill="rgb(224,145,40)" rx="2" ry="2" />
+<text  x="603.77" y="1439.5" ></text>
 </g>
 <g >
-<title>__pthread_setspecific (10,101,010 samples, 0.06%)</title><rect x="531.8" y="2037" width="0.8" height="15.0" fill="rgb(229,55,36)" rx="2" ry="2" />
-<text  x="534.81" y="2047.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="28.4" y="149" width="0.8" height="15.0" fill="rgb(219,54,3)" rx="2" ry="2" />
+<text  x="31.44" y="159.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1509" width="6.9" height="15.0" fill="rgb(244,175,45)" rx="2" ry="2" />
-<text  x="26.03" y="1519.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="1109" width="9.2" height="15.0" fill="rgb(244,229,45)" rx="2" ry="2" />
+<text  x="29.90" y="1119.5" ></text>
 </g>
 <g >
-<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="23.8" y="821" width="1.5" height="15.0" fill="rgb(212,33,35)" rx="2" ry="2" />
-<text  x="26.79" y="831.5" ></text>
+<title>vfs_write (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1333" width="0.8" height="15.0" fill="rgb(217,160,6)" rx="2" ry="2" />
+<text  x="605.30" y="1343.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1701" width="0.7" height="15.0" fill="rgb(243,201,39)" rx="2" ry="2" />
-<text  x="1025.96" y="1711.5" ></text>
+<title>__x64_sys_times (10,101,010 samples, 0.07%)</title><rect x="414.9" y="1381" width="0.7" height="15.0" fill="rgb(240,117,46)" rx="2" ry="2" />
+<text  x="417.86" y="1391.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (40,404,040 samples, 0.26%)</title><rect x="419.2" y="2037" width="3.0" height="15.0" fill="rgb(220,219,17)" rx="2" ry="2" />
-<text  x="422.17" y="2047.5" ></text>
+<title>load_elf_binary (10,101,010 samples, 0.07%)</title><rect x="12.3" y="1317" width="0.8" height="15.0" fill="rgb(237,66,12)" rx="2" ry="2" />
+<text  x="15.30" y="1327.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="2053" width="0.8" height="15.0" fill="rgb(213,102,54)" rx="2" ry="2" />
-<text  x="14.53" y="2063.5" ></text>
+<title>[libsupermalloc.so] (10,101,010 samples, 0.07%)</title><rect x="222.8" y="1381" width="0.8" height="15.0" fill="rgb(206,137,28)" rx="2" ry="2" />
+<text  x="225.80" y="1391.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1813" width="7.7" height="15.0" fill="rgb(211,196,24)" rx="2" ry="2" />
-<text  x="26.03" y="1823.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="949" width="9.2" height="15.0" fill="rgb(232,109,4)" rx="2" ry="2" />
+<text  x="29.90" y="959.5" ></text>
 </g>
 <g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="500.4" y="2037" width="0.8" height="15.0" fill="rgb(254,17,42)" rx="2" ry="2" />
-<text  x="503.39" y="2047.5" ></text>
+<title>__tls_get_addr (10,101,010 samples, 0.07%)</title><rect x="560.1" y="1413" width="0.7" height="15.0" fill="rgb(232,25,46)" rx="2" ry="2" />
+<text  x="563.05" y="1423.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1925" width="166.3" height="15.0" fill="rgb(241,225,46)" rx="2" ry="2" />
-<text  x="1026.73" y="1935.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="421" width="1.5" height="15.0" fill="rgb(226,150,29)" rx="2" ry="2" />
+<text  x="30.67" y="431.5" ></text>
 </g>
 <g >
-<title>[unknown] (50,505,050 samples, 0.32%)</title><rect x="23.8" y="1205" width="3.8" height="15.0" fill="rgb(225,207,8)" rx="2" ry="2" />
-<text  x="26.79" y="1215.5" ></text>
+<title>full_row (10,101,010 samples, 0.07%)</title><rect x="352.6" y="1413" width="0.8" height="15.0" fill="rgb(222,192,43)" rx="2" ry="2" />
+<text  x="355.63" y="1423.5" ></text>
 </g>
 <g >
-<title>object_base (10,101,010 samples, 0.06%)</title><rect x="26.9" y="1173" width="0.7" height="15.0" fill="rgb(243,131,42)" rx="2" ry="2" />
-<text  x="29.86" y="1183.5" ></text>
+<title>[unknown] (90,909,090 samples, 0.59%)</title><rect x="27.7" y="757" width="6.9" height="15.0" fill="rgb(231,124,41)" rx="2" ry="2" />
+<text  x="30.67" y="767.5" ></text>
 </g>
 <g >
-<title>tautology (70,707,070 samples, 0.45%)</title><rect x="259.8" y="2021" width="5.4" height="15.0" fill="rgb(213,63,6)" rx="2" ry="2" />
-<text  x="262.79" y="2031.5" ></text>
+<title>__GI___qsort_r (20,202,020 samples, 0.13%)</title><rect x="291.9" y="1397" width="1.6" height="15.0" fill="rgb(246,142,20)" rx="2" ry="2" />
+<text  x="294.94" y="1407.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1909" width="166.3" height="15.0" fill="rgb(214,15,10)" rx="2" ry="2" />
-<text  x="1026.73" y="1919.5" >[[kernel.kallsyms]]</text>
+<title>[unknown] (151,515,150 samples, 0.98%)</title><rect x="26.9" y="1349" width="11.5" height="15.0" fill="rgb(212,97,15)" rx="2" ry="2" />
+<text  x="29.90" y="1359.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (30,303,030 samples, 0.19%)</title><rect x="599.2" y="1909" width="2.3" height="15.0" fill="rgb(214,75,7)" rx="2" ry="2" />
-<text  x="602.23" y="1919.5" ></text>
+<title>[[kernel.kallsyms]] (10,101,010 samples, 0.07%)</title><rect x="602.3" y="1205" width="0.8" height="15.0" fill="rgb(217,225,15)" rx="2" ry="2" />
+<text  x="605.30" y="1215.5" ></text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="1925" width="0.8" height="15.0" fill="rgb(251,60,18)" rx="2" ry="2" />
-<text  x="14.53" y="1935.5" ></text>
+<title>[unknown] (10,101,010 samples, 0.07%)</title><rect x="27.7" y="149" width="0.7" height="15.0" fill="rgb(246,44,26)" rx="2" ry="2" />
+<text  x="30.67" y="159.5" ></text>
 </g>
 <g >
-<title>cached_free (20,202,020 samples, 0.13%)</title><rect x="32.2" y="2005" width="1.6" height="15.0" fill="rgb(237,92,43)" rx="2" ry="2" />
-<text  x="35.22" y="2015.5" ></text>
+<title>chronyd (20,202,020 samples, 0.13%)</title><rect x="10.8" y="1445" width="1.5" height="15.0" fill="rgb(216,61,6)" rx="2" ry="2" />
+<text  x="13.77" y="1455.5" ></text>
 </g>
 <g >
-<title>malloc (40,404,040 samples, 0.26%)</title><rect x="469.0" y="2053" width="3.0" height="15.0" fill="rgb(244,127,25)" rx="2" ry="2" />
-<text  x="471.97" y="2063.5" ></text>
+<title>arch_cpu_idle (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1349" width="514.7" height="15.0" fill="rgb(247,15,1)" rx="2" ry="2" />
+<text  x="608.38" y="1359.5" >arch_cpu_idle</text>
 </g>
 <g >
-<title>setp_disjoint (20,202,020 samples, 0.13%)</title><rect x="393.1" y="2037" width="1.5" height="15.0" fill="rgb(245,176,21)" rx="2" ry="2" />
-<text  x="396.12" y="2047.5" ></text>
+<title>sm_delrow.part.0 (10,101,010 samples, 0.07%)</title><rect x="411.0" y="1413" width="0.8" height="15.0" fill="rgb(220,55,38)" rx="2" ry="2" />
+<text  x="414.02" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="693" width="0.7" height="15.0" fill="rgb(245,184,49)" rx="2" ry="2" />
-<text  x="27.56" y="703.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="997" width="9.2" height="15.0" fill="rgb(217,15,3)" rx="2" ry="2" />
+<text  x="29.90" y="1007.5" ></text>
 </g>
 <g >
-<title>[unknown] (3,252,525,220 samples, 20.91%)</title><rect x="18.4" y="2037" width="246.8" height="15.0" fill="rgb(245,51,50)" rx="2" ry="2" />
-<text  x="21.43" y="2047.5" >[unknown]</text>
+<title>entry_SYSCALL_64_after_hwframe (10,101,010 samples, 0.07%)</title><rect x="10.8" y="1397" width="0.7" height="15.0" fill="rgb(228,187,40)" rx="2" ry="2" />
+<text  x="13.77" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="325" width="0.7" height="15.0" fill="rgb(224,150,27)" rx="2" ry="2" />
-<text  x="27.56" y="335.5" ></text>
+<title>[unknown] (141,414,140 samples, 0.91%)</title><rect x="26.9" y="1317" width="10.8" height="15.0" fill="rgb(247,190,32)" rx="2" ry="2" />
+<text  x="29.90" y="1327.5" ></text>
 </g>
 <g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1685" width="6.9" height="15.0" fill="rgb(248,35,51)" rx="2" ry="2" />
-<text  x="26.03" y="1695.5" ></text>
+<title>[unknown] (20,202,020 samples, 0.13%)</title><rect x="27.7" y="389" width="1.5" height="15.0" fill="rgb(214,51,28)" rx="2" ry="2" />
+<text  x="30.67" y="399.5" ></text>
 </g>
 <g >
-<title>[unknown] (70,707,070 samples, 0.45%)</title><rect x="23.8" y="1237" width="5.4" height="15.0" fill="rgb(225,10,33)" rx="2" ry="2" />
-<text  x="26.79" y="1247.5" ></text>
+<title>rest_init (919,191,910 samples, 5.92%)</title><rect x="1120.1" y="1349" width="69.9" height="15.0" fill="rgb(253,85,24)" rx="2" ry="2" />
+<text  x="1123.09" y="1359.5" >rest_init</text>
 </g>
 <g >
-<title>init_cache (20,202,020 samples, 0.13%)</title><rect x="587.0" y="2037" width="1.5" height="15.0" fill="rgb(251,92,28)" rx="2" ry="2" />
-<text  x="589.97" y="2047.5" ></text>
+<title>default_idle_call (6,767,676,700 samples, 43.62%)</title><rect x="605.4" y="1365" width="514.7" height="15.0" fill="rgb(240,208,13)" rx="2" ry="2" />
+<text  x="608.38" y="1375.5" >default_idle_call</text>
 </g>
 <g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="420.7" y="1941" width="1.5" height="15.0" fill="rgb(244,81,4)" rx="2" ry="2" />
-<text  x="423.70" y="1951.5" ></text>
+<title>do_syscall_64 (20,202,020 samples, 0.13%)</title><rect x="414.9" y="1397" width="1.5" height="15.0" fill="rgb(230,91,50)" rx="2" ry="2" />
+<text  x="417.86" y="1407.5" ></text>
 </g>
 <g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1941" width="8.4" height="15.0" fill="rgb(249,228,8)" rx="2" ry="2" />
-<text  x="25.26" y="1951.5" ></text>
+<title>init_cache (20,202,020 samples, 0.13%)</title><rect x="573.1" y="1413" width="1.5" height="15.0" fill="rgb(218,128,50)" rx="2" ry="2" />
+<text  x="576.11" y="1423.5" ></text>
 </g>
 <g >
-<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="22.3" y="1989" width="9.2" height="15.0" fill="rgb(207,58,19)" rx="2" ry="2" />
-<text  x="25.26" y="1999.5" ></text>
+<title>generic_file_read_iter (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1285" width="0.8" height="15.0" fill="rgb(247,185,43)" rx="2" ry="2" />
+<text  x="604.54" y="1295.5" ></text>
 </g>
 <g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="309" width="0.7" height="15.0" fill="rgb(206,85,31)" rx="2" ry="2" />
-<text  x="27.56" y="319.5" ></text>
+<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="27.7" y="789" width="7.7" height="15.0" fill="rgb(253,222,46)" rx="2" ry="2" />
+<text  x="30.67" y="799.5" ></text>
 </g>
 <g >
-<title>cached_malloc (70,707,070 samples, 0.45%)</title><rect x="573.2" y="2037" width="5.3" height="15.0" fill="rgb(252,18,42)" rx="2" ry="2" />
-<text  x="576.18" y="2047.5" ></text>
+<title>[unknown] (121,212,120 samples, 0.78%)</title><rect x="26.9" y="837" width="9.2" height="15.0" fill="rgb(239,73,49)" rx="2" ry="2" />
+<text  x="29.90" y="847.5" ></text>
 </g>
 <g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1285" width="6.2" height="15.0" fill="rgb(227,193,11)" rx="2" ry="2" />
-<text  x="26.03" y="1295.5" ></text>
+<title>sccc_special_cases (10,101,010 samples, 0.07%)</title><rect x="34.6" y="757" width="0.8" height="15.0" fill="rgb(223,62,10)" rx="2" ry="2" />
+<text  x="37.58" y="767.5" ></text>
 </g>
 <g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1749" width="7.7" height="15.0" fill="rgb(246,156,12)" rx="2" ry="2" />
-<text  x="26.03" y="1759.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1733" width="0.7" height="15.0" fill="rgb(243,7,1)" rx="2" ry="2" />
-<text  x="1025.96" y="1743.5" ></text>
-</g>
-<g >
-<title>setp_implies (30,303,030 samples, 0.19%)</title><rect x="223.8" y="2021" width="2.3" height="15.0" fill="rgb(226,9,29)" rx="2" ry="2" />
-<text  x="226.78" y="2031.5" ></text>
-</g>
-<g >
-<title>[unknown] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="2021" width="166.3" height="15.0" fill="rgb(224,144,7)" rx="2" ry="2" />
-<text  x="1026.73" y="2031.5" >[unknown]</text>
-</g>
-<g >
-<title>hv_kvp_daemon (30,303,030 samples, 0.19%)</title><rect x="599.2" y="2069" width="2.3" height="15.0" fill="rgb(214,112,53)" rx="2" ry="2" />
-<text  x="602.23" y="2079.5" ></text>
-</g>
-<g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1381" width="6.2" height="15.0" fill="rgb(235,59,6)" rx="2" ry="2" />
-<text  x="26.03" y="1391.5" ></text>
-</g>
-<g >
-<title>[unknown] (30,303,030 samples, 0.19%)</title><rect x="23.8" y="1109" width="2.3" height="15.0" fill="rgb(241,110,37)" rx="2" ry="2" />
-<text  x="26.79" y="1119.5" ></text>
-</g>
-<g >
-<title>cached_malloc (40,404,040 samples, 0.26%)</title><rect x="533.3" y="2037" width="3.1" height="15.0" fill="rgb(253,203,49)" rx="2" ry="2" />
-<text  x="536.34" y="2047.5" ></text>
-</g>
-<g >
-<title>[libsupermalloc.so] (10,101,010 samples, 0.06%)</title><rect x="261.3" y="2005" width="0.8" height="15.0" fill="rgb(254,63,28)" rx="2" ry="2" />
-<text  x="264.32" y="2015.5" ></text>
-</g>
-<g >
-<title>espresso (7,747,474,670 samples, 49.81%)</title><rect x="11.5" y="2069" width="587.7" height="15.0" fill="rgb(215,177,23)" rx="2" ry="2" />
-<text  x="14.53" y="2079.5" >espresso</text>
-</g>
-<g >
-<title>d1_order (10,101,010 samples, 0.06%)</title><rect x="40.6" y="2021" width="0.8" height="15.0" fill="rgb(234,91,8)" rx="2" ry="2" />
-<text  x="43.65" y="2031.5" ></text>
-</g>
-<g >
-<title>__tls_get_addr (10,101,010 samples, 0.06%)</title><rect x="532.6" y="2037" width="0.7" height="15.0" fill="rgb(220,139,29)" rx="2" ry="2" />
-<text  x="535.57" y="2047.5" ></text>
-</g>
-<g >
-<title>[unknown] (40,404,040 samples, 0.26%)</title><rect x="23.8" y="1173" width="3.1" height="15.0" fill="rgb(218,40,18)" rx="2" ry="2" />
-<text  x="26.79" y="1183.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (20,202,020 samples, 0.13%)</title><rect x="600.0" y="1861" width="1.5" height="15.0" fill="rgb(208,117,52)" rx="2" ry="2" />
-<text  x="603.00" y="1871.5" ></text>
-</g>
-<g >
-<title>[unknown] (101,010,100 samples, 0.65%)</title><rect x="23.0" y="1829" width="7.7" height="15.0" fill="rgb(228,90,6)" rx="2" ry="2" />
-<text  x="26.03" y="1839.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="11.5" y="2037" width="0.8" height="15.0" fill="rgb(227,57,23)" rx="2" ry="2" />
-<text  x="14.53" y="2047.5" ></text>
-</g>
-<g >
-<title>sm_minimum_cover (10,101,010 samples, 0.06%)</title><rect x="227.6" y="2021" width="0.8" height="15.0" fill="rgb(247,32,43)" rx="2" ry="2" />
-<text  x="230.61" y="2031.5" ></text>
-</g>
-<g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1701" width="6.9" height="15.0" fill="rgb(233,71,33)" rx="2" ry="2" />
-<text  x="26.03" y="1711.5" ></text>
-</g>
-<g >
-<title>cached_free (10,101,010 samples, 0.06%)</title><rect x="29.9" y="1701" width="0.8" height="15.0" fill="rgb(222,195,11)" rx="2" ry="2" />
-<text  x="32.92" y="1711.5" ></text>
-</g>
-<g >
-<title>[unknown] (111,111,110 samples, 0.71%)</title><rect x="22.3" y="1973" width="8.4" height="15.0" fill="rgb(212,156,0)" rx="2" ry="2" />
-<text  x="25.26" y="1983.5" ></text>
-</g>
-<g >
-<title>[unknown] (10,101,010 samples, 0.06%)</title><rect x="24.6" y="437" width="0.7" height="15.0" fill="rgb(232,90,26)" rx="2" ry="2" />
-<text  x="27.56" y="447.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="1023.0" y="1749" width="0.7" height="15.0" fill="rgb(220,115,28)" rx="2" ry="2" />
-<text  x="1025.96" y="1759.5" ></text>
-</g>
-<g >
-<title>cached_malloc (10,101,010 samples, 0.06%)</title><rect x="590.0" y="2037" width="0.8" height="15.0" fill="rgb(218,139,47)" rx="2" ry="2" />
-<text  x="593.04" y="2047.5" ></text>
-</g>
-<g >
-<title>[libsupermalloc.so] (40,404,040 samples, 0.26%)</title><rect x="15.4" y="2037" width="3.0" height="15.0" fill="rgb(220,219,17)" rx="2" ry="2" />
-<text  x="18.36" y="2047.5" ></text>
-</g>
-<g >
-<title>sccc_special_cases (10,101,010 samples, 0.06%)</title><rect x="501.9" y="2053" width="0.8" height="15.0" fill="rgb(237,59,25)" rx="2" ry="2" />
-<text  x="504.92" y="2063.5" ></text>
-</g>
-<g >
-<title>do_sm_minimum_cover (70,707,070 samples, 0.45%)</title><rect x="305.0" y="2037" width="5.4" height="15.0" fill="rgb(241,214,36)" rx="2" ry="2" />
-<text  x="308.00" y="2047.5" ></text>
-</g>
-<g >
-<title>[unknown] (2,191,919,170 samples, 14.09%)</title><rect x="1023.7" y="1989" width="166.3" height="15.0" fill="rgb(223,36,40)" rx="2" ry="2" />
-<text  x="1026.73" y="1999.5" >[unknown]</text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="601.5" y="2037" width="0.8" height="15.0" fill="rgb(227,113,39)" rx="2" ry="2" />
-<text  x="604.53" y="2047.5" ></text>
-</g>
-<g >
-<title>__times (50,505,050 samples, 0.32%)</title><rect x="418.4" y="2053" width="3.8" height="15.0" fill="rgb(206,13,53)" rx="2" ry="2" />
-<text  x="421.40" y="2063.5" ></text>
-</g>
-<g >
-<title>[espresso] (30,303,030 samples, 0.19%)</title><rect x="18.4" y="2021" width="2.3" height="15.0" fill="rgb(212,86,15)" rx="2" ry="2" />
-<text  x="21.43" y="2031.5" ></text>
-</g>
-<g >
-<title>[unknown] (90,909,090 samples, 0.58%)</title><rect x="23.0" y="1493" width="6.9" height="15.0" fill="rgb(214,155,43)" rx="2" ry="2" />
-<text  x="26.03" y="1503.5" ></text>
-</g>
-<g >
-<title>[unknown] (80,808,080 samples, 0.52%)</title><rect x="23.0" y="1365" width="6.2" height="15.0" fill="rgb(248,41,21)" rx="2" ry="2" />
-<text  x="26.03" y="1375.5" ></text>
-</g>
-<g >
-<title>[[kernel.kallsyms]] (10,101,010 samples, 0.06%)</title><rect x="10.8" y="2021" width="0.7" height="15.0" fill="rgb(243,31,14)" rx="2" ry="2" />
-<text  x="13.77" y="2031.5" ></text>
-</g>
-<g >
-<title>free (80,808,080 samples, 0.52%)</title><rect x="353.3" y="2037" width="6.1" height="15.0" fill="rgb(236,87,35)" rx="2" ry="2" />
-<text  x="356.27" y="2047.5" ></text>
+<title>new_sync_read (10,101,010 samples, 0.07%)</title><rect x="601.5" y="1317" width="0.8" height="15.0" fill="rgb(213,28,7)" rx="2" ry="2" />
+<text  x="604.54" y="1327.5" ></text>
 </g>
 </g>
 </svg>
