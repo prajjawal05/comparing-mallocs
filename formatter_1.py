@@ -3,10 +3,12 @@ import json
 import re
 filenames = os.listdir("perf-results")
 valgrindFiles = os.listdir("valgrind-results")
+valgrindMassifFiles = os.listdir("valgrind-massif-results")
 if '.DS_Store' in filenames:
     filenames.remove('.DS_Store')
 if '.DS_Store' in valgrindFiles:
     valgrindFiles.remove('.DS_Store')
+
 
 
 def checkisNumber(s):
@@ -89,9 +91,32 @@ def getDatafromValgrind(file_name) :
 
         print(curr_dict)
         return curr_dict
-        # print(num_content)
-    # print(fileContent)
 
+def getDataFromValgrindMassif(file_name) :
+    fileRead = open("valgrind-massif-results/"+file_name)
+    total_num_lines = 0
+    with open("valgrind-massif-results/"+file_name) as filePath:
+        total_num_lines = sum(1 for line in filePath)
+    print(total_num_lines)
+    names = file_name.split("-")
+    fileContent = fileRead.readlines()
+    curr_dict ={}
+    if file_name.startswith("larson") :
+        curr_dict = {"bm": names[0], "malloc":names[2]}
+    else :
+        curr_dict = {"bm": names[0], "malloc":names[1]}
+    fileContent = list(filter(lambda content: content.strip(), fileContent))
+
+    for i,content in enumerate(fileContent):
+        content = content.strip()
+        if not content:
+            continue
+        content = content.split("=")
+        if(not fileContent[-7].__contains__("snapshot")):
+            break
+        if i in [total_num_lines-3, total_num_lines-4, total_num_lines-5]:
+            curr_dict["massif-"+content[0]] = content[1]
+    return curr_dict
 
 
 json_attr = {
@@ -105,6 +130,8 @@ json_attr = {
     7:"page-faults",
     8:"page-reclaims"
 }
+
+
 
 nam_dict = {}
 for file in filenames :
@@ -134,6 +161,15 @@ for file in valgrindFiles :
     benchmark = curr_dict["bm"]
     memalloc = curr_dict["malloc"]    
     nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
+
+#valgrind-massif data
+for file in valgrindMassifFiles :
+    curr_dict = getDataFromValgrindMassif(file) 
+    benchmark = curr_dict["bm"]
+    memalloc = curr_dict["malloc"]
+    nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
+
+
     
 
 output = open("benchmarkAllocData.json", "w")
