@@ -1,0 +1,2696 @@
+desc: --heap=yes --stacks=no --detailed-freq=100
+cmd: make
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2735106
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2928244
+mem_heap_B=80325
+mem_heap_extra_B=1195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=3092892
+mem_heap_B=201458
+mem_heap_extra_B=6302
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=3306662
+mem_heap_B=247633
+mem_heap_extra_B=11895
+mem_stacks_B=0
+heap_tree=detailed
+n8: 247633 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 101880 0x124879: xcalloc (in /usr/bin/make)
+  n4: 88064 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 6144 in 4 places, all below massif's threshold (1.00%)
+  n3: 10368 0x118019: enter_file (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n1: 5040 0x118A98: enter_prereqs (in /usr/bin/make)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n0: 288 in 2 places, all below massif's threshold (1.00%)
+  n0: 3448 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 32816 0x4BB1F18: __alloc_dir (opendir.c:118)
+  n1: 32816 0x4BB1F18: opendir_tail (opendir.c:69)
+   n1: 32816 0x4BB1F18: opendir (opendir.c:92)
+    n1: 32816 0x1163AE: ??? (in /usr/bin/make)
+     n1: 32816 0x116563: file_exists_p (in /usr/bin/make)
+      n1: 32816 0x12B644: read_all_makefiles (in /usr/bin/make)
+       n0: 32816 0x112826: main (in /usr/bin/make)
+ n5: 19760 0x124834: xmalloc (in /usr/bin/make)
+  n1: 8176 0x12F95A: ??? (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n2: 5568 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n1: 3024 0x115D2A: define_default_variables (in /usr/bin/make)
+    n0: 3024 0x1126B2: main (in /usr/bin/make)
+   n0: 2544 in 34 places, all below massif's threshold (1.00%)
+  n1: 2904 0x11612C: ??? (in /usr/bin/make)
+   n1: 2904 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 2904 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 2904 0x112826: main (in /usr/bin/make)
+  n1: 2744 0x115C05: install_default_suffix_rules (in /usr/bin/make)
+   n0: 2744 0x11269B: main (in /usr/bin/make)
+  n0: 368 in 5 places, all below massif's threshold (1.00%)
+ n0: 6830 in 10 places, all below massif's threshold (1.00%)
+ n2: 5963 0x4B7338E: strdup (strdup.c:42)
+  n2: 5862 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4114 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4114 in 35 places, all below massif's threshold (1.00%)
+   n0: 1748 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+ n1: 3952 0x4B0C873: _nl_make_l10nflist (l10nflist.c:242)
+  n0: 3952 in 3 places, all below massif's threshold (1.00%)
+ n1: 3728 0x4B05A4E: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 3728 0x4B05C9D: _nl_load_locale (loadlocale.c:267)
+   n1: 3728 0x4B058BF: _nl_find_locale (findlocale.c:238)
+    n1: 3728 0x4B048F4: setlocale (setlocale.c:337)
+     n1: 3728 0x4B048F4: setlocale (setlocale.c:217)
+      n0: 3728 0x111965: main (in /usr/bin/make)
+#-----------
+snapshot=5
+#-----------
+time=3571344
+mem_heap_B=252977
+mem_heap_extra_B=14767
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3755794
+mem_heap_B=227372
+mem_heap_extra_B=16132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=3993821
+mem_heap_B=239961
+mem_heap_extra_B=16895
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=4155460
+mem_heap_B=243618
+mem_heap_extra_B=17598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=4454267
+mem_heap_B=250320
+mem_heap_extra_B=18864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=4657669
+mem_heap_B=254366
+mem_heap_extra_B=19578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=4947678
+mem_heap_B=260218
+mem_heap_extra_B=20550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=5133348
+mem_heap_B=263988
+mem_heap_extra_B=21244
+mem_stacks_B=0
+heap_tree=detailed
+n9: 263988 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 119048 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 22752 0x118019: enter_file (in /usr/bin/make)
+   n1: 11808 0x127F8B: ??? (in /usr/bin/make)
+    n1: 11808 0x129E6F: ??? (in /usr/bin/make)
+     n1: 11808 0x12B21E: ??? (in /usr/bin/make)
+      n1: 11808 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 11808 0x112826: main (in /usr/bin/make)
+   n2: 5472 0x118A98: enter_prereqs (in /usr/bin/make)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+    n0: 432 in 1 place, below massif's threshold (1.00%)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 5096 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 5080 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 5080 0x1280D7: ??? (in /usr/bin/make)
+     n1: 5000 0x129E6F: ??? (in /usr/bin/make)
+      n1: 5000 0x12B21E: ??? (in /usr/bin/make)
+       n1: 5000 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 5000 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n1: 4096 0x1331CC: hash_insert_at (in /usr/bin/make)
+   n1: 4096 0x116168: ??? (in /usr/bin/make)
+    n1: 4096 0x11656F: file_exists_p (in /usr/bin/make)
+     n1: 4096 0x12B644: read_all_makefiles (in /usr/bin/make)
+      n0: 4096 0x112826: main (in /usr/bin/make)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 39355 0x124834: xmalloc (in /usr/bin/make)
+  n2: 16352 0x12F95A: ??? (in /usr/bin/make)
+   n1: 8176 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n2: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n1: 3024 0x115D2A: define_default_variables (in /usr/bin/make)
+    n0: 3024 0x1126B2: main (in /usr/bin/make)
+   n0: 2784 in 34 places, all below massif's threshold (1.00%)
+  n1: 4256 0x128219: ??? (in /usr/bin/make)
+   n1: 4256 0x129E6F: ??? (in /usr/bin/make)
+    n1: 4256 0x12B21E: ??? (in /usr/bin/make)
+     n1: 4256 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 4256 0x112826: main (in /usr/bin/make)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 8287 0x4B733CE: strndup (strndup.c:43)
+  n2: 8191 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 7188 0x128250: ??? (in /usr/bin/make)
+    n1: 7188 0x129E6F: ??? (in /usr/bin/make)
+     n1: 7188 0x12B21E: ??? (in /usr/bin/make)
+      n1: 7188 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 7188 0x112826: main (in /usr/bin/make)
+   n0: 1003 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 6716 in 10 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n2: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4204 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4204 in 35 places, all below massif's threshold (1.00%)
+   n0: 1797 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B55D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B65ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B64CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4B65F85: _IO_default_uflow (genops.c:362)
+     n2: 4096 0x4B5786B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4B566C9: fgets (iofgets.c:53)
+       n1: 4096 0x126B5F: ??? (in /usr/bin/make)
+        n1: 4096 0x129508: ??? (in /usr/bin/make)
+         n1: 4096 0x12B21E: ??? (in /usr/bin/make)
+          n1: 4096 0x12B657: read_all_makefiles (in /usr/bin/make)
+           n0: 4096 0x112826: main (in /usr/bin/make)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3952 0x4B0C873: _nl_make_l10nflist (l10nflist.c:242)
+  n0: 3952 in 3 places, all below massif's threshold (1.00%)
+ n1: 3728 0x4B05A4E: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 3728 0x4B05C9D: _nl_load_locale (loadlocale.c:267)
+   n1: 3728 0x4B058BF: _nl_find_locale (findlocale.c:238)
+    n1: 3728 0x4B048F4: setlocale (setlocale.c:337)
+     n1: 3728 0x4B048F4: setlocale (setlocale.c:217)
+      n0: 3728 0x111965: main (in /usr/bin/make)
+#-----------
+snapshot=13
+#-----------
+time=5370853
+mem_heap_B=268583
+mem_heap_extra_B=22001
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=5537351
+mem_heap_B=271780
+mem_heap_extra_B=22516
+mem_stacks_B=0
+heap_tree=detailed
+n9: 271780 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 123312 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 25776 0x118019: enter_file (in /usr/bin/make)
+   n1: 14832 0x127F8B: ??? (in /usr/bin/make)
+    n1: 14832 0x129E6F: ??? (in /usr/bin/make)
+     n1: 14832 0x12B21E: ??? (in /usr/bin/make)
+      n1: 14832 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 14832 0x112826: main (in /usr/bin/make)
+   n2: 5472 0x118A98: enter_prereqs (in /usr/bin/make)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+    n0: 432 in 1 place, below massif's threshold (1.00%)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 6336 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 6320 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 6320 0x1280D7: ??? (in /usr/bin/make)
+     n1: 6240 0x129E6F: ??? (in /usr/bin/make)
+      n1: 6240 0x12B21E: ??? (in /usr/bin/make)
+       n1: 6240 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 6240 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n1: 4096 0x1331CC: hash_insert_at (in /usr/bin/make)
+   n1: 4096 0x116168: ??? (in /usr/bin/make)
+    n1: 4096 0x11656F: file_exists_p (in /usr/bin/make)
+     n1: 4096 0x12B644: read_all_makefiles (in /usr/bin/make)
+      n0: 4096 0x112826: main (in /usr/bin/make)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 40531 0x124834: xmalloc (in /usr/bin/make)
+  n2: 16352 0x12F95A: ??? (in /usr/bin/make)
+   n1: 8176 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n2: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n1: 3024 0x115D2A: define_default_variables (in /usr/bin/make)
+    n0: 3024 0x1126B2: main (in /usr/bin/make)
+   n0: 2784 in 34 places, all below massif's threshold (1.00%)
+  n1: 5432 0x128219: ??? (in /usr/bin/make)
+   n1: 5432 0x129E6F: ??? (in /usr/bin/make)
+    n1: 5432 0x12B21E: ??? (in /usr/bin/make)
+     n1: 5432 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 5432 0x112826: main (in /usr/bin/make)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 10639 0x4B733CE: strndup (strndup.c:43)
+  n2: 10543 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 9565 0x128250: ??? (in /usr/bin/make)
+    n1: 9565 0x129E6F: ??? (in /usr/bin/make)
+     n1: 9565 0x12B21E: ??? (in /usr/bin/make)
+      n1: 9565 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 9565 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 6716 in 10 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n2: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4204 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4204 in 35 places, all below massif's threshold (1.00%)
+   n0: 1797 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B55D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B65ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B64CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4B65F85: _IO_default_uflow (genops.c:362)
+     n2: 4096 0x4B5786B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4B566C9: fgets (iofgets.c:53)
+       n1: 4096 0x126B5F: ??? (in /usr/bin/make)
+        n1: 4096 0x129508: ??? (in /usr/bin/make)
+         n1: 4096 0x12B21E: ??? (in /usr/bin/make)
+          n1: 4096 0x12B657: read_all_makefiles (in /usr/bin/make)
+           n0: 4096 0x112826: main (in /usr/bin/make)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3952 0x4B0C873: _nl_make_l10nflist (l10nflist.c:242)
+  n0: 3952 in 3 places, all below massif's threshold (1.00%)
+ n1: 3728 0x4B05A4E: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 3728 0x4B05C9D: _nl_load_locale (loadlocale.c:267)
+   n1: 3728 0x4B058BF: _nl_find_locale (findlocale.c:238)
+    n1: 3728 0x4B048F4: setlocale (setlocale.c:337)
+     n1: 3728 0x4B048F4: setlocale (setlocale.c:217)
+      n0: 3728 0x111965: main (in /usr/bin/make)
+#-----------
+snapshot=15
+#-----------
+time=5824670
+mem_heap_B=277468
+mem_heap_extra_B=23540
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=6152887
+mem_heap_B=284009
+mem_heap_extra_B=24663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=6382722
+mem_heap_B=288465
+mem_heap_extra_B=25415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=6727639
+mem_heap_B=294977
+mem_heap_extra_B=26591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=6910125
+mem_heap_B=298520
+mem_heap_extra_B=27152
+mem_stacks_B=0
+heap_tree=detailed
+n9: 298520 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 138144 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 36288 0x118019: enter_file (in /usr/bin/make)
+   n1: 25344 0x127F8B: ??? (in /usr/bin/make)
+    n1: 25344 0x129E6F: ??? (in /usr/bin/make)
+     n1: 25344 0x12B21E: ??? (in /usr/bin/make)
+      n1: 25344 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 25344 0x112826: main (in /usr/bin/make)
+   n2: 5472 0x118A98: enter_prereqs (in /usr/bin/make)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+    n0: 432 in 1 place, below massif's threshold (1.00%)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 10656 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 10640 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 10640 0x1280D7: ??? (in /usr/bin/make)
+     n1: 10560 0x129E6F: ??? (in /usr/bin/make)
+      n1: 10560 0x12B21E: ??? (in /usr/bin/make)
+       n1: 10560 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 10560 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n1: 4096 0x1331CC: hash_insert_at (in /usr/bin/make)
+   n1: 4096 0x116168: ??? (in /usr/bin/make)
+    n1: 4096 0x11656F: file_exists_p (in /usr/bin/make)
+     n1: 4096 0x12B644: read_all_makefiles (in /usr/bin/make)
+      n0: 4096 0x112826: main (in /usr/bin/make)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 44563 0x124834: xmalloc (in /usr/bin/make)
+  n2: 16352 0x12F95A: ??? (in /usr/bin/make)
+   n1: 8176 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9464 0x128219: ??? (in /usr/bin/make)
+   n1: 9464 0x129E6F: ??? (in /usr/bin/make)
+    n1: 9464 0x12B21E: ??? (in /usr/bin/make)
+     n1: 9464 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 9464 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 18478 0x4B733CE: strndup (strndup.c:43)
+  n2: 18382 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 17404 0x128250: ??? (in /usr/bin/make)
+    n1: 17404 0x129E6F: ??? (in /usr/bin/make)
+     n1: 17404 0x12B21E: ??? (in /usr/bin/make)
+      n1: 17404 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 17404 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 6716 in 10 places, all below massif's threshold (1.00%)
+ n2: 6139 0x4B7338E: strdup (strdup.c:42)
+  n2: 6038 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4204 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4204 in 35 places, all below massif's threshold (1.00%)
+   n0: 1834 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B55D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B65ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B64CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4B65F85: _IO_default_uflow (genops.c:362)
+     n2: 4096 0x4B5786B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4B566C9: fgets (iofgets.c:53)
+       n1: 4096 0x126B5F: ??? (in /usr/bin/make)
+        n1: 4096 0x129508: ??? (in /usr/bin/make)
+         n1: 4096 0x12B21E: ??? (in /usr/bin/make)
+          n1: 4096 0x12B657: read_all_makefiles (in /usr/bin/make)
+           n0: 4096 0x112826: main (in /usr/bin/make)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3952 0x4B0C873: _nl_make_l10nflist (l10nflist.c:242)
+  n0: 3952 in 3 places, all below massif's threshold (1.00%)
+ n1: 3728 0x4B05A4E: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 3728 0x4B05C9D: _nl_load_locale (loadlocale.c:267)
+   n1: 3728 0x4B058BF: _nl_find_locale (findlocale.c:238)
+    n1: 3728 0x4B048F4: setlocale (setlocale.c:337)
+     n1: 3728 0x4B048F4: setlocale (setlocale.c:217)
+      n0: 3728 0x111965: main (in /usr/bin/make)
+#-----------
+snapshot=20
+#-----------
+time=7114694
+mem_heap_B=302259
+mem_heap_extra_B=27757
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=7312993
+mem_heap_B=305963
+mem_heap_extra_B=28373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=7590543
+mem_heap_B=311222
+mem_heap_extra_B=29202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=7843322
+mem_heap_B=315984
+mem_heap_extra_B=30048
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=8151290
+mem_heap_B=322155
+mem_heap_extra_B=31141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=8443667
+mem_heap_B=327647
+mem_heap_extra_B=32113
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=8649568
+mem_heap_B=331649
+mem_heap_extra_B=32815
+mem_stacks_B=0
+heap_tree=detailed
+n9: 331649 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 156504 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 49248 0x118019: enter_file (in /usr/bin/make)
+   n1: 38304 0x127F8B: ??? (in /usr/bin/make)
+    n1: 38304 0x129E6F: ??? (in /usr/bin/make)
+     n1: 38304 0x12B21E: ??? (in /usr/bin/make)
+      n1: 38304 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 38304 0x112826: main (in /usr/bin/make)
+   n2: 5472 0x118A98: enter_prereqs (in /usr/bin/make)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+    n0: 432 in 1 place, below massif's threshold (1.00%)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 16056 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 16040 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 16040 0x1280D7: ??? (in /usr/bin/make)
+     n1: 15960 0x129E6F: ??? (in /usr/bin/make)
+      n1: 15960 0x12B21E: ??? (in /usr/bin/make)
+       n1: 15960 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 15960 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n1: 4096 0x1331CC: hash_insert_at (in /usr/bin/make)
+   n1: 4096 0x116168: ??? (in /usr/bin/make)
+    n1: 4096 0x11656F: file_exists_p (in /usr/bin/make)
+     n1: 4096 0x12B644: read_all_makefiles (in /usr/bin/make)
+      n0: 4096 0x112826: main (in /usr/bin/make)
+  n0: 64 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 49603 0x124834: xmalloc (in /usr/bin/make)
+  n2: 16352 0x12F95A: ??? (in /usr/bin/make)
+   n1: 8176 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 14504 0x128219: ??? (in /usr/bin/make)
+   n1: 14504 0x129E6F: ??? (in /usr/bin/make)
+    n1: 14504 0x12B21E: ??? (in /usr/bin/make)
+     n1: 14504 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 14504 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 28216 0x4B733CE: strndup (strndup.c:43)
+  n2: 28120 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 27142 0x128250: ??? (in /usr/bin/make)
+    n1: 27142 0x129E6F: ??? (in /usr/bin/make)
+     n1: 27142 0x12B21E: ??? (in /usr/bin/make)
+      n1: 27142 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 27142 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 6716 in 10 places, all below massif's threshold (1.00%)
+ n2: 6130 0x4B7338E: strdup (strdup.c:42)
+  n2: 6029 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4204 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4204 in 35 places, all below massif's threshold (1.00%)
+   n0: 1825 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x4B55D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4B65ECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4B64CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4B65F85: _IO_default_uflow (genops.c:362)
+     n2: 4096 0x4B5786B: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x4B566C9: fgets (iofgets.c:53)
+       n1: 4096 0x126B5F: ??? (in /usr/bin/make)
+        n1: 4096 0x129508: ??? (in /usr/bin/make)
+         n1: 4096 0x12B21E: ??? (in /usr/bin/make)
+          n1: 4096 0x12B657: read_all_makefiles (in /usr/bin/make)
+           n0: 4096 0x112826: main (in /usr/bin/make)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3952 0x4B0C873: _nl_make_l10nflist (l10nflist.c:242)
+  n0: 3952 in 3 places, all below massif's threshold (1.00%)
+ n1: 3728 0x4B05A4E: _nl_intern_locale_data (loadlocale.c:98)
+  n1: 3728 0x4B05C9D: _nl_load_locale (loadlocale.c:267)
+   n1: 3728 0x4B058BF: _nl_find_locale (findlocale.c:238)
+    n1: 3728 0x4B048F4: setlocale (setlocale.c:337)
+     n1: 3728 0x4B048F4: setlocale (setlocale.c:217)
+      n0: 3728 0x111965: main (in /usr/bin/make)
+#-----------
+snapshot=27
+#-----------
+time=8932614
+mem_heap_B=336858
+mem_heap_extra_B=33742
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=9260844
+mem_heap_B=342460
+mem_heap_extra_B=34644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=9563196
+mem_heap_B=347795
+mem_heap_extra_B=35637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=9799662
+mem_heap_B=351778
+mem_heap_extra_B=36366
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=9998158
+mem_heap_B=363195
+mem_heap_extra_B=36869
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=10262730
+mem_heap_B=367895
+mem_heap_extra_B=37641
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=10584274
+mem_heap_B=373832
+mem_heap_extra_B=38576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=10871133
+mem_heap_B=379036
+mem_heap_extra_B=39436
+mem_stacks_B=0
+heap_tree=detailed
+n6: 379036 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 183840 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 68544 0x118019: enter_file (in /usr/bin/make)
+   n1: 49104 0x127F8B: ??? (in /usr/bin/make)
+    n1: 49104 0x129E6F: ??? (in /usr/bin/make)
+     n1: 49104 0x12B21E: ??? (in /usr/bin/make)
+      n1: 49104 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 49104 0x112826: main (in /usr/bin/make)
+   n2: 13968 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 8928 0x12874F: ??? (in /usr/bin/make)
+     n1: 8784 0x129E6F: ??? (in /usr/bin/make)
+      n1: 8784 0x12B21E: ??? (in /usr/bin/make)
+       n1: 8784 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 8784 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 24096 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 24080 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 24080 0x1280D7: ??? (in /usr/bin/make)
+     n1: 24000 0x129E6F: ??? (in /usr/bin/make)
+      n1: 24000 0x12B21E: ??? (in /usr/bin/make)
+       n1: 24000 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 24000 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 61979 0x124834: xmalloc (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 18704 0x128219: ??? (in /usr/bin/make)
+   n1: 18704 0x129E6F: ??? (in /usr/bin/make)
+    n1: 18704 0x12B21E: ??? (in /usr/bin/make)
+     n1: 18704 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 18704 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 35919 0x4B733CE: strndup (strndup.c:43)
+  n2: 35823 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 34845 0x128250: ??? (in /usr/bin/make)
+    n1: 34845 0x129E6F: ??? (in /usr/bin/make)
+     n1: 34845 0x12B21E: ??? (in /usr/bin/make)
+      n1: 34845 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 34845 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n2: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n1: 4204 0x1308DD: define_variable_in_set (in /usr/bin/make)
+    n0: 4204 in 35 places, all below massif's threshold (1.00%)
+   n0: 1797 in 7 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=11072919
+mem_heap_B=382449
+mem_heap_extra_B=40007
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=11394268
+mem_heap_B=388334
+mem_heap_extra_B=40914
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=11599793
+mem_heap_B=391912
+mem_heap_extra_B=41512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=11907367
+mem_heap_B=397317
+mem_heap_extra_B=42379
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=12249893
+mem_heap_B=403103
+mem_heap_extra_B=43353
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=12589835
+mem_heap_B=409204
+mem_heap_extra_B=44324
+mem_stacks_B=0
+heap_tree=detailed
+n6: 409204 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 205872 0x124879: xcalloc (in /usr/bin/make)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n4: 84096 0x118019: enter_file (in /usr/bin/make)
+   n1: 56880 0x127F8B: ??? (in /usr/bin/make)
+    n1: 56880 0x129E6F: ??? (in /usr/bin/make)
+     n1: 56880 0x12B21E: ??? (in /usr/bin/make)
+      n1: 56880 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 56880 0x112826: main (in /usr/bin/make)
+   n2: 21744 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 16704 0x12874F: ??? (in /usr/bin/make)
+     n1: 16560 0x129E6F: ??? (in /usr/bin/make)
+      n1: 16560 0x12B21E: ??? (in /usr/bin/make)
+       n1: 16560 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 16560 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n2: 30576 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 30560 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 30560 0x1280D7: ??? (in /usr/bin/make)
+     n1: 30480 0x129E6F: ??? (in /usr/bin/make)
+      n1: 30480 0x12B21E: ??? (in /usr/bin/make)
+       n1: 30480 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 30480 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 65003 0x124834: xmalloc (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 21728 0x128219: ??? (in /usr/bin/make)
+   n1: 21728 0x129E6F: ??? (in /usr/bin/make)
+    n1: 21728 0x12B21E: ??? (in /usr/bin/make)
+     n1: 21728 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 21728 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 41031 0x4B733CE: strndup (strndup.c:43)
+  n2: 40935 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 39957 0x128250: ??? (in /usr/bin/make)
+    n1: 39957 0x129E6F: ??? (in /usr/bin/make)
+     n1: 39957 0x12B21E: ??? (in /usr/bin/make)
+      n1: 39957 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 39957 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=12793230
+mem_heap_B=412466
+mem_heap_extra_B=44862
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=12935111
+mem_heap_B=414706
+mem_heap_extra_B=45254
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=13182816
+mem_heap_B=418708
+mem_heap_extra_B=45900
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=13434068
+mem_heap_B=422688
+mem_heap_extra_B=46584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=13684594
+mem_heap_B=426678
+mem_heap_extra_B=47242
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=13847816
+mem_heap_B=429212
+mem_heap_extra_B=47692
+mem_stacks_B=0
+heap_tree=detailed
+n6: 429212 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 220232 0x124879: xcalloc (in /usr/bin/make)
+  n4: 94176 0x118019: enter_file (in /usr/bin/make)
+   n1: 61920 0x127F8B: ??? (in /usr/bin/make)
+    n1: 61920 0x129E6F: ??? (in /usr/bin/make)
+     n1: 61920 0x12B21E: ??? (in /usr/bin/make)
+      n1: 61920 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 61920 0x112826: main (in /usr/bin/make)
+   n2: 26784 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 21744 0x12874F: ??? (in /usr/bin/make)
+     n1: 21600 0x129E6F: ??? (in /usr/bin/make)
+      n1: 21600 0x12B21E: ??? (in /usr/bin/make)
+       n1: 21600 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 21600 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 34856 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 34840 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 34840 0x1280D7: ??? (in /usr/bin/make)
+     n1: 34760 0x129E6F: ??? (in /usr/bin/make)
+      n1: 34760 0x12B21E: ??? (in /usr/bin/make)
+       n1: 34760 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 34760 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 66963 0x124834: xmalloc (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 23688 0x128219: ??? (in /usr/bin/make)
+   n1: 23688 0x129E6F: ??? (in /usr/bin/make)
+    n1: 23688 0x12B21E: ??? (in /usr/bin/make)
+     n1: 23688 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 23688 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 44719 0x4B733CE: strndup (strndup.c:43)
+  n2: 44623 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 43623 0x128250: ??? (in /usr/bin/make)
+    n1: 43623 0x129E6F: ??? (in /usr/bin/make)
+     n1: 43623 0x12B21E: ??? (in /usr/bin/make)
+      n1: 43623 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 43623 0x112826: main (in /usr/bin/make)
+   n0: 1000 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=14049964
+mem_heap_B=432583
+mem_heap_extra_B=48249
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=14353737
+mem_heap_B=437637
+mem_heap_extra_B=49075
+mem_stacks_B=0
+heap_tree=detailed
+n6: 437637 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 226272 0x124879: xcalloc (in /usr/bin/make)
+  n4: 98496 0x118019: enter_file (in /usr/bin/make)
+   n1: 64080 0x127F8B: ??? (in /usr/bin/make)
+    n1: 64080 0x129E6F: ??? (in /usr/bin/make)
+     n1: 64080 0x12B21E: ??? (in /usr/bin/make)
+      n1: 64080 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 64080 0x112826: main (in /usr/bin/make)
+   n2: 28944 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 23904 0x12874F: ??? (in /usr/bin/make)
+     n1: 23760 0x129E6F: ??? (in /usr/bin/make)
+      n1: 23760 0x12B21E: ??? (in /usr/bin/make)
+       n1: 23760 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 23760 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 36576 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 36560 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 36560 0x1280D7: ??? (in /usr/bin/make)
+     n1: 36480 0x129E6F: ??? (in /usr/bin/make)
+      n1: 36480 0x12B21E: ??? (in /usr/bin/make)
+       n1: 36480 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 36480 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 67803 0x124834: xmalloc (in /usr/bin/make)
+  n1: 24528 0x128219: ??? (in /usr/bin/make)
+   n1: 24528 0x129E6F: ??? (in /usr/bin/make)
+    n1: 24528 0x12B21E: ??? (in /usr/bin/make)
+     n1: 24528 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 24528 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 46264 0x4B733CE: strndup (strndup.c:43)
+  n2: 46168 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 45190 0x128250: ??? (in /usr/bin/make)
+    n1: 45190 0x129E6F: ??? (in /usr/bin/make)
+     n1: 45190 0x12B21E: ??? (in /usr/bin/make)
+      n1: 45190 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 45190 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=14455077
+mem_heap_B=439187
+mem_heap_extra_B=49341
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=14597368
+mem_heap_B=441460
+mem_heap_extra_B=49708
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=14625543
+mem_heap_B=441846
+mem_heap_extra_B=49778
+mem_stacks_B=0
+heap_tree=detailed
+n6: 441846 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 229352 0x124879: xcalloc (in /usr/bin/make)
+  n4: 100656 0x118019: enter_file (in /usr/bin/make)
+   n1: 65088 0x127F8B: ??? (in /usr/bin/make)
+    n1: 65088 0x129E6F: ??? (in /usr/bin/make)
+     n1: 65088 0x12B21E: ??? (in /usr/bin/make)
+      n1: 65088 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 65088 0x112826: main (in /usr/bin/make)
+   n2: 30096 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 25056 0x12874F: ??? (in /usr/bin/make)
+     n1: 24912 0x129E6F: ??? (in /usr/bin/make)
+      n1: 24912 0x12B21E: ??? (in /usr/bin/make)
+       n1: 24912 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 24912 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 37496 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 37480 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 37480 0x1280D7: ??? (in /usr/bin/make)
+     n1: 37400 0x129E6F: ??? (in /usr/bin/make)
+      n1: 37400 0x12B21E: ??? (in /usr/bin/make)
+       n1: 37400 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 37400 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 68195 0x124834: xmalloc (in /usr/bin/make)
+  n1: 24920 0x128219: ??? (in /usr/bin/make)
+   n1: 24920 0x129E6F: ??? (in /usr/bin/make)
+    n1: 24920 0x12B21E: ??? (in /usr/bin/make)
+     n1: 24920 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 24920 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 47001 0x4B733CE: strndup (strndup.c:43)
+  n2: 46905 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 45927 0x128250: ??? (in /usr/bin/make)
+    n1: 45927 0x129E6F: ??? (in /usr/bin/make)
+     n1: 45927 0x12B21E: ??? (in /usr/bin/make)
+      n1: 45927 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 45927 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=14767851
+mem_heap_B=444261
+mem_heap_extra_B=50171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=14891030
+mem_heap_B=446165
+mem_heap_extra_B=50507
+mem_stacks_B=0
+heap_tree=detailed
+n6: 446165 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 232392 0x124879: xcalloc (in /usr/bin/make)
+  n4: 102816 0x118019: enter_file (in /usr/bin/make)
+   n1: 66240 0x127F8B: ??? (in /usr/bin/make)
+    n1: 66240 0x129E6F: ??? (in /usr/bin/make)
+     n1: 66240 0x12B21E: ??? (in /usr/bin/make)
+      n1: 66240 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 66240 0x112826: main (in /usr/bin/make)
+   n2: 31104 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 26064 0x12874F: ??? (in /usr/bin/make)
+     n1: 25920 0x129E6F: ??? (in /usr/bin/make)
+      n1: 25920 0x12B21E: ??? (in /usr/bin/make)
+       n1: 25920 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 25920 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 38376 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 38360 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 38360 0x1280D7: ??? (in /usr/bin/make)
+     n1: 38280 0x129E6F: ??? (in /usr/bin/make)
+      n1: 38280 0x12B21E: ??? (in /usr/bin/make)
+       n1: 38280 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 38280 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 68643 0x124834: xmalloc (in /usr/bin/make)
+  n1: 25368 0x128219: ??? (in /usr/bin/make)
+   n1: 25368 0x129E6F: ??? (in /usr/bin/make)
+    n1: 25368 0x12B21E: ??? (in /usr/bin/make)
+     n1: 25368 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 25368 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 47832 0x4B733CE: strndup (strndup.c:43)
+  n2: 47736 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 46758 0x128250: ??? (in /usr/bin/make)
+    n1: 46758 0x129E6F: ??? (in /usr/bin/make)
+     n1: 46758 0x12B21E: ??? (in /usr/bin/make)
+      n1: 46758 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 46758 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=15033206
+mem_heap_B=448426
+mem_heap_extra_B=50902
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=15153814
+mem_heap_B=450493
+mem_heap_extra_B=51243
+mem_stacks_B=0
+heap_tree=detailed
+n6: 450493 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 235600 0x124879: xcalloc (in /usr/bin/make)
+  n4: 105120 0x118019: enter_file (in /usr/bin/make)
+   n1: 67392 0x127F8B: ??? (in /usr/bin/make)
+    n1: 67392 0x129E6F: ??? (in /usr/bin/make)
+     n1: 67392 0x12B21E: ??? (in /usr/bin/make)
+      n1: 67392 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 67392 0x112826: main (in /usr/bin/make)
+   n2: 32256 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 27216 0x12874F: ??? (in /usr/bin/make)
+     n1: 27072 0x129E6F: ??? (in /usr/bin/make)
+      n1: 27072 0x12B21E: ??? (in /usr/bin/make)
+       n1: 27072 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 27072 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n1: 5040 0x115B52: set_default_suffixes (in /usr/bin/make)
+     n0: 5040 0x112696: main (in /usr/bin/make)
+   n1: 5040 0x115BF8: install_default_suffix_rules (in /usr/bin/make)
+    n0: 5040 0x11269B: main (in /usr/bin/make)
+   n0: 432 in 3 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 39280 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 39280 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 39280 0x1280D7: ??? (in /usr/bin/make)
+     n1: 39200 0x129E6F: ??? (in /usr/bin/make)
+      n1: 39200 0x12B21E: ??? (in /usr/bin/make)
+       n1: 39200 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 39200 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 69035 0x124834: xmalloc (in /usr/bin/make)
+  n1: 25760 0x128219: ??? (in /usr/bin/make)
+   n1: 25760 0x129E6F: ??? (in /usr/bin/make)
+    n1: 25760 0x12B21E: ??? (in /usr/bin/make)
+     n1: 25760 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 25760 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 48560 0x4B733CE: strndup (strndup.c:43)
+  n2: 48464 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 47479 0x128250: ??? (in /usr/bin/make)
+    n1: 47479 0x129E6F: ??? (in /usr/bin/make)
+     n1: 47479 0x12B21E: ??? (in /usr/bin/make)
+      n1: 47479 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 47479 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=15296762
+mem_heap_B=452631
+mem_heap_extra_B=51609
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=15438749
+mem_heap_B=454720
+mem_heap_extra_B=51968
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=15441611
+mem_heap_B=454777
+mem_heap_extra_B=52007
+mem_stacks_B=0
+heap_tree=detailed
+n6: 454777 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 238592 0x124879: xcalloc (in /usr/bin/make)
+  n3: 107136 0x118019: enter_file (in /usr/bin/make)
+   n1: 68400 0x127F8B: ??? (in /usr/bin/make)
+    n1: 68400 0x129E6F: ??? (in /usr/bin/make)
+     n1: 68400 0x12B21E: ??? (in /usr/bin/make)
+      n1: 68400 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 68400 0x112826: main (in /usr/bin/make)
+   n2: 33264 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 28224 0x12874F: ??? (in /usr/bin/make)
+     n1: 28080 0x129E6F: ??? (in /usr/bin/make)
+      n1: 28080 0x12B21E: ??? (in /usr/bin/make)
+       n1: 28080 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 28080 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 40256 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 40240 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 40240 0x1280D7: ??? (in /usr/bin/make)
+     n1: 40160 0x129E6F: ??? (in /usr/bin/make)
+      n1: 40160 0x12B21E: ??? (in /usr/bin/make)
+       n1: 40160 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 40160 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 69483 0x124834: xmalloc (in /usr/bin/make)
+  n1: 26208 0x128219: ??? (in /usr/bin/make)
+   n1: 26208 0x129E6F: ??? (in /usr/bin/make)
+    n1: 26208 0x12B21E: ??? (in /usr/bin/make)
+     n1: 26208 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 26208 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 49404 0x4B733CE: strndup (strndup.c:43)
+  n2: 49308 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 48313 0x128250: ??? (in /usr/bin/make)
+    n1: 48313 0x129E6F: ??? (in /usr/bin/make)
+     n1: 48313 0x12B21E: ??? (in /usr/bin/make)
+      n1: 48313 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 48313 0x112826: main (in /usr/bin/make)
+   n0: 995 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=15584467
+mem_heap_B=457370
+mem_heap_extra_B=52414
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=15698632
+mem_heap_B=459214
+mem_heap_extra_B=52730
+mem_stacks_B=0
+heap_tree=detailed
+n6: 459214 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 241776 0x124879: xcalloc (in /usr/bin/make)
+  n3: 109440 0x118019: enter_file (in /usr/bin/make)
+   n1: 69552 0x127F8B: ??? (in /usr/bin/make)
+    n1: 69552 0x129E6F: ??? (in /usr/bin/make)
+     n1: 69552 0x12B21E: ??? (in /usr/bin/make)
+      n1: 69552 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 69552 0x112826: main (in /usr/bin/make)
+   n2: 34416 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 29376 0x12874F: ??? (in /usr/bin/make)
+     n1: 29232 0x129E6F: ??? (in /usr/bin/make)
+      n1: 29232 0x12B21E: ??? (in /usr/bin/make)
+       n1: 29232 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 29232 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 41136 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 41120 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 41120 0x1280D7: ??? (in /usr/bin/make)
+     n1: 41040 0x129E6F: ??? (in /usr/bin/make)
+      n1: 41040 0x12B21E: ??? (in /usr/bin/make)
+       n1: 41040 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 41040 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 69931 0x124834: xmalloc (in /usr/bin/make)
+  n1: 26656 0x128219: ??? (in /usr/bin/make)
+   n1: 26656 0x129E6F: ??? (in /usr/bin/make)
+    n1: 26656 0x12B21E: ??? (in /usr/bin/make)
+     n1: 26656 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 26656 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 50209 0x4B733CE: strndup (strndup.c:43)
+  n2: 50113 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 49135 0x128250: ??? (in /usr/bin/make)
+    n1: 49135 0x129E6F: ??? (in /usr/bin/make)
+     n1: 49135 0x12B21E: ??? (in /usr/bin/make)
+      n1: 49135 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 49135 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=15841913
+mem_heap_B=461333
+mem_heap_extra_B=53091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=15980046
+mem_heap_B=463619
+mem_heap_extra_B=53469
+mem_stacks_B=0
+heap_tree=detailed
+n6: 463619 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 245040 0x124879: xcalloc (in /usr/bin/make)
+  n3: 111744 0x118019: enter_file (in /usr/bin/make)
+   n1: 70704 0x127F8B: ??? (in /usr/bin/make)
+    n1: 70704 0x129E6F: ??? (in /usr/bin/make)
+     n1: 70704 0x12B21E: ??? (in /usr/bin/make)
+      n1: 70704 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 70704 0x112826: main (in /usr/bin/make)
+   n2: 35568 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 30528 0x12874F: ??? (in /usr/bin/make)
+     n1: 30384 0x129E6F: ??? (in /usr/bin/make)
+      n1: 30384 0x12B21E: ??? (in /usr/bin/make)
+       n1: 30384 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 30384 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 42096 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 42080 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 42080 0x1280D7: ??? (in /usr/bin/make)
+     n1: 42000 0x129E6F: ??? (in /usr/bin/make)
+      n1: 42000 0x12B21E: ??? (in /usr/bin/make)
+       n1: 42000 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 42000 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 70323 0x124834: xmalloc (in /usr/bin/make)
+  n1: 27048 0x128219: ??? (in /usr/bin/make)
+   n1: 27048 0x129E6F: ??? (in /usr/bin/make)
+    n1: 27048 0x12B21E: ??? (in /usr/bin/make)
+     n1: 27048 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 27048 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 50958 0x4B733CE: strndup (strndup.c:43)
+  n2: 50862 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 49868 0x128250: ??? (in /usr/bin/make)
+    n1: 49868 0x129E6F: ??? (in /usr/bin/make)
+     n1: 49868 0x12B21E: ??? (in /usr/bin/make)
+      n1: 49868 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 49868 0x112826: main (in /usr/bin/make)
+   n0: 994 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=16122202
+mem_heap_B=465884
+mem_heap_extra_B=53860
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=16261660
+mem_heap_B=468087
+mem_heap_extra_B=54233
+mem_stacks_B=0
+heap_tree=detailed
+n6: 468087 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 248248 0x124879: xcalloc (in /usr/bin/make)
+  n3: 114048 0x118019: enter_file (in /usr/bin/make)
+   n1: 71856 0x127F8B: ??? (in /usr/bin/make)
+    n1: 71856 0x129E6F: ??? (in /usr/bin/make)
+     n1: 71856 0x12B21E: ??? (in /usr/bin/make)
+      n1: 71856 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 71856 0x112826: main (in /usr/bin/make)
+   n2: 36720 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 31680 0x12874F: ??? (in /usr/bin/make)
+     n1: 31536 0x129E6F: ??? (in /usr/bin/make)
+      n1: 31536 0x12B21E: ??? (in /usr/bin/make)
+       n1: 31536 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 31536 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 43000 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 43000 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 43000 0x1280D7: ??? (in /usr/bin/make)
+     n1: 42920 0x129E6F: ??? (in /usr/bin/make)
+      n1: 42920 0x12B21E: ??? (in /usr/bin/make)
+       n1: 42920 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 42920 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 70771 0x124834: xmalloc (in /usr/bin/make)
+  n1: 27496 0x128219: ??? (in /usr/bin/make)
+   n1: 27496 0x129E6F: ??? (in /usr/bin/make)
+    n1: 27496 0x12B21E: ??? (in /usr/bin/make)
+     n1: 27496 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 27496 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 51770 0x4B733CE: strndup (strndup.c:43)
+  n2: 51674 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 50689 0x128250: ??? (in /usr/bin/make)
+    n1: 50689 0x129E6F: ??? (in /usr/bin/make)
+     n1: 50689 0x12B21E: ??? (in /usr/bin/make)
+      n1: 50689 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 50689 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=16404780
+mem_heap_B=470066
+mem_heap_extra_B=54590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=16547584
+mem_heap_B=472310
+mem_heap_extra_B=54946
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=16565155
+mem_heap_B=472646
+mem_heap_extra_B=54986
+mem_stacks_B=0
+heap_tree=detailed
+n6: 472646 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 251512 0x124879: xcalloc (in /usr/bin/make)
+  n3: 116352 0x118019: enter_file (in /usr/bin/make)
+   n1: 73008 0x127F8B: ??? (in /usr/bin/make)
+    n1: 73008 0x129E6F: ??? (in /usr/bin/make)
+     n1: 73008 0x12B21E: ??? (in /usr/bin/make)
+      n1: 73008 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 73008 0x112826: main (in /usr/bin/make)
+   n2: 37872 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 32832 0x12874F: ??? (in /usr/bin/make)
+     n1: 32688 0x129E6F: ??? (in /usr/bin/make)
+      n1: 32688 0x12B21E: ??? (in /usr/bin/make)
+       n1: 32688 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 32688 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 43960 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 43960 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 43960 0x1280D7: ??? (in /usr/bin/make)
+     n1: 43880 0x129E6F: ??? (in /usr/bin/make)
+      n1: 43880 0x12B21E: ??? (in /usr/bin/make)
+       n1: 43880 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 43880 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 71219 0x124834: xmalloc (in /usr/bin/make)
+  n1: 27944 0x128219: ??? (in /usr/bin/make)
+   n1: 27944 0x129E6F: ??? (in /usr/bin/make)
+    n1: 27944 0x12B21E: ??? (in /usr/bin/make)
+     n1: 27944 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 27944 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 52617 0x4B733CE: strndup (strndup.c:43)
+  n2: 52521 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 51536 0x128250: ??? (in /usr/bin/make)
+    n1: 51536 0x129E6F: ??? (in /usr/bin/make)
+     n1: 51536 0x12B21E: ??? (in /usr/bin/make)
+      n1: 51536 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 51536 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=16708176
+mem_heap_B=474664
+mem_heap_extra_B=55360
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=16850105
+mem_heap_B=476863
+mem_heap_extra_B=55697
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=16859718
+mem_heap_B=477198
+mem_heap_extra_B=55746
+mem_stacks_B=0
+heap_tree=detailed
+n6: 477198 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 254776 0x124879: xcalloc (in /usr/bin/make)
+  n3: 118656 0x118019: enter_file (in /usr/bin/make)
+   n1: 74160 0x127F8B: ??? (in /usr/bin/make)
+    n1: 74160 0x129E6F: ??? (in /usr/bin/make)
+     n1: 74160 0x12B21E: ??? (in /usr/bin/make)
+      n1: 74160 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 74160 0x112826: main (in /usr/bin/make)
+   n2: 39024 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 33984 0x12874F: ??? (in /usr/bin/make)
+     n1: 33840 0x129E6F: ??? (in /usr/bin/make)
+      n1: 33840 0x12B21E: ??? (in /usr/bin/make)
+       n1: 33840 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 33840 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 44920 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 44920 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 44920 0x1280D7: ??? (in /usr/bin/make)
+     n1: 44840 0x129E6F: ??? (in /usr/bin/make)
+      n1: 44840 0x12B21E: ??? (in /usr/bin/make)
+       n1: 44840 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 44840 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 71667 0x124834: xmalloc (in /usr/bin/make)
+  n1: 28392 0x128219: ??? (in /usr/bin/make)
+   n1: 28392 0x129E6F: ??? (in /usr/bin/make)
+    n1: 28392 0x12B21E: ??? (in /usr/bin/make)
+     n1: 28392 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 28392 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 53457 0x4B733CE: strndup (strndup.c:43)
+  n2: 53361 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 52376 0x128250: ??? (in /usr/bin/make)
+    n1: 52376 0x129E6F: ??? (in /usr/bin/make)
+     n1: 52376 0x12B21E: ??? (in /usr/bin/make)
+      n1: 52376 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 52376 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=17005262
+mem_heap_B=479159
+mem_heap_extra_B=56097
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=17149255
+mem_heap_B=481096
+mem_heap_extra_B=56408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=17200054
+mem_heap_B=481824
+mem_heap_extra_B=56528
+mem_stacks_B=0
+heap_tree=detailed
+n6: 481824 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 258040 0x124879: xcalloc (in /usr/bin/make)
+  n3: 120960 0x118019: enter_file (in /usr/bin/make)
+   n1: 75312 0x127F8B: ??? (in /usr/bin/make)
+    n1: 75312 0x129E6F: ??? (in /usr/bin/make)
+     n1: 75312 0x12B21E: ??? (in /usr/bin/make)
+      n1: 75312 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 75312 0x112826: main (in /usr/bin/make)
+   n2: 40176 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 35136 0x12874F: ??? (in /usr/bin/make)
+     n1: 34992 0x129E6F: ??? (in /usr/bin/make)
+      n1: 34992 0x12B21E: ??? (in /usr/bin/make)
+       n1: 34992 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 34992 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 45880 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 45880 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 45880 0x1280D7: ??? (in /usr/bin/make)
+     n1: 45800 0x129E6F: ??? (in /usr/bin/make)
+      n1: 45800 0x12B21E: ??? (in /usr/bin/make)
+       n1: 45800 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 45800 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 72115 0x124834: xmalloc (in /usr/bin/make)
+  n1: 28840 0x128219: ??? (in /usr/bin/make)
+   n1: 28840 0x129E6F: ??? (in /usr/bin/make)
+    n1: 28840 0x12B21E: ??? (in /usr/bin/make)
+     n1: 28840 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 28840 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 54371 0x4B733CE: strndup (strndup.c:43)
+  n2: 54275 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 53290 0x128250: ??? (in /usr/bin/make)
+    n1: 53290 0x129E6F: ??? (in /usr/bin/make)
+     n1: 53290 0x12B21E: ??? (in /usr/bin/make)
+      n1: 53290 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 53290 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=17342374
+mem_heap_B=483668
+mem_heap_extra_B=56852
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=17484609
+mem_heap_B=485912
+mem_heap_extra_B=57192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=17526164
+mem_heap_B=486477
+mem_heap_extra_B=57267
+mem_stacks_B=0
+heap_tree=detailed
+n6: 486477 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 260952 0x124879: xcalloc (in /usr/bin/make)
+  n3: 122976 0x118019: enter_file (in /usr/bin/make)
+   n1: 76320 0x127F8B: ??? (in /usr/bin/make)
+    n1: 76320 0x129E6F: ??? (in /usr/bin/make)
+     n1: 76320 0x12B21E: ??? (in /usr/bin/make)
+      n1: 76320 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 76320 0x112826: main (in /usr/bin/make)
+   n2: 41184 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 36144 0x12874F: ??? (in /usr/bin/make)
+     n1: 36000 0x129E6F: ??? (in /usr/bin/make)
+      n1: 36000 0x12B21E: ??? (in /usr/bin/make)
+       n1: 36000 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 36000 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 46776 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 46760 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 46760 0x1280D7: ??? (in /usr/bin/make)
+     n1: 46680 0x129E6F: ??? (in /usr/bin/make)
+      n1: 46680 0x12B21E: ??? (in /usr/bin/make)
+       n1: 46680 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 46680 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n5: 72563 0x124834: xmalloc (in /usr/bin/make)
+  n1: 29288 0x128219: ??? (in /usr/bin/make)
+   n1: 29288 0x129E6F: ??? (in /usr/bin/make)
+    n1: 29288 0x12B21E: ??? (in /usr/bin/make)
+     n1: 29288 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 29288 0x112826: main (in /usr/bin/make)
+  n2: 24528 0x12F95A: ??? (in /usr/bin/make)
+   n2: 16352 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x12A48E: ??? (in /usr/bin/make)
+     n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+      n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n2: 55664 0x4B733CE: strndup (strndup.c:43)
+  n2: 55568 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 54590 0x128250: ??? (in /usr/bin/make)
+    n1: 54590 0x129E6F: ??? (in /usr/bin/make)
+     n1: 54590 0x12B21E: ??? (in /usr/bin/make)
+      n1: 54590 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 54590 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=17668047
+mem_heap_B=488288
+mem_heap_extra_B=57552
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=17795067
+mem_heap_B=498196
+mem_heap_extra_B=57860
+mem_stacks_B=0
+heap_tree=detailed
+n6: 498196 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 263440 0x124879: xcalloc (in /usr/bin/make)
+  n3: 124704 0x118019: enter_file (in /usr/bin/make)
+   n1: 77184 0x127F8B: ??? (in /usr/bin/make)
+    n1: 77184 0x129E6F: ??? (in /usr/bin/make)
+     n1: 77184 0x12B21E: ??? (in /usr/bin/make)
+      n1: 77184 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 77184 0x112826: main (in /usr/bin/make)
+   n2: 42048 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 37008 0x12874F: ??? (in /usr/bin/make)
+     n1: 36864 0x129E6F: ??? (in /usr/bin/make)
+      n1: 36864 0x12B21E: ??? (in /usr/bin/make)
+       n1: 36864 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 36864 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 47536 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 47520 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 47520 0x1280D7: ??? (in /usr/bin/make)
+     n1: 47440 0x129E6F: ??? (in /usr/bin/make)
+      n1: 47440 0x12B21E: ??? (in /usr/bin/make)
+       n1: 47440 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 47440 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n5: 81075 0x124834: xmalloc (in /usr/bin/make)
+  n2: 32704 0x12F95A: ??? (in /usr/bin/make)
+   n2: 24528 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 16352 0x12A48E: ??? (in /usr/bin/make)
+     n1: 16352 0x12B21E: ??? (in /usr/bin/make)
+      n1: 16352 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 16352 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 29624 0x128219: ??? (in /usr/bin/make)
+   n1: 29624 0x129E6F: ??? (in /usr/bin/make)
+    n1: 29624 0x12B21E: ??? (in /usr/bin/make)
+     n1: 29624 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 29624 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 56366 0x4B733CE: strndup (strndup.c:43)
+  n2: 56270 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 55292 0x128250: ??? (in /usr/bin/make)
+    n1: 55292 0x129E6F: ??? (in /usr/bin/make)
+     n1: 55292 0x12B21E: ??? (in /usr/bin/make)
+      n1: 55292 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 55292 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6119 0x4B7338E: strdup (strdup.c:42)
+  n1: 6018 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6018 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=79
+#-----------
+time=17937719
+mem_heap_B=500296
+mem_heap_extra_B=58184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=18082506
+mem_heap_B=502512
+mem_heap_extra_B=58576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=18115616
+mem_heap_B=503010
+mem_heap_extra_B=58662
+mem_stacks_B=0
+heap_tree=detailed
+n6: 503010 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 267016 0x124879: xcalloc (in /usr/bin/make)
+  n3: 127296 0x118019: enter_file (in /usr/bin/make)
+   n1: 78480 0x127F8B: ??? (in /usr/bin/make)
+    n1: 78480 0x129E6F: ??? (in /usr/bin/make)
+     n1: 78480 0x12B21E: ??? (in /usr/bin/make)
+      n1: 78480 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 78480 0x112826: main (in /usr/bin/make)
+   n2: 43344 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 38304 0x12874F: ??? (in /usr/bin/make)
+     n1: 38160 0x129E6F: ??? (in /usr/bin/make)
+      n1: 38160 0x12B21E: ??? (in /usr/bin/make)
+       n1: 38160 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 38160 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 48520 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 48520 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 48520 0x1280D7: ??? (in /usr/bin/make)
+     n1: 48440 0x129E6F: ??? (in /usr/bin/make)
+      n1: 48440 0x12B21E: ??? (in /usr/bin/make)
+       n1: 48440 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 48440 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n5: 81523 0x124834: xmalloc (in /usr/bin/make)
+  n2: 32704 0x12F95A: ??? (in /usr/bin/make)
+   n2: 24528 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 16352 0x12A48E: ??? (in /usr/bin/make)
+     n1: 16352 0x12B21E: ??? (in /usr/bin/make)
+      n1: 16352 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 16352 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 30072 0x128219: ??? (in /usr/bin/make)
+   n1: 30072 0x129E6F: ??? (in /usr/bin/make)
+    n1: 30072 0x12B21E: ??? (in /usr/bin/make)
+     n1: 30072 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 30072 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 57173 0x4B733CE: strndup (strndup.c:43)
+  n2: 57077 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 56092 0x128250: ??? (in /usr/bin/make)
+    n1: 56092 0x129E6F: ??? (in /usr/bin/make)
+     n1: 56092 0x12B21E: ??? (in /usr/bin/make)
+      n1: 56092 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 56092 0x112826: main (in /usr/bin/make)
+   n0: 985 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=82
+#-----------
+time=18257651
+mem_heap_B=504958
+mem_heap_extra_B=59050
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=18399942
+mem_heap_B=507005
+mem_heap_extra_B=59371
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=18457386
+mem_heap_B=507824
+mem_heap_extra_B=59504
+mem_stacks_B=0
+heap_tree=detailed
+n6: 507824 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 270376 0x124879: xcalloc (in /usr/bin/make)
+  n3: 129600 0x118019: enter_file (in /usr/bin/make)
+   n1: 79632 0x127F8B: ??? (in /usr/bin/make)
+    n1: 79632 0x129E6F: ??? (in /usr/bin/make)
+     n1: 79632 0x12B21E: ??? (in /usr/bin/make)
+      n1: 79632 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 79632 0x112826: main (in /usr/bin/make)
+   n2: 44496 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 39456 0x12874F: ??? (in /usr/bin/make)
+     n1: 39312 0x129E6F: ??? (in /usr/bin/make)
+      n1: 39312 0x12B21E: ??? (in /usr/bin/make)
+       n1: 39312 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 39312 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 49576 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 49560 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 49560 0x1280D7: ??? (in /usr/bin/make)
+     n1: 49480 0x129E6F: ??? (in /usr/bin/make)
+      n1: 49480 0x12B21E: ??? (in /usr/bin/make)
+       n1: 49480 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 49480 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n5: 82027 0x124834: xmalloc (in /usr/bin/make)
+  n2: 32704 0x12F95A: ??? (in /usr/bin/make)
+   n2: 24528 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 16352 0x12A48E: ??? (in /usr/bin/make)
+     n1: 16352 0x12B21E: ??? (in /usr/bin/make)
+      n1: 16352 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 16352 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 30576 0x128219: ??? (in /usr/bin/make)
+   n1: 30576 0x129E6F: ??? (in /usr/bin/make)
+    n1: 30576 0x12B21E: ??? (in /usr/bin/make)
+     n1: 30576 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 30576 0x112826: main (in /usr/bin/make)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+  n1: 5808 0x13089E: define_variable_in_set (in /usr/bin/make)
+   n0: 5808 in 35 places, all below massif's threshold (1.00%)
+  n0: 3771 in 13 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 58123 0x4B733CE: strndup (strndup.c:43)
+  n2: 58027 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 57024 0x128250: ??? (in /usr/bin/make)
+    n1: 57024 0x129E6F: ??? (in /usr/bin/make)
+     n1: 57024 0x12B21E: ??? (in /usr/bin/make)
+      n1: 57024 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 57024 0x112826: main (in /usr/bin/make)
+   n0: 1003 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18492 in 13 places, all below massif's threshold (1.00%)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=85
+#-----------
+time=18599694
+mem_heap_B=509604
+mem_heap_extra_B=59788
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=18756117
+mem_heap_B=524376
+mem_heap_extra_B=59944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=18842308
+mem_heap_B=537613
+mem_heap_extra_B=59971
+mem_stacks_B=0
+heap_tree=peak
+n7: 537613 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 272416 0x124879: xcalloc (in /usr/bin/make)
+  n3: 131040 0x118019: enter_file (in /usr/bin/make)
+   n1: 80352 0x127F8B: ??? (in /usr/bin/make)
+    n1: 80352 0x129E6F: ??? (in /usr/bin/make)
+     n1: 80352 0x12B21E: ??? (in /usr/bin/make)
+      n1: 80352 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 80352 0x112826: main (in /usr/bin/make)
+   n2: 45216 0x118A98: enter_prereqs (in /usr/bin/make)
+    n2: 40176 0x12874F: ??? (in /usr/bin/make)
+     n1: 40032 0x129E6F: ??? (in /usr/bin/make)
+      n1: 40032 0x12B21E: ??? (in /usr/bin/make)
+       n1: 40032 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 40032 0x112826: main (in /usr/bin/make)
+     n0: 144 in 1 place, below massif's threshold (1.00%)
+    n0: 5040 in 1 place, below massif's threshold (1.00%)
+   n0: 5472 in 4 places, all below massif's threshold (1.00%)
+  n4: 87040 0x132FC4: hash_init (in /usr/bin/make)
+   n0: 65536 0x111AFC: main (in /usr/bin/make)
+   n0: 8192 0x111AF7: main (in /usr/bin/make)
+   n0: 8192 0x111B01: main (in /usr/bin/make)
+   n0: 5120 in 4 places, all below massif's threshold (1.00%)
+  n2: 50176 0x12908D: parse_file_seq (in /usr/bin/make)
+   n1: 50160 0x1187F6: split_prereqs (in /usr/bin/make)
+    n2: 50160 0x1280D7: ??? (in /usr/bin/make)
+     n1: 50080 0x129E6F: ??? (in /usr/bin/make)
+      n1: 50080 0x12B21E: ??? (in /usr/bin/make)
+       n1: 50080 0x12B657: read_all_makefiles (in /usr/bin/make)
+        n0: 50080 0x112826: main (in /usr/bin/make)
+     n0: 80 in 1 place, below massif's threshold (1.00%)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 4160 in 2 places, all below massif's threshold (1.00%)
+ n4: 82363 0x124834: xmalloc (in /usr/bin/make)
+  n2: 32704 0x12F95A: ??? (in /usr/bin/make)
+   n2: 24528 0x12909E: parse_file_seq (in /usr/bin/make)
+    n1: 16352 0x12A48E: ??? (in /usr/bin/make)
+     n1: 16352 0x12B21E: ??? (in /usr/bin/make)
+      n1: 16352 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 16352 0x112826: main (in /usr/bin/make)
+    n1: 8176 0x1187F6: split_prereqs (in /usr/bin/make)
+     n1: 8176 0x1280D7: ??? (in /usr/bin/make)
+      n1: 8176 0x129E6F: ??? (in /usr/bin/make)
+       n1: 8176 0x12B21E: ??? (in /usr/bin/make)
+        n1: 8176 0x12B657: read_all_makefiles (in /usr/bin/make)
+         n0: 8176 0x112826: main (in /usr/bin/make)
+   n1: 8176 0x12FBE5: strcache_add_len (in /usr/bin/make)
+    n1: 8176 0x128C43: construct_include_path (in /usr/bin/make)
+     n0: 8176 0x112300: main (in /usr/bin/make)
+  n1: 30912 0x128219: ??? (in /usr/bin/make)
+   n1: 30912 0x129E6F: ??? (in /usr/bin/make)
+    n1: 30912 0x12B21E: ??? (in /usr/bin/make)
+     n1: 30912 0x12B657: read_all_makefiles (in /usr/bin/make)
+      n0: 30912 0x112826: main (in /usr/bin/make)
+  n0: 9579 in 14 places, all below massif's threshold (1.00%)
+  n1: 9168 0x11612C: ??? (in /usr/bin/make)
+   n1: 9168 0x11656F: file_exists_p (in /usr/bin/make)
+    n1: 9168 0x12B644: read_all_makefiles (in /usr/bin/make)
+     n0: 9168 0x112826: main (in /usr/bin/make)
+ n1: 72704 0x4D6CA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 71868 0x4B733CE: strndup (strndup.c:43)
+  n2: 71772 0x124ADA: xstrndup (in /usr/bin/make)
+   n1: 70794 0x128250: ??? (in /usr/bin/make)
+    n1: 70794 0x129E6F: ??? (in /usr/bin/make)
+     n1: 70794 0x12B21E: ??? (in /usr/bin/make)
+      n1: 70794 0x12B657: read_all_makefiles (in /usr/bin/make)
+       n0: 70794 0x112826: main (in /usr/bin/make)
+   n0: 978 in 3 places, all below massif's threshold (1.00%)
+  n0: 96 in 1 place, below massif's threshold (1.00%)
+ n0: 18070 in 12 places, all below massif's threshold (1.00%)
+ n1: 14090 0x1248C9: xrealloc (in /usr/bin/make)
+  n1: 14090 0x129B3A: ??? (in /usr/bin/make)
+   n1: 14090 0x12B21E: ??? (in /usr/bin/make)
+    n1: 14090 0x12B657: read_all_makefiles (in /usr/bin/make)
+     n0: 14090 0x112826: main (in /usr/bin/make)
+ n2: 6102 0x4B7338E: strdup (strdup.c:42)
+  n1: 6001 0x124A98: xstrdup (in /usr/bin/make)
+   n0: 6001 in 8 places, all below massif's threshold (1.00%)
+  n0: 101 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=88
+#-----------
+time=18984321
+mem_heap_B=536906
+mem_heap_extra_B=61582
+mem_stacks_B=0
+heap_tree=empty

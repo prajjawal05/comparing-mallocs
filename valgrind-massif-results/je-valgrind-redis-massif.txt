@@ -1,0 +1,940 @@
+desc: --heap=yes --stacks=no --detailed-freq=100
+cmd: /home/azureuser/mimalloc-bench/extern/redis-6.2.7/src/redis-benchmark -r 1000000 -n 100000 -q -P 16 lpush a 1 2 3 4 5 lrange a 1 5
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3013647
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=3464513
+mem_heap_B=974303
+mem_heap_extra_B=12145
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7027047
+mem_heap_B=978403
+mem_heap_extra_B=12173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=8587119
+mem_heap_B=1006215
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=10216222
+mem_heap_B=1021767
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=11235351
+mem_heap_B=1071853
+mem_heap_extra_B=12091
+mem_stacks_B=0
+heap_tree=peak
+n8: 1071853 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 540344 0x177BCE: ztrymalloc_usable (zmalloc.c:101)
+  n4: 540344 0x177C12: zmalloc (zmalloc.c:119)
+   n1: 327680 0x1702E5: aeCreateEventLoop (ae.c:73)
+    n0: 327680 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 122880 0x17037A: aeApiCreate (ae_epoll.c:43)
+    n1: 122880 0x17037A: aeCreateEventLoop (ae.c:84)
+     n0: 122880 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 81920 0x1702F7: aeCreateEventLoop (ae.c:74)
+    n0: 81920 0x16ED42: main (redis-benchmark.c:1701)
+   n0: 7864 in 8 places, all below massif's threshold (1.00%)
+ n2: 163840 0x1850D5: hdr_init (hdr_histogram.c:395)
+  n1: 81920 0x17476A: benchmark (redis-benchmark.c:996)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+  n1: 81920 0x174786: benchmark (redis-benchmark.c:1001)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+ n1: 145900 0x17CA35: hi_malloc (alloc.h:59)
+  n1: 145900 0x17CA35: hi_sdsMakeRoomFor (sds.c:229)
+   n2: 145900 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 142982 0x173212: createClient (redis-benchmark.c:768)
+     n1: 142982 0x17395B: createMissingClients (redis-benchmark.c:862)
+      n1: 142982 0x1747B7: benchmark (redis-benchmark.c:1011)
+       n0: 142982 0x16FBAB: main (redis-benchmark.c:1829)
+    n0: 2918 in 4 places, all below massif's threshold (1.00%)
+ n1: 93526 0x17CBC0: hi_realloc (alloc.h:71)
+  n1: 93526 0x17CBC0: hi_sdsMakeRoomFor (sds.c:223)
+   n2: 93526 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 90732 0x1822C4: redisReaderFeed (read.c:675)
+     n2: 90732 0x17BDD1: redisBufferRead (hiredis.c:943)
+      n1: 90732 0x1739F1: readHandler (redis-benchmark.c:509)
+       n1: 90732 0x170BA9: aeProcessEvents (ae.c:427)
+        n1: 90732 0x170E3C: aeMain (ae.c:487)
+         n1: 90732 0x174810: benchmark (redis-benchmark.c:1014)
+          n0: 90732 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 2794 in 6 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4ED8A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x12: ???
+       n1: 72704 0x1FFF00061A: ???
+        n1: 72704 0x1FFF000660: ???
+         n1: 72704 0x1FFF000663: ???
+          n1: 72704 0x1FFF00066B: ???
+           n1: 72704 0x1FFF00066E: ???
+            n1: 72704 0x1FFF000675: ???
+             n1: 72704 0x1FFF000678: ???
+              n1: 72704 0x1FFF00067B: ???
+               n1: 72704 0x1FFF00067E: ???
+                n1: 72704 0x1FFF000684: ???
+                 n1: 72704 0x1FFF000686: ???
+                  n1: 72704 0x1FFF000688: ???
+                   n1: 72704 0x1FFF00068A: ???
+                    n1: 72704 0x1FFF00068C: ???
+                     n1: 72704 0x1FFF00068E: ???
+                      n1: 72704 0x1FFF000690: ???
+                       n1: 72704 0x1FFF000697: ???
+                        n1: 72704 0x1FFF000699: ???
+                         n0: 72704 0x1FFF00069B: ???
+ n1: 21600 0x182183: hi_calloc (alloc.h:67)
+  n1: 21600 0x182183: redisReaderCreateWithFunctions (read.c:621)
+   n1: 21600 0x17B76A: redisContextInit (hiredis.c:702)
+    n2: 21600 0x17B76A: redisConnectWithOptions (hiredis.c:787)
+     n1: 21600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+      n2: 21600 0x172F65: createClient (redis-benchmark.c:704)
+       n1: 21168 0x17395B: createMissingClients (redis-benchmark.c:862)
+        n1: 21168 0x1747B7: benchmark (redis-benchmark.c:1011)
+         n0: 21168 0x16FBAB: main (redis-benchmark.c:1829)
+       n0: 432 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 20339 in 18 places, all below massif's threshold (1.00%)
+ n1: 13600 0x17B741: hi_calloc (alloc.h:67)
+  n1: 13600 0x17B741: redisContextInit (hiredis.c:695)
+   n2: 13600 0x17B741: redisConnectWithOptions (hiredis.c:787)
+    n1: 13600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+     n2: 13600 0x172F65: createClient (redis-benchmark.c:704)
+      n1: 13328 0x17395B: createMissingClients (redis-benchmark.c:862)
+       n1: 13328 0x1747B7: benchmark (redis-benchmark.c:1011)
+        n0: 13328 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 272 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=12983947
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=14036956
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=15614683
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=17486951
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=18667129
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=20144531
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=21177630
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=22506069
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=24425503
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=25761911
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=26949164
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=28285544
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=30066990
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=31404217
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=32296381
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=33485913
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=34676040
+mem_heap_B=1082221
+mem_heap_extra_B=12091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=35865448
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=37352693
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=detailed
+n8: 1079303 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 540344 0x177BCE: ztrymalloc_usable (zmalloc.c:101)
+  n4: 540344 0x177C12: zmalloc (zmalloc.c:119)
+   n1: 327680 0x1702E5: aeCreateEventLoop (ae.c:73)
+    n0: 327680 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 122880 0x17037A: aeApiCreate (ae_epoll.c:43)
+    n1: 122880 0x17037A: aeCreateEventLoop (ae.c:84)
+     n0: 122880 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 81920 0x1702F7: aeCreateEventLoop (ae.c:74)
+    n0: 81920 0x16ED42: main (redis-benchmark.c:1701)
+   n0: 7864 in 8 places, all below massif's threshold (1.00%)
+ n2: 163840 0x1850D5: hdr_init (hdr_histogram.c:395)
+  n1: 81920 0x17476A: benchmark (redis-benchmark.c:996)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+  n1: 81920 0x174786: benchmark (redis-benchmark.c:1001)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+ n1: 142982 0x17CA35: hi_malloc (alloc.h:59)
+  n1: 142982 0x17CA35: hi_sdsMakeRoomFor (sds.c:229)
+   n2: 142982 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 142982 0x173212: createClient (redis-benchmark.c:768)
+     n1: 142982 0x17395B: createMissingClients (redis-benchmark.c:862)
+      n1: 142982 0x1747B7: benchmark (redis-benchmark.c:1011)
+       n0: 142982 0x16FBAB: main (redis-benchmark.c:1829)
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n1: 103894 0x17CBC0: hi_realloc (alloc.h:71)
+  n1: 103894 0x17CBC0: hi_sdsMakeRoomFor (sds.c:223)
+   n2: 103894 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 101100 0x1822C4: redisReaderFeed (read.c:675)
+     n2: 101100 0x17BDD1: redisBufferRead (hiredis.c:943)
+      n1: 101100 0x1739F1: readHandler (redis-benchmark.c:509)
+       n1: 101100 0x170BA9: aeProcessEvents (ae.c:427)
+        n1: 101100 0x170E3C: aeMain (ae.c:487)
+         n1: 101100 0x174810: benchmark (redis-benchmark.c:1014)
+          n0: 101100 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 2794 in 6 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4ED8A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x12: ???
+       n1: 72704 0x1FFF00061A: ???
+        n1: 72704 0x1FFF000660: ???
+         n1: 72704 0x1FFF000663: ???
+          n1: 72704 0x1FFF00066B: ???
+           n1: 72704 0x1FFF00066E: ???
+            n1: 72704 0x1FFF000675: ???
+             n1: 72704 0x1FFF000678: ???
+              n1: 72704 0x1FFF00067B: ???
+               n1: 72704 0x1FFF00067E: ???
+                n1: 72704 0x1FFF000684: ???
+                 n1: 72704 0x1FFF000686: ???
+                  n1: 72704 0x1FFF000688: ???
+                   n1: 72704 0x1FFF00068A: ???
+                    n1: 72704 0x1FFF00068C: ???
+                     n1: 72704 0x1FFF00068E: ???
+                      n1: 72704 0x1FFF000690: ???
+                       n1: 72704 0x1FFF000697: ???
+                        n1: 72704 0x1FFF000699: ???
+                         n0: 72704 0x1FFF00069B: ???
+ n1: 21600 0x182183: hi_calloc (alloc.h:67)
+  n1: 21600 0x182183: redisReaderCreateWithFunctions (read.c:621)
+   n1: 21600 0x17B76A: redisContextInit (hiredis.c:702)
+    n2: 21600 0x17B76A: redisConnectWithOptions (hiredis.c:787)
+     n1: 21600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+      n2: 21600 0x172F65: createClient (redis-benchmark.c:704)
+       n1: 21168 0x17395B: createMissingClients (redis-benchmark.c:862)
+        n1: 21168 0x1747B7: benchmark (redis-benchmark.c:1011)
+         n0: 21168 0x16FBAB: main (redis-benchmark.c:1829)
+       n0: 432 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 20339 in 18 places, all below massif's threshold (1.00%)
+ n1: 13600 0x17B741: hi_calloc (alloc.h:67)
+  n1: 13600 0x17B741: redisContextInit (hiredis.c:695)
+   n2: 13600 0x17B741: redisConnectWithOptions (hiredis.c:787)
+    n1: 13600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+     n2: 13600 0x172F65: createClient (redis-benchmark.c:704)
+      n1: 13328 0x17395B: createMissingClients (redis-benchmark.c:862)
+       n1: 13328 0x1747B7: benchmark (redis-benchmark.c:1011)
+        n0: 13328 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 272 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=38839936
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=40921357
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=44912686
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=46102176
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=47292391
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=48481671
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=49671469
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=51466445
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=53270554
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=54623538
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=55526107
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=56879867
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=57781856
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=59134721
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=60487605
+mem_heap_B=1079299
+mem_heap_extra_B=12053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=62292351
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=63645425
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=64547757
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=65901087
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=67253843
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=69058967
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=70412677
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=72216699
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=73119277
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=73570589
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=74021591
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=74472849
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=74923970
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=75375015
+mem_heap_B=1079299
+mem_heap_extra_B=12053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=75825905
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=76277188
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=76728155
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=77179326
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=77630222
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=78081125
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=78532130
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=78983369
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=79434354
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=79885478
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=83965826
+mem_heap_B=1082221
+mem_heap_extra_B=12091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=84416818
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=84868015
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=detailed
+n8: 1079367 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 540344 0x177BCE: ztrymalloc_usable (zmalloc.c:101)
+  n4: 540344 0x177C12: zmalloc (zmalloc.c:119)
+   n1: 327680 0x1702E5: aeCreateEventLoop (ae.c:73)
+    n0: 327680 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 122880 0x17037A: aeApiCreate (ae_epoll.c:43)
+    n1: 122880 0x17037A: aeCreateEventLoop (ae.c:84)
+     n0: 122880 0x16ED42: main (redis-benchmark.c:1701)
+   n1: 81920 0x1702F7: aeCreateEventLoop (ae.c:74)
+    n0: 81920 0x16ED42: main (redis-benchmark.c:1701)
+   n0: 7864 in 8 places, all below massif's threshold (1.00%)
+ n2: 163840 0x1850D5: hdr_init (hdr_histogram.c:395)
+  n1: 81920 0x17476A: benchmark (redis-benchmark.c:996)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+  n1: 81920 0x174786: benchmark (redis-benchmark.c:1001)
+   n0: 81920 0x16FBAB: main (redis-benchmark.c:1829)
+ n1: 142982 0x17CA35: hi_malloc (alloc.h:59)
+  n1: 142982 0x17CA35: hi_sdsMakeRoomFor (sds.c:229)
+   n2: 142982 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 142982 0x173212: createClient (redis-benchmark.c:768)
+     n1: 142982 0x17395B: createMissingClients (redis-benchmark.c:862)
+      n1: 142982 0x1747B7: benchmark (redis-benchmark.c:1011)
+       n0: 142982 0x16FBAB: main (redis-benchmark.c:1829)
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n1: 103894 0x17CBC0: hi_realloc (alloc.h:71)
+  n1: 103894 0x17CBC0: hi_sdsMakeRoomFor (sds.c:223)
+   n2: 103894 0x17D41B: hi_sdscatlen (sds.c:381)
+    n1: 101100 0x1822C4: redisReaderFeed (read.c:675)
+     n2: 101100 0x17BDD1: redisBufferRead (hiredis.c:943)
+      n1: 101100 0x1739F1: readHandler (redis-benchmark.c:509)
+       n1: 101100 0x170BA9: aeProcessEvents (ae.c:427)
+        n1: 101100 0x170E3C: aeMain (ae.c:487)
+         n1: 101100 0x174810: benchmark (redis-benchmark.c:1014)
+          n0: 101100 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 2794 in 6 places, all below massif's threshold (1.00%)
+ n1: 72704 0x4ED8A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x12: ???
+       n1: 72704 0x1FFF00061A: ???
+        n1: 72704 0x1FFF000660: ???
+         n1: 72704 0x1FFF000663: ???
+          n1: 72704 0x1FFF00066B: ???
+           n1: 72704 0x1FFF00066E: ???
+            n1: 72704 0x1FFF000675: ???
+             n1: 72704 0x1FFF000678: ???
+              n1: 72704 0x1FFF00067B: ???
+               n1: 72704 0x1FFF00067E: ???
+                n1: 72704 0x1FFF000684: ???
+                 n1: 72704 0x1FFF000686: ???
+                  n1: 72704 0x1FFF000688: ???
+                   n1: 72704 0x1FFF00068A: ???
+                    n1: 72704 0x1FFF00068C: ???
+                     n1: 72704 0x1FFF00068E: ???
+                      n1: 72704 0x1FFF000690: ???
+                       n1: 72704 0x1FFF000697: ???
+                        n1: 72704 0x1FFF000699: ???
+                         n0: 72704 0x1FFF00069B: ???
+ n1: 21600 0x182183: hi_calloc (alloc.h:67)
+  n1: 21600 0x182183: redisReaderCreateWithFunctions (read.c:621)
+   n1: 21600 0x17B76A: redisContextInit (hiredis.c:702)
+    n2: 21600 0x17B76A: redisConnectWithOptions (hiredis.c:787)
+     n1: 21600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+      n2: 21600 0x172F65: createClient (redis-benchmark.c:704)
+       n1: 21168 0x17395B: createMissingClients (redis-benchmark.c:862)
+        n1: 21168 0x1747B7: benchmark (redis-benchmark.c:1011)
+         n0: 21168 0x16FBAB: main (redis-benchmark.c:1829)
+       n0: 432 in 1 place, below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 20403 in 18 places, all below massif's threshold (1.00%)
+ n1: 13600 0x17B741: hi_calloc (alloc.h:67)
+  n1: 13600 0x17B741: redisContextInit (hiredis.c:695)
+   n2: 13600 0x17B741: redisConnectWithOptions (hiredis.c:787)
+    n1: 13600 0x17BA47: redisConnectNonBlock (hiredis.c:859)
+     n2: 13600 0x172F65: createClient (redis-benchmark.c:704)
+      n1: 13328 0x17395B: createMissingClients (redis-benchmark.c:862)
+       n1: 13328 0x1747B7: benchmark (redis-benchmark.c:1011)
+        n0: 13328 0x16FBAB: main (redis-benchmark.c:1829)
+      n0: 272 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=85319207
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=85770447
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=86221315
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=86672336
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=87123271
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=87574294
+mem_heap_B=1079299
+mem_heap_extra_B=12053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=88025429
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=88476800
+mem_heap_B=1082221
+mem_heap_extra_B=12091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=88927769
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=89378701
+mem_heap_B=1079303
+mem_heap_extra_B=12073
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=89829835
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=90280752
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=90731843
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=91182883
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=91634054
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=92085393
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=92536661
+mem_heap_B=1079367
+mem_heap_extra_B=12081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=94971802
+mem_heap_B=1073185
+mem_heap_extra_B=11815
+mem_stacks_B=0
+heap_tree=empty
