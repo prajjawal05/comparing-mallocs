@@ -89,3 +89,4 @@ sudo mv massif.out.* results/je-valgrind-larson-massif.txt
 echo "The current date is: $(date)"
 sudo LD_PRELOAD=/home/azureuser/mimalloc-bench/extern/tcg/bazel-bin/tcmalloc/libtcmalloc.so valgrind --tool=massif ./larson-sized 5 8 1000 5000 100 4141 16
 sudo mv massif.out.* results/tcg-valgrind-larson-massif.txt
+echo "The current date is: $(date)"
