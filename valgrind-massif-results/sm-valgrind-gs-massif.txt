@@ -1,4 +1,4 @@
-desc: --heap=yes --stacks=no --detailed-freq=100
+desc: (none)
 cmd: gs -dBATCH -dNODISPLAY /home/azureuser/mimalloc-bench/extern/large.pdf
 time_unit: i
 #-----------
@@ -12,15 +12,301 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=90127681
+time=90124343
 mem_heap_B=2985815
 mem_heap_extra_B=15521
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n4: 2985815 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 2805839 0x4C6FC4F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+  n3: 2694344 0x4C4C2D4: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n3: 1583792 0x4C4D221: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n6: 1242976 0x4D5E9F4: gs_alloc_ref_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 461104 0x4D42175: make_packed_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n2: 461104 0x4D2EAA7: gs_scan_token (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 380912 0x4D2A414: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 380912 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 380912 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 380912 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 380912 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 380912 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 380912 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 380912 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 380912 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 380912 0x109273: ??? (in /usr/bin/gs)
+                 n0: 380912 0x58D7082: (below main) (libc-start.c:308)
+       n1: 80192 0x4D444A2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 80192 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 80192 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 80192 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 80192 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 80192 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 80192 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 80192 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 80192 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 80192 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 80192 0x109273: ??? (in /usr/bin/gs)
+                  n0: 80192 0x58D7082: (below main) (libc-start.c:308)
+     n2: 300720 0x4D25215: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n3: 260624 0x4D253B5: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 120288 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 120288 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 120288 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 120288 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 120288 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 120288 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 120288 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 120288 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 120288 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 120288 0x109273: ??? (in /usr/bin/gs)
+                 n0: 120288 0x58D7082: (below main) (libc-start.c:308)
+       n1: 100240 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 100240 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 100240 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 100240 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 100240 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 100240 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 100240 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 100240 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 100240 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 100240 0x109273: ??? (in /usr/bin/gs)
+                 n0: 100240 0x58D7082: (below main) (libc-start.c:308)
+       n1: 40096 0x4D379E3: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 40096 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 40096 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 40096 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 40096 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 40096 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 40096 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 40096 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 40096 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 40096 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 40096 0x109273: ??? (in /usr/bin/gs)
+                  n0: 40096 0x58D7082: (below main) (libc-start.c:308)
+      n1: 40096 0x4D2613E: dict_resize (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n0: 40096 in 2 places, all below massif's threshold (1.00%)
+     n2: 240576 0x4D34A24: zarray (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 220528 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 220528 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 220528 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 220528 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 220528 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 220528 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 220528 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 220528 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 220528 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 220528 0x109273: ??? (in /usr/bin/gs)
+                n0: 220528 0x58D7082: (below main) (libc-start.c:308)
+      n0: 20048 in 1 place, below massif's threshold (1.00%)
+     n2: 140336 0x4D250EC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 120288 0x4D25473: dict_unpack (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 120288 0x4D264E9: dict_put (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 100240 0x4D3EDAB: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 80192 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 80192 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 80192 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 80192 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 80192 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 80192 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 80192 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 80192 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 80192 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 80192 0x109273: ??? (in /usr/bin/gs)
+                   n0: 80192 0x58D7082: (below main) (libc-start.c:308)
+         n0: 20048 in 1 place, below massif's threshold (1.00%)
+        n0: 20048 in 1 place, below massif's threshold (1.00%)
+      n0: 20048 in 1 place, below massif's threshold (1.00%)
+     n0: 60144 in 3 places, all below massif's threshold (1.00%)
+     n1: 40096 0x4D25368: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n0: 40096 in 2 places, all below massif's threshold (1.00%)
+    n2: 280672 0x4D62231: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 260624 0x4D62617: names_ref (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 240576 0x4D2F3CB: gs_scan_token (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 240576 0x4D2A414: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 240576 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 240576 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 240576 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 240576 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 240576 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 240576 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 240576 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 240576 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 240576 0x109273: ??? (in /usr/bin/gs)
+                 n0: 240576 0x58D7082: (below main) (libc-start.c:308)
+      n0: 20048 in 1 place, below massif's threshold (1.00%)
+     n0: 20048 in 1 place, below massif's threshold (1.00%)
+    n0: 60144 in 3 places, all below massif's threshold (1.00%)
+   n7: 1070736 0x4C4D0BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n4: 628216 0x4D5E9F4: gs_alloc_ref_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 263096 0x4D25215: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n3: 263096 0x4D253B5: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 205208 0x4D379E3: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 205208 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 205208 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 205208 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 205208 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 205208 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 205208 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 205208 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 205208 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 205208 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 205208 0x109273: ??? (in /usr/bin/gs)
+                  n0: 205208 0x58D7082: (below main) (libc-start.c:308)
+       n1: 32904 0x4D27EAB: obj_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 32904 0x4D1DA82: gs_main_init1 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 32904 0x4D208A7: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 32904 0x4D21F02: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 32904 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 32904 0x109273: ??? (in /usr/bin/gs)
+             n0: 32904 0x58D7082: (below main) (libc-start.c:308)
+       n0: 24984 in 3 places, all below massif's threshold (1.00%)
+     n1: 246440 0x4D250EC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 246440 0x4D25473: dict_unpack (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n3: 246440 0x4D264E9: dict_put (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 196880 0x4D37ADF: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 196880 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 196880 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 196880 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 196880 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 196880 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 196880 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 196880 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 196880 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 196880 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 196880 0x109273: ??? (in /usr/bin/gs)
+                   n0: 196880 0x58D7082: (below main) (libc-start.c:308)
+        n1: 41232 0x4D37D10: zop_def (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 41232 0x4D2A07F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 41232 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 41232 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 41232 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 41232 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 41232 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 41232 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 41232 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 41232 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 41232 0x109273: ??? (in /usr/bin/gs)
+                   n0: 41232 0x58D7082: (below main) (libc-start.c:308)
+        n0: 8328 in 1 place, below massif's threshold (1.00%)
+     n1: 93832 0x4D28D02: gs_interp_alloc_stacks (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 93832 0x4D240B5: context_state_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 93832 0x4D28C1E: gs_interp_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 93832 0x4D27EC1: obj_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 93832 0x4D1DA82: gs_main_init1 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 93832 0x4D208A7: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 93832 0x4D21F02: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 93832 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 93832 0x109273: ??? (in /usr/bin/gs)
+              n0: 93832 0x58D7082: (below main) (libc-start.c:308)
+     n0: 24848 in 2 places, all below massif's threshold (1.00%)
+    n1: 131176 0x4C8C3B6: gx_char_cache_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 131176 0x4C60BA1: gs_font_dir_alloc2_limits (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 131176 0x4C60CC0: gs_font_dir_alloc2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 131176 0x4D58E61: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 131176 0x4D2827F: zop_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 131176 0x4D1E559: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 131176 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 131176 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 131176 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 131176 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 131176 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 131176 0x109273: ??? (in /usr/bin/gs)
+                n0: 131176 0x58D7082: (below main) (libc-start.c:308)
+    n2: 124440 0x4D62248: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 116144 0x4D62617: names_ref (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 99552 0x4D2F3CB: gs_scan_token (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 99552 0x4D2A414: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 99552 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 99552 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 99552 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 99552 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 99552 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 99552 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 99552 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 99552 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 99552 0x109273: ??? (in /usr/bin/gs)
+                 n0: 99552 0x58D7082: (below main) (libc-start.c:308)
+      n0: 16592 in 2 places, all below massif's threshold (1.00%)
+     n0: 8296 in 1 place, below massif's threshold (1.00%)
+    n1: 49960 0x4A77C86: gx_unshare_cie_caches (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 49960 0x4A7810B: gs_cie_cs_complete (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 49960 0x4A797F1: gs_setcolorrendering (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 49960 0x4D14D22: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 49960 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 49960 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 49960 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 49960 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 49960 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 49960 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 49960 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 49960 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 49960 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 49960 0x109273: ??? (in /usr/bin/gs)
+                  n0: 49960 0x58D7082: (below main) (libc-start.c:308)
+    n1: 49288 0x4D62B8A: names_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 49288 0x4D1DA25: gs_main_init1 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 49288 0x4D208A7: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 49288 0x4D21F02: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 49288 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 49288 0x109273: ??? (in /usr/bin/gs)
+          n0: 49288 0x58D7082: (below main) (libc-start.c:308)
+    n1: 46416 0x4A7DB8A: gs_cie_render1_build (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 46416 0x4D145D7: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 46416 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 46416 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 46416 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 46416 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 46416 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 46416 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 46416 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 46416 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 46416 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 46416 0x109273: ??? (in /usr/bin/gs)
+                n0: 46416 0x58D7082: (below main) (libc-start.c:308)
+    n0: 41240 in 8 places, all below massif's threshold (1.00%)
+   n0: 39816 in 2 places, all below massif's threshold (1.00%)
+  n1: 65584 0x4B16010: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n1: 65584 0x4C87837: gs_fapi_ft_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 65584 0x4C84DDF: gs_fapi_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 65584 0x4C6CE71: gs_lib_init1 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 65584 0x4D1DA01: gs_main_init1 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 65584 0x4D208A7: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 65584 0x4D21F02: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 65584 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 65584 0x109273: ??? (in /usr/bin/gs)
+           n0: 65584 0x58D7082: (below main) (libc-start.c:308)
+  n1: 32736 0x4C4C28D: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n0: 32736 in 4 places, all below massif's threshold (1.00%)
+  n0: 13175 in 25 places, all below massif's threshold (1.00%)
+ n1: 90592 0x6A5561B: ??? (in /usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.0)
+  n2: 90592 0x6A56DEB: asn1_array2tree (in /usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.0)
+   n1: 72656 0x6447868: ??? (in /usr/lib/x86_64-linux-gnu/libgnutls.so.30.27.0)
+    n1: 72656 0x641B564: ??? (in /usr/lib/x86_64-linux-gnu/libgnutls.so.30.27.0)
+     n1: 72656 0x4011B99: call_init.part.0 (dl-init.c:72)
+      n1: 72656 0x4011CA0: call_init (dl-init.c:30)
+       n1: 72656 0x4011CA0: _dl_init (dl-init.c:119)
+        n1: 72656 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+         n1: 72656 0x3: ???
+          n1: 72656 0x1FFF0006F6: ???
+           n1: 72656 0x1FFF0006F9: ???
+            n1: 72656 0x1FFF000701: ???
+             n0: 72656 0x1FFF00070D: ???
+   n0: 17936 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x5B51A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x3: ???
+       n1: 72704 0x1FFF0006F6: ???
+        n1: 72704 0x1FFF0006F9: ???
+         n1: 72704 0x1FFF000701: ???
+          n0: 72704 0x1FFF00070D: ???
+ n0: 16680 in 15 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=2
 #-----------
-time=178590342
+time=178589056
 mem_heap_B=5001143
 mem_heap_extra_B=19281
 mem_stacks_B=0
@@ -28,7 +314,7 @@ heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=316190590
+time=316189112
 mem_heap_B=6691327
 mem_heap_extra_B=20921
 mem_stacks_B=0
@@ -36,7 +322,7 @@ heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=398017533
+time=398014000
 mem_heap_B=8615032
 mem_heap_extra_B=22680
 mem_stacks_B=0
@@ -44,7 +330,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=517662486
+time=517658953
 mem_heap_B=8850898
 mem_heap_extra_B=22822
 mem_stacks_B=0
@@ -52,7 +338,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=659885985
+time=659879305
 mem_heap_B=9384354
 mem_heap_extra_B=22982
 mem_stacks_B=0
@@ -60,7 +346,7 @@ heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=744992315
+time=744983329
 mem_heap_B=9322946
 mem_heap_extra_B=22886
 mem_stacks_B=0
@@ -68,7 +354,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=874535606
+time=874518178
 mem_heap_B=9794698
 mem_heap_extra_B=23374
 mem_stacks_B=0
@@ -76,7 +362,7 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=1038046883
+time=1038020306
 mem_heap_B=10838442
 mem_heap_extra_B=24438
 mem_stacks_B=0
@@ -565,7 +851,7 @@ n3: 10838442 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=10
 #-----------
-time=1189606542
+time=1189573626
 mem_heap_B=10826882
 mem_heap_extra_B=24518
 mem_stacks_B=0
@@ -573,7 +859,7 @@ heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=1301647476
+time=1301609079
 mem_heap_B=11457845
 mem_heap_extra_B=25475
 mem_stacks_B=0
@@ -1092,7 +1378,7 @@ n3: 11457845 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=12
 #-----------
-time=1467067799
+time=1467022133
 mem_heap_B=11089293
 mem_heap_extra_B=25115
 mem_stacks_B=0
@@ -1100,7 +1386,7 @@ heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=1569597650
+time=1569551788
 mem_heap_B=10803637
 mem_heap_extra_B=24675
 mem_stacks_B=0
@@ -1108,7 +1394,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=1655552189
+time=1655501273
 mem_heap_B=11231861
 mem_heap_extra_B=25331
 mem_stacks_B=0
@@ -1116,7 +1402,7 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=1798203527
+time=1798147445
 mem_heap_B=11516997
 mem_heap_extra_B=25731
 mem_stacks_B=0
@@ -1124,15 +1410,494 @@ heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=1932675084
+time=1932614873
 mem_heap_B=11984301
 mem_heap_extra_B=26315
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n3: 11984301 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 11526941 0x4C6FC4F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+  n4: 10557312 0x4C4C2D4: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n5: 6615840 0x4C4D221: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n6: 4871664 0x4D5E9F4: gs_alloc_ref_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 1884512 0x4D25215: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n4: 1744176 0x4D253B5: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 1162784 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 1162784 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 1042496 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 1042496 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 1042496 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 1042496 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 1042496 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 1042496 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 1042496 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 1042496 0x109273: ??? (in /usr/bin/gs)
+                 n0: 1042496 0x58D7082: (below main) (libc-start.c:308)
+         n1: 120288 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 120288 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 120288 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 120288 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 120288 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 120288 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 120288 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 120288 0x109273: ??? (in /usr/bin/gs)
+                 n0: 120288 0x58D7082: (below main) (libc-start.c:308)
+       n1: 220528 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 220528 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 140336 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 140336 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 140336 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 140336 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 140336 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 140336 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 140336 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 140336 0x109273: ??? (in /usr/bin/gs)
+                 n0: 140336 0x58D7082: (below main) (libc-start.c:308)
+         n0: 80192 in 1 place, below massif's threshold (1.00%)
+       n1: 180432 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 180432 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 120288 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 120288 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 120288 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 120288 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 120288 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 120288 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 120288 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 120288 0x109273: ??? (in /usr/bin/gs)
+                 n0: 120288 0x58D7082: (below main) (libc-start.c:308)
+         n0: 60144 in 1 place, below massif's threshold (1.00%)
+       n2: 180432 0x4D379E3: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 120288 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 120288 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 120288 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 120288 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 120288 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 120288 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 120288 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 120288 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 120288 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 120288 0x109273: ??? (in /usr/bin/gs)
+                  n0: 120288 0x58D7082: (below main) (libc-start.c:308)
+        n0: 60144 in 2 places, all below massif's threshold (1.00%)
+      n1: 140336 0x4D2613E: dict_resize (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n0: 140336 in 2 places, all below massif's threshold (1.00%)
+     n2: 1303120 0x4D250EC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 1002400 0x4D25473: dict_unpack (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 1002400 0x4D264E9: dict_put (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 862064 0x4D3EDAB: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 842016 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n2: 842016 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 641536 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 641536 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 641536 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 641536 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 641536 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 641536 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 641536 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 641536 0x109273: ??? (in /usr/bin/gs)
+                   n0: 641536 0x58D7082: (below main) (libc-start.c:308)
+           n1: 200480 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 200480 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 200480 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 200480 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 200480 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 200480 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 200480 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 200480 0x109273: ??? (in /usr/bin/gs)
+                   n0: 200480 0x58D7082: (below main) (libc-start.c:308)
+         n0: 20048 in 1 place, below massif's threshold (1.00%)
+        n0: 140336 in 4 places, all below massif's threshold (1.00%)
+      n1: 300720 0x4D252B2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 300720 0x4D2613E: dict_resize (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 280672 0x4D26394: dict_grow (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n2: 280672 0x4D2653D: dict_put (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n2: 220528 0x4D3EDAB: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 180432 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 180432 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 180432 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 180432 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 180432 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 180432 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 180432 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 180432 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 180432 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 180432 0x109273: ??? (in /usr/bin/gs)
+                     n0: 180432 0x58D7082: (below main) (libc-start.c:308)
+           n0: 40096 in 1 place, below massif's threshold (1.00%)
+          n0: 60144 in 2 places, all below massif's threshold (1.00%)
+        n0: 20048 in 1 place, below massif's threshold (1.00%)
+     n2: 842016 0x4D42175: make_packed_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n2: 781872 0x4D2EAA7: gs_scan_token (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 561344 0x4D2A414: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n2: 561344 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 561344 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 561344 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 561344 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 561344 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 561344 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 561344 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 561344 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 561344 0x109273: ??? (in /usr/bin/gs)
+                 n0: 561344 0x58D7082: (below main) (libc-start.c:308)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+       n1: 220528 0x4D444A2: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 220528 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 220528 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 220528 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 220528 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 220528 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 220528 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 220528 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 220528 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 220528 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 220528 0x109273: ??? (in /usr/bin/gs)
+                  n0: 220528 0x58D7082: (below main) (libc-start.c:308)
+      n0: 60144 in 1 place, below massif's threshold (1.00%)
+     n3: 481152 0x4D34A24: zarray (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 220528 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 220528 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 220528 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 220528 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 220528 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 220528 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 220528 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 220528 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 220528 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 220528 0x109273: ??? (in /usr/bin/gs)
+                n0: 220528 0x58D7082: (below main) (libc-start.c:308)
+        n0: 0 in 1 place, below massif's threshold (1.00%)
+      n1: 200480 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 200480 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 180432 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 180432 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 180432 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 180432 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 180432 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 180432 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 180432 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 180432 0x109273: ??? (in /usr/bin/gs)
+                n0: 180432 0x58D7082: (below main) (libc-start.c:308)
+        n0: 20048 in 1 place, below massif's threshold (1.00%)
+      n0: 60144 in 1 place, below massif's threshold (1.00%)
+     n2: 220528 0x4D25368: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n2: 200480 0x4D379E3: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 180432 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 180432 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 180432 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 180432 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 180432 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 180432 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 180432 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 180432 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 180432 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 180432 0x109273: ??? (in /usr/bin/gs)
+                 n0: 180432 0x58D7082: (below main) (libc-start.c:308)
+       n0: 20048 in 1 place, below massif's threshold (1.00%)
+      n0: 20048 in 4 places, all below massif's threshold (1.00%)
+     n0: 140336 in 3 places, all below massif's threshold (1.00%)
+    n1: 681632 0x4B70749: file_prepare_stream (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 681632 0x4B7082C: file_open_stream (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 661584 0x4D3AA6D: filter_open (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 661584 0x4D3D133: filter_read (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 481152 0x4D1793A: filter_read_predictor (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 481152 0x4D7F507: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 481152 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 481152 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 481152 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 481152 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 481152 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 481152 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 481152 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 481152 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 481152 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 481152 0x109273: ??? (in /usr/bin/gs)
+                    n0: 481152 0x58D7082: (below main) (libc-start.c:308)
+        n1: 180432 0x4D3D3E5: zSFD (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 180432 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 180432 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 180432 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 180432 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 180432 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 180432 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 180432 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 180432 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 180432 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 180432 0x109273: ??? (in /usr/bin/gs)
+                   n0: 180432 0x58D7082: (below main) (libc-start.c:308)
+      n0: 20048 in 1 place, below massif's threshold (1.00%)
+    n1: 501200 0x4D63E9C: alloc_save_change_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n4: 501200 0x4D5E9D8: gs_alloc_ref_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n2: 160384 0x4D42175: make_packed_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 160384 0x4D42540: zpackedarray (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 160384 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 160384 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 160384 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 160384 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 160384 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 160384 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 160384 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 160384 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 160384 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 160384 0x109273: ??? (in /usr/bin/gs)
+                  n0: 160384 0x58D7082: (below main) (libc-start.c:308)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n1: 140336 0x4D34A24: zarray (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 140336 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 140336 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 140336 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 140336 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 140336 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 140336 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 140336 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 140336 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 140336 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 140336 0x109273: ??? (in /usr/bin/gs)
+                 n0: 140336 0x58D7082: (below main) (libc-start.c:308)
+      n1: 120288 0x4D25368: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n0: 120288 in 3 places, all below massif's threshold (1.00%)
+      n0: 80192 in 5 places, all below massif's threshold (1.00%)
+    n2: 320768 0x4D62231: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 300720 0x4D62617: names_ref (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 280672 0x4D2F3CB: gs_scan_token (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 280672 0x4D2A414: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 280672 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 280672 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 280672 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 280672 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 280672 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 280672 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 280672 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 280672 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 280672 0x109273: ??? (in /usr/bin/gs)
+                 n0: 280672 0x58D7082: (below main) (libc-start.c:308)
+      n0: 20048 in 2 places, all below massif's threshold (1.00%)
+     n0: 20048 in 1 place, below massif's threshold (1.00%)
+    n0: 240576 in 25 places, all below massif's threshold (1.00%)
+   n6: 2808200 0x4C4D0BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 1082832 0x4CAA687: gx_ht_alloc_cache (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 1082832 0x4C63B11: gx_gstate_dev_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 541416 0x4C64066: gx_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 541416 0x4C65CB8: gs_screen_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 541416 0x4D5BA3C: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 541416 0x4D5B8BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 541416 0x4D5BE27: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 541416 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n2: 541416 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 541416 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 541416 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 541416 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 541416 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 541416 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 541416 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 541416 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 541416 0x109273: ??? (in /usr/bin/gs)
+                     n0: 541416 0x58D7082: (below main) (libc-start.c:308)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+      n1: 541416 0x4C64173: gx_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 541416 0x4C65CB8: gs_screen_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 541416 0x4D5BA3C: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 541416 0x4D5B8BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 541416 0x4D5BE27: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 541416 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 541416 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 541416 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 541416 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 541416 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 541416 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 541416 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 541416 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 541416 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 541416 0x109273: ??? (in /usr/bin/gs)
+                     n0: 541416 0x58D7082: (below main) (libc-start.c:308)
+    n3: 680800 0x4D5E9F4: gs_alloc_ref_array (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 254768 0x4D25215: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n2: 254768 0x4D253B5: dict_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 205208 0x4D379E3: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 205208 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 205208 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 205208 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 205208 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 205208 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 205208 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 205208 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 205208 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 205208 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 205208 0x109273: ??? (in /usr/bin/gs)
+                  n0: 205208 0x58D7082: (below main) (libc-start.c:308)
+       n0: 49560 in 4 places, all below massif's threshold (1.00%)
+     n1: 238112 0x4D250EC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 238112 0x4D25473: dict_unpack (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n2: 238112 0x4D264E9: dict_put (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 196880 0x4D37ADF: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 196880 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 196880 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 196880 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 196880 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 196880 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 196880 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 196880 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 196880 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 196880 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 196880 0x109273: ??? (in /usr/bin/gs)
+                   n0: 196880 0x58D7082: (below main) (libc-start.c:308)
+        n0: 41232 in 2 places, all below massif's threshold (1.00%)
+     n0: 187920 in 4 places, all below massif's threshold (1.00%)
+    n1: 473856 0x4CAA6A0: gx_ht_alloc_cache (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 473856 0x4C63B11: gx_gstate_dev_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 236928 0x4C64066: gx_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 236928 0x4C65CB8: gs_screen_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 236928 0x4D5BA3C: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 236928 0x4D5B8BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 236928 0x4D5BE27: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 236928 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n2: 236928 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 236928 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 236928 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 236928 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 236928 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 236928 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 236928 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 236928 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 236928 0x109273: ??? (in /usr/bin/gs)
+                     n0: 236928 0x58D7082: (below main) (libc-start.c:308)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+      n1: 236928 0x4C64173: gx_ht_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 236928 0x4C65CB8: gs_screen_install (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 236928 0x4D5BA3C: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 236928 0x4D5B8BE: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 236928 0x4D5BE27: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 236928 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 236928 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 236928 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 236928 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 236928 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 236928 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 236928 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 236928 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 236928 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 236928 0x109273: ??? (in /usr/bin/gs)
+                     n0: 236928 0x58D7082: (below main) (libc-start.c:308)
+    n0: 298504 in 18 places, all below massif's threshold (1.00%)
+    n2: 141032 0x4D62248: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 132736 0x4D62617: names_ref (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n0: 132736 in 4 places, all below massif's threshold (1.00%)
+     n0: 8296 in 1 place, below massif's threshold (1.00%)
+    n1: 131176 0x4C8C3B6: gx_char_cache_alloc (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 131176 0x4C60BA1: gs_font_dir_alloc2_limits (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 131176 0x4C60CC0: gs_font_dir_alloc2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 131176 0x4D58E61: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 131176 0x4D2827F: zop_init (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 131176 0x4D1E559: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 131176 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 131176 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 131176 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 131176 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 131176 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 131176 0x109273: ??? (in /usr/bin/gs)
+                n0: 131176 0x58D7082: (below main) (libc-start.c:308)
+   n1: 972888 0x4C4C3A0: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 972888 0x4C4CACF: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n2: 972888 0x4D43500: zstring (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 953120 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 953120 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 953120 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 953120 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 953120 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 953120 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 953120 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 953120 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 953120 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 953120 0x109273: ??? (in /usr/bin/gs)
+                n0: 953120 0x58D7082: (below main) (libc-start.c:308)
+      n0: 19768 in 1 place, below massif's threshold (1.00%)
+   n2: 160384 0x4C4CA30: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 140336 0x4D43500: zstring (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n0: 140336 in 2 places, all below massif's threshold (1.00%)
+    n0: 20048 in 1 place, below massif's threshold (1.00%)
+  n3: 393504 0x4B16010: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n0: 131168 in 2 places, all below massif's threshold (1.00%)
+   n1: 131168 0x4C8633B: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 131168 0x612C7DE: ??? (in /usr/lib/x86_64-linux-gnu/libfreetype.so.6.17.1)
+     n1: 131168 0x612C83D: ??? (in /usr/lib/x86_64-linux-gnu/libfreetype.so.6.17.1)
+      n1: 131168 0x612CA3C: ??? (in /usr/lib/x86_64-linux-gnu/libfreetype.so.6.17.1)
+       n0: 131168 in 2 places, all below massif's threshold (1.00%)
+   n1: 131168 0x4C86FA4: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 131168 0x4C81647: gs_fapi_prepare_font (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n0: 131168 in 2 places, all below massif's threshold (1.00%)
+  n2: 203656 0x4AC27E7: gsicc_profile_new (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n1: 194684 0x4AC3617: gsicc_set_profile (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 194684 0x4AC3CE3: gsicc_init_iccmanager (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 194684 0x4C58B57: gs_setdevice_no_erase (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 194684 0x4D58C40: zsetdevice_no_safer (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 194684 0x4D58D5D: zsetdevice (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 194684 0x4D2A869: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 194684 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 194684 0x4D1E0D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 194684 0x4D1E625: gs_main_init2aux (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 194684 0x4D1ED31: gs_main_init2 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 194684 0x4D2066F: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 194684 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 194684 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 194684 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 194684 0x109273: ??? (in /usr/bin/gs)
+                  n0: 194684 0x58D7082: (below main) (libc-start.c:308)
+   n0: 8972 in 2 places, all below massif's threshold (1.00%)
+  n1: 200049 0x4C6FD9C: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+   n1: 200049 0x4C8D013: gx_alloc_char_bits (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+    n1: 200049 0x4C8E684: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+     n1: 200049 0x4C8EAC4: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+      n1: 200049 0x4D082B4: zchar_set_cache (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+       n1: 200049 0x4D6EC8B: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+        n1: 200049 0x4C84204: gs_fapi_do_char (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+         n1: 200049 0x4D6F321: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+          n1: 200049 0x4D2B6BC: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 200049 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 200049 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 200049 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n1: 200049 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 200049 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 200049 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 200049 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 200049 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 200049 0x109273: ??? (in /usr/bin/gs)
+                    n0: 200049 0x58D7082: (below main) (libc-start.c:308)
+  n0: 172420 in 39 places, all below massif's threshold (1.00%)
+ n2: 267996 0x5EF492B: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+  n2: 235396 0x5F01847: cmsStageAllocCLut16bitGranular (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+   n1: 235396 0x5F0193E: cmsStageAllocCLut16bit (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+    n1: 235396 0x5F264C3: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+     n1: 235396 0x5F27DFE: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+      n1: 235396 0x5F0E4AB: ??? (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+       n1: 235396 0x5F0ED5B: cmsCreateExtendedTransform (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+        n1: 235396 0x5F0F1C7: cmsCreateMultiprofileTransformTHR (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+         n1: 235396 0x5F0F2F2: cmsCreateTransformTHR (in /usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.8)
+          n1: 235396 0x4AC9242: gscms_get_link (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+           n1: 235396 0x4AC7710: gsicc_get_link_profile (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+            n1: 235396 0x4AC7E10: gsicc_get_link (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+             n1: 235396 0x4AC0B30: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+              n2: 235396 0x4C97E1B: gx_remap_color (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+               n1: 235298 0x4C7CDDA: gs_text_begin (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                n1: 235298 0x4C7CF0B: gs_show_begin (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                 n1: 235298 0x4D494D9: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                  n1: 235298 0x4D2A720: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                   n1: 235298 0x4D2BC8D: gs_interpret (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                    n1: 235298 0x4D1E3C1: gs_main_run_string_end (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                     n1: 235298 0x4D1E458: gs_main_run_string_with_length (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                      n1: 235298 0x4D2032E: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                       n1: 235298 0x4D20625: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                        n1: 235298 0x4D20743: ??? (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                         n1: 235298 0x4D21E4F: gs_main_init_with_args01 (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                          n1: 235298 0x4D220FC: gs_main_init_with_args (in /usr/lib/x86_64-linux-gnu/libgs.so.9.50)
+                           n1: 235298 0x109273: ??? (in /usr/bin/gs)
+                            n0: 235298 0x58D7082: (below main) (libc-start.c:308)
+               n0: 98 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 32600 in 23 places, all below massif's threshold (1.00%)
+ n0: 189364 in 28 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=17
 #-----------
-time=2019501442
+time=2019439727
 mem_heap_B=11803205
 mem_heap_extra_B=26195
 mem_stacks_B=0
@@ -1140,7 +1905,7 @@ heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=2112019458
+time=2111956453
 mem_heap_B=12131485
 mem_heap_extra_B=26571
 mem_stacks_B=0
@@ -1148,7 +1913,7 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=2235382654
+time=2235315214
 mem_heap_B=12617101
 mem_heap_extra_B=27067
 mem_stacks_B=0
@@ -1156,7 +1921,7 @@ heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=2412802030
+time=2412727565
 mem_heap_B=12620325
 mem_heap_extra_B=27275
 mem_stacks_B=0
@@ -1164,7 +1929,7 @@ heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=2499203074
+time=2499128212
 mem_heap_B=12904469
 mem_heap_extra_B=27611
 mem_stacks_B=0
@@ -1172,7 +1937,7 @@ heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=2605656711
+time=2605579916
 mem_heap_B=13283509
 mem_heap_extra_B=27811
 mem_stacks_B=0
@@ -1626,7 +2391,7 @@ n3: 13283509 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=23
 #-----------
-time=2751806659
+time=2751726466
 mem_heap_B=13254837
 mem_heap_extra_B=28139
 mem_stacks_B=0
@@ -1634,7 +2399,7 @@ heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=2862828276
+time=2862746170
 mem_heap_B=13272277
 mem_heap_extra_B=28203
 mem_stacks_B=0
@@ -1642,7 +2407,7 @@ heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=3021476510
+time=3021391194
 mem_heap_B=13432909
 mem_heap_extra_B=28283
 mem_stacks_B=0
@@ -1650,7 +2415,7 @@ heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=3142262275
+time=3142170069
 mem_heap_B=13779429
 mem_heap_extra_B=28787
 mem_stacks_B=0
@@ -1658,23 +2423,23 @@ heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=3254512549
-mem_heap_B=13674349
-mem_heap_extra_B=28683
+time=3226813845
+mem_heap_B=13581157
+mem_heap_extra_B=28539
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=3379644478
-mem_heap_B=13878277
-mem_heap_extra_B=28979
+time=3323026303
+mem_heap_B=13585603
+mem_heap_extra_B=28701
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=3470494700
+time=3470396512
 mem_heap_B=14267773
 mem_heap_extra_B=29443
 mem_stacks_B=0
@@ -1682,7 +2447,7 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=3590744392
+time=3590642147
 mem_heap_B=14242141
 mem_heap_extra_B=29323
 mem_stacks_B=0
@@ -1690,7 +2455,7 @@ heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=3728963660
+time=3728856568
 mem_heap_B=14105901
 mem_heap_extra_B=29283
 mem_stacks_B=0
@@ -1698,7 +2463,7 @@ heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=3812455175
+time=3812348076
 mem_heap_B=14170637
 mem_heap_extra_B=29379
 mem_stacks_B=0
@@ -1706,7 +2471,7 @@ heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=3925622702
+time=3925508125
 mem_heap_B=14325061
 mem_heap_extra_B=29531
 mem_stacks_B=0
@@ -1714,7 +2479,7 @@ heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=4065822669
+time=4065704118
 mem_heap_B=14530877
 mem_heap_extra_B=29707
 mem_stacks_B=0
@@ -1722,7 +2487,7 @@ heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=4196693481
+time=4196569731
 mem_heap_B=15380941
 mem_heap_extra_B=30731
 mem_stacks_B=0
@@ -2170,7 +2935,7 @@ n3: 15380941 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=36
 #-----------
-time=4303668643
+time=4303541017
 mem_heap_B=14752765
 mem_heap_extra_B=30131
 mem_stacks_B=0
@@ -2178,7 +2943,7 @@ heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=4417097023
+time=4416963237
 mem_heap_B=15182853
 mem_heap_extra_B=30643
 mem_stacks_B=0
@@ -2186,7 +2951,7 @@ heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=4586188145
+time=4586054325
 mem_heap_B=15487541
 mem_heap_extra_B=31019
 mem_stacks_B=0
@@ -2194,7 +2959,7 @@ heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=4711803682
+time=4711665101
 mem_heap_B=15968805
 mem_heap_extra_B=31387
 mem_stacks_B=0
@@ -2644,7 +3409,7 @@ n3: 15968805 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=40
 #-----------
-time=4882972824
+time=4882829202
 mem_heap_B=15547685
 mem_heap_extra_B=31043
 mem_stacks_B=0
@@ -2652,7 +3417,7 @@ heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=5052501550
+time=5052354417
 mem_heap_B=15688885
 mem_heap_extra_B=31403
 mem_stacks_B=0
@@ -2660,7 +3425,7 @@ heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=5202688717
+time=5202531385
 mem_heap_B=16277197
 mem_heap_extra_B=32075
 mem_stacks_B=0
@@ -2668,7 +3433,7 @@ heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=5357376385
+time=5357210422
 mem_heap_B=16400461
 mem_heap_extra_B=32315
 mem_stacks_B=0
@@ -2676,7 +3441,7 @@ heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=5436253894
+time=5436085647
 mem_heap_B=16342949
 mem_heap_extra_B=32219
 mem_stacks_B=0
@@ -2684,7 +3449,7 @@ heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=5547998972
+time=5547826606
 mem_heap_B=16380909
 mem_heap_extra_B=32339
 mem_stacks_B=0
@@ -2692,7 +3457,7 @@ heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=5632925743
+time=5632751611
 mem_heap_B=17013709
 mem_heap_extra_B=33075
 mem_stacks_B=0
@@ -2700,7 +3465,7 @@ heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=5733576984
+time=5733398812
 mem_heap_B=17372205
 mem_heap_extra_B=33235
 mem_stacks_B=0
@@ -3099,7 +3864,7 @@ n3: 17372205 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=48
 #-----------
-time=5860996331
+time=5860814761
 mem_heap_B=17238453
 mem_heap_extra_B=33435
 mem_stacks_B=0
@@ -3107,7 +3872,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=5989070420
+time=5988887582
 mem_heap_B=17234829
 mem_heap_extra_B=33443
 mem_stacks_B=0
@@ -3115,7 +3880,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=6055224164
+time=6055038750
 mem_heap_B=17639277
 mem_heap_extra_B=33755
 mem_stacks_B=0
@@ -3523,7 +4288,7 @@ n3: 17639277 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=51
 #-----------
-time=6134565225
+time=6134376889
 mem_heap_B=17294973
 mem_heap_extra_B=33467
 mem_stacks_B=0
@@ -3531,7 +4296,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=6213444215
+time=6213255403
 mem_heap_B=17603285
 mem_heap_extra_B=33835
 mem_stacks_B=0
@@ -3539,7 +4304,7 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=6217174006
+time=6216985194
 mem_heap_B=17820949
 mem_heap_extra_B=33907
 mem_stacks_B=0
@@ -3950,7 +4715,7 @@ n3: 17820949 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=54
 #-----------
-time=6296283548
+time=6296093856
 mem_heap_B=17362461
 mem_heap_extra_B=33723
 mem_stacks_B=0
@@ -3958,7 +4723,7 @@ heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=6378584142
+time=6378392278
 mem_heap_B=17540261
 mem_heap_extra_B=33867
 mem_stacks_B=0
@@ -3966,7 +4731,7 @@ heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=6416357095
+time=6416165163
 mem_heap_B=18025645
 mem_heap_extra_B=34259
 mem_stacks_B=0
@@ -4350,7 +5115,7 @@ n3: 18025645 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=57
 #-----------
-time=6496377306
+time=6496184118
 mem_heap_B=17743965
 mem_heap_extra_B=34155
 mem_stacks_B=0
@@ -4358,7 +5123,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=6575352695
+time=6575157629
 mem_heap_B=17827285
 mem_heap_extra_B=34147
 mem_stacks_B=0
@@ -4366,7 +5131,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=6613182876
+time=6612987776
 mem_heap_B=18207565
 mem_heap_extra_B=34427
 mem_stacks_B=0
@@ -4750,7 +5515,7 @@ n3: 18207565 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=60
 #-----------
-time=6646981296
+time=6646782192
 mem_heap_B=18390229
 mem_heap_extra_B=34643
 mem_stacks_B=0
@@ -5134,7 +5899,7 @@ n3: 18390229 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=61
 #-----------
-time=6726006753
+time=6725806393
 mem_heap_B=18093861
 mem_heap_extra_B=34635
 mem_stacks_B=0
@@ -5142,7 +5907,7 @@ heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=6805134029
+time=6804932789
 mem_heap_B=17991885
 mem_heap_extra_B=34483
 mem_stacks_B=0
@@ -5150,7 +5915,7 @@ heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=6871667077
+time=6871464785
 mem_heap_B=18615717
 mem_heap_extra_B=35051
 mem_stacks_B=0
@@ -5534,7 +6299,7 @@ n3: 18615717 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=64
 #-----------
-time=6950619466
+time=6950413769
 mem_heap_B=18317365
 mem_heap_extra_B=34915
 mem_stacks_B=0
@@ -5542,7 +6307,7 @@ heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=7029534380
+time=7029326541
 mem_heap_B=18560917
 mem_heap_extra_B=35203
 mem_stacks_B=0
@@ -5550,7 +6315,7 @@ heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=7108462390
+time=7108253671
 mem_heap_B=18297069
 mem_heap_extra_B=34891
 mem_stacks_B=0
@@ -5558,7 +6323,7 @@ heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=7187672359
+time=7187461393
 mem_heap_B=18536501
 mem_heap_extra_B=35155
 mem_stacks_B=0
@@ -5566,7 +6331,7 @@ heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=7211523608
+time=7211311949
 mem_heap_B=18821413
 mem_heap_extra_B=35547
 mem_stacks_B=0
@@ -5952,7 +6717,7 @@ n3: 18821413 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=69
 #-----------
-time=7221549190
+time=7221335419
 mem_heap_B=19042181
 mem_heap_extra_B=35571
 mem_stacks_B=0
@@ -6338,7 +7103,7 @@ n3: 19042181 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=70
 #-----------
-time=7300638121
+time=7300423128
 mem_heap_B=18641357
 mem_heap_extra_B=35251
 mem_stacks_B=0
@@ -6346,7 +7111,7 @@ heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=7381407298
+time=7381188508
 mem_heap_B=18454573
 mem_heap_extra_B=35011
 mem_stacks_B=0
@@ -6354,7 +7119,7 @@ heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=7461882631
+time=7461658525
 mem_heap_B=18620189
 mem_heap_extra_B=35419
 mem_stacks_B=0
@@ -6362,7 +7127,7 @@ heap_tree=empty
 #-----------
 snapshot=73
 #-----------
-time=7504363032
+time=7504136696
 mem_heap_B=19247125
 mem_heap_extra_B=35939
 mem_stacks_B=0
@@ -6752,7 +7517,7 @@ n3: 19247125 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=74
 #-----------
-time=7536089258
+time=7535860124
 mem_heap_B=19510973
 mem_heap_extra_B=36251
 mem_stacks_B=0
@@ -7137,15 +7902,15 @@ n3: 19510973 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=75
 #-----------
-time=7614967210
-mem_heap_B=19212125
-mem_heap_extra_B=36083
+time=7614761177
+mem_heap_B=19237357
+mem_heap_extra_B=36115
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=76
 #-----------
-time=7693869713
+time=7693637140
 mem_heap_B=19415085
 mem_heap_extra_B=36323
 mem_stacks_B=0
@@ -7153,7 +7918,7 @@ heap_tree=empty
 #-----------
 snapshot=77
 #-----------
-time=7775024244
+time=7774789093
 mem_heap_B=19431261
 mem_heap_extra_B=36323
 mem_stacks_B=0
@@ -7161,7 +7926,7 @@ heap_tree=empty
 #-----------
 snapshot=78
 #-----------
-time=7801103875
+time=7800866582
 mem_heap_B=19815165
 mem_heap_extra_B=36595
 mem_stacks_B=0
@@ -7530,7 +8295,7 @@ n3: 19815165 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=79
 #-----------
-time=7880929259
+time=7880688568
 mem_heap_B=19617053
 mem_heap_extra_B=36499
 mem_stacks_B=0
@@ -7538,7 +8303,7 @@ heap_tree=empty
 #-----------
 snapshot=80
 #-----------
-time=7959818967
+time=7959578276
 mem_heap_B=19784605
 mem_heap_extra_B=36715
 mem_stacks_B=0
@@ -7546,7 +8311,7 @@ heap_tree=empty
 #-----------
 snapshot=81
 #-----------
-time=8039144557
+time=8038902644
 mem_heap_B=19534973
 mem_heap_extra_B=36587
 mem_stacks_B=0
@@ -7554,7 +8319,7 @@ heap_tree=empty
 #-----------
 snapshot=82
 #-----------
-time=8119004820
+time=8118762015
 mem_heap_B=19412453
 mem_heap_extra_B=36395
 mem_stacks_B=0
@@ -7562,7 +8327,7 @@ heap_tree=empty
 #-----------
 snapshot=83
 #-----------
-time=8198243537
+time=8198000368
 mem_heap_B=19696597
 mem_heap_extra_B=36731
 mem_stacks_B=0
@@ -7570,7 +8335,7 @@ heap_tree=empty
 #-----------
 snapshot=84
 #-----------
-time=8214055186
+time=8213811983
 mem_heap_B=20019613
 mem_heap_extra_B=36931
 mem_stacks_B=0
@@ -7899,7 +8664,7 @@ n3: 20019613 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=85
 #-----------
-time=8294522078
+time=8294277619
 mem_heap_B=19838917
 mem_heap_extra_B=36915
 mem_stacks_B=0
@@ -7907,7 +8672,7 @@ heap_tree=empty
 #-----------
 snapshot=86
 #-----------
-time=8320037768
+time=8319792667
 mem_heap_B=20222821
 mem_heap_extra_B=37187
 mem_stacks_B=0
@@ -8236,7 +9001,7 @@ n3: 20222821 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=87
 #-----------
-time=8398919620
+time=8398673263
 mem_heap_B=19984861
 mem_heap_extra_B=37091
 mem_stacks_B=0
@@ -8244,7 +9009,7 @@ heap_tree=empty
 #-----------
 snapshot=88
 #-----------
-time=8478905537
+time=8478655644
 mem_heap_B=19929309
 mem_heap_extra_B=37139
 mem_stacks_B=0
@@ -8252,7 +9017,7 @@ heap_tree=empty
 #-----------
 snapshot=89
 #-----------
-time=8490769925
+time=8490519240
 mem_heap_B=20431805
 mem_heap_extra_B=35251
 mem_stacks_B=0
@@ -8565,7 +9330,7 @@ n3: 20431805 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=90
 #-----------
-time=8569680978
+time=8569427001
 mem_heap_B=11590352
 mem_heap_extra_B=26088
 mem_stacks_B=0

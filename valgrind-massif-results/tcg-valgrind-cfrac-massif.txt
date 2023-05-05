@@ -1,4 +1,4 @@
-desc: --heap=yes --stacks=no --detailed-freq=100
+desc: (none)
 cmd: ./cfrac 17545186520507317056371138836327483792789528
 time_unit: i
 #-----------
@@ -12,37 +12,39 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=776425408
-mem_heap_B=89548
-mem_heap_extra_B=7364
+time=876585884
+mem_heap_B=91445
+mem_heap_extra_B=8483
 mem_stacks_B=0
 heap_tree=detailed
-n7: 89548 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+n7: 91445 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n3: 5504 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 2358 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 2340 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 2340 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n4: 6186 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 2722 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 2704 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 2704 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 18 in 10 places, all below massif's threshold (1.00%)
-  n0: 2006 in 11 places, all below massif's threshold (1.00%)
-  n2: 1140 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 1140 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 1140 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 1140 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 1336 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 1336 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 1336 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 1336 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
- n1: 3567 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 3567 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 3567 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
- n1: 3480 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 3480 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 3480 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 1080 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 1080 in 13 places, all below massif's threshold (1.00%)
+  n0: 1048 in 10 places, all below massif's threshold (1.00%)
+ n1: 4182 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 4182 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 4182 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+ n1: 4080 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 4080 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 4080 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
  n1: 2608 0x10F73F: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n0: 2608 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
  n2: 1296 0x10ED4D: pfactorbase (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -53,106 +55,63 @@ n7: 89548 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=2
 #-----------
-time=1402230808
-mem_heap_B=97403
-mem_heap_extra_B=11957
+time=1696444844
+mem_heap_B=101444
+mem_heap_extra_B=14436
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=2174108545
-mem_heap_B=108355
-mem_heap_extra_B=18549
+time=2146790579
+mem_heap_B=107960
+mem_heap_extra_B=18312
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=3124913346
-mem_heap_B=122427
-mem_heap_extra_B=27173
+time=2861355676
+mem_heap_B=118489
+mem_heap_extra_B=24743
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=3788201888
-mem_heap_B=133667
-mem_heap_extra_B=33829
+time=3305624654
+mem_heap_B=126212
+mem_heap_extra_B=29548
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=4472539140
-mem_heap_B=143344
-mem_heap_extra_B=39576
+time=4001125929
+mem_heap_B=136755
+mem_heap_extra_B=35693
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=5380484200
-mem_heap_B=156640
-mem_heap_extra_B=47552
+time=5020134027
+mem_heap_B=152154
+mem_heap_extra_B=44926
 mem_stacks_B=0
-heap_tree=detailed
-n6: 156640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 30800 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 15748 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 15730 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 15730 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 18 in 10 places, all below massif's threshold (1.00%)
-  n2: 7586 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 7586 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 7586 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 7586 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 6420 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 3780 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 3696 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 3696 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 3696 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 84 in 1 place, below massif's threshold (1.00%)
-   n2: 2640 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 2556 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 2556 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 2556 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 84 in 1 place, below massif's threshold (1.00%)
-   n0: 0 in 11 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
- n2: 24723 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 24108 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 24108 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 615 in 1 place, below massif's threshold (1.00%)
- n2: 24120 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 23520 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 23520 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 600 in 1 place, below massif's threshold (1.00%)
- n1: 2608 0x10F73F: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 2608 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
- n0: 1685 in 5 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=5940625446
-mem_heap_B=165148
-mem_heap_extra_B=52644
+time=5709592639
+mem_heap_B=161240
+mem_heap_extra_B=50328
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=6607185001
+time=6607184995
 mem_heap_B=174685
 mem_heap_extra_B=58363
 mem_stacks_B=0
@@ -164,8 +123,8 @@ n6: 174685 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n4: 37586 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 19362 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 19292 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -203,498 +162,496 @@ n6: 174685 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=10
 #-----------
-time=7315307439
-mem_heap_B=185402
-mem_heap_extra_B=64870
-mem_stacks_B=0
-heap_tree=detailed
-n6: 185402 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 41580 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 21520 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 21346 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 21346 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 174 in 11 places, all below massif's threshold (1.00%)
-  n2: 10280 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 10280 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 10280 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 10280 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 8736 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 5100 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 4980 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 4980 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 4980 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 120 in 1 place, below massif's threshold (1.00%)
-   n2: 3552 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 3456 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 3456 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 3456 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 96 in 1 place, below massif's threshold (1.00%)
-   n0: 84 in 16 places, all below massif's threshold (1.00%)
-  n0: 1044 in 10 places, all below massif's threshold (1.00%)
- n2: 33825 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 32759 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 32759 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1066 in 1 place, below massif's threshold (1.00%)
- n2: 33000 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 31960 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 31960 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1040 in 1 place, below massif's threshold (1.00%)
- n1: 2608 0x10F73F: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 2608 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
- n0: 1685 in 5 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=11
-#-----------
-time=8093546397
-mem_heap_B=198249
-mem_heap_extra_B=72927
-mem_stacks_B=0
-heap_tree=detailed
-n5: 198249 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 46408 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 24068 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 23868 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 23868 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 200 in 11 places, all below massif's threshold (1.00%)
-  n2: 11504 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 11504 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 11504 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 11504 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 9858 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 5760 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 5628 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 5628 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 5628 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 132 in 1 place, below massif's threshold (1.00%)
-   n2: 3972 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 3864 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 3864 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 3864 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 108 in 1 place, below massif's threshold (1.00%)
-   n0: 126 in 16 places, all below massif's threshold (1.00%)
-  n0: 978 in 10 places, all below massif's threshold (1.00%)
- n2: 37884 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 36695 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 36695 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1189 in 1 place, below massif's threshold (1.00%)
- n2: 36960 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 35800 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 35800 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1160 in 1 place, below massif's threshold (1.00%)
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=12
-#-----------
-time=8582819957
-mem_heap_B=203653
-mem_heap_extra_B=76355
+time=7487773055
+mem_heap_B=188190
+mem_heap_extra_B=66578
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=13
+snapshot=11
 #-----------
-time=9378265625
-mem_heap_B=214293
-mem_heap_extra_B=82699
+time=8235837580
+mem_heap_B=199638
+mem_heap_extra_B=73850
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=9132411242
+mem_heap_B=210618
+mem_heap_extra_B=80454
 mem_stacks_B=0
 heap_tree=detailed
-n5: 214293 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+n5: 210618 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 52408 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 27292 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 27014 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 27014 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 278 in 11 places, all below massif's threshold (1.00%)
-  n2: 13054 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 13054 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 13054 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 13054 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n4: 51082 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 26590 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 26338 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 26338 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 252 in 11 places, all below massif's threshold (1.00%)
+  n2: 12690 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 12690 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 12690 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 12690 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 11088 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 6528 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 6396 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 6396 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 6396 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 10758 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 6336 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 6204 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 6204 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 6204 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 132 in 1 place, below massif's threshold (1.00%)
-   n2: 4392 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 4284 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 4284 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 4284 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 4296 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 4188 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 4188 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 4188 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 108 in 1 place, below massif's threshold (1.00%)
-   n0: 168 in 16 places, all below massif's threshold (1.00%)
-  n0: 974 in 10 places, all below massif's threshold (1.00%)
- n2: 42968 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 41656 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 41656 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1312 in 1 place, below massif's threshold (1.00%)
- n2: 41920 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 40640 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 40640 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1280 in 1 place, below massif's threshold (1.00%)
+   n0: 126 in 16 places, all below massif's threshold (1.00%)
+  n0: 1044 in 10 places, all below massif's threshold (1.00%)
+ n2: 41779 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 40508 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 40508 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1271 in 1 place, below massif's threshold (1.00%)
+ n2: 40760 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 39520 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 39520 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1240 in 1 place, below massif's threshold (1.00%)
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=9745480280
+mem_heap_B=220030
+mem_heap_extra_B=86130
+mem_stacks_B=0
+heap_tree=detailed
+n5: 220030 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n4: 54622 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 28446 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 28158 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 28158 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 288 in 11 places, all below massif's threshold (1.00%)
+  n2: 13618 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 13618 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 13618 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 13618 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 11576 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 6852 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 6720 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 6720 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 6720 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 132 in 1 place, below massif's threshold (1.00%)
+   n2: 4572 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 4464 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 4464 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 4464 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 108 in 1 place, below massif's threshold (1.00%)
+   n0: 152 in 16 places, all below massif's threshold (1.00%)
+  n0: 982 in 10 places, all below massif's threshold (1.00%)
+ n2: 44731 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 43378 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 43378 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1353 in 1 place, below massif's threshold (1.00%)
+ n2: 43680 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 42360 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 42360 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1320 in 1 place, below massif's threshold (1.00%)
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=14
 #-----------
-time=10329228983
-mem_heap_B=230015
-mem_heap_extra_B=92065
+time=10441624881
+mem_heap_B=232079
+mem_heap_extra_B=93313
 mem_stacks_B=0
 heap_tree=detailed
-n5: 230015 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+n5: 232079 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 58410 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 30438 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 30108 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 30108 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 330 in 11 places, all below massif's threshold (1.00%)
-  n2: 14566 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 14566 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 14566 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 14566 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n4: 59178 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 30854 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 30472 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 30472 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 382 in 11 places, all below massif's threshold (1.00%)
+  n2: 14744 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 14744 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 14744 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 14744 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 12360 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 7236 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 7104 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 7104 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 7104 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 12536 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 7308 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 7176 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 7176 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 7176 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 132 in 1 place, below massif's threshold (1.00%)
-   n2: 4956 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 4836 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 4836 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 4836 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 5028 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 4908 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 4908 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 4908 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 120 in 1 place, below massif's threshold (1.00%)
-   n0: 168 in 16 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
- n2: 47888 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 46412 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 46412 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1476 in 1 place, below massif's threshold (1.00%)
- n2: 46720 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 45280 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 45280 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1440 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 16 places, all below massif's threshold (1.00%)
+  n0: 1044 in 10 places, all below massif's threshold (1.00%)
+ n2: 48544 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 46986 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 46986 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1558 in 1 place, below massif's threshold (1.00%)
+ n2: 47360 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 45840 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 45840 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1520 in 1 place, below massif's threshold (1.00%)
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=15
 #-----------
-time=10814971721
-mem_heap_B=236225
-mem_heap_extra_B=95727
+time=11481771129
+mem_heap_B=246930
+mem_heap_extra_B=102182
 mem_stacks_B=0
 heap_tree=detailed
-n5: 236225 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+n5: 246930 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n4: 60732 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 31712 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 31278 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 31278 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 434 in 11 places, all below massif's threshold (1.00%)
-  n2: 15122 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 15122 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 15122 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 15122 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n4: 64714 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 33826 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 33358 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 33358 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 468 in 11 places, all below massif's threshold (1.00%)
+  n2: 16108 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 16108 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 16108 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 16108 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 12852 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 7476 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 7332 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 7332 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 7332 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 13732 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 7968 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 7800 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 7800 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 7800 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 168 in 1 place, below massif's threshold (1.00%)
+   n2: 5508 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 5364 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 5364 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 5364 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 144 in 1 place, below massif's threshold (1.00%)
-   n2: 5148 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 5028 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 5028 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 5028 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 120 in 1 place, below massif's threshold (1.00%)
-   n0: 228 in 16 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
- n2: 49856 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 48175 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 48175 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1681 in 1 place, below massif's threshold (1.00%)
- n2: 48640 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 47000 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 47000 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 1640 in 1 place, below massif's threshold (1.00%)
+   n0: 256 in 16 places, all below massif's threshold (1.00%)
+  n0: 1048 in 10 places, all below massif's threshold (1.00%)
+ n2: 53259 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 51332 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 51332 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1927 in 1 place, below massif's threshold (1.00%)
+ n2: 51960 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 50080 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 50080 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 1880 in 1 place, below massif's threshold (1.00%)
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=16
 #-----------
-time=11702160606
-mem_heap_B=250996
-mem_heap_extra_B=104732
+time=12430635869
+mem_heap_B=261592
+mem_heap_extra_B=111280
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=12781094420
-mem_heap_B=266208
-mem_heap_extra_B=113960
+time=13230482829
+mem_heap_B=273893
+mem_heap_extra_B=118523
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=13491078787
-mem_heap_B=279646
-mem_heap_extra_B=122018
+time=13695050778
+mem_heap_B=282214
+mem_heap_extra_B=123506
 mem_stacks_B=0
 heap_tree=detailed
-n5: 279646 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 77018 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 40422 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 39780 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 39780 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 642 in 11 places, all below massif's threshold (1.00%)
-  n2: 19224 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 19224 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 19224 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 19224 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 282214 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 77966 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 40898 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 40274 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 40274 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 624 in 11 places, all below massif's threshold (1.00%)
+  n2: 19490 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 19490 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 19490 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 19490 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 16326 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 9312 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 9120 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 9120 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 9120 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 16530 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 9384 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 9192 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 9192 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 9192 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 192 in 1 place, below massif's threshold (1.00%)
-   n2: 6672 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 6504 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 6504 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 6504 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 6804 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 6636 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 6636 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 6636 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 168 in 1 place, below massif's threshold (1.00%)
    n0: 342 in 16 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
+  n0: 1048 in 10 places, all below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n2: 63591 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 61172 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 61172 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n2: 64411 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 61992 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 61992 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n0: 2419 in 1 place, below massif's threshold (1.00%)
- n2: 62040 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 59680 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 59680 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+ n2: 62840 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 60480 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 60480 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n0: 2360 in 1 place, below massif's threshold (1.00%)
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=19
 #-----------
-time=14318115868
-mem_heap_B=289915
-mem_heap_extra_B=128133
+time=14505973664
+mem_heap_B=292515
+mem_heap_extra_B=129717
 mem_stacks_B=0
 heap_tree=detailed
-n5: 289915 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 80848 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 42460 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 41782 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 41782 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 678 in 11 places, all below massif's threshold (1.00%)
-  n2: 20226 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 20226 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 20226 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 20226 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 292515 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 81868 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 42970 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 42302 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 42302 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 668 in 11 places, all below massif's threshold (1.00%)
+  n2: 20468 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 20468 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 20468 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 20468 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 17180 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 9744 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 9540 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 9540 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 9540 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 17384 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 9864 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 9660 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 9660 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 9660 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 204 in 1 place, below massif's threshold (1.00%)
-   n2: 7068 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 6876 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 6876 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 6876 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 7164 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 6972 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 6972 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 6972 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 192 in 1 place, below massif's threshold (1.00%)
-   n0: 368 in 16 places, all below massif's threshold (1.00%)
-  n0: 982 in 10 places, all below massif's threshold (1.00%)
+   n0: 356 in 16 places, all below massif's threshold (1.00%)
+  n0: 1046 in 10 places, all below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n2: 66830 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 64247 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 64247 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n2: 67650 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 65067 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 65067 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n0: 2583 in 1 place, below massif's threshold (1.00%)
- n2: 65240 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 62720 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 62720 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+ n2: 66000 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 63480 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 63480 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n0: 2520 in 1 place, below massif's threshold (1.00%)
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=20
 #-----------
-time=15189977688
-mem_heap_B=302506
-mem_heap_extra_B=135654
+time=15198112849
+mem_heap_B=302474
+mem_heap_extra_B=135646
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=16209266991
-mem_heap_B=316323
-mem_heap_extra_B=143797
+time=15810341492
+mem_heap_B=310550
+mem_heap_extra_B=140490
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=16744610069
-mem_heap_B=325235
-mem_heap_extra_B=149317
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=23
-#-----------
-time=17634914607
-mem_heap_B=338499
-mem_heap_extra_B=157069
+time=16787705485
+mem_heap_B=326218
+mem_heap_extra_B=149854
 mem_stacks_B=0
 heap_tree=detailed
-n5: 338499 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 99138 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 52262 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 51168 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 51168 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 1094 in 14 places, all below massif's threshold (1.00%)
-  n2: 24874 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 24874 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 24874 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 24874 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 326218 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 94592 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 49782 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 48906 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 48906 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 876 in 14 places, all below massif's threshold (1.00%)
+  n2: 23734 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 23734 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 23734 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 23734 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 21020 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 11760 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 11544 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 11544 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 11544 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 20038 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 11232 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 11016 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 11016 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 11016 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 216 in 1 place, below massif's threshold (1.00%)
-   n2: 8748 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 8544 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 8544 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 8544 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 204 in 1 place, below massif's threshold (1.00%)
-   n0: 512 in 16 places, all below massif's threshold (1.00%)
-  n0: 982 in 10 places, all below massif's threshold (1.00%)
- n2: 82164 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 78966 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 78966 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3198 in 1 place, below massif's threshold (1.00%)
- n2: 80200 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 77080 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 77080 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3120 in 1 place, below massif's threshold (1.00%)
+   n2: 8388 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 8196 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 8196 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 8196 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 192 in 1 place, below massif's threshold (1.00%)
+   n0: 418 in 16 places, all below massif's threshold (1.00%)
+  n0: 1038 in 10 places, all below massif's threshold (1.00%)
+ n2: 78269 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 75399 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 75399 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 2870 in 1 place, below massif's threshold (1.00%)
+ n2: 76360 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 73560 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 73560 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 2800 in 1 place, below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=17782872734
+mem_heap_B=341692
+mem_heap_extra_B=158940
+mem_stacks_B=0
+heap_tree=detailed
+n5: 341692 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 100346 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 52902 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 51818 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 51818 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 1084 in 14 places, all below massif's threshold (1.00%)
+  n2: 25164 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 25164 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 25164 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 25164 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 21236 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 11904 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 11676 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 11676 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 11676 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 228 in 1 place, below massif's threshold (1.00%)
+   n2: 8832 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 8628 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 8628 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 8628 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 204 in 1 place, below massif's threshold (1.00%)
+   n0: 500 in 16 places, all below massif's threshold (1.00%)
+  n0: 1044 in 10 places, all below massif's threshold (1.00%)
+ n2: 83189 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 79909 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 79909 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 3280 in 1 place, below massif's threshold (1.00%)
+ n2: 81160 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 77960 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 77960 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 3200 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=24
 #-----------
-time=18425455847
-mem_heap_B=351306
-mem_heap_extra_B=164646
+time=18660238325
+mem_heap_B=354470
+mem_heap_extra_B=166650
 mem_stacks_B=0
 heap_tree=detailed
-n5: 351306 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 103966 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 54852 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 53586 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 53586 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 1266 in 14 places, all below massif's threshold (1.00%)
-  n2: 26026 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 26026 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 26026 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 26026 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 354470 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 105146 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 55512 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 54158 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 54158 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 1354 in 14 places, all below massif's threshold (1.00%)
+  n2: 26336 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 26336 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 26336 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 26336 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 22042 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 12408 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 12156 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 12156 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 12156 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 22318 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 12528 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 12276 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 12276 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 12276 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 252 in 1 place, below massif's threshold (1.00%)
-   n2: 9060 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 8856 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 8856 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 8856 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 9192 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 8988 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 8988 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 8988 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 204 in 1 place, below massif's threshold (1.00%)
-   n0: 574 in 16 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
- n2: 86223 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 82615 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 82615 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3608 in 1 place, below massif's threshold (1.00%)
- n2: 84120 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 80600 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 80600 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3520 in 1 place, below massif's threshold (1.00%)
+   n0: 598 in 16 places, all below massif's threshold (1.00%)
+  n0: 980 in 10 places, all below massif's threshold (1.00%)
+ n2: 87207 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 83517 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 83517 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 3690 in 1 place, below massif's threshold (1.00%)
+ n2: 85120 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 81520 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 81520 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 3600 in 1 place, below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=19449119161
+time=19449119155
 mem_heap_B=364465
 mem_heap_extra_B=172615
 mem_stacks_B=0
@@ -737,111 +694,37 @@ n5: 364465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=26
 #-----------
-time=19998256746
-mem_heap_B=371154
-mem_heap_extra_B=176758
+time=20223532857
+mem_heap_B=373527
+mem_heap_extra_B=178073
 mem_stacks_B=0
-heap_tree=detailed
-n5: 371154 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 111502 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 58856 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 57434 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 57434 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 1422 in 14 places, all below massif's threshold (1.00%)
-  n2: 27932 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 27932 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 27932 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 27932 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 23666 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 13344 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 13080 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 13080 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 13080 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 264 in 1 place, below massif's threshold (1.00%)
-   n2: 9696 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 9492 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 9492 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 9492 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 204 in 1 place, below massif's threshold (1.00%)
-   n0: 626 in 16 places, all below massif's threshold (1.00%)
-  n0: 1048 in 10 places, all below massif's threshold (1.00%)
- n2: 92455 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 88601 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 88601 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3854 in 1 place, below massif's threshold (1.00%)
- n2: 90200 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 86440 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 86440 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3760 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=21067253872
-mem_heap_B=385097
-mem_heap_extra_B=185287
+time=20774626809
+mem_heap_B=380399
+mem_heap_extra_B=182337
 mem_stacks_B=0
-heap_tree=detailed
-n5: 385097 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 116778 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 61610 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 60112 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 60112 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 1498 in 14 places, all below massif's threshold (1.00%)
-  n2: 29274 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 29274 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 29274 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 29274 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 24846 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 13944 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 13680 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 13680 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 13680 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 264 in 1 place, below massif's threshold (1.00%)
-   n2: 10224 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 10020 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 10020 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 10020 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 204 in 1 place, below massif's threshold (1.00%)
-   n0: 678 in 16 places, all below massif's threshold (1.00%)
-  n0: 1048 in 10 places, all below massif's threshold (1.00%)
- n2: 96842 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 92865 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 92865 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3977 in 1 place, below massif's threshold (1.00%)
- n2: 94480 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 90600 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 90600 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 3880 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=21958725955
+time=21292514562
+mem_heap_B=388066
+mem_heap_extra_B=187070
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=21958725949
 mem_heap_B=399610
 mem_heap_extra_B=194110
 mem_stacks_B=0
@@ -884,184 +767,225 @@ n5: 399610 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=29
-#-----------
-time=22860000602
-mem_heap_B=414286
-mem_heap_extra_B=202778
-mem_stacks_B=0
-heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=23402955219
-mem_heap_B=421494
-mem_heap_extra_B=207098
-mem_stacks_B=0
-heap_tree=empty
-#-----------
-snapshot=31
-#-----------
-time=24180345054
-mem_heap_B=434725
-mem_heap_extra_B=215043
+time=22884333902
+mem_heap_B=414850
+mem_heap_extra_B=203158
 mem_stacks_B=0
 heap_tree=detailed
-n5: 434725 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 135464 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 71726 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 69550 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 69550 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 2176 in 14 places, all below massif's threshold (1.00%)
-  n2: 33888 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 33888 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 33888 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 33888 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 414850 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 127982 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 67652 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 65754 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 65754 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 1898 in 14 places, all below massif's threshold (1.00%)
+  n2: 32048 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 32048 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 32048 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 32048 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 28804 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 16044 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 15756 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 15756 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 15756 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 288 in 1 place, below massif's threshold (1.00%)
-   n2: 11880 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 11664 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 11664 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 11664 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 27234 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 15216 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 14940 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 14940 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 14940 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 276 in 1 place, below massif's threshold (1.00%)
+   n2: 11232 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 11016 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 11016 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 11016 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 216 in 1 place, below massif's threshold (1.00%)
-   n0: 880 in 16 places, all below massif's threshold (1.00%)
-  n0: 1046 in 10 places, all below massif's threshold (1.00%)
- n2: 112504 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 107543 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 107543 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 4961 in 1 place, below massif's threshold (1.00%)
- n2: 109760 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 104920 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 104920 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 4840 in 1 place, below massif's threshold (1.00%)
+   n0: 786 in 16 places, all below massif's threshold (1.00%)
+  n0: 1048 in 10 places, all below massif's threshold (1.00%)
+ n2: 106231 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 101639 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 101639 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 4592 in 1 place, below massif's threshold (1.00%)
+ n2: 103640 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 99160 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 99160 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 4480 in 1 place, below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=23450210555
+mem_heap_B=422729
+mem_heap_extra_B=207775
+mem_stacks_B=0
+heap_tree=detailed
+n5: 422729 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 130920 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 69256 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 67236 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 67236 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 2020 in 14 places, all below massif's threshold (1.00%)
+  n2: 32768 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 32768 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 32768 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 32768 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 27850 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 15576 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 15288 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 15288 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 15288 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 288 in 1 place, below massif's threshold (1.00%)
+   n2: 11424 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 11208 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 11208 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 11208 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 216 in 1 place, below massif's threshold (1.00%)
+   n0: 850 in 16 places, all below massif's threshold (1.00%)
+  n0: 1046 in 10 places, all below massif's threshold (1.00%)
+ n2: 108732 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 103935 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 103935 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 4797 in 1 place, below massif's threshold (1.00%)
+ n2: 106080 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 101400 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 101400 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 4680 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=32
 #-----------
-time=24793351849
-mem_heap_B=443034
-mem_heap_extra_B=219838
+time=24405605636
+mem_heap_B=438136
+mem_heap_extra_B=217040
 mem_stacks_B=0
-heap_tree=detailed
-n5: 443034 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 138508 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 73390 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 71084 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 71084 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 2306 in 14 places, all below massif's threshold (1.00%)
-  n2: 34656 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 34656 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 34656 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 34656 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 29484 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 16452 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 16152 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 16152 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 16152 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 300 in 1 place, below massif's threshold (1.00%)
-   n2: 12084 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 11868 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 11868 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 11868 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 216 in 1 place, below massif's threshold (1.00%)
-   n0: 948 in 16 places, all below massif's threshold (1.00%)
-  n0: 978 in 10 places, all below massif's threshold (1.00%)
- n2: 115169 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 110003 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 110003 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 5166 in 1 place, below massif's threshold (1.00%)
- n2: 112360 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 107320 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 107320 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 5040 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
+heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=25840758496
-mem_heap_B=459837
-mem_heap_extra_B=230163
+time=25085779468
+mem_heap_B=447238
+mem_heap_extra_B=222354
 mem_stacks_B=0
 heap_tree=detailed
-n5: 459837 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 144862 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 76822 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 74334 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 74334 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 2488 in 14 places, all below massif's threshold (1.00%)
-  n2: 36242 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 36242 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 36242 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 36242 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 447238 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 140120 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 74274 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 71890 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 71890 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 2384 in 14 places, all below massif's threshold (1.00%)
+  n2: 35034 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 35034 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 35034 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 35034 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 30754 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 17232 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 16920 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 16920 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 16920 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 312 in 1 place, below massif's threshold (1.00%)
-   n2: 12564 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 12348 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 12348 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 12348 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 29768 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 16644 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 16344 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 16344 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 16344 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 300 in 1 place, below massif's threshold (1.00%)
+   n2: 12192 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 11976 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 11976 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 11976 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 216 in 1 place, below massif's threshold (1.00%)
-   n0: 958 in 16 places, all below massif's threshold (1.00%)
+   n0: 932 in 16 places, all below massif's threshold (1.00%)
   n0: 1044 in 10 places, all below massif's threshold (1.00%)
- n2: 120458 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 115005 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 115005 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 5453 in 1 place, below massif's threshold (1.00%)
- n2: 117520 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 112200 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 112200 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 5320 in 1 place, below massif's threshold (1.00%)
+ n2: 116481 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 111233 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 111233 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 5248 in 1 place, below massif's threshold (1.00%)
+ n2: 113640 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 108520 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 108520 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 5120 in 1 place, below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=34
 #-----------
-time=26477304913
-mem_heap_B=468218
-mem_heap_extra_B=235174
+time=25594131857
+mem_heap_B=455457
+mem_heap_extra_B=227615
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n5: 455457 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 143196 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 75922 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 73476 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 73476 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 2446 in 14 places, all below massif's threshold (1.00%)
+  n2: 35838 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 35838 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 35838 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 35838 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 30454 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 17028 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 16728 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 16728 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 16728 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 300 in 1 place, below massif's threshold (1.00%)
+   n2: 12456 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 12240 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 12240 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 12240 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 216 in 1 place, below massif's threshold (1.00%)
+   n0: 970 in 16 places, all below massif's threshold (1.00%)
+  n0: 982 in 10 places, all below massif's threshold (1.00%)
+ n2: 119064 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 113734 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 113734 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 5330 in 1 place, below massif's threshold (1.00%)
+ n2: 116200 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 111000 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 111000 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 5200 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=26992324735
+time=26454042136
+mem_heap_B=467986
+mem_heap_extra_B=234998
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=26992324729
 mem_heap_B=477418
 mem_heap_extra_B=240670
 mem_stacks_B=0
@@ -1104,13 +1028,13 @@ n5: 477418 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=36
+snapshot=37
 #-----------
-time=27646842915
+time=27646842909
 mem_heap_B=486419
 mem_heap_extra_B=246157
 mem_stacks_B=0
@@ -1153,13 +1077,13 @@ n5: 486419 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=37
+snapshot=38
 #-----------
-time=28234258596
+time=28234258590
 mem_heap_B=495664
 mem_heap_extra_B=251736
 mem_stacks_B=0
@@ -1202,13 +1126,13 @@ n5: 495664 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=38
+snapshot=39
 #-----------
-time=29289128065
+time=29289128059
 mem_heap_B=509966
 mem_heap_extra_B=260186
 mem_stacks_B=0
@@ -1251,21 +1175,21 @@ n5: 509966 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=39
-#-----------
-time=29966091812
-mem_heap_B=518500
-mem_heap_extra_B=265332
-mem_stacks_B=0
-heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=30413198677
+time=29942829955
+mem_heap_B=518266
+mem_heap_extra_B=265214
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=30413198671
 mem_heap_B=524570
 mem_heap_extra_B=268998
 mem_stacks_B=0
@@ -1308,184 +1232,192 @@ n5: 524570 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=41
-#-----------
-time=31104296519
-mem_heap_B=534146
-mem_heap_extra_B=274814
-mem_stacks_B=0
-heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=32145967876
-mem_heap_B=550116
-mem_heap_extra_B=284116
-mem_stacks_B=0
-heap_tree=detailed
-n5: 550116 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 179008 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 95646 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 91000 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 91000 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 4646 in 14 places, all below massif's threshold (1.00%)
-  n2: 44456 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 44456 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 44456 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 44456 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 37862 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 21036 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 20688 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 20688 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 20688 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 348 in 1 place, below massif's threshold (1.00%)
-   n2: 15504 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 15252 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 15252 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 15252 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 252 in 1 place, below massif's threshold (1.00%)
-   n0: 1322 in 16 places, all below massif's threshold (1.00%)
-  n0: 1044 in 10 places, all below massif's threshold (1.00%)
- n2: 148871 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 140958 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 140958 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 7913 in 1 place, below massif's threshold (1.00%)
- n2: 145240 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 137520 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 137520 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 7720 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=43
-#-----------
-time=32921844596
-mem_heap_B=560639
-mem_heap_extra_B=290401
-mem_stacks_B=0
-heap_tree=detailed
-n5: 560639 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 182970 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 97804 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 92976 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 92976 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 4828 in 14 places, all below massif's threshold (1.00%)
-  n2: 45444 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 45444 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 45444 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 45444 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 38680 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 21516 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 21156 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 21156 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 21156 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 360 in 1 place, below massif's threshold (1.00%)
-   n2: 15828 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 15576 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 15576 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 15576 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 252 in 1 place, below massif's threshold (1.00%)
-   n0: 1336 in 16 places, all below massif's threshold (1.00%)
-  n0: 1042 in 10 places, all below massif's threshold (1.00%)
- n2: 152192 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 144074 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 144074 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 8118 in 1 place, below massif's threshold (1.00%)
- n2: 148480 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 140560 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 140560 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 7920 in 1 place, below massif's threshold (1.00%)
- n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
-  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
-   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
-    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
-     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
-      n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
- n0: 4293 in 6 places, all below massif's threshold (1.00%)
-#-----------
-snapshot=44
-#-----------
-time=33626406051
-mem_heap_B=569649
-mem_heap_extra_B=295783
+time=31081034734
+mem_heap_B=533552
+mem_heap_extra_B=274488
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=45
+snapshot=43
 #-----------
-time=34110576182
-mem_heap_B=576851
-mem_heap_extra_B=300045
+time=31478211677
+mem_heap_B=539203
+mem_heap_extra_B=277661
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=32534611957
+mem_heap_B=555310
+mem_heap_extra_B=287298
 mem_stacks_B=0
 heap_tree=detailed
-n5: 576851 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n4: 189138 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n2: 101210 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 96044 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 96044 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 5166 in 14 places, all below massif's threshold (1.00%)
-  n2: 46956 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n1: 46956 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 46956 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n0: 46956 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+n5: 555310 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 180922 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 96678 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 91962 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 91962 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 4716 in 14 places, all below massif's threshold (1.00%)
+  n2: 44960 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 44960 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 44960 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 44960 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 0 in 1 place, below massif's threshold (1.00%)
-  n3: 39930 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n2: 22164 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 21804 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 21804 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 21804 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n0: 360 in 1 place, below massif's threshold (1.00%)
-   n2: 16416 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-    n1: 16164 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-     n1: 16164 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-      n0: 16164 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n3: 38284 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 21252 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 20904 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 20904 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 20904 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 348 in 1 place, below massif's threshold (1.00%)
+   n2: 15672 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 15420 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 15420 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 15420 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
     n0: 252 in 1 place, below massif's threshold (1.00%)
-   n0: 1350 in 16 places, all below massif's threshold (1.00%)
-  n0: 1042 in 10 places, all below massif's threshold (1.00%)
- n2: 157276 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 148871 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 148871 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 8405 in 1 place, below massif's threshold (1.00%)
- n2: 153440 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n1: 145240 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-   n0: 145240 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
-  n0: 8200 in 1 place, below massif's threshold (1.00%)
+   n0: 1360 in 16 places, all below massif's threshold (1.00%)
+  n0: 1000 in 10 places, all below massif's threshold (1.00%)
+ n2: 150511 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 142516 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 142516 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 7995 in 1 place, below massif's threshold (1.00%)
+ n2: 146880 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 139080 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 139080 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 7800 in 1 place, below massif's threshold (1.00%)
  n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
   n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
    n1: 72704 0x4011CA0: call_init (dl-init.c:30)
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=33280817114
+mem_heap_B=565990
+mem_heap_extra_B=293570
+mem_stacks_B=0
+heap_tree=detailed
+n5: 565990 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 185000 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 98896 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 94042 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 94042 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 4854 in 14 places, all below massif's threshold (1.00%)
+  n2: 45954 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 45954 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 45954 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 45954 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 39102 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 21720 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 21360 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 21360 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 21360 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 360 in 1 place, below massif's threshold (1.00%)
+   n2: 16032 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 15780 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 15780 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 15780 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 252 in 1 place, below massif's threshold (1.00%)
+   n0: 1350 in 16 places, all below massif's threshold (1.00%)
+  n0: 1048 in 10 places, all below massif's threshold (1.00%)
+ n2: 153873 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 145714 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 145714 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 8159 in 1 place, below massif's threshold (1.00%)
+ n2: 150120 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 142160 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 142160 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 7960 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=46
 #-----------
-time=34809422039
-mem_heap_B=587444
-mem_heap_extra_B=306516
+time=33773994957
+mem_heap_B=571390
+mem_heap_extra_B=296810
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n5: 571390 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 186998 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 99988 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 95030 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 95030 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 4958 in 14 places, all below massif's threshold (1.00%)
+  n2: 46472 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 46472 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 46472 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 46472 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 39562 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 21984 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 21624 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 21624 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 21624 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 360 in 1 place, below massif's threshold (1.00%)
+   n2: 16200 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 15948 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 15948 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 15948 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 252 in 1 place, below massif's threshold (1.00%)
+   n0: 1378 in 16 places, all below massif's threshold (1.00%)
+  n0: 976 in 10 places, all below massif's threshold (1.00%)
+ n2: 155595 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 147354 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 147354 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 8241 in 1 place, below massif's threshold (1.00%)
+ n2: 151800 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 143760 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 143760 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 8040 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=47
 #-----------
-time=35686056820
+time=34432902874
+mem_heap_B=581739
+mem_heap_extra_B=303125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=35166463348
+mem_heap_B=592781
+mem_heap_extra_B=309707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=35686056814
 mem_heap_B=599107
 mem_heap_extra_B=313501
 mem_stacks_B=0
@@ -1528,21 +1460,176 @@ n5: 599107 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=48
+snapshot=50
 #-----------
-time=36502016347
-mem_heap_B=610394
-mem_heap_extra_B=320270
+time=36083233795
+mem_heap_B=603957
+mem_heap_extra_B=316403
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=49
+snapshot=51
 #-----------
-time=37260166534
+time=36156427599
+mem_heap_B=604890
+mem_heap_extra_B=316910
+mem_stacks_B=0
+heap_tree=detailed
+n5: 604890 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 199762 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 107086 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 101166 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 101166 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 5920 in 14 places, all below massif's threshold (1.00%)
+  n2: 49510 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 49510 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 49510 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 49510 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 42188 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 23412 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 23052 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 23052 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 23052 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 360 in 1 place, below massif's threshold (1.00%)
+   n2: 17340 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 17064 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 17064 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 17064 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 276 in 1 place, below massif's threshold (1.00%)
+   n0: 1436 in 16 places, all below massif's threshold (1.00%)
+  n0: 978 in 10 places, all below massif's threshold (1.00%)
+ n2: 166091 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 156948 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 156948 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 9143 in 1 place, below massif's threshold (1.00%)
+ n2: 162040 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 153120 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 153120 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 8920 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=36507764714
+mem_heap_B=610694
+mem_heap_extra_B=320410
+mem_stacks_B=0
+heap_tree=detailed
+n5: 610694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 202002 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 108360 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 102232 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 102232 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 6128 in 14 places, all below massif's threshold (1.00%)
+  n2: 50028 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 50028 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 50028 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 50028 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 42568 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 23604 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 23244 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 23244 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 23244 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 360 in 1 place, below massif's threshold (1.00%)
+   n2: 17556 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 17280 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 17280 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 17280 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 276 in 1 place, below massif's threshold (1.00%)
+   n0: 1408 in 16 places, all below massif's threshold (1.00%)
+  n0: 1046 in 10 places, all below massif's threshold (1.00%)
+ n2: 167895 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 158588 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 158588 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 9307 in 1 place, below massif's threshold (1.00%)
+ n2: 163800 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 154720 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 154720 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 9080 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=36904942073
+mem_heap_B=615937
+mem_heap_extra_B=323623
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=36921189224
+mem_heap_B=616479
+mem_heap_extra_B=323945
+mem_stacks_B=0
+heap_tree=detailed
+n5: 616479 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 204142 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n2: 109530 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 103350 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 103350 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 6180 in 14 places, all below massif's threshold (1.00%)
+  n2: 50584 0x10DBAA: pidiv (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n1: 50584 0x10F4C6: pfactorQ (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 50584 0x10FC27: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n0: 50584 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n3: 43052 0x10C294: pmul (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n2: 23868 0x10DFBB: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 23508 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 23508 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 23508 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 360 in 1 place, below massif's threshold (1.00%)
+   n2: 17748 0x10DF2A: combineSoln.constprop.0 (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n1: 17472 0x10E8DD: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+     n1: 17472 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+      n0: 17472 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+    n0: 276 in 1 place, below massif's threshold (1.00%)
+   n0: 1436 in 16 places, all below massif's threshold (1.00%)
+  n0: 976 in 10 places, all below massif's threshold (1.00%)
+ n2: 169740 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 160392 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 160392 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 9348 in 1 place, below massif's threshold (1.00%)
+ n2: 165600 0x10E875: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n1: 156480 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+   n0: 156480 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
+  n0: 9120 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x56F2A99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
+ n0: 4293 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=37260166528
 mem_heap_B=622269
 mem_heap_extra_B=327579
 mem_stacks_B=0
@@ -1585,13 +1672,13 @@ n5: 622269 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=50
+snapshot=56
 #-----------
-time=37602309468
+time=37602309462
 mem_heap_B=628239
 mem_heap_extra_B=331145
 mem_stacks_B=0
@@ -1635,13 +1722,13 @@ n5: 628239 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=51
+snapshot=57
 #-----------
-time=37980298330
+time=37980298324
 mem_heap_B=634247
 mem_heap_extra_B=334793
 mem_stacks_B=0
@@ -1685,21 +1772,21 @@ n5: 634247 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=52
+snapshot=58
 #-----------
-time=38427405230
-mem_heap_B=640227
-mem_heap_extra_B=338309
+time=38377478221
+mem_heap_B=639288
+mem_heap_extra_B=337752
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=53
+snapshot=59
 #-----------
-time=38448843480
+time=38448843474
 mem_heap_B=640305
 mem_heap_extra_B=338439
 mem_stacks_B=0
@@ -1743,13 +1830,21 @@ n5: 640305 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=54
+snapshot=60
 #-----------
-time=38876168850
+time=38846020434
+mem_heap_B=645943
+mem_heap_extra_B=341753
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=38876168844
 mem_heap_B=646460
 mem_heap_extra_B=342084
 mem_stacks_B=0
@@ -1793,21 +1888,21 @@ n5: 646460 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=55
+snapshot=62
 #-----------
-time=39323295904
-mem_heap_B=652485
-mem_heap_extra_B=345723
+time=39273345842
+mem_heap_B=651548
+mem_heap_extra_B=345092
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=56
+snapshot=63
 #-----------
-time=39328901059
+time=39328901053
 mem_heap_B=652694
 mem_heap_extra_B=345834
 mem_stacks_B=0
@@ -1851,13 +1946,21 @@ n5: 652694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=57
+snapshot=64
 #-----------
-time=39773046353
+time=39726078843
+mem_heap_B=657959
+mem_heap_extra_B=349185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=39773046347
 mem_heap_B=658841
 mem_heap_extra_B=349687
 mem_stacks_B=0
@@ -1901,21 +2004,21 @@ n5: 658841 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=58
+snapshot=66
 #-----------
-time=40220170922
-mem_heap_B=664602
-mem_heap_extra_B=353126
+time=40170223399
+mem_heap_B=663804
+mem_heap_extra_B=352676
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=59
+snapshot=67
 #-----------
-time=40228460660
+time=40228460654
 mem_heap_B=665186
 mem_heap_extra_B=353478
 mem_stacks_B=0
@@ -1960,13 +2063,21 @@ n5: 665186 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=60
+snapshot=68
 #-----------
-time=40629472059
+time=40625637648
+mem_heap_B=671358
+mem_heap_extra_B=357138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=40629472053
 mem_heap_B=671587
 mem_heap_extra_B=357269
 mem_stacks_B=0
@@ -2011,13 +2122,21 @@ n5: 671587 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=61
+snapshot=70
 #-----------
-time=41038700777
+time=41026649143
+mem_heap_B=677734
+mem_heap_extra_B=360962
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=41038700771
 mem_heap_B=678000
 mem_heap_extra_B=361160
 mem_stacks_B=0
@@ -2062,21 +2181,21 @@ n5: 678000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=62
+snapshot=72
 #-----------
-time=41485808912
-mem_heap_B=683862
-mem_heap_extra_B=364618
+time=41435881180
+mem_heap_B=682828
+mem_heap_extra_B=363972
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=63
+snapshot=73
 #-----------
-time=41532618415
+time=41532618409
 mem_heap_B=684500
 mem_heap_extra_B=365076
 mem_stacks_B=0
@@ -2121,13 +2240,21 @@ n5: 684500 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=64
+snapshot=74
 #-----------
-time=41975731814
+time=41929795520
+mem_heap_B=690211
+mem_heap_extra_B=368269
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=41975731808
 mem_heap_B=691248
 mem_heap_extra_B=368896
 mem_stacks_B=0
@@ -2172,21 +2299,21 @@ n5: 691248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=65
+snapshot=76
 #-----------
-time=42422840736
-mem_heap_B=697063
-mem_heap_extra_B=372393
+time=42372909027
+mem_heap_B=696541
+mem_heap_extra_B=372107
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=66
+snapshot=77
 #-----------
-time=42510038900
+time=42510038894
 mem_heap_B=697893
 mem_heap_extra_B=372859
 mem_stacks_B=0
@@ -2231,21 +2358,21 @@ n5: 697893 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=67
+snapshot=78
 #-----------
-time=42957151139
-mem_heap_B=704518
-mem_heap_extra_B=376730
+time=42907215965
+mem_heap_B=703736
+mem_heap_extra_B=376264
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=68
+snapshot=79
 #-----------
-time=42963332528
+time=42963332522
 mem_heap_B=704717
 mem_heap_extra_B=376827
 mem_stacks_B=0
@@ -2290,21 +2417,21 @@ n5: 704717 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=69
+snapshot=80
 #-----------
-time=43410454224
-mem_heap_B=710895
-mem_heap_extra_B=380625
+time=43360509558
+mem_heap_B=710236
+mem_heap_extra_B=380132
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=70
+snapshot=81
 #-----------
-time=43447311506
+time=43447311500
 mem_heap_B=711417
 mem_heap_extra_B=380943
 mem_stacks_B=0
@@ -2349,21 +2476,21 @@ n5: 711417 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=71
+snapshot=82
 #-----------
-time=43894418421
-mem_heap_B=716951
-mem_heap_extra_B=384257
+time=43844488825
+mem_heap_B=716532
+mem_heap_extra_B=383972
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=72
+snapshot=83
 #-----------
-time=43995520104
+time=43995520098
 mem_heap_B=718297
 mem_heap_extra_B=385015
 mem_stacks_B=0
@@ -2408,13 +2535,21 @@ n5: 718297 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=73
+snapshot=84
 #-----------
-time=44394437458
+time=44392697131
+mem_heap_B=725017
+mem_heap_extra_B=388991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=44394437452
 mem_heap_B=725252
 mem_heap_extra_B=389100
 mem_stacks_B=0
@@ -2459,21 +2594,21 @@ n5: 725252 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)
 #-----------
-snapshot=74
+snapshot=86
 #-----------
-time=44841549961
-mem_heap_B=730894
-mem_heap_extra_B=392466
+time=44791614500
+mem_heap_B=729880
+mem_heap_extra_B=391808
 mem_stacks_B=0
 heap_tree=empty
 #-----------
-snapshot=75
+snapshot=87
 #-----------
-time=44954255493
+time=44954255487
 mem_heap_B=732296
 mem_heap_extra_B=393232
 mem_stacks_B=0
@@ -2518,6 +2653,6 @@ n5: 732296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006E6: ???
-        n0: 72704 0x1FFF0006EE: ???
+       n1: 72704 0x1FFF00070E: ???
+        n0: 72704 0x1FFF000716: ???
  n0: 4293 in 6 places, all below massif's threshold (1.00%)

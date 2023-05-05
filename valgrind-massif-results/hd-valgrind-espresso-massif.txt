@@ -1,4 +1,4 @@
-desc: --heap=yes --stacks=no --detailed-freq=100
+desc: (none)
 cmd: ./espresso ../../bench/espresso/largest.espresso
 time_unit: i
 #-----------
@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=536845203
+time=536845191
 mem_heap_B=227978
 mem_heap_extra_B=1910
 mem_stacks_B=0
@@ -20,7 +20,7 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=1046635247
+time=1046635235
 mem_heap_B=285898
 mem_heap_extra_B=1110
 mem_stacks_B=0
@@ -28,7 +28,7 @@ heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=1340118642
+time=1340118630
 mem_heap_B=188426
 mem_heap_extra_B=998
 mem_stacks_B=0
@@ -36,7 +36,7 @@ heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=1971508182
+time=1971508170
 mem_heap_B=228482
 mem_heap_extra_B=1014
 mem_stacks_B=0
@@ -44,7 +44,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=2540282660
+time=2540282648
 mem_heap_B=276778
 mem_heap_extra_B=1270
 mem_stacks_B=0
@@ -52,7 +52,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=3089257850
+time=3089257838
 mem_heap_B=204530
 mem_heap_extra_B=1254
 mem_stacks_B=0
@@ -60,7 +60,7 @@ heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=3509074070
+time=3509074058
 mem_heap_B=234442
 mem_heap_extra_B=1038
 mem_stacks_B=0
@@ -68,7 +68,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=4128152028
+time=4128152016
 mem_heap_B=300026
 mem_heap_extra_B=1078
 mem_stacks_B=0
@@ -76,7 +76,7 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=4850984346
+time=4850984334
 mem_heap_B=204834
 mem_heap_extra_B=1358
 mem_stacks_B=0
@@ -84,15 +84,62 @@ heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=5378756274
+time=5378756262
 mem_heap_B=237186
 mem_heap_extra_B=1062
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n6: 237186 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 83280 0x138A8E: sf_save (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 38496 0x10EF4C: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 38496 0x11D209: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n0: 38496 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 6288 0x11D216: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n0: 6288 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n1: 72704 0x6B6EA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
+ n3: 52512 0x1389E2: sf_new (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n2: 38496 0x114AD7: sf_unlist (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 38496 0x118A24: mini_sort (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 38496 0x1201AD: expand (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 38496 0x11D2CC: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 38496 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 13664 0x111FF2: compl_merge (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 13664 0x1127D3: complement (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 13664 0x1180AB: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 13664 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 13664 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n0: 352 in 19 places, all below massif's threshold (1.00%)
+ n1: 16384 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 16384 0x693EECF: _IO_doallocbuf (genops.c:347)
+   n1: 16384 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 16384 0x693EF85: _IO_default_uflow (genops.c:362)
+     n1: 16384 0x116F6F: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n1: 16384 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+       n1: 16384 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+        n0: 16384 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n2: 7232 0x138C96: sf_addset (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 7232 0x11655E: read_cube (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n1: 7232 0x116FB5: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 7232 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 7232 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 7232 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n0: 5074 in 89 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=11
 #-----------
-time=5686359647
+time=5686359635
 mem_heap_B=296554
 mem_heap_extra_B=1142
 mem_stacks_B=0
@@ -100,7 +147,7 @@ heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=6135500415
+time=6135500403
 mem_heap_B=436722
 mem_heap_extra_B=43854
 mem_stacks_B=0
@@ -137,8 +184,8 @@ n11: 436722 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n3: 52360 0x136B01: sm_row_alloc (in /home/azureuser/mimalloc-bench/out/bench/espresso)
   n2: 26152 0x126586: sm_dup (in /home/azureuser/mimalloc-bench/out/bench/espresso)
    n2: 26152 0x1287EB: sm_minimum_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
@@ -210,7 +257,7 @@ n11: 436722 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=13
 #-----------
-time=6523898442
+time=6523898430
 mem_heap_B=164482
 mem_heap_extra_B=1022
 mem_stacks_B=0
@@ -218,7 +265,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=6977003969
+time=6977003957
 mem_heap_B=243450
 mem_heap_extra_B=1086
 mem_stacks_B=0
@@ -226,7 +273,7 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=7494937903
+time=7494937891
 mem_heap_B=297850
 mem_heap_extra_B=1190
 mem_stacks_B=0
@@ -234,7 +281,7 @@ heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=7883350021
+time=7883350009
 mem_heap_B=217578
 mem_heap_extra_B=1134
 mem_stacks_B=0
@@ -242,7 +289,7 @@ heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=8595401420
+time=8595401408
 mem_heap_B=246290
 mem_heap_extra_B=1110
 mem_stacks_B=0
@@ -250,7 +297,7 @@ heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=9049354745
+time=9049354733
 mem_heap_B=312882
 mem_heap_extra_B=1134
 mem_stacks_B=0
@@ -258,7 +305,7 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=9401798385
+time=9401798373
 mem_heap_B=443650
 mem_heap_extra_B=43358
 mem_stacks_B=0
@@ -295,8 +342,8 @@ n11: 443650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n3: 50120 0x136B01: sm_row_alloc (in /home/azureuser/mimalloc-bench/out/bench/espresso)
   n2: 25032 0x126586: sm_dup (in /home/azureuser/mimalloc-bench/out/bench/espresso)
    n2: 25032 0x1287EB: sm_minimum_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
@@ -368,7 +415,7 @@ n11: 443650 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=20
 #-----------
-time=9829738429
+time=9829738417
 mem_heap_B=358108
 mem_heap_extra_B=1396
 mem_stacks_B=0
@@ -376,7 +423,7 @@ heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=10151259109
+time=10151259097
 mem_heap_B=250570
 mem_heap_extra_B=1142
 mem_stacks_B=0
@@ -384,7 +431,7 @@ heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=10579263948
+time=10579263936
 mem_heap_B=312010
 mem_heap_extra_B=1270
 mem_stacks_B=0
@@ -392,7 +439,7 @@ heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=11145569843
+time=11145569831
 mem_heap_B=222578
 mem_heap_extra_B=2486
 mem_stacks_B=0
@@ -400,7 +447,7 @@ heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=11894570044
+time=11894570032
 mem_heap_B=255938
 mem_heap_extra_B=1166
 mem_stacks_B=0
@@ -408,7 +455,7 @@ heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=12322617751
+time=12322617739
 mem_heap_B=301618
 mem_heap_extra_B=1326
 mem_stacks_B=0
@@ -416,7 +463,7 @@ heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=13071457000
+time=13071456988
 mem_heap_B=182754
 mem_heap_extra_B=1118
 mem_stacks_B=0
@@ -424,7 +471,7 @@ heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=13606720279
+time=13606720267
 mem_heap_B=260138
 mem_heap_extra_B=1182
 mem_stacks_B=0
@@ -432,7 +479,7 @@ heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=14034715768
+time=14034715756
 mem_heap_B=316202
 mem_heap_extra_B=1350
 mem_stacks_B=0
@@ -440,7 +487,7 @@ heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=14605502220
+time=14605502208
 mem_heap_B=234826
 mem_heap_extra_B=1398
 mem_stacks_B=0
@@ -448,7 +495,7 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=14993448440
+time=14993448428
 mem_heap_B=265138
 mem_heap_extra_B=1206
 mem_stacks_B=0
@@ -456,7 +503,7 @@ heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=15381302805
+time=15381302793
 mem_heap_B=315602
 mem_heap_extra_B=1486
 mem_stacks_B=0
@@ -464,7 +511,7 @@ heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=15769154743
+time=15769154731
 mem_heap_B=335682
 mem_heap_extra_B=1390
 mem_stacks_B=0
@@ -472,7 +519,7 @@ heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=16329542757
+time=16329542745
 mem_heap_B=191890
 mem_heap_extra_B=1166
 mem_stacks_B=0
@@ -480,7 +527,7 @@ heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=16911426355
+time=16911426343
 mem_heap_B=305594
 mem_heap_extra_B=1254
 mem_stacks_B=0
@@ -488,7 +535,7 @@ heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=17299334153
+time=17299334141
 mem_heap_B=324762
 mem_heap_extra_B=1302
 mem_stacks_B=0
@@ -496,15 +543,79 @@ heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=17881132561
+time=17881132549
 mem_heap_B=244050
 mem_heap_extra_B=1278
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n9: 244050 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 76992 0x138A8E: sf_save (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 38496 0x10EF4C: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 38496 0x11D209: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n0: 38496 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 72704 0x6B6EA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
+ n1: 45056 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 45056 0x693EECF: _IO_doallocbuf (genops.c:347)
+   n1: 45056 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 45056 0x693EF85: _IO_default_uflow (genops.c:362)
+     n1: 45056 0x116F6F: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n1: 45056 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+       n1: 45056 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+        n0: 45056 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n3: 25248 0x1389E2: sf_new (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 13664 0x111FF2: compl_merge (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 13664 0x1127D3: complement (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 13664 0x1180AB: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 13664 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 13664 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n1: 6288 0x13C987: mv_reduce (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n1: 6288 0x13CE18: make_sparse (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 6288 0x11D3C9: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 6288 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 5296 in 19 places, all below massif's threshold (1.00%)
+ n2: 7232 0x138C96: sf_addset (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 7232 0x11655E: read_cube (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n1: 7232 0x116FB5: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 7232 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 7232 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 7232 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 5192 0x692F92D: __fopen_internal (iofopen.c:65)
+  n1: 5192 0x692F92D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 5192 0x124C4F: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 5192 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n0: 4314 in 86 places, all below massif's threshold (1.00%)
+ n2: 3664 0x10FBDB: cofactor (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 3664 0x12477C: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 3664 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 3664 0x13C9F4: mv_reduce (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 3664 0x13CE18: make_sparse (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n1: 3664 0x11D3C9: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+       n0: 3664 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n2: 3648 0x1105B8: cube2list (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 3648 0x124751: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 3648 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 3648 0x13C9F4: mv_reduce (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 3648 0x13CE18: make_sparse (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n1: 3648 0x11D3C9: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+       n0: 3648 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 7 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=37
 #-----------
-time=18268993429
+time=18268993417
 mem_heap_B=275394
 mem_heap_extra_B=1262
 mem_stacks_B=0
@@ -512,7 +623,7 @@ heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=18656845754
+time=18656845742
 mem_heap_B=321306
 mem_heap_extra_B=1334
 mem_stacks_B=0
@@ -520,7 +631,7 @@ heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=19044719138
+time=19044719126
 mem_heap_B=344642
 mem_heap_extra_B=1390
 mem_stacks_B=0
@@ -528,7 +639,7 @@ heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=19788679299
+time=19788679287
 mem_heap_B=334260
 mem_heap_extra_B=1924
 mem_stacks_B=0
@@ -536,7 +647,7 @@ heap_tree=empty
 #-----------
 snapshot=41
 #-----------
-time=20176537860
+time=20176537848
 mem_heap_B=317250
 mem_heap_extra_B=1470
 mem_stacks_B=0
@@ -544,7 +655,7 @@ heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=20844443302
+time=20844443290
 mem_heap_B=477834
 mem_heap_extra_B=44070
 mem_stacks_B=0
@@ -581,8 +692,8 @@ n11: 477834 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n1: 53248 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
   n1: 53248 0x693EECF: _IO_doallocbuf (genops.c:347)
    n1: 53248 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
@@ -656,7 +767,7 @@ n11: 477834 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=43
 #-----------
-time=21426207971
+time=21426207959
 mem_heap_B=346052
 mem_heap_extra_B=2092
 mem_stacks_B=0
@@ -664,7 +775,7 @@ heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=21814064985
+time=21814064973
 mem_heap_B=321186
 mem_heap_extra_B=1374
 mem_stacks_B=0
@@ -672,7 +783,7 @@ heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=22201918636
+time=22201918624
 mem_heap_B=339954
 mem_heap_extra_B=1606
 mem_stacks_B=0
@@ -680,7 +791,7 @@ heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=22589793398
+time=22589793386
 mem_heap_B=257666
 mem_heap_extra_B=1414
 mem_stacks_B=0
@@ -688,7 +799,7 @@ heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=23171594168
+time=23171594156
 mem_heap_B=287146
 mem_heap_extra_B=1326
 mem_stacks_B=0
@@ -696,7 +807,7 @@ heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=23559464265
+time=23559464253
 mem_heap_B=336698
 mem_heap_extra_B=1462
 mem_stacks_B=0
@@ -704,7 +815,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=23947412997
+time=23947412985
 mem_heap_B=357858
 mem_heap_extra_B=1422
 mem_stacks_B=0
@@ -712,7 +823,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=24110003885
+time=24110003873
 mem_heap_B=484762
 mem_heap_extra_B=43574
 mem_stacks_B=0
@@ -749,8 +860,8 @@ n11: 484762 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n1: 61440 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
   n1: 61440 0x693EECF: _IO_doallocbuf (genops.c:347)
    n1: 61440 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
@@ -824,7 +935,7 @@ n11: 484762 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=51
 #-----------
-time=24403504223
+time=24403504211
 mem_heap_B=262442
 mem_heap_extra_B=1366
 mem_stacks_B=0
@@ -832,7 +943,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=24696988196
+time=24696988184
 mem_heap_B=334820
 mem_heap_extra_B=2092
 mem_stacks_B=0
@@ -840,7 +951,7 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=24990477093
+time=24990477081
 mem_heap_B=292434
 mem_heap_extra_B=1350
 mem_stacks_B=0
@@ -848,7 +959,7 @@ heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=25283965502
+time=25283965490
 mem_heap_B=352498
 mem_heap_extra_B=1454
 mem_stacks_B=0
@@ -856,7 +967,7 @@ heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=25577448955
+time=25577448943
 mem_heap_B=363194
 mem_heap_extra_B=1542
 mem_stacks_B=0
@@ -864,7 +975,7 @@ heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=25746800310
+time=25746800298
 mem_heap_B=491538
 mem_heap_extra_B=44142
 mem_stacks_B=0
@@ -901,8 +1012,8 @@ n11: 491538 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n1: 65536 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
   n1: 65536 0x693EECF: _IO_doallocbuf (genops.c:347)
    n1: 65536 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
@@ -976,7 +1087,7 @@ n11: 491538 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=57
 #-----------
-time=26040287553
+time=26040287541
 mem_heap_B=266770
 mem_heap_extra_B=1358
 mem_stacks_B=0
@@ -984,7 +1095,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=26333810771
+time=26333810759
 mem_heap_B=325428
 mem_heap_extra_B=1564
 mem_stacks_B=0
@@ -992,7 +1103,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=26627355850
+time=26627355838
 mem_heap_B=296522
 mem_heap_extra_B=1374
 mem_stacks_B=0
@@ -1000,7 +1111,7 @@ heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=26920866615
+time=26920866603
 mem_heap_B=354970
 mem_heap_extra_B=1398
 mem_stacks_B=0
@@ -1008,7 +1119,7 @@ heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=27214350984
+time=27214350972
 mem_heap_B=367370
 mem_heap_extra_B=1558
 mem_stacks_B=0
@@ -1016,7 +1127,7 @@ heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=27507834399
+time=27507834387
 mem_heap_B=270698
 mem_heap_extra_B=1574
 mem_stacks_B=0
@@ -1024,7 +1135,7 @@ heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=27801455362
+time=27801455350
 mem_heap_B=321988
 mem_heap_extra_B=1340
 mem_stacks_B=0
@@ -1032,7 +1143,7 @@ heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=28094941814
+time=28094941802
 mem_heap_B=301170
 mem_heap_extra_B=1398
 mem_stacks_B=0
@@ -1040,7 +1151,7 @@ heap_tree=empty
 #-----------
 snapshot=65
 #-----------
-time=28388443965
+time=28388443953
 mem_heap_B=340610
 mem_heap_extra_B=1422
 mem_stacks_B=0
@@ -1048,15 +1159,98 @@ heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=28681927498
+time=28681927486
 mem_heap_B=349154
 mem_heap_extra_B=1598
 mem_stacks_B=0
-heap_tree=empty
+heap_tree=detailed
+n9: 349154 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 83280 0x138A8E: sf_save (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n0: 38496 0x10EF4C: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 38496 0x11D209: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n0: 38496 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 6288 0x11D216: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n0: 6288 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n1: 73728 0x692ED03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 73728 0x693EECF: _IO_doallocbuf (genops.c:347)
+   n1: 73728 0x693DCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 73728 0x693EF85: _IO_default_uflow (genops.c:362)
+     n1: 73728 0x116F6F: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n1: 73728 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+       n1: 73728 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+        n0: 73728 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n1: 72704 0x6B6EA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+      n1: 72704 0x1: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
+ n3: 52320 0x1389E2: sf_new (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n2: 38496 0x114AD7: sf_unlist (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 38496 0x118A24: mini_sort (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 38496 0x1201AD: expand (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 38496 0x11D2CC: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 38496 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 3 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 13664 0x111FF2: compl_merge (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 13664 0x1127D3: complement (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 13664 0x1180AB: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 13664 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 13664 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n0: 160 in 19 places, all below massif's threshold (1.00%)
+ n4: 41056 0x138C96: sf_addset (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 24464 0x12479B: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 24464 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 24464 0x124B4E: irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 24464 0x11D301: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 24464 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 7232 0x11655E: read_cube (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n1: 7232 0x116FB5: parse_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n1: 7232 0x117E78: read_pla (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 7232 0x124BDB: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 7232 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 7232 0x1248A2: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 7232 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 7232 0x124B4E: irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 7232 0x11D301: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 7232 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 2128 in 3 places, all below massif's threshold (1.00%)
+ n1: 8496 0x692F92D: __fopen_internal (iofopen.c:65)
+  n1: 8496 0x692F92D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 8496 0x124C4F: getPLA (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n0: 8496 0x10EB60: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+ n2: 6432 0x10FBDB: cofactor (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 6432 0x12481C: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 6432 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 6432 0x124B4E: irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 6432 0x11D301: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 6432 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n2: 6416 0x1105B8: cube2list (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+  n1: 6416 0x1247DF: irred_split_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+   n2: 6416 0x1249B3: mark_irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+    n2: 6416 0x124B4E: irredundant (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n1: 6416 0x11D301: espresso (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+      n0: 6416 0x10EF66: main (in /home/azureuser/mimalloc-bench/out/bench/espresso)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 7 places, all below massif's threshold (1.00%)
+ n0: 4722 in 86 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=67
 #-----------
-time=28975411200
+time=28975411188
 mem_heap_B=281826
 mem_heap_extra_B=1398
 mem_stacks_B=0
@@ -1064,7 +1258,7 @@ heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=29013098280
+time=29013098268
 mem_heap_B=498466
 mem_heap_extra_B=43646
 mem_stacks_B=0
@@ -1109,8 +1303,8 @@ n11: 498466 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n3: 50120 0x136B01: sm_row_alloc (in /home/azureuser/mimalloc-bench/out/bench/espresso)
   n2: 25032 0x126586: sm_dup (in /home/azureuser/mimalloc-bench/out/bench/espresso)
    n2: 25032 0x1287EB: sm_minimum_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
@@ -1176,7 +1370,7 @@ n11: 498466 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=69
 #-----------
-time=29306598163
+time=29306598151
 mem_heap_B=276146
 mem_heap_extra_B=1438
 mem_stacks_B=0
@@ -1184,7 +1378,7 @@ heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=29600082129
+time=29600082117
 mem_heap_B=348524
 mem_heap_extra_B=2164
 mem_stacks_B=0
@@ -1192,7 +1386,7 @@ heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=29893571159
+time=29893571147
 mem_heap_B=306138
 mem_heap_extra_B=1422
 mem_stacks_B=0
@@ -1200,7 +1394,7 @@ heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=30187059568
+time=30187059556
 mem_heap_B=366202
 mem_heap_extra_B=1526
 mem_stacks_B=0
@@ -1208,7 +1402,7 @@ heap_tree=empty
 #-----------
 snapshot=73
 #-----------
-time=30480543021
+time=30480543009
 mem_heap_B=376898
 mem_heap_extra_B=1614
 mem_stacks_B=0
@@ -1216,7 +1410,7 @@ heap_tree=empty
 #-----------
 snapshot=74
 #-----------
-time=30649894460
+time=30649894448
 mem_heap_B=505242
 mem_heap_extra_B=44214
 mem_stacks_B=0
@@ -1261,8 +1455,8 @@ n11: 505242 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006FE: ???
-        n0: 72704 0x1FFF000709: ???
+       n1: 72704 0x1FFF000726: ???
+        n0: 72704 0x1FFF000731: ???
  n3: 52360 0x136B01: sm_row_alloc (in /home/azureuser/mimalloc-bench/out/bench/espresso)
   n2: 26152 0x126586: sm_dup (in /home/azureuser/mimalloc-bench/out/bench/espresso)
    n2: 26152 0x1287EB: sm_minimum_cover (in /home/azureuser/mimalloc-bench/out/bench/espresso)
@@ -1328,7 +1522,7 @@ n11: 505242 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=75
 #-----------
-time=30943382123
+time=30943382111
 mem_heap_B=280474
 mem_heap_extra_B=1430
 mem_stacks_B=0
@@ -1336,7 +1530,7 @@ heap_tree=empty
 #-----------
 snapshot=76
 #-----------
-time=31236921288
+time=31236921276
 mem_heap_B=344428
 mem_heap_extra_B=1668
 mem_stacks_B=0
@@ -1344,7 +1538,7 @@ heap_tree=empty
 #-----------
 snapshot=77
 #-----------
-time=31530457233
+time=31530457221
 mem_heap_B=310082
 mem_heap_extra_B=1446
 mem_stacks_B=0
@@ -1352,7 +1546,7 @@ heap_tree=empty
 #-----------
 snapshot=78
 #-----------
-time=31823990984
+time=31823990972
 mem_heap_B=368674
 mem_heap_extra_B=1470
 mem_stacks_B=0
@@ -1360,7 +1554,7 @@ heap_tree=empty
 #-----------
 snapshot=79
 #-----------
-time=32117474565
+time=32117474553
 mem_heap_B=381154
 mem_heap_extra_B=1678
 mem_stacks_B=0
@@ -1368,7 +1562,7 @@ heap_tree=empty
 #-----------
 snapshot=80
 #-----------
-time=32410959436
+time=32410959424
 mem_heap_B=283682
 mem_heap_extra_B=1598
 mem_stacks_B=0

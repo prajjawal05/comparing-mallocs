@@ -1,4 +1,4 @@
-desc: --heap=yes --stacks=no --detailed-freq=100
+desc: (none)
 cmd: ./cfrac 17545186520507317056371138836327483792789528
 time_unit: i
 #-----------
@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=383714369
+time=383714363
 mem_heap_B=83349
 mem_heap_extra_B=3579
 mem_stacks_B=0
@@ -20,7 +20,7 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=1184870383
+time=1184870377
 mem_heap_B=94140
 mem_heap_extra_B=9996
 mem_stacks_B=0
@@ -28,7 +28,7 @@ heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=2206522568
+time=2206522562
 mem_heap_B=109020
 mem_heap_extra_B=19004
 mem_stacks_B=0
@@ -36,7 +36,7 @@ heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=2834573640
+time=2834573634
 mem_heap_B=118313
 mem_heap_extra_B=24631
 mem_stacks_B=0
@@ -48,8 +48,8 @@ n6: 118313 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n4: 16368 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 8078 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 8060 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -82,7 +82,7 @@ n6: 118313 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=5
 #-----------
-time=3764231470
+time=3764231464
 mem_heap_B=133395
 mem_heap_extra_B=33661
 mem_stacks_B=0
@@ -90,7 +90,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=4416230902
+time=4416230896
 mem_heap_B=143087
 mem_heap_extra_B=39417
 mem_stacks_B=0
@@ -102,8 +102,8 @@ n6: 143087 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n4: 25752 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 13018 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 13000 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -141,7 +141,7 @@ n6: 143087 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=7
 #-----------
-time=5018219122
+time=5018219116
 mem_heap_B=152154
 mem_heap_extra_B=44926
 mem_stacks_B=0
@@ -149,7 +149,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=5934098057
+time=5934098051
 mem_heap_B=165029
 mem_heap_extra_B=52603
 mem_stacks_B=0
@@ -157,7 +157,7 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=6881584054
+time=6881584048
 mem_heap_B=179078
 mem_heap_extra_B=60970
 mem_stacks_B=0
@@ -165,7 +165,7 @@ heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=7492843627
+time=7492843621
 mem_heap_B=188188
 mem_heap_extra_B=66556
 mem_stacks_B=0
@@ -173,7 +173,7 @@ heap_tree=empty
 #-----------
 snapshot=11
 #-----------
-time=8389639429
+time=8389639423
 mem_heap_B=201560
 mem_heap_extra_B=75112
 mem_stacks_B=0
@@ -185,8 +185,8 @@ n5: 201560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n4: 47694 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 24770 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 24544 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -222,7 +222,7 @@ n5: 201560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=12
 #-----------
-time=9130496337
+time=9130496331
 mem_heap_B=210618
 mem_heap_extra_B=80454
 mem_stacks_B=0
@@ -234,8 +234,8 @@ n5: 210618 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n4: 51082 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 26590 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 26338 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -271,7 +271,7 @@ n5: 210618 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=13
 #-----------
-time=10142874986
+time=10142874980
 mem_heap_B=225922
 mem_heap_extra_B=89566
 mem_stacks_B=0
@@ -279,7 +279,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=10920622291
+time=10920622285
 mem_heap_B=237903
 mem_heap_extra_B=96777
 mem_stacks_B=0
@@ -287,7 +287,7 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=11812681727
+time=11812681721
 mem_heap_B=252649
 mem_heap_extra_B=105719
 mem_stacks_B=0
@@ -295,7 +295,7 @@ heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=12435189508
+time=12435189502
 mem_heap_B=261731
 mem_heap_extra_B=111397
 mem_stacks_B=0
@@ -303,7 +303,7 @@ heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=13224901984
+time=13224901978
 mem_heap_B=274017
 mem_heap_extra_B=118623
 mem_stacks_B=0
@@ -311,7 +311,7 @@ heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=14041424502
+time=14041424496
 mem_heap_B=287066
 mem_heap_extra_B=126414
 mem_stacks_B=0
@@ -319,7 +319,7 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=14840216073
+time=14840216067
 mem_heap_B=297828
 mem_heap_extra_B=132908
 mem_stacks_B=0
@@ -354,8 +354,8 @@ n5: 297828 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n2: 69331 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n1: 66707 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 66707 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -368,7 +368,7 @@ n5: 297828 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=20
 #-----------
-time=15373519381
+time=15373519375
 mem_heap_B=305344
 mem_heap_extra_B=137336
 mem_stacks_B=0
@@ -376,7 +376,7 @@ heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=16211831347
+time=16211831341
 mem_heap_B=316365
 mem_heap_extra_B=143875
 mem_stacks_B=0
@@ -384,7 +384,7 @@ heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=16747242048
+time=16747242042
 mem_heap_B=325255
 mem_heap_extra_B=149313
 mem_stacks_B=0
@@ -392,7 +392,7 @@ heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=17340824822
+time=17340824816
 mem_heap_B=334263
 mem_heap_extra_B=154561
 mem_stacks_B=0
@@ -400,7 +400,7 @@ heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=18077952279
+time=18077952273
 mem_heap_B=344919
 mem_heap_extra_B=160793
 mem_stacks_B=0
@@ -443,13 +443,13 @@ n5: 344919 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=25
 #-----------
-time=18658323420
+time=18658323414
 mem_heap_B=354470
 mem_heap_extra_B=166650
 mem_stacks_B=0
@@ -492,13 +492,13 @@ n5: 354470 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=26
 #-----------
-time=19651612051
+time=19651612045
 mem_heap_B=367249
 mem_heap_extra_B=174391
 mem_stacks_B=0
@@ -506,7 +506,7 @@ heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=20273286359
+time=20273286353
 mem_heap_B=374659
 mem_heap_extra_B=178789
 mem_stacks_B=0
@@ -549,13 +549,13 @@ n5: 374659 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=28
 #-----------
-time=20751859494
+time=20751859488
 mem_heap_B=379758
 mem_heap_extra_B=182026
 mem_stacks_B=0
@@ -563,7 +563,7 @@ heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=21695834980
+time=21695834974
 mem_heap_B=395479
 mem_heap_extra_B=191585
 mem_stacks_B=0
@@ -571,7 +571,7 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=22367129213
+time=22367129207
 mem_heap_B=405946
 mem_heap_extra_B=197934
 mem_stacks_B=0
@@ -579,7 +579,7 @@ heap_tree=empty
 #-----------
 snapshot=31
 #-----------
-time=23448295650
+time=23448295644
 mem_heap_B=422729
 mem_heap_extra_B=207775
 mem_stacks_B=0
@@ -622,13 +622,13 @@ n5: 422729 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=32
 #-----------
-time=24418557491
+time=24418557485
 mem_heap_B=438872
 mem_heap_extra_B=217408
 mem_stacks_B=0
@@ -671,13 +671,13 @@ n5: 438872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=33
 #-----------
-time=25083864563
+time=25083864557
 mem_heap_B=447238
 mem_heap_extra_B=222354
 mem_stacks_B=0
@@ -720,13 +720,13 @@ n5: 447238 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=34
 #-----------
-time=26129800566
+time=26129800560
 mem_heap_B=464146
 mem_heap_extra_B=232758
 mem_stacks_B=0
@@ -769,13 +769,13 @@ n5: 464146 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=35
 #-----------
-time=26990409824
+time=26990409818
 mem_heap_B=477418
 mem_heap_extra_B=240670
 mem_stacks_B=0
@@ -818,13 +818,13 @@ n5: 477418 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=36
 #-----------
-time=27644928004
+time=27644927998
 mem_heap_B=486419
 mem_heap_extra_B=246157
 mem_stacks_B=0
@@ -867,13 +867,13 @@ n5: 486419 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=37
 #-----------
-time=28232343685
+time=28232343679
 mem_heap_B=495664
 mem_heap_extra_B=251736
 mem_stacks_B=0
@@ -916,13 +916,13 @@ n5: 495664 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=38
 #-----------
-time=29287213154
+time=29287213148
 mem_heap_B=509966
 mem_heap_extra_B=260186
 mem_stacks_B=0
@@ -965,13 +965,13 @@ n5: 509966 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=39
 #-----------
-time=29954745812
+time=29954745806
 mem_heap_B=518554
 mem_heap_extra_B=265398
 mem_stacks_B=0
@@ -979,7 +979,7 @@ heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=30411283766
+time=30411283760
 mem_heap_B=524570
 mem_heap_extra_B=268998
 mem_stacks_B=0
@@ -1022,13 +1022,13 @@ n5: 524570 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=41
 #-----------
-time=31092950073
+time=31092950067
 mem_heap_B=534132
 mem_heap_extra_B=274828
 mem_stacks_B=0
@@ -1036,7 +1036,7 @@ heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=31498454455
+time=31498454449
 mem_heap_B=539712
 mem_heap_extra_B=278024
 mem_stacks_B=0
@@ -1079,13 +1079,13 @@ n5: 539712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=43
 #-----------
-time=32532697052
+time=32532697046
 mem_heap_B=555310
 mem_heap_extra_B=287298
 mem_stacks_B=0
@@ -1128,13 +1128,13 @@ n5: 555310 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=44
 #-----------
-time=33278902209
+time=33278902203
 mem_heap_B=565990
 mem_heap_extra_B=293570
 mem_stacks_B=0
@@ -1177,13 +1177,13 @@ n5: 565990 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=45
 #-----------
-time=33772080052
+time=33772080046
 mem_heap_B=571390
 mem_heap_extra_B=296810
 mem_stacks_B=0
@@ -1226,13 +1226,13 @@ n5: 571390 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=46
 #-----------
-time=34444819124
+time=34444819118
 mem_heap_B=581727
 mem_heap_extra_B=303113
 mem_stacks_B=0
@@ -1240,7 +1240,7 @@ heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=35194127599
+time=35194127593
 mem_heap_B=593424
 mem_heap_extra_B=310128
 mem_stacks_B=0
@@ -1283,13 +1283,13 @@ n5: 593424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=48
 #-----------
-time=35684141909
+time=35684141903
 mem_heap_B=599107
 mem_heap_extra_B=313501
 mem_stacks_B=0
@@ -1332,13 +1332,13 @@ n5: 599107 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=49
 #-----------
-time=36020299268
+time=36020299262
 mem_heap_B=602893
 mem_heap_extra_B=315755
 mem_stacks_B=0
@@ -1346,7 +1346,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=36154512694
+time=36154512688
 mem_heap_B=604890
 mem_heap_extra_B=316910
 mem_stacks_B=0
@@ -1389,13 +1389,13 @@ n5: 604890 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=51
 #-----------
-time=36505849809
+time=36505849803
 mem_heap_B=610694
 mem_heap_extra_B=320410
 mem_stacks_B=0
@@ -1438,13 +1438,13 @@ n5: 610694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=52
 #-----------
-time=36889759879
+time=36889759873
 mem_heap_B=615590
 mem_heap_extra_B=323442
 mem_stacks_B=0
@@ -1452,7 +1452,7 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=36919274319
+time=36919274313
 mem_heap_B=616479
 mem_heap_extra_B=323945
 mem_stacks_B=0
@@ -1495,13 +1495,13 @@ n5: 616479 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=54
 #-----------
-time=37258251623
+time=37258251617
 mem_heap_B=622269
 mem_heap_extra_B=327579
 mem_stacks_B=0
@@ -1544,13 +1544,13 @@ n5: 622269 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=55
 #-----------
-time=37600394557
+time=37600394551
 mem_heap_B=628239
 mem_heap_extra_B=331145
 mem_stacks_B=0
@@ -1594,13 +1594,13 @@ n5: 628239 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=56
 #-----------
-time=37978383419
+time=37978383413
 mem_heap_B=634247
 mem_heap_extra_B=334793
 mem_stacks_B=0
@@ -1644,13 +1644,13 @@ n5: 634247 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=57
 #-----------
-time=38362097946
+time=38362097940
 mem_heap_B=639269
 mem_heap_extra_B=337755
 mem_stacks_B=0
@@ -1658,7 +1658,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=38446928569
+time=38446928563
 mem_heap_B=640305
 mem_heap_extra_B=338439
 mem_stacks_B=0
@@ -1702,13 +1702,13 @@ n5: 640305 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=59
 #-----------
-time=38830643126
+time=38830643120
 mem_heap_B=645874
 mem_heap_extra_B=341734
 mem_stacks_B=0
@@ -1716,7 +1716,7 @@ heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=38874253939
+time=38874253933
 mem_heap_B=646460
 mem_heap_extra_B=342084
 mem_stacks_B=0
@@ -1760,13 +1760,13 @@ n5: 646460 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=61
 #-----------
-time=39257968396
+time=39257968390
 mem_heap_B=651467
 mem_heap_extra_B=345093
 mem_stacks_B=0
@@ -1774,7 +1774,7 @@ heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=39326986148
+time=39326986142
 mem_heap_B=652694
 mem_heap_extra_B=345834
 mem_stacks_B=0
@@ -1818,13 +1818,13 @@ n5: 652694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=63
 #-----------
-time=39710700708
+time=39710700702
 mem_heap_B=657705
 mem_heap_extra_B=349007
 mem_stacks_B=0
@@ -1832,7 +1832,7 @@ heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=39771131442
+time=39771131436
 mem_heap_B=658841
 mem_heap_extra_B=349687
 mem_stacks_B=0
@@ -1876,13 +1876,13 @@ n5: 658841 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=65
 #-----------
-time=40154846244
+time=40154846238
 mem_heap_B=663727
 mem_heap_extra_B=352657
 mem_stacks_B=0
@@ -1890,7 +1890,7 @@ heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=40226545749
+time=40226545743
 mem_heap_B=665186
 mem_heap_extra_B=353478
 mem_stacks_B=0
@@ -1935,13 +1935,13 @@ n5: 665186 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=67
 #-----------
-time=40610260228
+time=40610260222
 mem_heap_B=671396
 mem_heap_extra_B=357180
 mem_stacks_B=0
@@ -1949,7 +1949,7 @@ heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=40627557148
+time=40627557142
 mem_heap_B=671587
 mem_heap_extra_B=357269
 mem_stacks_B=0
@@ -1994,13 +1994,13 @@ n5: 671587 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=69
 #-----------
-time=41011271707
+time=41011271701
 mem_heap_B=677537
 mem_heap_extra_B=360823
 mem_stacks_B=0
@@ -2008,7 +2008,7 @@ heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=41036785866
+time=41036785860
 mem_heap_B=678000
 mem_heap_extra_B=361160
 mem_stacks_B=0
@@ -2053,13 +2053,13 @@ n5: 678000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=71
 #-----------
-time=41420520976
+time=41420520970
 mem_heap_B=682570
 mem_heap_extra_B=363838
 mem_stacks_B=0
@@ -2067,7 +2067,7 @@ heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=41530703504
+time=41530703498
 mem_heap_B=684500
 mem_heap_extra_B=365076
 mem_stacks_B=0
@@ -2112,13 +2112,13 @@ n5: 684500 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=73
 #-----------
-time=41914438940
+time=41914438934
 mem_heap_B=690142
 mem_heap_extra_B=368266
 mem_stacks_B=0
@@ -2126,7 +2126,7 @@ heap_tree=empty
 #-----------
 snapshot=74
 #-----------
-time=41973816903
+time=41973816897
 mem_heap_B=691248
 mem_heap_extra_B=368896
 mem_stacks_B=0
@@ -2171,13 +2171,13 @@ n5: 691248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=75
 #-----------
-time=42357531321
+time=42357531315
 mem_heap_B=696382
 mem_heap_extra_B=372010
 mem_stacks_B=0
@@ -2185,7 +2185,7 @@ heap_tree=empty
 #-----------
 snapshot=76
 #-----------
-time=42508123989
+time=42508123983
 mem_heap_B=697893
 mem_heap_extra_B=372859
 mem_stacks_B=0
@@ -2230,13 +2230,13 @@ n5: 697893 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=77
 #-----------
-time=42891840691
+time=42891840685
 mem_heap_B=703472
 mem_heap_extra_B=376136
 mem_stacks_B=0
@@ -2244,7 +2244,7 @@ heap_tree=empty
 #-----------
 snapshot=78
 #-----------
-time=42961417617
+time=42961417611
 mem_heap_B=704717
 mem_heap_extra_B=376827
 mem_stacks_B=0
@@ -2289,13 +2289,13 @@ n5: 704717 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=79
 #-----------
-time=43345134475
+time=43345134469
 mem_heap_B=710085
 mem_heap_extra_B=380067
 mem_stacks_B=0
@@ -2303,7 +2303,7 @@ heap_tree=empty
 #-----------
 snapshot=80
 #-----------
-time=43445396595
+time=43445396589
 mem_heap_B=711417
 mem_heap_extra_B=380943
 mem_stacks_B=0
@@ -2348,13 +2348,13 @@ n5: 711417 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=81
 #-----------
-time=43829111078
+time=43829111072
 mem_heap_B=716291
 mem_heap_extra_B=383813
 mem_stacks_B=0
@@ -2362,7 +2362,7 @@ heap_tree=empty
 #-----------
 snapshot=82
 #-----------
-time=43993605193
+time=43993605187
 mem_heap_B=718297
 mem_heap_extra_B=385015
 mem_stacks_B=0
@@ -2407,13 +2407,13 @@ n5: 718297 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=83
 #-----------
-time=44377319586
+time=44377319580
 mem_heap_B=724608
 mem_heap_extra_B=388712
 mem_stacks_B=0
@@ -2421,7 +2421,7 @@ heap_tree=empty
 #-----------
 snapshot=84
 #-----------
-time=44392522547
+time=44392522541
 mem_heap_B=725252
 mem_heap_extra_B=389100
 mem_stacks_B=0
@@ -2466,13 +2466,13 @@ n5: 725252 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=85
 #-----------
-time=44776236943
+time=44776236937
 mem_heap_B=729681
 mem_heap_extra_B=391695
 mem_stacks_B=0
@@ -2480,7 +2480,7 @@ heap_tree=empty
 #-----------
 snapshot=86
 #-----------
-time=44952340582
+time=44952340576
 mem_heap_B=732296
 mem_heap_extra_B=393232
 mem_stacks_B=0
@@ -2525,6 +2525,6 @@ n5: 732296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF00071E: ???
+        n0: 72704 0x1FFF000726: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)

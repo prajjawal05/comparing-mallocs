@@ -1,4 +1,4 @@
-desc: --heap=yes --stacks=no --detailed-freq=100
+desc: (none)
 cmd: ./cfrac 17545186520507317056371138836327483792789528
 time_unit: i
 #-----------
@@ -32,8 +32,8 @@ n7: 98287 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 8776 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 4066 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 4056 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -77,8 +77,8 @@ n6: 112208 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 14070 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 6882 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 6864 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -123,8 +123,8 @@ n6: 123926 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 18498 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 9196 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 9178 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -206,8 +206,8 @@ n6: 179166 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 39192 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 20282 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 20150 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -257,8 +257,8 @@ n6: 188526 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 42760 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 22144 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 21970 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -324,8 +324,8 @@ n5: 226035 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 56860 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 29632 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 29302 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -373,8 +373,8 @@ n5: 240384 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n4: 62218 0x10B1B3: palloc (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n2: 32518 0x10C492: pdivmod (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n1: 32084 0x10FA07: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -461,8 +461,8 @@ n5: 292515 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n2: 67650 0x10E8F7: newSoln (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
   n1: 65067 0x11039D: pcfrac (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
    n0: 65067 0x10A559: main (in /home/azureuser/mimalloc-bench/out/bench/cfrac)
@@ -534,8 +534,8 @@ n5: 332304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=21
@@ -583,8 +583,8 @@ n5: 341692 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=22
@@ -656,8 +656,8 @@ n5: 385097 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=26
@@ -753,8 +753,8 @@ n5: 481941 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=33
@@ -810,8 +810,8 @@ n5: 509966 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=35
@@ -859,8 +859,8 @@ n5: 524570 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=36
@@ -916,8 +916,8 @@ n5: 550116 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=38
@@ -965,8 +965,8 @@ n5: 555310 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=39
@@ -1022,8 +1022,8 @@ n5: 582273 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=41
@@ -1071,8 +1071,8 @@ n5: 599107 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=42
@@ -1120,8 +1120,8 @@ n5: 610694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=43
@@ -1170,8 +1170,8 @@ n5: 628239 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=44
@@ -1228,8 +1228,8 @@ n5: 652694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=46
@@ -1279,8 +1279,8 @@ n5: 665186 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=47
@@ -1330,8 +1330,8 @@ n5: 678000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=48
@@ -1381,8 +1381,8 @@ n5: 691248 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=49
@@ -1440,8 +1440,8 @@ n5: 697893 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=51
@@ -1499,8 +1499,8 @@ n5: 704717 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=53
@@ -1558,8 +1558,8 @@ n5: 711417 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=55
@@ -1617,8 +1617,8 @@ n5: 718297 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=57
@@ -1676,8 +1676,8 @@ n5: 725252 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=59
@@ -1735,6 +1735,6 @@ n5: 732296 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
     n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
      n1: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
       n1: 72704 0x1: ???
-       n1: 72704 0x1FFF0006F6: ???
-        n0: 72704 0x1FFF0006FE: ???
+       n1: 72704 0x1FFF000722: ???
+        n0: 72704 0x1FFF00072A: ???
  n0: 4293 in 4 places, all below massif's threshold (1.00%)
