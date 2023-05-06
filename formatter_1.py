@@ -170,11 +170,16 @@ for file in valgrindMassifFiles :
     print(curr_dict)
     nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
 
+ans = []
+
+for benchmark in nam_dict.keys():
+    for malloc in nam_dict[benchmark].keys():
+        ans.append(nam_dict[benchmark][malloc])
 
     
-
+print(ans)
 output = open("benchmarkAllocData.json", "w")
-output.write(json.dumps(nam_dict))
+output.write(json.dumps(ans))
 # print(nam_dict)
 
 
