@@ -8,6 +8,8 @@ if '.DS_Store' in filenames:
     filenames.remove('.DS_Store')
 if '.DS_Store' in valgrindFiles:
     valgrindFiles.remove('.DS_Store')
+if '.DS_Store' in valgrindMassifFiles:
+    valgrindMassifFiles.remove('.DS_Store')
 
 
 
@@ -45,13 +47,13 @@ def getDatafromResult2(file_name) :
         if i > 1 :
             curr_dict[json_attr[i]]= data
 
-    print(curr_dict)
+    # print(curr_dict)
     return curr_dict
 
 def getDatafromPerf(file_name) :   
     fileRead = open("perf-results/"+file_name)
     names = file_name.split("-")
-    print(names)
+    # print(names)
     fileContent = fileRead.readlines()
     if file_name.startswith("larson") :
         curr_dict = {"bm": names[0], "malloc":names[2]}
@@ -89,7 +91,7 @@ def getDatafromValgrind(file_name) :
         for i,data in enumerate(num_content):
             curr_dict[valgrind_json[i]] = data
 
-        print(curr_dict)
+        # print(curr_dict)
         return curr_dict
 
 def getDataFromValgrindMassif(file_name) :
@@ -97,14 +99,10 @@ def getDataFromValgrindMassif(file_name) :
     total_num_lines = 0
     with open("valgrind-massif-results/"+file_name) as filePath:
         total_num_lines = sum(1 for line in filePath)
-    print(total_num_lines)
+    # print(total_num_lines)
     names = file_name.split("-")
     fileContent = fileRead.readlines()
-    curr_dict ={}
-    if file_name.startswith("larson") :
-        curr_dict = {"bm": names[0], "malloc":names[2]}
-    else :
-        curr_dict = {"bm": names[0], "malloc":names[1]}
+    curr_dict = {"bm": names[2], "malloc":names[0]}
     fileContent = list(filter(lambda content: content.strip(), fileContent))
 
     for i,content in enumerate(fileContent):
@@ -167,6 +165,7 @@ for file in valgrindMassifFiles :
     curr_dict = getDataFromValgrindMassif(file) 
     benchmark = curr_dict["bm"]
     memalloc = curr_dict["malloc"]
+    print(curr_dict)
     nam_dict[benchmark][memalloc] = {**nam_dict[benchmark][memalloc],**curr_dict}
 
 
@@ -174,7 +173,7 @@ for file in valgrindMassifFiles :
 
 output = open("benchmarkAllocData.json", "w")
 output.write(json.dumps(nam_dict))
-print(nam_dict)
+# print(nam_dict)
 
 
 
