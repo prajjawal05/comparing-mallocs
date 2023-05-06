@@ -1,0 +1,626 @@
+desc: (none)
+cmd: ./larson-sized 5 8 1000 5000 100 4141 16
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=12559232
+mem_heap_B=40385515
+mem_heap_extra_B=1240045
+mem_stacks_B=0
+heap_tree=peak
+n2: 40385515 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 40312811 0x109FD9: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 40312811 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n0: 72704 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=266767963
+mem_heap_B=40508689
+mem_heap_extra_B=1383479
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=418136003
+mem_heap_B=40463867
+mem_heap_extra_B=1383885
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=677998505
+mem_heap_B=40401167
+mem_heap_extra_B=1386313
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=948957197
+mem_heap_B=40504145
+mem_heap_extra_B=1382039
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1278408041
+mem_heap_B=40430471
+mem_heap_extra_B=1383265
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1581144097
+mem_heap_B=40456609
+mem_heap_extra_B=1382583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1741416174
+mem_heap_B=40439897
+mem_heap_extra_B=1381807
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2061960289
+mem_heap_B=40389434
+mem_heap_extra_B=1380254
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2275656442
+mem_heap_B=40342977
+mem_heap_extra_B=1382975
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2489352596
+mem_heap_B=40434731
+mem_heap_extra_B=1384621
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40434731 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25092004 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 25092004 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n1: 15123420 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 15123420 0x493D608: start_thread (pthread_create.c:477)
+   n0: 15123420 0x4C59132: clone (clone.S:95)
+ n0: 219307 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=2809896689
+mem_heap_B=40420218
+mem_heap_extra_B=1382294
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2952360717
+mem_heap_B=40437478
+mem_heap_extra_B=1381434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3201672785
+mem_heap_B=40441703
+mem_heap_extra_B=1383929
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40441703 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 25092004 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 25092004 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n1: 15127656 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 15127656 0x493D608: start_thread (pthread_create.c:477)
+   n0: 15127656 0x4C59132: clone (clone.S:95)
+ n0: 222043 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=3344136862
+mem_heap_B=40464662
+mem_heap_extra_B=1385882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=3700297005
+mem_heap_B=40425421
+mem_heap_extra_B=1387427
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=3949609133
+mem_heap_B=40366902
+mem_heap_extra_B=1385466
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=4172211176
+mem_heap_B=40426737
+mem_heap_extra_B=1384247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=4350292773
+mem_heap_B=40423204
+mem_heap_extra_B=1381084
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40423204 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 22590655 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 22590655 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n1: 17622528 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 17622528 0x493D608: start_thread (pthread_create.c:477)
+   n0: 17622528 0x4C59132: clone (clone.S:95)
+ n0: 210021 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=4617415326
+mem_heap_B=40426918
+mem_heap_extra_B=1384282
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=4795496982
+mem_heap_B=40467259
+mem_heap_extra_B=1383389
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40467259 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 20221316 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 20221316 0x493D608: start_thread (pthread_create.c:477)
+   n0: 20221316 0x4C59132: clone (clone.S:95)
+ n1: 20042637 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 20042637 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n0: 203306 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=5107139814
+mem_heap_B=40462761
+mem_heap_extra_B=1384103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=5418782603
+mem_heap_B=40411741
+mem_heap_extra_B=1384979
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=5596864275
+mem_heap_B=40346930
+mem_heap_extra_B=1385126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=5908507135
+mem_heap_B=40288052
+mem_heap_extra_B=1385100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=6175629628
+mem_heap_B=40333629
+mem_heap_extra_B=1383083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=6353711254
+mem_heap_B=40353783
+mem_heap_extra_B=1388201
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=6620833720
+mem_heap_B=40421255
+mem_heap_extra_B=1389257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=6798915348
+mem_heap_B=40400459
+mem_heap_extra_B=1391557
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=6976997070
+mem_heap_B=40471433
+mem_heap_extra_B=1384775
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40471433 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 30319478 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 30319478 0x493D608: start_thread (pthread_create.c:477)
+   n0: 30319478 0x4C59132: clone (clone.S:95)
+ n1: 9987605 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 9987605 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n0: 164350 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=7244119559
+mem_heap_B=40478949
+mem_heap_extra_B=1384707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=7422201218
+mem_heap_B=40411611
+mem_heap_extra_B=1389525
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=7600282935
+mem_heap_B=40524167
+mem_heap_extra_B=1388769
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=7778364602
+mem_heap_B=40445779
+mem_heap_extra_B=1390765
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=7956446230
+mem_heap_B=40514662
+mem_heap_extra_B=1388970
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=8134527913
+mem_heap_B=40541530
+mem_heap_extra_B=1389406
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=8401650428
+mem_heap_B=40426601
+mem_heap_extra_B=1392663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=8579732139
+mem_heap_B=40447425
+mem_heap_extra_B=1395295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=8757813767
+mem_heap_B=40520162
+mem_heap_extra_B=1392094
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40520162 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32870629 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 32870629 0x493D608: start_thread (pthread_create.c:477)
+   n0: 32870629 0x4C59132: clone (clone.S:95)
+ n1: 7489050 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 7489050 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n0: 160483 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=8935895386
+mem_heap_B=40463606
+mem_heap_extra_B=1391330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=9113977106
+mem_heap_B=40407624
+mem_heap_extra_B=1394248
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=9292058798
+mem_heap_B=40355503
+mem_heap_extra_B=1395937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=9470140426
+mem_heap_B=40406022
+mem_heap_extra_B=1397130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=9648222103
+mem_heap_B=40459906
+mem_heap_extra_B=1399118
+mem_stacks_B=0
+heap_tree=detailed
+n3: 40459906 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 32806725 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 32806725 0x493D608: start_thread (pthread_create.c:477)
+   n0: 32806725 0x4C59132: clone (clone.S:95)
+ n1: 7489050 0x10A176: runthreads(long, int, int, int, int) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n0: 7489050 0x10943C: main (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+ n0: 164131 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=9826303753
+mem_heap_B=40439530
+mem_heap_extra_B=1401798
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=10093426218
+mem_heap_B=40437045
+mem_heap_extra_B=1401323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=10271507889
+mem_heap_B=40475146
+mem_heap_extra_B=1400590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=10449589578
+mem_heap_B=40484408
+mem_heap_extra_B=1397040
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=10627671255
+mem_heap_B=40437712
+mem_heap_extra_B=1398712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=10770135334
+mem_heap_B=40450333
+mem_heap_extra_B=1398643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=10912599383
+mem_heap_B=40483936
+mem_heap_extra_B=1398920
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=11055063411
+mem_heap_B=40417708
+mem_heap_extra_B=1395180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=11197527457
+mem_heap_B=40445743
+mem_heap_extra_B=1395793
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=11339991514
+mem_heap_B=40472407
+mem_heap_extra_B=1394161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=11482455557
+mem_heap_B=40355322
+mem_heap_extra_B=1394366
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=11624919630
+mem_heap_B=40318608
+mem_heap_extra_B=1392936
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=11767383738
+mem_heap_B=40310540
+mem_heap_extra_B=1393788
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=11909847767
+mem_heap_B=40313584
+mem_heap_extra_B=1391192
+mem_stacks_B=0
+heap_tree=detailed
+n2: 40313584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 40190968 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 40190968 0x493D608: start_thread (pthread_create.c:477)
+   n0: 40190968 0x4C59132: clone (clone.S:95)
+ n0: 122616 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=12052311813
+mem_heap_B=40372893
+mem_heap_extra_B=1390611
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=12194775856
+mem_heap_B=40345932
+mem_heap_extra_B=1389972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=12337239899
+mem_heap_B=40317462
+mem_heap_extra_B=1391722
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=12479703927
+mem_heap_B=40303565
+mem_heap_extra_B=1391507
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=12622167955
+mem_heap_B=40372095
+mem_heap_extra_B=1389697
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=12764632049
+mem_heap_B=40385189
+mem_heap_extra_B=1390723
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=12907096093
+mem_heap_B=40412720
+mem_heap_extra_B=1392152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=13049560149
+mem_heap_B=40361168
+mem_heap_extra_B=1395408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=13192024243
+mem_heap_B=40375924
+mem_heap_extra_B=1394964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=13334488288
+mem_heap_B=40384467
+mem_heap_extra_B=1392981
+mem_stacks_B=0
+heap_tree=detailed
+n2: 40384467 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 40256683 0x109699: exercise_heap(void*) (in /home/azureuser/mimalloc-bench/out/bench/larson-sized)
+  n1: 40256683 0x493D608: start_thread (pthread_create.c:477)
+   n0: 40256683 0x4C59132: clone (clone.S:95)
+ n0: 127784 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=13476952326
+mem_heap_B=40375993
+mem_heap_extra_B=1393207
+mem_stacks_B=0
+heap_tree=empty
