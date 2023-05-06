@@ -105,15 +105,17 @@ def getDataFromValgrindMassif(file_name) :
     curr_dict = {"bm": names[2], "malloc":names[0]}
     fileContent = list(filter(lambda content: content.strip(), fileContent))
 
-    for i,content in enumerate(fileContent):
-        content = content.strip()
-        if not content:
-            continue
-        content = content.split("=")
-        if(not fileContent[-7].__contains__("snapshot")):
-            break
-        if i in [total_num_lines-3, total_num_lines-4, total_num_lines-5]:
-            curr_dict["massif-"+content[0]] = content[1]
+    lineNum = 0
+    for i, content in enumerate(fileContent):
+        if(content.__contains__("snapshot=")):
+            lineNum = i
+        
+    
+    contentJson = fileContent[lineNum+3].strip().split("=")
+    curr_dict["massif-"+contentJson[0]] = contentJson[1]
+
+    contentJson = fileContent[lineNum+4].strip().split("=")
+    curr_dict["massif-"+contentJson[0]] = contentJson[1]
     return curr_dict
 
 
